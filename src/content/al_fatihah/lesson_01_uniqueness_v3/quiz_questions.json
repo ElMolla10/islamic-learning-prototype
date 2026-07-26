@@ -1,0 +1,354 @@
+{
+  "lesson_id": "al_fatihah.lesson_01_uniqueness",
+  "draft_version": 3,
+  "status": "internal_unapproved",
+  "passing_rule": "score / total > 0.5",
+  "questions": [
+    {
+      "question_id": "V3Q01",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "بأي وصف ثبتت مكانة الفاتحة في الحديث الصحيح؟",
+      "prompt_en": "Which description of al-Fatihah is established in authentic hadith?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "أعظم سورة في القرآن",
+          "en": "The greatest surah in the Qur'an"
+        },
+        {
+          "id": "b",
+          "ar": "أطول سورة",
+          "en": "The longest surah"
+        },
+        {
+          "id": "c",
+          "ar": "آخر سورة نزلت",
+          "en": "The final surah revealed"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "وصفها النبي ﷺ بأنها أعظم سورة في القرآن.",
+      "explanation_en": "The Prophet ﷺ described it as the greatest surah in the Qur'an.",
+      "claim_ids": [
+        "CLM004"
+      ],
+      "review_card_id": "V3B03"
+    },
+    {
+      "question_id": "V3Q02",
+      "type": "matching",
+      "depth": "deep",
+      "prompt_ar": "صِل كل اسم بالمعنى الذي شرحه الدرس.",
+      "prompt_en": "Match each name to the meaning explained in the lesson.",
+      "matching_rows": [
+        {
+          "id": "umm",
+          "ar": "أم القرآن",
+          "en": "Umm al-Qur'an"
+        },
+        {
+          "id": "mathani",
+          "ar": "السبع المثاني",
+          "en": "The Seven Oft-Repeated"
+        },
+        {
+          "id": "fatihah",
+          "ar": "فاتحة الكتاب",
+          "en": "Opening of the Book"
+        }
+      ],
+      "matching_choices": [
+        {
+          "id": "gathers",
+          "ar": "أصل وافتتاح يجمع المقاصد إجمالًا",
+          "en": "An origin and opening that gathers purposes in summary"
+        },
+        {
+          "id": "repeated",
+          "ar": "تتكرر في الصلاة",
+          "en": "Repeated in prayer"
+        },
+        {
+          "id": "opens",
+          "ar": "يفتتح بها الكتاب والقراءة",
+          "en": "The Book and recitation open with it"
+        }
+      ],
+      "correct_answer": [
+        "umm=gathers",
+        "mathani=repeated",
+        "fatihah=opens"
+      ],
+      "explanation_ar": "تشرح المصادر هذه الأسماء بمعاني الأصل والافتتاح والتكرار في الصلاة.",
+      "explanation_en": "The sources explain these names through origin, opening, and repetition in prayer.",
+      "claim_ids": [
+        "CLM003",
+        "DCLM009",
+        "DCLM010"
+      ],
+      "review_card_id": "V3B04",
+      "review_deep_section_id": "V3D04A"
+    },
+    {
+      "question_id": "V3Q03",
+      "type": "ordering",
+      "depth": "core",
+      "prompt_ar": "رتّب الحركة الكبرى في السورة.",
+      "prompt_en": "Order the surah's major movement.",
+      "items": [
+        {
+          "id": "a",
+          "ar": "الثناء على الله",
+          "en": "Praise of Allah"
+        },
+        {
+          "id": "b",
+          "ar": "العبادة والاستعانة",
+          "en": "Worship and seeking help"
+        },
+        {
+          "id": "c",
+          "ar": "طلب الهداية",
+          "en": "Request for guidance"
+        }
+      ],
+      "correct_answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation_ar": "تبدأ بالثناء، ثم إعلان العبادة والافتقار إلى العون، ثم سؤال الهداية.",
+      "explanation_en": "It begins with praise, moves to worship and dependence, then asks for guidance.",
+      "claim_ids": [
+        "CLM009",
+        "CLM012",
+        "CLM013",
+        "DCLM008"
+      ],
+      "review_card_id": "V3B07"
+    },
+    {
+      "question_id": "V3Q04",
+      "type": "true_false",
+      "depth": "deep",
+      "prompt_ar": "عند ﴿إياك نعبد﴾ تنتقل السورة من الحديث عن الله إلى خطابه مباشرة.",
+      "prompt_en": "At ‘You alone we worship,’ the surah moves from speaking about Allah to addressing Him directly.",
+      "correct_answer": true,
+      "explanation_ar": "صحيح؛ وهذا الالتفات يناسب الانتقال من الثناء إلى الدعاء.",
+      "explanation_en": "True; this turn of address suits the movement from praise to supplication.",
+      "claim_ids": [
+        "DCLM002"
+      ],
+      "review_card_id": "V3B06",
+      "review_deep_section_id": "V3D06A"
+    },
+    {
+      "question_id": "V3Q05",
+      "type": "scenario",
+      "depth": "deep",
+      "prompt_ar": "قال متعلم: لماذا قُدمت العبادة على طلب العون؟ أي جواب يوافق التفسير الذي درسته؟",
+      "prompt_en": "A learner asks why worship comes before seeking help. Which answer matches the studied explanation?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "لأن العبادة هي الغاية والاستعانة وسيلة إليها",
+          "en": "Because worship is the objective and seeking help is a means to it"
+        },
+        {
+          "id": "b",
+          "ar": "لأن طلب العون غير مهم",
+          "en": "Because seeking help is unimportant"
+        },
+        {
+          "id": "c",
+          "ar": "لأن ترتيب الآية بلا دلالة",
+          "en": "Because the order carries no meaning"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "ذكر ابن كثير أن العبادة هي المقصودة والاستعانة وسيلة إليها.",
+      "explanation_en": "Ibn Kathir explains that worship is the objective and seeking help is a means to it.",
+      "claim_ids": [
+        "DCLM004"
+      ],
+      "review_card_id": "V3B06",
+      "review_deep_section_id": "V3D06B"
+    },
+    {
+      "question_id": "V3Q06",
+      "type": "select_all",
+      "depth": "deep",
+      "prompt_ar": "لماذا يكرر المؤمن طلب الهداية؟ اختر كل ما تدعمه المصادر.",
+      "prompt_en": "Why does a believer repeatedly ask for guidance? Select every source-supported answer.",
+      "options": [
+        {
+          "id": "a",
+          "ar": "للثبات على الهدى",
+          "en": "For steadfastness"
+        },
+        {
+          "id": "b",
+          "ar": "لزيادة البصيرة والنمو",
+          "en": "For clearer insight and growth"
+        },
+        {
+          "id": "c",
+          "ar": "للوقاية من الزيغ والتقصير",
+          "en": "For protection from deviation and shortcoming"
+        },
+        {
+          "id": "d",
+          "ar": "لأنه لم يسمع بالإسلام من قبل",
+          "en": "Because the believer has never heard of Islam"
+        }
+      ],
+      "correct_answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation_ar": "الهداية المطلوبة تشمل الثبات والزيادة والاستمرار والوقاية من الانحراف.",
+      "explanation_en": "The requested guidance includes steadfastness, growth, continuity, and protection from deviation.",
+      "claim_ids": [
+        "DCLM006"
+      ],
+      "review_card_id": "V3B07",
+      "review_deep_section_id": "V3D07B"
+    },
+    {
+      "question_id": "V3Q07",
+      "type": "scenario",
+      "depth": "deep",
+      "prompt_ar": "حصر شخص الهداية في معرفة معلومة صحيحة فقط. ما التصحيح الأقرب؟",
+      "prompt_en": "Someone reduces guidance to knowing one correct fact. What is the closest correction?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "الصراط يشمل معرفة الحق واعتقاده والعمل به والثبات عليه",
+          "en": "The path includes knowing truth, holding it, acting upon it, and remaining steadfast"
+        },
+        {
+          "id": "b",
+          "ar": "الهداية تعني المعلومات بلا عمل",
+          "en": "Guidance means information without action"
+        },
+        {
+          "id": "c",
+          "ar": "الهداية لا يحتاجها المسلم بعد إسلامه",
+          "en": "A Muslim no longer needs guidance after accepting Islam"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "شرح ابن عاشور الصراط بمعارف صالحة من اعتقاد وعمل، مع حاجة العبد الدائمة للهداية.",
+      "explanation_en": "Ibn Ashur describes the path through sound knowledge, belief, and action, alongside the servant's continuing need for guidance.",
+      "claim_ids": [
+        "DCLM006",
+        "DCLM007"
+      ],
+      "review_card_id": "V3B07",
+      "review_deep_section_id": "V3D07C"
+    },
+    {
+      "question_id": "V3Q08",
+      "type": "matching",
+      "depth": "deep",
+      "prompt_ar": "صِل أجزاء الحركة التي يبرزها الحديث القدسي.",
+      "prompt_en": "Match the movements highlighted by the hadith qudsi.",
+      "matching_rows": [
+        {
+          "id": "opening",
+          "ar": "أول السورة",
+          "en": "Opening"
+        },
+        {
+          "id": "middle",
+          "ar": "إياك نعبد وإياك نستعين",
+          "en": "You alone we worship and ask for help"
+        },
+        {
+          "id": "ending",
+          "ar": "اهدنا الصراط المستقيم",
+          "en": "Guide us to the straight path"
+        }
+      ],
+      "matching_choices": [
+        {
+          "id": "praise",
+          "ar": "ثناء وتمجيد",
+          "en": "Praise and glorification"
+        },
+        {
+          "id": "bridge",
+          "ar": "عبادة وافتقار عند موضع الوصل",
+          "en": "Worship and dependence at the joining point"
+        },
+        {
+          "id": "request",
+          "ar": "سؤال وطلب",
+          "en": "Request and supplication"
+        }
+      ],
+      "correct_answer": [
+        "opening=praise",
+        "middle=bridge",
+        "ending=request"
+      ],
+      "explanation_ar": "يشرح النووي النصف الأول بالثناء والثاني بالسؤال، وتقع آية العبادة والاستعانة عند موضع الوصل.",
+      "explanation_en": "Al-Nawawi describes the first half as praise and the second as request, with worship and dependence at their joining point.",
+      "claim_ids": [
+        "CLM006",
+        "DCLM003",
+        "DCLM008"
+      ],
+      "review_card_id": "V3B06",
+      "review_deep_section_id": "V3D06A"
+    },
+    {
+      "question_id": "V3Q09",
+      "type": "true_false",
+      "depth": "core",
+      "prompt_ar": "الخلاف في عدّ البسملة يغيّر كلمات سورة الفاتحة.",
+      "prompt_en": "The disagreement about counting the basmalah changes the words of al-Fatihah.",
+      "correct_answer": false,
+      "explanation_ar": "خطأ؛ الخلاف في العد والترقيم، لا في كلمات السورة المتلقاة.",
+      "explanation_en": "False; the disagreement concerns counting and numbering, not the received wording of the surah.",
+      "claim_ids": [
+        "CLM019"
+      ],
+      "review_card_id": "V3B05"
+    },
+    {
+      "question_id": "V3Q10",
+      "type": "short_recall",
+      "depth": "deep",
+      "prompt_ar": "في جملة واحدة: كيف ترتبط معرفة الله بالعبادة وطلب الهداية في بناء الفاتحة؟",
+      "prompt_en": "In one sentence, how are knowing Allah, worship, and asking for guidance connected in al-Fatihah's structure?",
+      "correct_answer": null,
+      "accepted_concepts": [
+        "knowledge",
+        "Allah",
+        "worship",
+        "help",
+        "guidance",
+        "path"
+      ],
+      "sample_answer_ar": "تعرفنا السورة بربنا، ثم نعلن عبادته وافتقارنا إلى عونه، ثم نسأله أن يهدينا الطريق.",
+      "sample_answer_en": "The surah teaches us about our Lord, then we declare worship and dependence, and then ask Him to guide us along the path.",
+      "explanation_ar": "تنتقل السورة من معرفة الله والثناء عليه إلى العبادة والاستعانة ثم إلى سؤال الهداية.",
+      "explanation_en": "The surah moves from knowing and praising Allah to worship and dependence, then to asking for guidance.",
+      "claim_ids": [
+        "DCLM008",
+        "DCLM011"
+      ],
+      "review_card_id": "V3B07",
+      "review_deep_section_id": "V3D07A"
+    }
+  ]
+}

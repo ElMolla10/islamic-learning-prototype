@@ -1,0 +1,800 @@
+{
+  "lesson_id": "al_fatihah.lesson_01_uniqueness",
+  "draft_version": 3,
+  "status": "internal_unapproved",
+  "blocks": [
+    {
+      "block_id": "V3B01",
+      "block_type": "lesson_hook",
+      "title_ar": "لماذا نتوقف عند الفاتحة؟",
+      "title_en": "Why pause at al-Fatihah?",
+      "body_ar": "قد تقرأ الفاتحة مرارًا في يومك، وفي كل قراءة تنتقل من حمد الله إلى عبادته والاستعانة به، ثم إلى طلب الهداية. وقبل أن تدرس آياتها واحدةً واحدة، انظر أولًا إلى الصورة الكاملة التي تجمعها. هذه النظرة المختصرة ستعينك على سماع معاني السورة بوعي أكبر حين تقرؤها. وتجتمع معانيها في مسار واضح: معرفة الله، ثم التوجه إليه بالعبادة، ثم سؤاله الهداية.",
+      "body_en": "You may recite al-Fatihah many times in a day, and each recitation moves from praising Allah, to worshipping Him and seeking His help, and then to asking for guidance. Before studying its verses one by one, first notice the complete picture they form together. This short overview can help you hear the surah's meanings with greater attention when you recite it. Its meanings form a clear movement: knowing Allah, turning to Him in worship, and then asking Him for guidance.",
+      "claim_ids": [
+        "CLM009",
+        "CLM010",
+        "CLM012",
+        "CLM013",
+        "CLM015"
+      ],
+      "estimated_reading_time_seconds": 45,
+      "visibility": "always_visible",
+      "content_density": "medium",
+      "custom_component": "standard_card",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "قد تقرأ الفاتحة مرارًا في يومك، وفي كل قراءة تنتقل من حمد الله إلى عبادته والاستعانة به، ثم إلى طلب الهداية.",
+        "وقبل أن تدرس آياتها واحدةً واحدة، انظر أولًا إلى الصورة الكاملة التي تجمعها.",
+        "هذه النظرة المختصرة ستعينك على سماع معاني السورة بوعي أكبر حين تقرؤها.",
+        "وتجتمع معانيها في مسار واضح: معرفة الله، ثم التوجه إليه بالعبادة، ثم سؤاله الهداية."
+      ],
+      "core_items_en": [
+        "You may recite al-Fatihah many times in a day, and each recitation moves from praising Allah, to worshipping Him and seeking His help, and then to asking for guidance.",
+        "Before studying its verses one by one, first notice the complete picture they form together.",
+        "This short overview can help you hear the surah's meanings with greater attention when you recite it.",
+        "Its meanings form a clear movement: knowing Allah, turning to Him in worship, and then asking Him for guidance."
+      ],
+      "content_items_ar": [
+        "قد تقرأ الفاتحة مرارًا في يومك، وفي كل قراءة تنتقل من حمد الله إلى عبادته والاستعانة به، ثم إلى طلب الهداية.",
+        "وقبل أن تدرس آياتها واحدةً واحدة، انظر أولًا إلى الصورة الكاملة التي تجمعها.",
+        "هذه النظرة المختصرة ستعينك على سماع معاني السورة بوعي أكبر حين تقرؤها.",
+        "وتجتمع معانيها في مسار واضح: معرفة الله، ثم التوجه إليه بالعبادة، ثم سؤاله الهداية."
+      ],
+      "content_items_en": [
+        "You may recite al-Fatihah many times in a day, and each recitation moves from praising Allah, to worshipping Him and seeking His help, and then to asking for guidance.",
+        "Before studying its verses one by one, first notice the complete picture they form together.",
+        "This short overview can help you hear the surah's meanings with greater attention when you recite it.",
+        "Its meanings form a clear movement: knowing Allah, turning to Him in worship, and then asking Him for guidance."
+      ],
+      "deep_sections": [],
+      "source_summary_ar": "آيات السورة + تفسير مقارن",
+      "source_summary_en": "Qur'anic text + compared tafsir",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B02",
+      "block_type": "surah_facts",
+      "title_ar": "حقائق سريعة",
+      "title_en": "Quick surah facts",
+      "body_ar": "الاسم العربي: سورة الفاتحة العنوان الإنجليزي: The Opening عدد الآيات: سبع النزول: يعدّها أكثر العلماء مكية، مع وجود أقوال أخرى. أسماء أساسية: فاتحة الكتاب، أم القرآن وأم الكتاب، والسبع المثاني. زمن القراءة: نحو خمس إلى سبع دقائق موضع الدرس: الدرس الأول في مسار سورة الفاتحة",
+      "body_en": "Arabic name: Surah al-Fatihah English title: The Opening Verses: seven Revelation: most scholars classify it as Makki, though other views are reported. Key names: Fatihat al-Kitab, Umm al-Qur'an and Umm al-Kitab, and the Seven Oft-Repeated. Reading time: about five to seven minutes Path position: Lesson 1 in the Surah al-Fatihah path",
+      "claim_ids": [
+        "CLM001",
+        "CLM002",
+        "CLM003",
+        "CLM007",
+        "CLM008",
+        "CLM019"
+      ],
+      "estimated_reading_time_seconds": 45,
+      "visibility": "always_visible",
+      "content_density": "compact",
+      "custom_component": "surah_facts_strip",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "الاسم العربي: سورة الفاتحة",
+        "العنوان الإنجليزي: The Opening",
+        "عدد الآيات: سبع",
+        "النزول: يعدّها أكثر العلماء مكية، مع وجود أقوال أخرى.",
+        "أسماء أساسية: فاتحة الكتاب، أم القرآن وأم الكتاب، والسبع المثاني.",
+        "زمن القراءة: نحو خمس إلى سبع دقائق",
+        "موضع الدرس: الدرس الأول في مسار سورة الفاتحة"
+      ],
+      "core_items_en": [
+        "Arabic name: Surah al-Fatihah",
+        "English title: The Opening",
+        "Verses: seven",
+        "Revelation: most scholars classify it as Makki, though other views are reported.",
+        "Key names: Fatihat al-Kitab, Umm al-Qur'an and Umm al-Kitab, and the Seven Oft-Repeated.",
+        "Reading time: about five to seven minutes",
+        "Path position: Lesson 1 in the Surah al-Fatihah path"
+      ],
+      "content_items_ar": [
+        "الاسم العربي: سورة الفاتحة",
+        "العنوان الإنجليزي: The Opening",
+        "عدد الآيات: سبع",
+        "النزول: يعدّها أكثر العلماء مكية، مع وجود أقوال أخرى.",
+        "أسماء أساسية: فاتحة الكتاب، أم القرآن وأم الكتاب، والسبع المثاني.",
+        "زمن القراءة: نحو خمس إلى سبع دقائق",
+        "موضع الدرس: الدرس الأول في مسار سورة الفاتحة"
+      ],
+      "content_items_en": [
+        "Arabic name: Surah al-Fatihah",
+        "English title: The Opening",
+        "Verses: seven",
+        "Revelation: most scholars classify it as Makki, though other views are reported.",
+        "Key names: Fatihat al-Kitab, Umm al-Qur'an and Umm al-Kitab, and the Seven Oft-Repeated.",
+        "Reading time: about five to seven minutes",
+        "Path position: Lesson 1 in the Surah al-Fatihah path"
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D02A",
+          "title_ar": "ملاحظة مختصرة",
+          "title_en": "A brief note",
+          "content_items_ar": [
+            "قول الأكثرين إنها مكية هو الأنسب للعرض المختصر، مع بقاء الخلاف معروفًا في كتب التفسير. والخلاف في عدّ البسملة يؤثر في الترقيم، لا في كلمات السورة."
+          ],
+          "content_items_en": [
+            "The majority Makki classification is the clearest concise presentation, while the disagreement remains recorded in tafsir. The basmalah-count discussion affects numbering, not the surah's wording."
+          ],
+          "claim_ids": [
+            "CLM008",
+            "CLM019"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "٣ مصادر مباشرة",
+      "source_summary_en": "3 direct sources",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B03",
+      "block_type": "key_evidence",
+      "title_ar": "لماذا هي فريدة؟",
+      "title_en": "Why is it unique?",
+      "body_ar": "قال النبي ﷺ عن الفاتحة: «أعظم سورة في القرآن». وهذا وحده يكشف علو مكانتها، مع قصرها وسهولة حفظها. وقال ﷺ: «لا صلاة لمن لم يقرأ بفاتحة الكتاب». لذلك تحتل الفاتحة مكانًا مركزيًّا في الصلاة، وتستحق أن تُقرأ بقلب حاضر. وتكرارها في الصلاة يجعل معانيها قريبة من عبادة المسلم كل يوم. أما تفاصيل قراءتها للإمام والمأموم والمنفرد فلها درس مستقل.",
+      "body_en": "The Prophet ﷺ described al-Fatihah as “the greatest surah in the Qur'an.” That description alone reveals its exceptional rank, even though the surah is short and readily memorized. He ﷺ also said: “There is no prayer for one who does not recite Fatihat al-Kitab.” Al-Fatihah therefore holds a central place in Salah and deserves attentive recitation. Its recurring place in Salah keeps these meanings close to a Muslim's daily worship. The detailed rulings for the imam, follower, and person praying alone belong to a separate lesson.",
+      "claim_ids": [
+        "CLM002",
+        "CLM004",
+        "CLM005",
+        "DCLM001",
+        "DCLM011",
+        "DCLM012"
+      ],
+      "estimated_reading_time_seconds": 75,
+      "visibility": "always_visible",
+      "content_density": "medium",
+      "custom_component": "verse_quotation_block",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "قال النبي ﷺ عن الفاتحة: «أعظم سورة في القرآن».",
+        "وهذا وحده يكشف علو مكانتها، مع قصرها وسهولة حفظها.",
+        "وقال ﷺ: «لا صلاة لمن لم يقرأ بفاتحة الكتاب».",
+        "لذلك تحتل الفاتحة مكانًا مركزيًّا في الصلاة، وتستحق أن تُقرأ بقلب حاضر.",
+        "وتكرارها في الصلاة يجعل معانيها قريبة من عبادة المسلم كل يوم.",
+        "أما تفاصيل قراءتها للإمام والمأموم والمنفرد فلها درس مستقل."
+      ],
+      "core_items_en": [
+        "The Prophet ﷺ described al-Fatihah as “the greatest surah in the Qur'an.”",
+        "That description alone reveals its exceptional rank, even though the surah is short and readily memorized.",
+        "He ﷺ also said: “There is no prayer for one who does not recite Fatihat al-Kitab.”",
+        "Al-Fatihah therefore holds a central place in Salah and deserves attentive recitation.",
+        "Its recurring place in Salah keeps these meanings close to a Muslim's daily worship.",
+        "The detailed rulings for the imam, follower, and person praying alone belong to a separate lesson."
+      ],
+      "content_items_ar": [
+        "قال النبي ﷺ عن الفاتحة: «أعظم سورة في القرآن».",
+        "وهذا وحده يكشف علو مكانتها، مع قصرها وسهولة حفظها.",
+        "وقال ﷺ: «لا صلاة لمن لم يقرأ بفاتحة الكتاب».",
+        "لذلك تحتل الفاتحة مكانًا مركزيًّا في الصلاة، وتستحق أن تُقرأ بقلب حاضر.",
+        "وتكرارها في الصلاة يجعل معانيها قريبة من عبادة المسلم كل يوم.",
+        "أما تفاصيل قراءتها للإمام والمأموم والمنفرد فلها درس مستقل."
+      ],
+      "content_items_en": [
+        "The Prophet ﷺ described al-Fatihah as “the greatest surah in the Qur'an.”",
+        "That description alone reveals its exceptional rank, even though the surah is short and readily memorized.",
+        "He ﷺ also said: “There is no prayer for one who does not recite Fatihat al-Kitab.”",
+        "Al-Fatihah therefore holds a central place in Salah and deserves attentive recitation.",
+        "Its recurring place in Salah keeps these meanings close to a Muslim's daily worship.",
+        "The detailed rulings for the imam, follower, and person praying alone belong to a separate lesson."
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D03A",
+          "title_ar": "كيف تجمع مقاصد كبرى؟",
+          "title_en": "How does it gather major purposes?",
+          "content_items_ar": [
+            "يشرح ابن عاشور أن الفاتحة تجمع أنواعًا كبرى من مقاصد القرآن: الثناء على الله وتوحيده، والبعث والجزاء، والتكليف، والوعد والوعيد.",
+            "ويذكر القرطبي معاني قريبة: التوحيد، والعبادة، والافتقار إلى العون، وطلب الهداية. فهي لا تفصّل كل موضوع؛ بل تقدم خريطة إجمالية يشرحها القرآن بعد ذلك."
+          ],
+          "content_items_en": [
+            "Ibn Ashur explains that al-Fatihah gathers major kinds of Qur'anic purpose: praise and divine oneness, resurrection and recompense, responsibility, promise, and warning.",
+            "Al-Qurtubi highlights related meanings: divine oneness, worship, dependence on help, and guidance. The surah does not detail every subject; it presents a concise map that the rest of the Qur'an unfolds."
+          ],
+          "claim_ids": [
+            "DCLM001",
+            "DCLM011",
+            "DCLM012"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "حديث صحيح + تفسيران مباشران",
+      "source_summary_en": "Authentic hadith + 2 direct tafsirs",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B04",
+      "block_type": "name_cards",
+      "title_ar": "أسماؤها الأثبت",
+      "title_en": "Its best-established names",
+      "body_ar": "فاتحة الكتاب — الاسم الذي يعرّفها بأنها فاتحة القرآن. أم القرآن / أم الكتاب — اسمان ثابتان في الأحاديث الصحيحة. السبع المثاني — وصف ثبت في القرآن، وبيّن الحديث الصحيح أنه الفاتحة. وتساعد هذه الأسماء على رؤية مكانة السورة وصلتها بالقرآن والصلاة. وستظهر دلالة هذه الأسماء في بقية الدرس.",
+      "body_en": "Fatihat al-Kitab — the name that identifies it as the Opening of the Book. Umm al-Qur'an / Umm al-Kitab — two names established in authentic hadith. The Seven Oft-Repeated — a Qur'anic description that authentic hadith identifies as al-Fatihah. Together, these names help the learner notice the surah's place in the Qur'an and its connection to Salah. Their relevance will become clearer through the rest of the lesson.",
+      "claim_ids": [
+        "CLM001",
+        "CLM002",
+        "CLM003",
+        "CLM005",
+        "DCLM009",
+        "DCLM010"
+      ],
+      "estimated_reading_time_seconds": 65,
+      "visibility": "always_visible",
+      "content_density": "medium",
+      "custom_component": "name_cards",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "فاتحة الكتاب — الاسم الذي يعرّفها بأنها فاتحة القرآن.",
+        "أم القرآن / أم الكتاب — اسمان ثابتان في الأحاديث الصحيحة.",
+        "السبع المثاني — وصف ثبت في القرآن، وبيّن الحديث الصحيح أنه الفاتحة.",
+        "وتساعد هذه الأسماء على رؤية مكانة السورة وصلتها بالقرآن والصلاة.",
+        "وستظهر دلالة هذه الأسماء في بقية الدرس."
+      ],
+      "core_items_en": [
+        "Fatihat al-Kitab — the name that identifies it as the Opening of the Book.",
+        "Umm al-Qur'an / Umm al-Kitab — two names established in authentic hadith.",
+        "The Seven Oft-Repeated — a Qur'anic description that authentic hadith identifies as al-Fatihah.",
+        "Together, these names help the learner notice the surah's place in the Qur'an and its connection to Salah.",
+        "Their relevance will become clearer through the rest of the lesson."
+      ],
+      "content_items_ar": [
+        "فاتحة الكتاب — الاسم الذي يعرّفها بأنها فاتحة القرآن.",
+        "أم القرآن / أم الكتاب — اسمان ثابتان في الأحاديث الصحيحة.",
+        "السبع المثاني — وصف ثبت في القرآن، وبيّن الحديث الصحيح أنه الفاتحة.",
+        "وتساعد هذه الأسماء على رؤية مكانة السورة وصلتها بالقرآن والصلاة.",
+        "وستظهر دلالة هذه الأسماء في بقية الدرس."
+      ],
+      "content_items_en": [
+        "Fatihat al-Kitab — the name that identifies it as the Opening of the Book.",
+        "Umm al-Qur'an / Umm al-Kitab — two names established in authentic hadith.",
+        "The Seven Oft-Repeated — a Qur'anic description that authentic hadith identifies as al-Fatihah.",
+        "Together, these names help the learner notice the surah's place in the Qur'an and its connection to Salah.",
+        "Their relevance will become clearer through the rest of the lesson."
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D04A",
+          "title_ar": "لماذا «أم القرآن»؟",
+          "title_en": "Why ‘Mother of the Qur'an’?",
+          "content_items_ar": [
+            "ليست كلمة «أم» هنا مجرد لقب للتعظيم. يذكر المفسرون معنى الأصل والافتتاح، ويذكرون أيضًا أنها تجمع مقاصد القرآن أو علومه على وجه الإجمال."
+          ],
+          "content_items_en": [
+            "Here ‘Mother’ is not merely an honorific. Exegetes connect it with origin and opening, and with gathering the Qur'an's purposes or sciences in summary."
+          ],
+          "claim_ids": [
+            "DCLM009"
+          ],
+          "open_by_default": false
+        },
+        {
+          "section_id": "V3D04B",
+          "title_ar": "ماذا يعني «المثاني»؟",
+          "title_en": "What does ‘the Oft-Repeated’ mean?",
+          "content_items_ar": [
+            "من أشهر تفسيرات الاسم أنها تُثنّى في الصلاة: تتكرر وتقرأ في كل ركعة. وهذا يربط الاسم بمكانها العملي في عبادة المسلم كل يوم."
+          ],
+          "content_items_en": [
+            "A prominent explanation is that it is repeated in prayer—recited in every rak'ah. The name therefore connects directly to its daily place in a Muslim's worship."
+          ],
+          "claim_ids": [
+            "DCLM010"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "حديثان + ٣ تفاسير مقارنة",
+      "source_summary_en": "2 hadith sources + 3 compared tafsirs",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B05",
+      "block_type": "seven_oft_repeated",
+      "title_ar": "السبع المثاني",
+      "title_en": "The Seven Oft-Repeated",
+      "body_ar": "قال الله تعالى: ﴿وَلَقَدْ آتَيْنَاكَ سَبْعًا مِنَ الْمَثَانِي وَالْقُرْآنَ الْعَظِيمَ﴾. وفي الحديث الصحيح عرّف النبي ﷺ السبع المثاني بأنها الفاتحة. الفاتحة سبع آيات تتكرر في الصلاة. ملاحظة: اتفق العلماء على أن الفاتحة سبع آيات، واختلفوا في عدّ البسملة وبعض حدود الترقيم، لا في كلمات السورة نفسها.",
+      "body_en": "Allah says: “We have certainly given you the Seven Oft-Repeated and the Great Qur'an.” In authentic hadith, the Prophet ﷺ identifies the Seven Oft-Repeated as al-Fatihah. Al-Fatihah is seven verses, repeatedly recited in Salah. Note: scholars agree that al-Fatihah has seven verses while differing over how the basmalah and some verse boundaries are numbered, not over the words of the surah itself.",
+      "claim_ids": [
+        "CLM002",
+        "CLM005",
+        "CLM007",
+        "CLM019",
+        "DCLM010"
+      ],
+      "estimated_reading_time_seconds": 60,
+      "visibility": "always_visible",
+      "content_density": "medium",
+      "custom_component": "expandable_disagreement_note",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "قال الله تعالى: ﴿وَلَقَدْ آتَيْنَاكَ سَبْعًا مِنَ الْمَثَانِي وَالْقُرْآنَ الْعَظِيمَ﴾.",
+        "وفي الحديث الصحيح عرّف النبي ﷺ السبع المثاني بأنها الفاتحة.",
+        "الفاتحة سبع آيات تتكرر في الصلاة.",
+        "ملاحظة: اتفق العلماء على أن الفاتحة سبع آيات، واختلفوا في عدّ البسملة وبعض حدود الترقيم، لا في كلمات السورة نفسها."
+      ],
+      "core_items_en": [
+        "Allah says: “We have certainly given you the Seven Oft-Repeated and the Great Qur'an.”",
+        "In authentic hadith, the Prophet ﷺ identifies the Seven Oft-Repeated as al-Fatihah.",
+        "Al-Fatihah is seven verses, repeatedly recited in Salah.",
+        "Note: scholars agree that al-Fatihah has seven verses while differing over how the basmalah and some verse boundaries are numbered, not over the words of the surah itself."
+      ],
+      "content_items_ar": [
+        "قال الله تعالى: ﴿وَلَقَدْ آتَيْنَاكَ سَبْعًا مِنَ الْمَثَانِي وَالْقُرْآنَ الْعَظِيمَ﴾.",
+        "وفي الحديث الصحيح عرّف النبي ﷺ السبع المثاني بأنها الفاتحة.",
+        "الفاتحة سبع آيات تتكرر في الصلاة.",
+        "ملاحظة: اتفق العلماء على أن الفاتحة سبع آيات، واختلفوا في عدّ البسملة وبعض حدود الترقيم، لا في كلمات السورة نفسها."
+      ],
+      "content_items_en": [
+        "Allah says: “We have certainly given you the Seven Oft-Repeated and the Great Qur'an.”",
+        "In authentic hadith, the Prophet ﷺ identifies the Seven Oft-Repeated as al-Fatihah.",
+        "Al-Fatihah is seven verses, repeatedly recited in Salah.",
+        "Note: scholars agree that al-Fatihah has seven verses while differing over how the basmalah and some verse boundaries are numbered, not over the words of the surah itself."
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D05A",
+          "title_ar": "التكرار الذي يصنع حضورًا",
+          "title_en": "Repetition that builds presence",
+          "content_items_ar": [
+            "تكرار الفاتحة ليس معلومة عددية فقط. فكونها تُقرأ في كل ركعة يجعل معاني الحمد والعبادة والاستعانة والهداية تعود إلى القلب في كل صلاة."
+          ],
+          "content_items_en": [
+            "Al-Fatihah's repetition is more than a count. Reciting it in every rak'ah returns praise, worship, dependence, and guidance to the heart throughout the day."
+          ],
+          "claim_ids": [
+            "DCLM010",
+            "CLM005"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "آية + حديث صحيح + تفسيران",
+      "source_summary_en": "Qur'anic verse + authentic hadith + 2 tafsirs",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B06",
+      "block_type": "hadith_conversation",
+      "title_ar": "حوار يغيّر طريقة قراءتك",
+      "title_en": "A conversation that changes how you recite",
+      "body_ar": "في صحيح مسلم حديث قدسي يجعل قراءة الفاتحة أقرب إلى القلب: قال الله تعالى: «قسمت الصلاة بيني وبين عبدي نصفين، ولعبدي ما سأل». وشرح النووي والقرطبي أن المقصود بـ«الصلاة» هنا هو الفاتحة في الصلاة. تبدأ السورة بالثناء: ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾. ثم يقف العبد عند العبادة والاستعانة: ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾. ثم يأتي السؤال: ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾. وهكذا تجمع القراءة بين حمد الله والوقوف بين يديه وسؤاله الهداية. حين تستحضر هذا المعنى، لا تعود الفاتحة كلمات مألوفة تمر سريعًا، بل دعاءً تقوله وأنت تعلم ما تطلب.",
+      "body_en": "A hadith qudsi in Sahih Muslim brings the recitation of al-Fatihah close to the heart: Allah says: “I have divided the prayer between Me and My servant into two halves, and My servant shall have what he asks.” Al-Nawawi and al-Qurtubi explain that “the prayer” here refers to al-Fatihah within Salah. The surah begins with praise: “All praise belongs to Allah, Lord of all worlds.” The servant then reaches worship and dependence: “You alone we worship, and You alone we ask for help.” Then comes the request: “Guide us to the straight path.” The recitation thus gathers praise of Allah, worship before Him, and the request for His guidance. When you hold this meaning in mind, al-Fatihah need not pass as familiar words; it becomes a supplication recited with awareness of what you are asking.",
+      "claim_ids": [
+        "CLM006",
+        "CLM009",
+        "CLM010",
+        "CLM012",
+        "CLM013",
+        "DCLM002",
+        "DCLM003",
+        "DCLM004",
+        "DCLM013",
+        "DCLM005"
+      ],
+      "estimated_reading_time_seconds": 110,
+      "visibility": "always_visible",
+      "content_density": "feature",
+      "custom_component": "hadith_conversation_block",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "في صحيح مسلم حديث قدسي يجعل قراءة الفاتحة أقرب إلى القلب:",
+        "قال الله تعالى: «قسمت الصلاة بيني وبين عبدي نصفين، ولعبدي ما سأل».",
+        "وشرح النووي والقرطبي أن المقصود بـ«الصلاة» هنا هو الفاتحة في الصلاة.",
+        "تبدأ السورة بالثناء: ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾.",
+        "ثم يقف العبد عند العبادة والاستعانة: ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾.",
+        "ثم يأتي السؤال: ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾.",
+        "وهكذا تجمع القراءة بين حمد الله والوقوف بين يديه وسؤاله الهداية.",
+        "حين تستحضر هذا المعنى، لا تعود الفاتحة كلمات مألوفة تمر سريعًا، بل دعاءً تقوله وأنت تعلم ما تطلب."
+      ],
+      "core_items_en": [
+        "A hadith qudsi in Sahih Muslim brings the recitation of al-Fatihah close to the heart:",
+        "Allah says: “I have divided the prayer between Me and My servant into two halves, and My servant shall have what he asks.”",
+        "Al-Nawawi and al-Qurtubi explain that “the prayer” here refers to al-Fatihah within Salah.",
+        "The surah begins with praise: “All praise belongs to Allah, Lord of all worlds.”",
+        "The servant then reaches worship and dependence: “You alone we worship, and You alone we ask for help.”",
+        "Then comes the request: “Guide us to the straight path.”",
+        "The recitation thus gathers praise of Allah, worship before Him, and the request for His guidance.",
+        "When you hold this meaning in mind, al-Fatihah need not pass as familiar words; it becomes a supplication recited with awareness of what you are asking."
+      ],
+      "content_items_ar": [
+        "في صحيح مسلم حديث قدسي يجعل قراءة الفاتحة أقرب إلى القلب:",
+        "قال الله تعالى: «قسمت الصلاة بيني وبين عبدي نصفين، ولعبدي ما سأل».",
+        "وشرح النووي والقرطبي أن المقصود بـ«الصلاة» هنا هو الفاتحة في الصلاة.",
+        "تبدأ السورة بالثناء: ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾.",
+        "ثم يقف العبد عند العبادة والاستعانة: ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾.",
+        "ثم يأتي السؤال: ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾.",
+        "وهكذا تجمع القراءة بين حمد الله والوقوف بين يديه وسؤاله الهداية.",
+        "حين تستحضر هذا المعنى، لا تعود الفاتحة كلمات مألوفة تمر سريعًا، بل دعاءً تقوله وأنت تعلم ما تطلب."
+      ],
+      "content_items_en": [
+        "A hadith qudsi in Sahih Muslim brings the recitation of al-Fatihah close to the heart:",
+        "Allah says: “I have divided the prayer between Me and My servant into two halves, and My servant shall have what he asks.”",
+        "Al-Nawawi and al-Qurtubi explain that “the prayer” here refers to al-Fatihah within Salah.",
+        "The surah begins with praise: “All praise belongs to Allah, Lord of all worlds.”",
+        "The servant then reaches worship and dependence: “You alone we worship, and You alone we ask for help.”",
+        "Then comes the request: “Guide us to the straight path.”",
+        "The recitation thus gathers praise of Allah, worship before Him, and the request for His guidance.",
+        "When you hold this meaning in mind, al-Fatihah need not pass as familiar words; it becomes a supplication recited with awareness of what you are asking."
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D06A",
+          "title_ar": "من الحديث عنه إلى مناجاته",
+          "title_en": "From speaking about Him to addressing Him",
+          "content_items_ar": [
+            "تبدأ السورة بالحديث عن الله: رب العالمين، الرحمن الرحيم، مالك يوم الدين. ثم تتغير الصيغة فجأة: ﴿إياك نعبد﴾. يسمي البلاغيون هذا التفاتًا؛ وهنا يناسب انتقال القارئ من الثناء إلى مخاطبة ربه والدعاء."
+          ],
+          "content_items_en": [
+            "The surah begins by speaking about Allah: Lord of all worlds, the Most Merciful, Master of the Day of Judgment. Then the form changes: ‘You alone we worship.’ Rhetoricians call this a turn of address; here it fits the learner's movement from praise to addressing the Lord in supplication."
+          ],
+          "claim_ids": [
+            "DCLM002",
+            "DCLM003"
+          ],
+          "open_by_default": false
+        },
+        {
+          "section_id": "V3D06B",
+          "title_ar": "لماذا العبادة قبل الاستعانة؟",
+          "title_en": "Why worship before seeking help?",
+          "content_items_ar": [
+            "ذكر ابن كثير أن العبادة هي المقصودة، وأن الاستعانة وسيلة إليها. فأنت تعلن غاية حياتك أولًا، ثم تعترف أنك لا تبلغها إلا بعون الله.",
+            "وتقديم ﴿إياك﴾ يجعل الإخلاص ظاهرًا: العبادة لله وحده، والعون الأعظم يطلب منه."
+          ],
+          "content_items_en": [
+            "Ibn Kathir explains that worship is the objective and seeking help is a means to it. You first state life's purpose, then acknowledge that it cannot be fulfilled without Allah's help.",
+            "Placing ‘You alone’ first makes exclusive devotion explicit: worship belongs to Allah alone, and ultimate help is sought from Him."
+          ],
+          "claim_ids": [
+            "DCLM004",
+            "DCLM013"
+          ],
+          "open_by_default": false
+        },
+        {
+          "section_id": "V3D06C",
+          "title_ar": "لماذا نقول «نعبد»؟",
+          "title_en": "Why do we say ‘we worship’?",
+          "content_items_ar": [
+            "حتى حين يصلي الإنسان منفردًا، لا يقول «أعبد» بل «نعبد». يذكر ابن كثير أن المصلي فرد من جنس العباد، فيتكلم عن نفسه وعن إخوانه المؤمنين. العبادة شخصية، لكنها ليست عزلة عن جماعة الإيمان."
+          ],
+          "content_items_en": [
+            "Even when praying alone, a person says ‘we worship,’ not ‘I worship.’ Ibn Kathir places the worshipper among the wider body of believers: worship is personal, but not isolated from the community of faith."
+          ],
+          "claim_ids": [
+            "DCLM005"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "حديث قدسي + شرحه + تفسيران",
+      "source_summary_en": "Hadith qudsi + commentary + 2 tafsirs",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B07",
+      "block_type": "theme_journey",
+      "title_ar": "السورة في خريطة واحدة",
+      "title_en": "The surah in one map",
+      "body_ar": "١. الثناء على الله — ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾: تبدأ السورة بالحمد. ومن أول السورة إلى آخرها، تسير هذه المعاني في ترتيب يسهل تتبعه. ٢. معرفة الرب الرحيم — ﴿الرَّحْمَنِ الرَّحِيمِ﴾: تذكّر العبد بربوبية الله ورحمته. ٣. تذكّر يوم الدين — ﴿مَالِكِ يَوْمِ الدِّينِ﴾: تضع أمامه يوم الحساب والجزاء. ٤. العبادة والاستعانة — ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾: عبادة لله وحده وافتقار إلى عونه. ٥. طلب الهداية — ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾: سؤال الطريق المستقيم. ٦. تمييز الطريق — ختام السورة يفرّق بين طريق المنعم عليهم وطريق المغضوب عليهم والضالين.",
+      "body_en": "1. Praising Allah — “All praise belongs to Allah, Lord of all worlds”: the surah opens with praise. From the beginning of the surah to its end, these meanings follow an order that is easy to trace. 2. Knowing the merciful Lord — “The Most Merciful, the Especially Merciful”: the servant is reminded of Allah's lordship and mercy. 3. Remembering the Day of Judgment — “Master of the Day of Judgment”: it places accountability and recompense before the servant. 4. Worship and help — “You alone we worship, and You alone we ask for help”: worship belongs to Allah alone, and help is sought from Him. 5. Asking for guidance — “Guide us to the straight path”: a request to be guided to the right path. 6. Distinguishing the path — the ending separates the path of those favored from the paths of those who incurred anger and those astray.",
+      "claim_ids": [
+        "CLM009",
+        "CLM010",
+        "CLM011",
+        "CLM012",
+        "CLM013",
+        "CLM014",
+        "CLM015",
+        "DCLM001",
+        "DCLM008",
+        "DCLM011",
+        "DCLM006",
+        "DCLM007"
+      ],
+      "estimated_reading_time_seconds": 95,
+      "visibility": "always_visible",
+      "content_density": "feature",
+      "custom_component": "theme_journey",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "١. الثناء على الله — ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾: تبدأ السورة بالحمد.",
+        "ومن أول السورة إلى آخرها، تسير هذه المعاني في ترتيب يسهل تتبعه.",
+        "٢. معرفة الرب الرحيم — ﴿الرَّحْمَنِ الرَّحِيمِ﴾: تذكّر العبد بربوبية الله ورحمته.",
+        "٣. تذكّر يوم الدين — ﴿مَالِكِ يَوْمِ الدِّينِ﴾: تضع أمامه يوم الحساب والجزاء.",
+        "٤. العبادة والاستعانة — ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾: عبادة لله وحده وافتقار إلى عونه.",
+        "٥. طلب الهداية — ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾: سؤال الطريق المستقيم.",
+        "٦. تمييز الطريق — ختام السورة يفرّق بين طريق المنعم عليهم وطريق المغضوب عليهم والضالين."
+      ],
+      "core_items_en": [
+        "1. Praising Allah — “All praise belongs to Allah, Lord of all worlds”: the surah opens with praise.",
+        "From the beginning of the surah to its end, these meanings follow an order that is easy to trace.",
+        "2. Knowing the merciful Lord — “The Most Merciful, the Especially Merciful”: the servant is reminded of Allah's lordship and mercy.",
+        "3. Remembering the Day of Judgment — “Master of the Day of Judgment”: it places accountability and recompense before the servant.",
+        "4. Worship and help — “You alone we worship, and You alone we ask for help”: worship belongs to Allah alone, and help is sought from Him.",
+        "5. Asking for guidance — “Guide us to the straight path”: a request to be guided to the right path.",
+        "6. Distinguishing the path — the ending separates the path of those favored from the paths of those who incurred anger and those astray."
+      ],
+      "content_items_ar": [
+        "١. الثناء على الله — ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾: تبدأ السورة بالحمد.",
+        "ومن أول السورة إلى آخرها، تسير هذه المعاني في ترتيب يسهل تتبعه.",
+        "٢. معرفة الرب الرحيم — ﴿الرَّحْمَنِ الرَّحِيمِ﴾: تذكّر العبد بربوبية الله ورحمته.",
+        "٣. تذكّر يوم الدين — ﴿مَالِكِ يَوْمِ الدِّينِ﴾: تضع أمامه يوم الحساب والجزاء.",
+        "٤. العبادة والاستعانة — ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾: عبادة لله وحده وافتقار إلى عونه.",
+        "٥. طلب الهداية — ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾: سؤال الطريق المستقيم.",
+        "٦. تمييز الطريق — ختام السورة يفرّق بين طريق المنعم عليهم وطريق المغضوب عليهم والضالين."
+      ],
+      "content_items_en": [
+        "1. Praising Allah — “All praise belongs to Allah, Lord of all worlds”: the surah opens with praise.",
+        "From the beginning of the surah to its end, these meanings follow an order that is easy to trace.",
+        "2. Knowing the merciful Lord — “The Most Merciful, the Especially Merciful”: the servant is reminded of Allah's lordship and mercy.",
+        "3. Remembering the Day of Judgment — “Master of the Day of Judgment”: it places accountability and recompense before the servant.",
+        "4. Worship and help — “You alone we worship, and You alone we ask for help”: worship belongs to Allah alone, and help is sought from Him.",
+        "5. Asking for guidance — “Guide us to the straight path”: a request to be guided to the right path.",
+        "6. Distinguishing the path — the ending separates the path of those favored from the paths of those who incurred anger and those astray."
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D07A",
+          "title_ar": "معرفة، ثم عبادة، ثم هداية",
+          "title_en": "Knowledge, then worship, then guidance",
+          "content_items_ar": [
+            "تعرفك الآيات الأولى بربك وصفاته ويوم الجزاء. ثم يأتي جواب العبد: العبادة والاستعانة. وبعد معرفة الله وإعلان العبودية، يأتي السؤال الذي يحتاجه الطريق كله: الهداية.",
+            "هذه قراءة لبنية السورة من مصادر متعددة، وليست اقتباسًا حرفيًا من آية واحدة."
+          ],
+          "content_items_en": [
+            "The opening verses teach you about your Lord, His attributes, and the Day of Recompense. The servant then answers with worship and dependence. After knowing Allah and declaring servitude comes the request needed for the whole journey: guidance.",
+            "This is a synthesis of the surah's structure across several sources, not a direct quotation from one verse."
+          ],
+          "claim_ids": [
+            "DCLM001",
+            "DCLM008",
+            "DCLM011"
+          ],
+          "open_by_default": false
+        },
+        {
+          "section_id": "V3D07B",
+          "title_ar": "لماذا نطلب الهداية كل يوم؟",
+          "title_en": "Why ask for guidance every day?",
+          "content_items_ar": [
+            "لا يطلب المسلم مجرد بداية الدخول في الإسلام. يشرح ابن كثير الحاجة إلى الثبات، وزيادة البصيرة، والاستمرار. ويضيف ابن عاشور أن الإنسان يحتاج الهداية في شؤونه كلها، حتى ليبقى على الخير ويتوقى التقصير والزيغ."
+          ],
+          "content_items_en": [
+            "A Muslim is not merely asking to enter Islam for the first time. Ibn Kathir names steadfastness, clearer insight, increase, and continuity. Ibn Ashur adds that guidance is needed throughout life—even to remain upon existing good and avoid shortcoming or deviation."
+          ],
+          "claim_ids": [
+            "DCLM006"
+          ],
+          "open_by_default": false
+        },
+        {
+          "section_id": "V3D07C",
+          "title_ar": "لماذا «صراط»؟",
+          "title_en": "Why a ‘path’?",
+          "content_items_ar": [
+            "شرح ابن عاشور الصراط المستقيم بأنه يشمل معارف صالحة من اعتقاد وعمل. فالهداية ليست معلومة تحفظها ثم تنتهي؛ إنها حق تعرفه، وعمل تسلكه، وثبات تطلبه."
+          ],
+          "content_items_en": [
+            "Ibn Ashur explains the straight path as encompassing sound knowledge, belief, and action. Guidance is not information memorised and finished; it is truth to know, action to walk, and steadfastness to keep seeking."
+          ],
+          "claim_ids": [
+            "DCLM007"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "٤ تفاسير مقارنة",
+      "source_summary_en": "4 tafsir sources compared",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B08",
+      "block_type": "reflection",
+      "title_ar": "في صلاتك القادمة",
+      "title_en": "In your next prayer",
+      "body_ar": "في صلاتك القادمة، جرّب ألا تمر على الفاتحة بسرعة. عند ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾، لاحظ أنك تعلن عبادتك لله وافتقارك إلى عونه. وعند ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾، قلها وأنت تعي أنك تطلب الهداية حقًّا. وفي ختام السورة، تذكّر أنك تسأل الله طريقًا واضحًا وتحذر من طرق الضلال.",
+      "body_en": "In your next prayer, try not to hurry through al-Fatihah. At “You alone we worship, and You alone we ask for help,” notice that you are affirming worship and dependence on Allah. At “Guide us to the straight path,” say it with awareness that you are truly asking for guidance. At the surah's close, remember that you are asking Allah for a clear path and seeking distance from paths of error.",
+      "claim_ids": [
+        "CLM012",
+        "CLM013",
+        "CLM014"
+      ],
+      "estimated_reading_time_seconds": 60,
+      "visibility": "always_visible",
+      "content_density": "medium",
+      "custom_component": "reflection_panel",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "في صلاتك القادمة، جرّب ألا تمر على الفاتحة بسرعة.",
+        "عند ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾، لاحظ أنك تعلن عبادتك لله وافتقارك إلى عونه.",
+        "وعند ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾، قلها وأنت تعي أنك تطلب الهداية حقًّا.",
+        "وفي ختام السورة، تذكّر أنك تسأل الله طريقًا واضحًا وتحذر من طرق الضلال."
+      ],
+      "core_items_en": [
+        "In your next prayer, try not to hurry through al-Fatihah.",
+        "At “You alone we worship, and You alone we ask for help,” notice that you are affirming worship and dependence on Allah.",
+        "At “Guide us to the straight path,” say it with awareness that you are truly asking for guidance.",
+        "At the surah's close, remember that you are asking Allah for a clear path and seeking distance from paths of error."
+      ],
+      "content_items_ar": [
+        "في صلاتك القادمة، جرّب ألا تمر على الفاتحة بسرعة.",
+        "عند ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾، لاحظ أنك تعلن عبادتك لله وافتقارك إلى عونه.",
+        "وعند ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾، قلها وأنت تعي أنك تطلب الهداية حقًّا.",
+        "وفي ختام السورة، تذكّر أنك تسأل الله طريقًا واضحًا وتحذر من طرق الضلال."
+      ],
+      "content_items_en": [
+        "In your next prayer, try not to hurry through al-Fatihah.",
+        "At “You alone we worship, and You alone we ask for help,” notice that you are affirming worship and dependence on Allah.",
+        "At “Guide us to the straight path,” say it with awareness that you are truly asking for guidance.",
+        "At the surah's close, remember that you are asking Allah for a clear path and seeking distance from paths of error."
+      ],
+      "deep_sections": [],
+      "source_summary_ar": "تطبيق مبني على نص السورة",
+      "source_summary_en": "Application grounded in the surah",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B09",
+      "block_type": "summary",
+      "title_ar": "خمس نقاط تبقى معك",
+      "title_en": "Five things to remember",
+      "body_ar": "١. وصف النبي ﷺ الفاتحة بأنها أعظم سورة في القرآن. ٢. هي سبع آيات لها مكانة مركزية في الصلاة. ٣. من أسمائها الثابتة أم القرآن وأم الكتاب والسبع المثاني. ٤. تجمع السورة الثناء والعبادة والاستعانة والدعاء. ٥. يكشف الحديث القدسي أن قراءتها تجمع الحمد والسؤال بين العبد وربه.",
+      "body_en": "1. The Prophet ﷺ described al-Fatihah as the greatest surah in the Qur'an. 2. Its seven verses hold a central place in Salah. 3. Its established names include Umm al-Qur'an, Umm al-Kitab, and the Seven Oft-Repeated. 4. The surah gathers praise, worship, seeking help, and supplication. 5. The hadith qudsi shows that its recitation gathers praise and request between the servant and the Lord.",
+      "claim_ids": [
+        "CLM002",
+        "CLM003",
+        "CLM004",
+        "CLM005",
+        "CLM006",
+        "CLM007",
+        "CLM009",
+        "CLM012",
+        "CLM013",
+        "DCLM001",
+        "DCLM002",
+        "DCLM004",
+        "DCLM006",
+        "DCLM007"
+      ],
+      "estimated_reading_time_seconds": 50,
+      "visibility": "always_visible",
+      "content_density": "compact",
+      "custom_component": "summary_checklist",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "١. وصف النبي ﷺ الفاتحة بأنها أعظم سورة في القرآن.",
+        "٢. هي سبع آيات لها مكانة مركزية في الصلاة.",
+        "٣. من أسمائها الثابتة أم القرآن وأم الكتاب والسبع المثاني.",
+        "٤. تجمع السورة الثناء والعبادة والاستعانة والدعاء.",
+        "٥. يكشف الحديث القدسي أن قراءتها تجمع الحمد والسؤال بين العبد وربه."
+      ],
+      "core_items_en": [
+        "1. The Prophet ﷺ described al-Fatihah as the greatest surah in the Qur'an.",
+        "2. Its seven verses hold a central place in Salah.",
+        "3. Its established names include Umm al-Qur'an, Umm al-Kitab, and the Seven Oft-Repeated.",
+        "4. The surah gathers praise, worship, seeking help, and supplication.",
+        "5. The hadith qudsi shows that its recitation gathers praise and request between the servant and the Lord."
+      ],
+      "content_items_ar": [
+        "١. وصف النبي ﷺ الفاتحة بأنها أعظم سورة في القرآن.",
+        "٢. هي سبع آيات لها مكانة مركزية في الصلاة.",
+        "٣. من أسمائها الثابتة أم القرآن وأم الكتاب والسبع المثاني.",
+        "٤. تجمع السورة الثناء والعبادة والاستعانة والدعاء.",
+        "٥. يكشف الحديث القدسي أن قراءتها تجمع الحمد والسؤال بين العبد وربه."
+      ],
+      "content_items_en": [
+        "1. The Prophet ﷺ described al-Fatihah as the greatest surah in the Qur'an.",
+        "2. Its seven verses hold a central place in Salah.",
+        "3. Its established names include Umm al-Qur'an, Umm al-Kitab, and the Seven Oft-Repeated.",
+        "4. The surah gathers praise, worship, seeking help, and supplication.",
+        "5. The hadith qudsi shows that its recitation gathers praise and request between the servant and the Lord."
+      ],
+      "deep_sections": [
+        {
+          "section_id": "V3D09A",
+          "title_ar": "خلاصات أعمق",
+          "title_en": "Advanced takeaways",
+          "content_items_ar": [
+            "الفاتحة خريطة مصغرة لمقاصد كبرى في القرآن.",
+            "﴿إياك نعبد﴾ نقطة تحول من الثناء إلى الخطاب والدعاء.",
+            "العبادة هي الغاية والاستعانة وسيلتها، وطلب الهداية يمتد إلى الثبات والنمو والعمل."
+          ],
+          "content_items_en": [
+            "Al-Fatihah is a compact map of major Qur'anic purposes.",
+            "‘You alone we worship’ marks the turn from praise to direct address and supplication.",
+            "Worship is the objective and seeking help its means; asking for guidance includes steadfastness, growth, and lived action."
+          ],
+          "claim_ids": [
+            "DCLM001",
+            "DCLM002",
+            "DCLM004",
+            "DCLM006",
+            "DCLM007"
+          ],
+          "open_by_default": false
+        }
+      ],
+      "source_summary_ar": "خلاصة ٥ مصادر",
+      "source_summary_en": "5-source synthesis",
+      "required_for_completion": true
+    },
+    {
+      "block_id": "V3B10",
+      "block_type": "quiz_sources",
+      "title_ar": "اختبر فهمك وراجع المصادر",
+      "title_en": "Check your understanding and sources",
+      "body_ar": "اختبر فهمك في سبعة أسئلة، ثم افتح درج المصادر إذا أردت مراجعة الأحاديث وصفحات التفسير. هذه مسودة داخلية غير معتمدة للنشر.",
+      "body_en": "Check your understanding with seven questions, then open the source drawer if you wish to review the hadith and tafsir pages. This is an internal draft and is not approved for publication.",
+      "claim_ids": [],
+      "estimated_reading_time_seconds": 35,
+      "visibility": "always_visible",
+      "content_density": "compact",
+      "custom_component": "quiz_card_and_source_drawer",
+      "source_interaction": "Claim-bearing items open filtered entries in the source drawer; reflective items carry no authority badge.",
+      "collapsed_state": "Only the verse-numbering detail in V2B05 and bibliographic detail in V2B10 are collapsible.",
+      "mobile_layout": "Full-width vertical flow; component-specific behaviour is in mobile_reading_flow.md.",
+      "desktop_layout": "Preserve order in the central column; allow source/context rail as specified in desktop_reading_flow.md.",
+      "status": "internal_unapproved",
+      "core_items_ar": [
+        "اختبر فهمك في سبعة أسئلة، ثم افتح درج المصادر إذا أردت مراجعة الأحاديث وصفحات التفسير.",
+        "هذه مسودة داخلية غير معتمدة للنشر."
+      ],
+      "core_items_en": [
+        "Check your understanding with seven questions, then open the source drawer if you wish to review the hadith and tafsir pages.",
+        "This is an internal draft and is not approved for publication."
+      ],
+      "content_items_ar": [
+        "اختبر فهمك في سبعة أسئلة، ثم افتح درج المصادر إذا أردت مراجعة الأحاديث وصفحات التفسير.",
+        "هذه مسودة داخلية غير معتمدة للنشر."
+      ],
+      "content_items_en": [
+        "Check your understanding with seven questions, then open the source drawer if you wish to review the hadith and tafsir pages.",
+        "This is an internal draft and is not approved for publication."
+      ],
+      "deep_sections": [],
+      "source_summary_ar": "مصادر الدرس الكاملة",
+      "source_summary_en": "Complete lesson sources",
+      "required_for_completion": true
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "lesson_id": "al_fatihah.lesson_01_uniqueness",
+  "status": "internal_unapproved",
+  "sources": [
+    {
+      "work_id": "work_quran_text",
+      "display_title": "القرآن الكريم",
+      "author": "—",
+      "source_role": [
+        "revelation_quran"
+      ],
+      "claims_supported": [
+        "CLM001",
+        "CLM002",
+        "CLM009",
+        "CLM010",
+        "CLM011",
+        "CLM012",
+        "CLM013",
+        "CLM014"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 1,
+          "printed_page": 1
+        },
+        {
+          "volume": null,
+          "pdf_page": 241,
+          "printed_page": 267
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/quran_text/al-quran-al-karim__no-author/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM001, CLM002, CLM009, CLM010, CLM011, CLM012, CLM013, CLM014.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_maalim_tanzil",
+      "display_title": "معالم التنزيل",
+      "author": "الحسين بن مسعود البغوي",
+      "source_role": [
+        "early_tafsir"
+      ],
+      "claims_supported": [
+        "CLM003",
+        "CLM005",
+        "CLM008"
+      ],
+      "locations": [
+        {
+          "volume": 1,
+          "pdf_page": 7,
+          "printed_page": 37
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/tafsir/maalim-al-tanzil__al-baghawi/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM003, CLM005, CLM008.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_tafsir_ibn_kathir",
+      "display_title": "تفسير القرآن العظيم",
+      "author": "إسماعيل بن عمر ابن كثير",
+      "source_role": [
+        "later_tafsir"
+      ],
+      "claims_supported": [
+        "CLM003",
+        "CLM006",
+        "CLM007",
+        "CLM008",
+        "CLM019",
+        "DCLM002",
+        "DCLM004",
+        "DCLM005",
+        "DCLM006",
+        "DCLM008",
+        "DCLM009",
+        "DCLM010",
+        "DCLM013"
+      ],
+      "locations": [
+        {
+          "volume": 1,
+          "pdf_page": 8,
+          "printed_page": 8
+        },
+        {
+          "volume": 1,
+          "pdf_page": 9,
+          "printed_page": 9
+        },
+        {
+          "volume": 1,
+          "pdf_page": 25,
+          "printed_page": 25
+        },
+        {
+          "volume": 1,
+          "pdf_page": 26,
+          "printed_page": 26
+        },
+        {
+          "volume": 1,
+          "pdf_page": 28,
+          "printed_page": 28
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/tafsir/tafsir-al-quran-al-azim__ibn-kathir/volume-01.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM003, CLM006, CLM007, CLM008, CLM019.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_tahrir_tanwir",
+      "display_title": "التحرير والتنوير",
+      "author": "محمد الطاهر ابن عاشور",
+      "source_role": [
+        "analytical_tafsir"
+      ],
+      "claims_supported": [
+        "CLM003",
+        "CLM009",
+        "CLM010",
+        "CLM011",
+        "CLM012",
+        "CLM013",
+        "CLM014",
+        "CLM015",
+        "DCLM001",
+        "DCLM002",
+        "DCLM006",
+        "DCLM007",
+        "DCLM009",
+        "DCLM011",
+        "DCLM012",
+        "DCLM013"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 320,
+          "printed_page": 131
+        },
+        {
+          "volume": null,
+          "pdf_page": 322,
+          "printed_page": 133
+        },
+        {
+          "volume": 1,
+          "pdf_page": 368,
+          "printed_page": 179
+        },
+        {
+          "volume": 1,
+          "pdf_page": 372,
+          "printed_page": 183
+        },
+        {
+          "volume": 1,
+          "pdf_page": 380,
+          "printed_page": 191
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/tafsir/al-tahrir-wa-al-tanwir__ibn-ashur/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM003, CLM009, CLM010, CLM011, CLM012, CLM013, CLM014, CLM015.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_tafsir_muyassar",
+      "display_title": "التفسير الميسر",
+      "author": "نخبة من العلماء",
+      "source_role": [
+        "accessible_tafsir"
+      ],
+      "claims_supported": [
+        "CLM009",
+        "CLM010",
+        "CLM011",
+        "CLM012",
+        "CLM013",
+        "CLM014"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 1,
+          "printed_page": 1
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/tafsir/al-tafsir-al-muyassar__committee-of-scholars/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM009, CLM010, CLM011, CLM012, CLM013, CLM014.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_mufradat_quran",
+      "display_title": "مفردات ألفاظ القرآن",
+      "author": "الحسين بن محمد الراغب الأصفهاني",
+      "source_role": [
+        "quranic_vocabulary_reference"
+      ],
+      "claims_supported": [
+        "CLM009"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 263,
+          "printed_page": 256
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/quranic_vocabulary/mufradat-alfaz-al-quran__al-raghib-al-isfahani/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM009.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_jami_ahkam_quran",
+      "display_title": "الجامع لأحكام القرآن",
+      "author": "محمد بن أحمد الأنصاري القرطبي",
+      "source_role": [
+        "later_tafsir"
+      ],
+      "claims_supported": [
+        "CLM002",
+        "CLM003",
+        "CLM004",
+        "CLM006",
+        "CLM007",
+        "CLM019",
+        "DCLM001",
+        "DCLM009",
+        "DCLM010",
+        "DCLM011"
+      ],
+      "locations": [
+        {
+          "volume": 1,
+          "pdf_page": 110,
+          "printed_page": 94
+        },
+        {
+          "volume": 1,
+          "pdf_page": 124,
+          "printed_page": 108
+        },
+        {
+          "volume": 1,
+          "pdf_page": 130,
+          "printed_page": 114
+        },
+        {
+          "volume": 1,
+          "pdf_page": 128,
+          "printed_page": 112
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/01_quran/tafsir/al-jami-li-ahkam-al-quran__al-qurtubi/volume-01.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM002, CLM003, CLM004, CLM006, CLM007, CLM019.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_sahih_bukhari",
+      "display_title": "الجامع المسند الصحيح المختصر من أمور رسول الله وسننه وأيامه",
+      "author": "محمد بن إسماعيل البخاري",
+      "source_role": [
+        "primary_hadith_collection"
+      ],
+      "claims_supported": [
+        "CLM002",
+        "CLM003",
+        "CLM004"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 1279,
+          "printed_page": 1497
+        },
+        {
+          "volume": null,
+          "pdf_page": 1452,
+          "printed_page": 1703
+        },
+        {
+          "volume": null,
+          "pdf_page": 1453,
+          "printed_page": 1704
+        }
+      ],
+      "hadith_numbers": [
+        "5006",
+        "5736"
+      ],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/02_hadith/primary_collections/sahih-al-bukhari__al-bukhari/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM002, CLM003, CLM004.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_jami_tirmidhi",
+      "display_title": "الجامع الكبير",
+      "author": "محمد بن عيسى الترمذي",
+      "source_role": [
+        "primary_hadith_collection"
+      ],
+      "claims_supported": [
+        "CLM003",
+        "CLM004",
+        "CLM006"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 497,
+          "printed_page": 531
+        }
+      ],
+      "hadith_numbers": [
+        "3124",
+        "3125"
+      ],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/02_hadith/primary_collections/jami-al-tirmidhi__al-tirmidhi/book.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM003, CLM004, CLM006.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    },
+    {
+      "work_id": "work_sharh_muslim_nawawi",
+      "display_title": "المنهاج شرح صحيح مسلم بن الحجاج",
+      "author": "يحيى بن شرف النووي",
+      "source_role": [
+        "hadith_commentary",
+        "primary_hadith_collection_with_commentary"
+      ],
+      "claims_supported": [
+        "CLM003",
+        "CLM005",
+        "CLM006",
+        "CLM019",
+        "DCLM003",
+        "DCLM008"
+      ],
+      "locations": [
+        {
+          "volume": 4,
+          "pdf_page": 100,
+          "printed_page": 42
+        },
+        {
+          "volume": 4,
+          "pdf_page": 101,
+          "printed_page": 43
+        },
+        {
+          "volume": 4,
+          "pdf_page": 103,
+          "printed_page": 45
+        }
+      ],
+      "hadith_numbers": [],
+      "organized_paths": [
+        "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/organized_library/02_hadith/commentaries/al-minhaj-sharh-sahih-muslim__al-nawawi/volume-04.pdf"
+      ],
+      "why_used": "Provides verified evidence for CLM003, CLM005, CLM006, CLM019.",
+      "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
+      "expandable": true
+    }
+  ],
+  "ui_policy": "Show bibliographic metadata and verified locations only; never show internal OCR transcriptions.",
+  "draft_version": 3,
+  "learner_notes": {
+    "names": "The displayed names are established across more than one authentic report; the UI must not imply a single combined narration.",
+    "hadith_qudsi": "Only the short verified quotation is public in Draft 2. A full alternating sequence requires reviewer-approved extraction before use.",
+    "ocr": "Never display internal OCR text."
+  }
+}

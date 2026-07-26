@@ -1,0 +1,107 @@
+{
+  "lesson_id": "al_fatihah.lesson_01_uniqueness",
+  "status": "internal_unapproved",
+  "terms": [
+    {
+      "term_id": "fatihah",
+      "arabic": "الفاتحة",
+      "english": "al-Fatihah",
+      "definition_ar": "اسم السورة، ومعناه المرتبط بكونها فاتحة الكتاب.",
+      "definition_en": "The surah's name, associated with its place as the Opening of the Book.",
+      "claim_ids": [
+        "CLM001",
+        "CLM003"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "umm_quran",
+      "arabic": "أم القرآن",
+      "english": "Umm al-Qur'an",
+      "definition_ar": "اسم ثابت للفـاتحة في الحديث الصحيح.",
+      "definition_en": "An authentically established name for al-Fatihah.",
+      "claim_ids": [
+        "CLM003"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "umm_kitab",
+      "arabic": "أم الكتاب",
+      "english": "Umm al-Kitab",
+      "definition_ar": "اسم ثابت للفـاتحة في الحديث الصحيح.",
+      "definition_en": "An authentically established name for al-Fatihah.",
+      "claim_ids": [
+        "CLM003"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "sab_mathani",
+      "arabic": "السبع المثاني",
+      "english": "al-Sab‘ al-Mathani",
+      "definition_ar": "السبع التي تتكرر، وقد عرّف الحديث الصحيح بها الفاتحة.",
+      "definition_en": "The Seven Oft-Repeated, explicitly identified as al-Fatihah in authentic hadith.",
+      "claim_ids": [
+        "CLM002"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "salah",
+      "arabic": "الصلاة",
+      "english": "Salah",
+      "definition_ar": "العبادة المعروفة، ويشير لفظ «الصلاة» في الحديث القدسي المدروس إلى الفاتحة داخل الصلاة وفق شرح العلماء.",
+      "definition_en": "The formal prayer; in the studied hadith qudsi, commentators explain that “the prayer” refers to al-Fatihah within Salah.",
+      "claim_ids": [
+        "CLM006"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "rakah",
+      "arabic": "ركعة",
+      "english": "rak‘ah",
+      "definition_ar": "وحدة من وحدات الصلاة؛ تؤجل تفاصيل أحكام قراءة الفاتحة فيها إلى درس فقهي.",
+      "definition_en": "A unit of Salah; detailed rulings about reciting al-Fatihah in it are deferred.",
+      "claim_ids": [
+        "CLM005"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "hadith_qudsi",
+      "arabic": "حديث قدسي",
+      "english": "hadith qudsi",
+      "definition_ar": "حديث يرويه النبي ﷺ عن الله تعالى؛ والحديث المستعمل هنا هو «قسمت الصلاة بيني وبين عبدي».",
+      "definition_en": "A hadith in which the Prophet ﷺ reports from Allah; the one used here begins, “I have divided the prayer between Me and My servant.”",
+      "claim_ids": [
+        "CLM006"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "makki",
+      "arabic": "مكية",
+      "english": "Makki",
+      "definition_ar": "التصنيف الذي رجحه أكثر العلماء للفـاتحة، مع وجود أقوال أخرى.",
+      "definition_en": "The classification preferred by most scholars for al-Fatihah, while other views are reported.",
+      "claim_ids": [
+        "CLM008"
+      ],
+      "reviewer_status": "internal_unapproved"
+    },
+    {
+      "term_id": "basmalah",
+      "arabic": "البسملة",
+      "english": "basmalah",
+      "definition_ar": "قول «بسم الله الرحمن الرحيم»؛ ويؤجل تفصيل الخلاف في عدّها إلى درس لاحق.",
+      "definition_en": "The words “In the name of Allah, the Most Merciful, the Especially Merciful”; detailed counting disputes are deferred.",
+      "claim_ids": [
+        "CLM019"
+      ],
+      "reviewer_status": "internal_unapproved"
+    }
+  ],
+  "draft_version": 2
+}
