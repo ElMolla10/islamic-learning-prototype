@@ -22,11 +22,12 @@ export function useSources() {
   return value;
 }
 
-export function SourceBadge({ sourceKeys, compact = false }: { sourceKeys: string[]; compact?: boolean }) {
+export function SourceBadge({ sourceKeys, compact = false, label }: { sourceKeys: string[]; compact?: boolean; label?: string }) {
   const { language } = useLanguage();
   const { openSources } = useSources();
   if (!sourceKeys.length) return null;
-  return <button type="button" className="source-badge" data-compact={compact} onClick={(event) => openSources(sourceKeys, event.currentTarget)} aria-label={language === "ar" ? `فتح ${sourceKeys.length} من المصادر` : `Open ${sourceKeys.length} sources`}><SourceIcon />{language === "ar" ? (sourceKeys.length === 1 ? "المصدر" : `${sourceKeys.length} مصادر`) : (sourceKeys.length === 1 ? "Source" : `${sourceKeys.length} sources`)}</button>;
+  const visible = label ?? (language === "ar" ? (sourceKeys.length === 1 ? "المصدر" : `${sourceKeys.length} مصادر`) : (sourceKeys.length === 1 ? "Source" : `${sourceKeys.length} sources`));
+  return <button type="button" className="source-badge" data-compact={compact} onClick={(event) => openSources(sourceKeys, event.currentTarget)} aria-label={language === "ar" ? `فتح المصادر الداعمة: ${visible}` : `Open supporting sources: ${visible}`}><SourceIcon />{visible}</button>;
 }
 
 export function AllSourcesButton({ count }: { count: number }) {

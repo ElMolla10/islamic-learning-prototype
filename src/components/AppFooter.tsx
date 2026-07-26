@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "./LanguageProvider";
-import { PROGRESS_KEY, QUIZ_KEY } from "@/lib/progress";
+import { FOCUS_KEY, PROGRESS_KEY, QUIZ_KEY } from "@/lib/progress";
 import { ResetIcon } from "./icons";
 
 export function AppFooter() {
@@ -9,6 +9,7 @@ export function AppFooter() {
   function reset() {
     window.localStorage.removeItem(PROGRESS_KEY);
     window.sessionStorage.removeItem(QUIZ_KEY);
+    window.sessionStorage.removeItem(FOCUS_KEY);
     window.dispatchEvent(new Event("prototype-progress-reset"));
   }
   return (

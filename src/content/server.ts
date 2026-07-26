@@ -4,7 +4,7 @@ import path from "node:path";
 import { adaptLesson } from "./adapter";
 
 async function readJson(name: string) {
-  const source = path.resolve(process.cwd(), "../../content_drafts/al_fatihah/lesson_01_uniqueness_v2", name);
+  const source = path.resolve(process.cwd(), "../../content_drafts/al_fatihah/lesson_01_uniqueness_v3", name);
   return JSON.parse(await readFile(source, "utf8")) as unknown;
 }
 

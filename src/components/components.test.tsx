@@ -31,17 +31,25 @@ describe("interactive lesson components", () => {
 
   it("renders the central verified hadith block", () => {
     const lesson=adaptedFixture(); const block=lesson.blocks.find(item=>item.type==="hadith_conversation")!;
-    render(<LanguageProvider><SourceProvider sources={lesson.sources}><LessonBlockRenderer block={block} language="ar"/></SourceProvider></LanguageProvider>);
+    render(<LanguageProvider><SourceProvider sources={lesson.sources}><LessonBlockRenderer block={block} language="ar" expandedDeepIds={[]} onToggleDeep={vi.fn()}/></SourceProvider></LanguageProvider>);
     expect(screen.getByText(/قسمت الصلاة بيني وبين عبدي/)).toBeInTheDocument();
     expect(screen.getByText(/حوار يغيّر/)).toBeInTheDocument();
   });
 
   it("gives immediate quiz feedback and persists the answer in session storage", async () => {
-    const lesson=adaptedFixture(); const complete=vi.fn();
-    render(<LanguageProvider><QuizPlayer questions={lesson.quiz} language="en" onComplete={complete}/></LanguageProvider>);
+    const lesson=adaptedFixture(); const attempt=vi.fn();
+    render(<LanguageProvider><QuizPlayer questions={lesson.quiz} language="en" onAttempt={attempt} onReview={vi.fn()}/></LanguageProvider>);
     await userEvent.click(screen.getByLabelText("The greatest surah in the Qur'an"));
     await userEvent.click(screen.getByRole("button",{name:"Check answer"}));
     expect(screen.getByText("Well recalled")).toBeInTheDocument();
     expect(sessionStorage.getItem("islamic-library-lesson-1-quiz")).toContain("question-1");
+  });
+
+  it("renders evidence-backed deep sections with classified sources", () => {
+    const lesson=adaptedFixture(); const block=lesson.blocks[5];
+    render(<LanguageProvider><SourceProvider sources={lesson.sources}><LessonBlockRenderer block={block} language="en" expandedDeepIds={[block.deepSections[0].key]} onToggleDeep={vi.fn()}/></SourceProvider></LanguageProvider>);
+    expect(screen.getByText("From speaking about Him to addressing Him")).toBeVisible();
+    expect(screen.getByText(/The surah begins by speaking about Allah/)).toBeVisible();
+    expect(screen.getByRole("button",{name:/Hadith qudsi/})).toBeVisible();
   });
 });

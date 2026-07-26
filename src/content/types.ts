@@ -55,17 +55,32 @@ export type LessonBlock = {
   title: Record<Language, string>;
   items: Record<Language, string[]>;
   sourceKeys: string[];
+  sourceSummary: Record<Language, string>;
+  deepSections: DeepSection[];
+  requiredForCompletion: boolean;
+};
+
+export type DeepSection = {
+  key: string;
+  title: Record<Language, string>;
+  items: Record<Language, string[]>;
+  sourceKeys: string[];
 };
 
 export type QuizOption = { id: string; label: Record<Language, string> };
-export type QuizQuestionType = "multiple_choice" | "select_all" | "ordering" | "true_false" | "short_recall";
+export type QuizQuestionType = "multiple_choice" | "select_all" | "ordering" | "true_false" | "short_recall" | "matching" | "scenario";
+export type MatchingRow = { id: string; label: Record<Language, string> };
 export type QuizQuestion = {
   key: string;
   type: QuizQuestionType;
   prompt: Record<Language, string>;
   options: QuizOption[];
+  matchingRows: MatchingRow[];
   correctAnswer: string[] | boolean | null;
   explanation: Record<Language, string | null>;
+  depth: "core" | "deep";
+  reviewCardKey: string;
+  reviewDeepSectionKey?: string;
 };
 
 export type GlossaryTerm = {
@@ -87,8 +102,17 @@ export type Lesson = {
 };
 
 export type ProgressState = {
+  version: 3;
   lessonOpened: boolean;
-  viewedBlocks: string[];
-  quizCompleted: boolean;
+  currentCardId: string;
+  visitedCardIds: string[];
+  expandedDeepSectionIds: string[];
+  quizAttempts: number;
+  bestQuizScore: number;
+  quizSubmitted: boolean;
+  quizPassed: boolean;
   lessonCompleted: boolean;
+  completedLessonIds: string[];
+  preferredLanguage: Language;
+  focusMode: boolean;
 };

@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { adaptLesson } from "./adapter";
 
 function fixture(name: string) {
-  const file = path.resolve(process.cwd(), "../../content_drafts/al_fatihah/lesson_01_uniqueness_v2", name);
+  const file = path.resolve(process.cwd(), "../../content_drafts/al_fatihah/lesson_01_uniqueness_v3", name);
   return JSON.parse(readFileSync(file, "utf8"));
 }
 
@@ -12,13 +12,15 @@ export function adaptedFixture() {
   return adaptLesson({ blocks: fixture("lesson_blocks.json"), quiz: fixture("quiz_questions.json"), sources: fixture("source_drawer.json"), glossary: fixture("glossary.json") });
 }
 
-describe("Draft 2 content adapter", () => {
+describe("Draft 3 content adapter", () => {
   it("parses all learner blocks, quiz questions, and sources", () => {
     const lesson = adaptedFixture();
     expect(lesson.blocks).toHaveLength(10);
-    expect(lesson.quiz).toHaveLength(7);
+    expect(lesson.quiz).toHaveLength(10);
     expect(lesson.sources).toHaveLength(10);
     expect(lesson.blocks[5].items.ar[1]).toContain("قسمت الصلاة");
+    expect(lesson.blocks.flatMap(block=>block.deepSections)).toHaveLength(12);
+    expect(lesson.quiz.some(question=>question.type==="matching")).toBe(true);
   });
 
   it("never exposes internal paths, OCR, hashes, or claim identifiers", () => {
