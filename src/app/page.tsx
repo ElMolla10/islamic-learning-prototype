@@ -1,0 +1,10 @@
+"use client";
+
+import { ContinueLearningCard, SubjectCard } from "@/components/Cards";
+import { useLanguage } from "@/components/LanguageProvider";
+import { subjects } from "@/content/catalogue";
+
+export default function HomePage() {
+  const { language }=useLanguage();
+  return <main><section className="home-hero"><div className="shell hero-grid"><div><span className="eyebrow">{language==="ar"?"نموذج تعلّم خاص":"Private learning prototype"}</span><h1>{language==="ar"?"تعلّمٌ متأنٍّ، يبدأ من المصدر":"Thoughtful learning, grounded in sources"}</h1><p>{language==="ar"?"مسارات هادئة تساعدك على فهم القرآن والسنة والعلوم الإسلامية خطوةً خطوة.":"Calm, guided paths for understanding the Qur’an, Sunnah, and Islamic disciplines one step at a time."}</p></div><div className="hero-note"><strong>{language==="ar"?"حالة النموذج":"Prototype state"}</strong><p>{language==="ar"?"مسار القرآن وحده متاح الآن للاختبار المحلي.":"Only the Qur’an path is active for local testing."}</p></div></div></section><div className="shell page-stack"><ContinueLearningCard/><section><div className="section-heading"><div><span className="eyebrow">{language==="ar"?"مجالات التعلّم":"Subjects"}</span><h2>{language==="ar"?"اختر مسارك":"Choose a path"}</h2></div><p>{language==="ar"?"لا تُعرض أعداد دروس غير مبنية بعد.":"No fabricated lesson counts are shown."}</p></div><div className="subject-grid">{subjects.map(subject=><SubjectCard key={subject.slug} subject={subject}/>)}</div></section><section className="progress-overview"><div><span className="eyebrow">{language==="ar"?"نظرة على التقدم":"Progress overview"}</span><h2>{language==="ar"?"درس واحد جاهز للتجربة":"One lesson ready to explore"}</h2><p>{language==="ar"?"يُحفظ تقدم هذا النموذج محليًا في متصفحك، بلا حساب.":"This prototype stores progress only in your browser—no account required."}</p></div><div className="progress-ring" aria-label={language==="ar"?"حالة نموذجية، لا توجد بيانات مستخدم":"Prototype state, no user data"}><span>01</span><small>{language==="ar"?"درس متاح":"lesson available"}</small></div></section></div></main>;
+}

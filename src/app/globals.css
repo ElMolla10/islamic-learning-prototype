@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --font-arabic: Tahoma, Arial, "Segoe UI", sans-serif;
+  --font-english: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ivory: #f7f3e9;
+  --paper: #fffdf8;
+  --paper-strong: #ffffff;
+  --ink: #1d2926;
+  --muted: #56615d;
+  --green: #315f50;
+  --green-dark: #23483d;
+  --green-soft: #dfe9e2;
+  --sand: #dfc89a;
+  --sand-soft: #f0e5ce;
+  --blue: #344f65;
+  --line: #dedbd0;
+  --shadow: 0 18px 50px rgb(35 52 45 / 8%);
+  --radius-sm: .75rem;
+  --radius: 1.2rem;
+  --radius-lg: 1.8rem;
+  --header-height: 4.6rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--ivory); }
+body { margin: 0; color: var(--ink); background: var(--ivory); font-family: var(--font-english); line-height: 1.65; text-rendering: optimizeLegibility; }
+html[dir="rtl"] body { font-family: var(--font-arabic); line-height: 1.9; }
+button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button { color: inherit; }
+:focus-visible { outline: 3px solid #a97729; outline-offset: 3px; }
+::selection { background: #d5e4db; }
+
+.shell { width: min(100% - 2rem, 78rem); margin-inline: auto; }
+.shell.narrow { max-width: 53rem; margin-inline: auto; }
+.development-banner { min-height: 1.8rem; padding: .28rem 1rem; background: #263b34; color: #f8f4e9; text-align: center; font-size: .72rem; letter-spacing: .01em; }
+.app-header { position: relative; z-index: 40; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--ivory) 94%, transparent); backdrop-filter: blur(14px); }
+.header-row { min-height: var(--header-height); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.identity { display: inline-flex; align-items: center; gap: .7rem; font-weight: 800; font-size: 1.08rem; }
+.identity small { display: block; color: var(--muted); font-size: .64rem; font-weight: 500; line-height: 1.2; }
+.identity-mark, .card-icon { display: grid; place-items: center; width: 2.35rem; height: 2.35rem; border-radius: 50%; background: var(--green); color: #fff; }
+.identity-mark svg, .card-icon svg { width: 1.15rem; }
+.desktop-nav { display: none; align-items: center; gap: 2rem; color: var(--muted); font-size: .9rem; }
+.desktop-nav a:hover { color: var(--green); }
+.header-actions { display: flex; align-items: center; gap: .6rem; }
+.icon-button { display: inline-grid; place-items: center; width: 2.65rem; height: 2.65rem; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); cursor: pointer; }
+.icon-button svg { width: 1.2rem; }
+.mobile-nav { display: grid; padding: .5rem 1rem 1rem; background: var(--paper); border-top: 1px solid var(--line); }
+.mobile-nav a { padding: .75rem; border-bottom: 1px solid var(--line); }
+.language-switch { display: inline-flex; direction: ltr; border: 1px solid var(--line); border-radius: 999px; padding: .2rem; background: var(--paper); }
+.language-switch button { min-width: 2.45rem; height: 2rem; border: 0; border-radius: 999px; background: transparent; font-size: .78rem; font-weight: 800; cursor: pointer; }
+.language-switch button[aria-pressed="true"] { color: #fff; background: var(--green); }
+
+.app-footer { margin-top: 6rem; border-top: 1px solid var(--line); background: #eee9dd; }
+.footer-row { min-height: 6rem; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: .6rem; color: var(--muted); font-size: .8rem; }
+.footer-row p { margin: 0; }
+.text-button { display: inline-flex; align-items: center; gap: .45rem; padding: .25rem 0; border: 0; background: transparent; color: var(--green-dark); font-weight: 700; cursor: pointer; }
+.text-button svg { width: 1rem; }
+
+.eyebrow { display: block; color: var(--green); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+html[dir="rtl"] .eyebrow { letter-spacing: 0; }
+.page-stack { display: grid; gap: 4rem; padding-block: 2rem 4rem; }
+.section-heading { display: flex; flex-direction: column; gap: .8rem; justify-content: space-between; margin-bottom: 1.3rem; }
+.section-heading h2 { margin: .2rem 0 0; font-size: clamp(1.45rem, 4vw, 2.15rem); line-height: 1.25; }
+.section-heading p { margin: 0; color: var(--muted); max-width: 30rem; font-size: .88rem; }
+.home-hero, .category-hero, .surah-hero { padding-block: 4.5rem 3.5rem; border-bottom: 1px solid var(--line); background: radial-gradient(circle at 15% 20%, #e5eadf 0, transparent 32%), linear-gradient(145deg,#f7f3e9,#eee8d9); }
+.hero-grid { display: grid; gap: 2rem; }
+.hero-grid h1, .category-hero h1 { max-width: 48rem; margin: .6rem 0 1rem; font-size: clamp(2.2rem,8vw,4.7rem); line-height: 1.08; letter-spacing: -.04em; }
+html[dir="rtl"] .hero-grid h1, html[dir="rtl"] .category-hero h1 { letter-spacing: 0; line-height: 1.35; }
+.hero-grid > div > p, .category-hero p { max-width: 40rem; margin: 0; color: var(--muted); font-size: clamp(1rem,2.5vw,1.22rem); }
+.hero-note { align-self: end; padding: 1.25rem; border-inline-start: 3px solid var(--sand); background: rgb(255 253 248 / 55%); }
+.hero-note p { margin: .3rem 0 0; color: var(--muted); font-size: .88rem; }
+.continue-card { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem; overflow: hidden; padding: 1.5rem; border-radius: var(--radius-lg); background: var(--green-dark); color: #fff; box-shadow: var(--shadow); }
+.continue-card::after { content:""; position:absolute; inset-inline-end:-4rem; top:-5rem; width:13rem; height:13rem; border:1px solid rgb(255 255 255 / 14%); border-radius:50%; box-shadow:0 0 0 2.5rem rgb(255 255 255 / 3%),0 0 0 5rem rgb(255 255 255 / 3%); }
+.continue-card .eyebrow { color: #c9dacd; }
+.continue-card h2 { position:relative; z-index:1; max-width: 36rem; margin: .5rem 0; font-size: clamp(1.45rem,4vw,2.4rem); line-height:1.3; }
+.continue-card p { margin:0; color:#d4ded8; }
+.continue-action { position:relative; z-index:1; display:inline-flex; align-items:center; align-self:flex-start; gap:.5rem; font-weight:800; }
+.continue-action svg { width:1rem; }
+html[dir="rtl"] .card-arrow, html[dir="rtl"] .continue-action svg { transform: scaleX(-1); }
+.subject-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; }
+.subject-card { position:relative; min-height:9.5rem; display:flex; flex-direction:column; align-items:flex-start; padding:1.05rem; border:1px solid var(--line); border-radius:var(--radius); background:var(--paper); color:var(--muted); }
+.subject-card.active { color:var(--ink); border-color:#a8bdb2; box-shadow:0 10px 30px rgb(35 72 61 / 7%); }
+.subject-card .card-icon { width:2.1rem;height:2.1rem;margin-bottom:auto;background:#e9e8df;color:var(--muted); }
+.subject-card.active .card-icon { background:var(--green-soft); color:var(--green); }
+.subject-card strong { margin-top:1.1rem; line-height:1.3; }
+.card-meta { margin-top:.25rem; font-size:.72rem; }
+.card-arrow { position:absolute; inset-inline-end:1rem; top:1rem; width:1rem; color:var(--green); }
+.progress-overview, .guided-entry { display:grid; gap:1.5rem; padding:1.5rem; border:1px solid var(--line); border-radius:var(--radius-lg); background:var(--paper); }
+.progress-overview h2,.guided-entry h2 { margin:.3rem 0 .6rem;font-size:1.45rem; }
+.progress-overview p,.guided-entry p { margin:0;color:var(--muted); }
+.progress-ring { justify-self:start; width:7rem;height:7rem;display:grid;place-content:center;text-align:center;border-radius:50%;background:conic-gradient(var(--green) 0 18%,var(--green-soft) 18%);box-shadow:inset 0 0 0 .65rem var(--paper); }
+.progress-ring span { font-size:1.5rem;font-weight:800;line-height:1; }
+.progress-ring small { max-width:4.5rem;margin-top:.3rem;color:var(--muted);font-size:.65rem;line-height:1.2; }
+
+.category-hero { text-align:center; }
+.category-hero h1 { margin-inline:auto; font-size:clamp(2rem,7vw,4rem); }
+.category-hero p { margin-inline:auto; }
+.visual-search { padding:.6rem 1rem;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.75rem;background:var(--paper); }
+.surah-grid { display:grid;gap:.8rem; }
+.surah-card { position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;padding:1rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--muted); }
+.surah-card.active { color:var(--ink);border-color:#a8bdb2; }
+.surah-number { display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:#efede5;font-weight:800; }
+.surah-card.active .surah-number { background:var(--green);color:#fff; }
+.surah-card h3 { margin:0;font-size:1.06rem; }.surah-card p { margin:.1rem 0 0;font-size:.75rem;color:var(--muted); }.surah-card .card-arrow{position:static;}
+
+.surah-hero-grid { display:grid;gap:2rem;align-items:end; }.surah-index { display:block;color:#9da9a2;font-size:3.5rem;font-weight:900;line-height:1; }.surah-hero h1{margin:.3rem 0;font-size:clamp(2.3rem,8vw,4.6rem);line-height:1.2}.surah-hero p{margin:0;color:var(--muted)}.surah-hero blockquote{margin:0;padding:1.5rem;border-inline-start:2px solid var(--sand);background:rgb(255 253 248 / 55%);font-size:clamp(1.2rem,3vw,1.8rem);line-height:2;}
+.path-layout { display:grid;gap:2rem;padding-block:3rem 5rem; }.path-list{display:grid;gap:.8rem}.path-card{position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;padding:1rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--muted)}.path-card.active{color:var(--ink);border-color:#a8bdb2;box-shadow:0 10px 30px rgb(35 72 61 / 6%)}.path-number{display:grid;place-items:center;width:2.55rem;height:2.55rem;border-radius:50%;background:#eceae2;font-weight:800}.path-card.active .path-number{background:var(--green);color:#fff}.path-number svg{width:1rem}.path-card h3{margin:.15rem 0;font-size:1rem}.path-card p{margin:0;font-size:.72rem}.path-card .card-arrow{position:static}.path-context{align-self:start;padding:1.5rem;border-radius:var(--radius-lg);background:var(--green-dark);color:#fff}.path-context .eyebrow{color:#c8dbce}.path-context h2{margin:.35rem 0 .75rem;font-size:1.5rem}.path-context p{margin:0;color:#d3ded8}
+
+.lesson-progress-sticky { position:sticky;z-index:30;top:0;border-bottom:1px solid #ccd5cf;background:rgb(247 243 233 / 94%);backdrop-filter:blur(10px); }.lesson-progress-sticky .shell{height:3rem;display:flex;align-items:center;gap:1rem}.progress-copy{min-width:7rem;display:flex;justify-content:space-between;gap:.5rem;font-size:.72rem}.progress-copy span{color:var(--muted)}.progress-track{flex:1;height:.28rem;overflow:hidden;border-radius:999px;background:#dbe2dc}.progress-track i{display:block;height:100%;border-radius:inherit;background:var(--green);transition:width .25s ease}
+.lesson-page { padding-block:1.5rem 5rem; }.lesson-shell{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}.lesson-toc,.source-rail{display:none}.reading-column{min-width:0;max-width:46rem;margin-inline:auto;width:100%}.lesson-header{padding:1rem 0 2.5rem}.breadcrumbs{display:flex;flex-wrap:wrap;gap:.4rem;color:var(--muted);font-size:.75rem}.breadcrumbs a:hover{color:var(--green)}.lesson-kicker{display:flex;gap:.5rem;margin-top:2rem;color:var(--green);font-size:.78rem;font-weight:800}.lesson-header h1{margin:.5rem 0;font-size:clamp(2.25rem,8vw,4.5rem);line-height:1.17;letter-spacing:-.045em}.lesson-header .surah-label{margin:0;color:var(--muted);font-size:1.05rem}.lesson-header-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.lesson-block { scroll-margin-top:4rem;margin-bottom:1rem;padding:1.25rem;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--paper);box-shadow:0 8px 30px rgb(44 57 51 / 4%); }.block-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.25rem}.block-heading h2{margin:.25rem 0 0;font-size:clamp(1.45rem,5vw,2.15rem);line-height:1.35}.prose{display:grid;gap:.85rem}.prose p{margin:0;color:#3f4b47}.prose.compact{margin-top:1rem}.source-badge{display:inline-flex;align-items:center;gap:.35rem;flex:0 0 auto;padding:.42rem .65rem;border:1px solid #b9c9bf;border-radius:999px;background:#f2f6f2;color:var(--green-dark);font-size:.68rem;font-weight:800;cursor:pointer}.source-badge svg{width:.9rem}.source-badge[data-compact="true"]{margin-top:auto}.primary-button,.secondary-button{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:2.75rem;padding:.65rem 1rem;border-radius:999px;font-weight:800;font-size:.83rem;cursor:pointer}.primary-button{border:1px solid var(--green);background:var(--green);color:#fff}.secondary-button{border:1px solid #bdc9c1;background:var(--paper);color:var(--green-dark)}.primary-button svg,.secondary-button svg{width:1rem}.primary-button:disabled,.secondary-button:disabled{opacity:.45;cursor:not-allowed}
+.hook-block{padding:1.5rem;background:linear-gradient(145deg,#fffdf8,#f0eee4)}.hook-block .prose p:first-child{font-size:1.14rem;color:var(--ink)}
+.facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.fact-item{min-width:0;padding:.8rem;border-radius:var(--radius-sm);background:#f1efe7}.fact-item>span{display:block;color:var(--muted);font-size:.67rem}.fact-item>strong{display:block;margin-top:.15rem;overflow-wrap:anywhere;font-size:.88rem;line-height:1.5}.fact-item details{margin-top:.4rem}.fact-item summary{color:var(--green);font-size:.65rem;cursor:pointer}.fact-item details p{margin:.3rem 0 0;color:var(--muted);font-size:.67rem}
+.quote-pair{display:grid;gap:.7rem;margin-bottom:1rem}.quote-pair blockquote,.hadith-feature blockquote,.quran-quote{margin:0;padding:1.15rem;border-inline-start:3px solid var(--sand);border-radius:var(--radius-sm);background:#f3ead7;font-size:1.1rem;font-weight:700;line-height:1.9}
+.name-grid{display:grid;gap:.7rem}.name-card{min-height:11.5rem;display:flex;flex-direction:column;padding:1rem;border:1px solid var(--line);border-radius:var(--radius);background:#f9f7f0}.name-card>span{color:var(--green);font-size:.67rem;font-weight:800}.name-card h3{margin:.65rem 0 .35rem;font-size:1.2rem}.name-card p{margin:0 0 1rem;color:var(--muted);font-size:.82rem}
+.quran-quote{text-align:center;border-inline:0;border-block-start:3px solid var(--sand);font-size:clamp(1.2rem,4.5vw,1.75rem);line-height:2.1}.clarification,.hadith-understand{margin-top:1.1rem;border-top:1px solid var(--line)}.clarification summary,.hadith-understand summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0 0;color:var(--green-dark);font-weight:800;cursor:pointer}.clarification summary::-webkit-details-marker,.hadith-understand summary::-webkit-details-marker{display:none}.clarification summary svg,.hadith-understand summary svg{width:1rem;transition:transform .2s}.clarification[open] summary svg,.hadith-understand[open] summary svg{transform:rotate(180deg)}.clarification>p{margin:.8rem 0 0;color:var(--muted)}
+.hadith-feature{position:relative;overflow:hidden;padding:1.5rem;background:#253e35;color:#fdfbf6;border-color:#253e35;box-shadow:0 22px 55px rgb(21 49 40 / 16%)}.hadith-feature::after{content:"";position:absolute;inset-inline-end:-5rem;top:-6rem;width:14rem;height:14rem;border:1px solid rgb(255 255 255 / 10%);border-radius:50%;box-shadow:0 0 0 2.5rem rgb(255 255 255 / 2%),0 0 0 5rem rgb(255 255 255 / 2%)}.hadith-feature .block-heading{position:relative;z-index:1}.hadith-feature .eyebrow,.hadith-feature .source-badge{color:#d7c58e}.hadith-feature .source-badge{border-color:#65796f;background:#304b41}.hadith-lead{position:relative;z-index:1;color:#d2ded8}.hadith-feature blockquote{position:relative;z-index:1;margin:1rem 0;background:#fffdf8;color:#1d2926;border-inline-start-color:#c6a95d;font-size:clamp(1.2rem,4vw,1.75rem);line-height:2}.hadith-stages{position:relative;z-index:1;display:grid;gap:.65rem}.hadith-stages article{display:grid;grid-template-columns:auto 1fr;gap:.75rem;align-items:start;padding:.85rem;border:1px solid #4c665b;border-radius:var(--radius-sm);background:#2c473d}.hadith-stages span{display:grid;place-items:center;width:1.8rem;height:1.8rem;border-radius:50%;background:#cbb574;color:#263c34;font-weight:900}.hadith-stages p{margin:0;color:#f0f4f1}.hadith-understand{position:relative;z-index:1;border-top-color:#536b61}.hadith-understand summary{color:#f2dfaa}.hadith-understand .prose{margin-top:1rem}.hadith-understand .prose p{color:#d8e1dc}
+.theme-journey{display:grid;gap:.75rem}.theme-journey article{position:relative;display:grid;grid-template-columns:auto 1fr;gap:.9rem;padding:1rem;border:1px solid var(--line);border-radius:var(--radius);background:#faf8f1}.theme-journey article>span{display:grid;place-items:center;width:2.3rem;height:2.3rem;border-radius:50%;background:var(--green-soft);color:var(--green-dark);font-weight:900}.theme-journey h3{margin:0;font-size:1rem}.theme-journey p{margin:.25rem 0 0;color:var(--muted);font-size:.82rem}.theme-intro{order:-1;margin:0 0 .3rem;color:var(--muted)}
+.reflection-block{background:#edf1eb;border-color:#cbd8cf}.reflection-label{display:inline-block;margin-bottom:1rem;padding:.35rem .65rem;border-radius:999px;background:#d7e3da;color:var(--green-dark);font-size:.7rem;font-weight:800}.summary-block ul{display:grid;gap:.65rem;margin:0;padding:0;list-style:none}.summary-block li{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:.7rem;padding:.8rem 0;border-bottom:1px solid var(--line)}.summary-block li:last-child{border:0}.summary-block li svg{width:1.25rem;margin-top:.2rem;color:var(--green)}
+.quiz-section{scroll-margin-top:4rem}.quiz-intro{color:var(--muted)}.quiz-player{margin-top:1.25rem;padding:1rem;border-radius:var(--radius);background:#f2f0e8}.quiz-topline{display:flex;align-items:center;justify-content:space-between;gap:1rem;color:var(--muted);font-size:.72rem}.quiz-dots{display:flex;direction:ltr;gap:.25rem}.quiz-dots i{width:.42rem;height:.42rem;border-radius:50%;background:#cfd2cb}.quiz-dots i[data-state="current"]{background:var(--sand);box-shadow:0 0 0 3px #e9dfc8}.quiz-dots i[data-state="done"]{background:var(--green)}.quiz-player>h3{margin:1rem 0;font-size:1.15rem}.quiz-answer-area{display:grid;gap:.55rem;margin-bottom:1rem}.quiz-option{display:flex;align-items:flex-start;gap:.65rem;padding:.8rem;border:1px solid #d7d6ce;border-radius:var(--radius-sm);background:var(--paper);cursor:pointer}.quiz-option[data-selected="true"]{border-color:var(--green);background:#edf3ef}.quiz-option input{margin-top:.35rem;accent-color:var(--green)}.quiz-answer-area textarea{width:100%;resize:vertical;padding:.8rem;border:1px solid #c9ccc5;border-radius:var(--radius-sm);background:var(--paper)}.ordering-list{display:grid;gap:.5rem}.ordering-item{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.7rem;padding:.65rem;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--paper)}.ordering-item>span{display:grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--green-soft);font-size:.72rem;font-weight:800}.ordering-item>div{display:flex;direction:ltr}.ordering-item button{display:grid;place-items:center;width:2rem;height:2rem;border:0;background:transparent;color:var(--green);cursor:pointer}.ordering-item button:disabled{opacity:.3}.ordering-item svg{width:.9rem}.quiz-feedback{margin-top:1rem;padding:1rem;border-inline-start:3px solid #b88635;border-radius:var(--radius-sm);background:#f5ead2}.quiz-feedback[data-correct="true"]{border-color:var(--green);background:#e5efe8}.quiz-feedback strong{display:flex;align-items:center;gap:.4rem}.quiz-feedback strong svg{width:1.1rem}.quiz-feedback p{margin:.4rem 0;color:var(--muted)}.quiz-navigation{display:flex;justify-content:space-between;gap:.6rem;margin-top:1rem}.quiz-result{display:flex;align-items:center;gap:.8rem;margin-top:1rem;padding:1rem;border-radius:var(--radius);background:var(--green-dark);color:#fff}.quiz-result>svg{width:1.7rem}.quiz-result p{margin:.15rem 0 0;color:#d2ddd7}
+.completion-card{display:grid;grid-template-columns:auto 1fr;gap:1rem;margin-top:1rem;padding:1.5rem;border-radius:var(--radius-lg);background:#eadfc5}.completion-icon{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--paper);color:var(--green)}.completion-icon svg{width:1.4rem}.completion-card h2{margin:.3rem 0}.completion-card p{margin:0;color:#5f625e}.completion-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+
+.drawer-layer{position:fixed;z-index:100;inset:0}.drawer-backdrop{position:absolute;inset:0;width:100%;border:0;background:rgb(20 29 26 / 54%);cursor:pointer}.source-drawer{position:absolute;inset-inline:0;bottom:0;max-height:88dvh;overflow:auto;padding:1.25rem;border-radius:1.5rem 1.5rem 0 0;background:var(--paper);box-shadow:0 -20px 60px rgb(0 0 0 / 18%)}.source-drawer>header{position:sticky;z-index:1;top:-1.25rem;display:flex;justify-content:space-between;gap:1rem;padding:1.25rem 0 1rem;background:var(--paper);border-bottom:1px solid var(--line)}.source-drawer h2{margin:.2rem 0 0;font-size:1.45rem}.drawer-intro{color:var(--muted);font-size:.85rem}.source-list{display:grid;gap:.75rem}.source-item{padding:1rem;border:1px solid var(--line);border-radius:var(--radius);background:#f9f7f0}.source-item-heading{display:flex;align-items:flex-start;gap:.7rem}.source-item-heading>svg{flex:0 0 auto;width:1.2rem;color:var(--green)}.source-item h3{margin:0;font-size:1rem;line-height:1.5}.source-item-heading p{margin:.1rem 0 0;color:var(--muted);font-size:.75rem}.role-list{display:flex;flex-wrap:wrap;gap:.35rem;margin:.8rem 0}.role-list span{padding:.25rem .45rem;border-radius:999px;background:var(--green-soft);color:var(--green-dark);font-size:.62rem;font-weight:700}.source-item dl{display:grid;gap:.4rem;margin:.8rem 0}.source-item dl>div{display:grid;grid-template-columns:5.5rem 1fr;gap:.5rem;font-size:.72rem}.source-item dt{color:var(--muted)}.source-item dd{margin:0}.source-reason{margin:.75rem 0 0;padding-top:.75rem;border-top:1px solid var(--line);color:#4c5753;font-size:.75rem}
+
+@media (min-width: 640px){.shell{width:min(100% - 3rem,78rem)}.section-heading{flex-direction:row;align-items:end}.continue-card{flex-direction:row;align-items:end;padding:2rem}.subject-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.progress-overview{grid-template-columns:1fr auto;align-items:center;padding:2rem}.surah-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.surah-hero-grid{grid-template-columns:1.25fr .75fr}.lesson-block{padding:1.75rem}.facts-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.quote-pair{grid-template-columns:1fr 1fr}.name-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hadith-stages{grid-template-columns:repeat(3,minmax(0,1fr))}.theme-journey{grid-template-columns:repeat(2,minmax(0,1fr))}.theme-intro{grid-column:1/-1}.summary-block ul{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:1rem}.footer-row{flex-direction:row;align-items:center;justify-content:space-between}.source-drawer{inset-block:0;left:auto;right:0;width:min(31rem,92vw);max-height:none;border-radius:0;padding:1.5rem}.source-drawer>header{top:-1.5rem;padding-top:1.5rem}}
+@media (min-width: 768px){.desktop-nav{display:flex}.mobile-menu-button,.mobile-nav{display:none}.hero-grid{grid-template-columns:1fr 18rem}.path-layout{grid-template-columns:minmax(0,1fr) 18rem}.path-context{position:sticky;top:5rem}.lesson-header h1{font-size:3.7rem}.drawer-intro{font-size:.9rem}}
+@media (min-width: 1024px){.page-stack{padding-top:3rem}.home-hero,.category-hero,.surah-hero{padding-block:6rem 5rem}.subject-grid{gap:1rem}.subject-card{min-height:11rem;padding:1.25rem}.lesson-page{padding-top:2.5rem}.lesson-shell{grid-template-columns:12rem minmax(0,46rem);justify-content:center;align-items:start}.lesson-toc{display:block;position:sticky;top:4rem;padding-top:1rem}.lesson-toc ol{display:grid;gap:.2rem;margin:1rem 0 0;padding:0;list-style:none}.lesson-toc a{display:grid;grid-template-columns:auto 1fr;gap:.55rem;align-items:start;padding:.45rem;color:var(--muted);font-size:.68rem;line-height:1.45;border-radius:.5rem}.lesson-toc a:hover{background:#eeeae0;color:var(--ink)}.lesson-toc a>span{display:grid;place-items:center;width:1.25rem;height:1.25rem;border-radius:50%;border:1px solid var(--line);font-size:.58rem}.lesson-toc a[data-viewed="true"]>span{background:var(--green);color:#fff;border-color:var(--green)}}
+@media (min-width: 1280px){.lesson-shell{width:min(100% - 3rem,88rem);grid-template-columns:13rem minmax(0,46rem) 15rem;gap:2.5rem}.source-rail{display:block;position:sticky;top:4rem;padding-top:1rem}.source-rail>div{padding:1.2rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}.source-rail>div>svg{width:1.5rem;margin-bottom:1rem;color:var(--green)}.source-rail h2{margin:.4rem 0;font-size:1rem;line-height:1.5}.source-rail p{margin:.5rem 0 1rem;color:var(--muted);font-size:.72rem}.source-rail .secondary-button{width:100%;font-size:.72rem}}
+@media (min-width: 1440px){.lesson-shell{grid-template-columns:14rem minmax(0,48rem) 17rem}.reading-column{max-width:48rem}.lesson-block{padding:2rem}.hadith-feature{padding:2.25rem}}
+@media (max-width: 374px){.shell{width:min(100% - 1.2rem,78rem)}.development-banner{font-size:.64rem}.identity small{display:none}.language-switch button{min-width:2rem}.lesson-header h1{font-size:2rem}.lesson-block{padding:1rem;border-radius:1rem}.facts-grid{grid-template-columns:1fr}.block-heading{flex-direction:column}.subject-grid{grid-template-columns:1fr 1fr}.source-badge{align-self:flex-start}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
