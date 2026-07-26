@@ -3,8 +3,8 @@ import { expect, type Page } from "@playwright/test";
 type TestLanguage = "ar" | "en";
 
 const copy = {
-  ar: { next: "التالي", check: "تحقق", true: "صحيح", false: "خطأ" },
-  en: { next: "Next", check: "Check answer", true: "True", false: "False" },
+  ar: { next: "التالي", nextQuestion:"السؤال التالي", check: "تحقق من الإجابة", true: "صحيح", false: "خطأ" },
+  en: { next: "Next", nextQuestion:"Next Question", check: "Check answer", true: "True", false: "False" },
 };
 
 export async function resetPrototype(page: Page) {
@@ -39,6 +39,15 @@ async function chooseRadio(page: Page, label: string) {
   await quiz(page).getByLabel(label, { exact: true }).check();
 }
 
+async function arrangeOrdering(page:Page,language:TestLanguage,correct:boolean){
+  const desired=language==="ar"?(correct?["الثناء على الله","العبادة والاستعانة","طلب الهداية"]:["العبادة والاستعانة","الثناء على الله","طلب الهداية"]):(correct?["Praise of Allah","Worship and seeking help","Request for guidance"]:["Worship and seeking help","Praise of Allah","Request for guidance"]);
+  const list=quiz(page).locator(".ordering-list");
+  for(let target=0;target<desired.length;target+=1){
+    let labels=await list.locator(".ordering-item strong").allTextContents();let current=labels.indexOf(desired[target]);
+    while(current>target){await list.locator(".ordering-item").filter({hasText:desired[target]}).getByRole("button",{name:new RegExp(language==="ar"?"^تحريك لأعلى":"^Move up")}).click();current-=1;labels=await list.locator(".ordering-item strong").allTextContents();}
+  }
+}
+
 async function answerQuestion(page: Page, language: TestLanguage, question: number, correct: boolean) {
   const q = quiz(page);
   if (question === 1) {
@@ -51,9 +60,7 @@ async function answerQuestion(page: Page, language: TestLanguage, question: numb
       await q.getByLabel(new RegExp(`^${labels[index].replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} —`)).selectOption({ label: (correct ? correctOptions : wrongOptions)[index] });
     }
   } else if (question === 3) {
-    if (!correct) {
-      await q.getByRole("button", { name: new RegExp(language === "ar" ? "^تحريك لأسفل" : "^Move down") }).first().click();
-    }
+    await arrangeOrdering(page,language,correct);
   } else if (question === 4) {
     await chooseRadio(page, correct ? copy[language].true : copy[language].false);
   } else if (question === 5) {
@@ -77,7 +84,7 @@ async function answerQuestion(page: Page, language: TestLanguage, question: numb
   } else if (question === 9) {
     await chooseRadio(page, correct ? copy[language].false : copy[language].true);
   } else {
-    await q.getByPlaceholder(language === "ar" ? "اكتب إجابتك هنا" : "Write your response here").fill(language === "ar" ? "نعبد الله ونطلب منه الهداية" : "We worship Allah and ask Him for guidance");
+    await chooseRadio(page,language==="ar"?(correct?"معرفة الله والثناء عليه، ثم العبادة والاستعانة، ثم طلب الهداية":"طلب الهداية أولًا، ثم ذكر أسماء السورة، ثم الاستغناء عن العبادة"):(correct?"Knowing and praising Allah, then worship and seeking help, then asking for guidance":"Asking for guidance first, then listing the surah's names, then no longer needing worship"));
   }
 
   await q.getByRole("button", { name: copy[language].check, exact: true }).click();
@@ -87,10 +94,10 @@ export async function completeQuiz(page: Page, language: TestLanguage, correctQu
   for (let question = 1; question <= 10; question += 1) {
     await answerQuestion(page, language, question, correctQuestions.has(question));
     if (question < 10) {
-      await quiz(page).locator(".quiz-navigation").getByRole("button", { name: copy[language].next, exact: true }).click();
+      await quiz(page).locator(".quiz-navigation").getByRole("button", { name: copy[language].nextQuestion, exact: true }).click();
     }
   }
 }
 
-export const exactlyHalfCorrect = new Set([1, 2, 3, 4]); // Question 10 accepts meaningful short recall, yielding 5/10.
-export const passingQuestions = new Set([1, 2, 3, 4, 5]); // Plus short recall yields 6/10.
+export const exactlyHalfCorrect = new Set([1,2,3,4,5]);
+export const passingQuestions = new Set([1,2,3,4,5,6]);

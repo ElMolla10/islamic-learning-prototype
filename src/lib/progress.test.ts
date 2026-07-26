@@ -8,14 +8,14 @@ describe("progress and quiz helpers", () => {
     expect(parseProgress('{"lessonOpened":true,"viewedBlocks":["block-1"],"quizCompleted":true,"lessonCompleted":true}')).toMatchObject({ lessonOpened: true, currentCardId:"card-1", visitedCardIds: ["card-1"], quizSubmitted:false, quizPassed:false, lessonCompleted:false });
   });
   it("calculates bounded progress", () => {
-    expect(progressPercent({ ...emptyProgress, visitedCardIds: ["a","b"] }, 10)).toBe(20);
-    expect(progressPercent({ ...emptyProgress, visitedCardIds: Array.from({length:20},(_,i)=>String(i)) }, 10)).toBe(100);
+    expect(progressPercent({ ...emptyProgress, visitedCardIds: ["a","b"] }, 10)).toBe(18);
+    expect(progressPercent({ ...emptyProgress, visitedCardIds: Array.from({length:10},(_,i)=>String(i)) }, 10)).toBe(90);
+    expect(progressPercent({ ...emptyProgress, visitedCardIds: Array.from({length:10},(_,i)=>String(i)),quizPassed:true }, 10)).toBe(100);
   });
-  it("validates ordered, selected, boolean, and recall answers", () => {
-    expect(answersMatch(["a","b"],["a","b"])).toBe(true);
-    expect(answersMatch(["b","a"],["a","b"])).toBe(false);
+  it("validates stable IDs while keeping only ordering answers order-sensitive", () => {
+    expect(answersMatch(["b","a"],["a","b"])).toBe(true);
+    expect(answersMatch(["b","a"],["a","b"],true)).toBe(false);
     expect(answersMatch(false,false)).toBe(true);
-    expect(answersMatch("A reflection",null)).toBe(true);
   });
   it("requires a score strictly greater than 50 percent", () => {
     expect(passesQuiz(5,10)).toBe(false);

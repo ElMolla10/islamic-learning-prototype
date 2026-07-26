@@ -31,8 +31,10 @@ export type Source = {
   key: string;
   title: string;
   author: string;
-  roles: string[];
+  roleCodes: string[];
+  supportLevel: "primary_evidence" | "direct_commentary" | "supporting_tafsir" | "broader_comparative_support";
   locations: SourceLocation[];
+  scriptureReferences: Record<Language, string>[];
   hadithNumbers: string[];
   reason: Record<Language, string>;
 };
@@ -68,7 +70,7 @@ export type DeepSection = {
 };
 
 export type QuizOption = { id: string; label: Record<Language, string> };
-export type QuizQuestionType = "multiple_choice" | "select_all" | "ordering" | "true_false" | "short_recall" | "matching" | "scenario";
+export type QuizQuestionType = "multiple_choice" | "select_all" | "ordering" | "true_false" | "matching" | "scenario";
 export type MatchingRow = { id: string; label: Record<Language, string> };
 export type QuizQuestion = {
   key: string;
@@ -76,7 +78,7 @@ export type QuizQuestion = {
   prompt: Record<Language, string>;
   options: QuizOption[];
   matchingRows: MatchingRow[];
-  correctAnswer: string[] | boolean | null;
+  correctAnswer: string[] | boolean;
   explanation: Record<Language, string | null>;
   depth: "core" | "deep";
   reviewCardKey: string;

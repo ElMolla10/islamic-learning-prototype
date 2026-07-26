@@ -37,7 +37,17 @@
       ],
       "why_used": "Provides verified evidence for CLM001, CLM002, CLM009, CLM010, CLM011, CLM012, CLM013, CLM014.",
       "scan_readability_warning": "Page images were visually checked; OCR text is an internal aid and is not user-visible.",
-      "expandable": true
+      "expandable": true,
+      "scripture_references": [
+        {
+          "ar": "سورة الفاتحة",
+          "en": "Surah al-Fatihah"
+        },
+        {
+          "ar": "سورة الحجر: ٨٧",
+          "en": "Surah al-Hijr: 87"
+        }
+      ]
     },
     {
       "work_id": "work_maalim_tanzil",

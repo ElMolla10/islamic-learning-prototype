@@ -21,6 +21,9 @@ describe("Draft 3 content adapter", () => {
     expect(lesson.blocks[5].items.ar[1]).toContain("قسمت الصلاة");
     expect(lesson.blocks.flatMap(block=>block.deepSections)).toHaveLength(12);
     expect(lesson.quiz.some(question=>question.type==="matching")).toBe(true);
+    expect(lesson.quiz.every(question=>["multiple_choice","select_all","ordering","true_false","matching","scenario"].includes(question.type))).toBe(true);
+    expect(lesson.quiz.every(question=>question.correctAnswer!==null)).toBe(true);
+    expect(lesson.quiz.some(question=>question.type==="scenario"&&question.key==="question-10")).toBe(true);
   });
 
   it("never exposes internal paths, OCR, hashes, or claim identifiers", () => {

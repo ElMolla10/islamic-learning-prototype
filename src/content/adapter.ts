@@ -27,6 +27,7 @@ type RawSource = {
   claims_supported: string[];
   locations: { volume: number | null; pdf_page: number; printed_page: number | null }[];
   hadith_numbers: string[];
+  scripture_references?: { ar: string; en: string }[];
 };
 type RawQuestion = {
   question_id: string;
@@ -37,7 +38,7 @@ type RawQuestion = {
   items?: { id: string; ar: string; en: string }[] | null;
   matching_rows?: { id: string; ar: string; en: string }[] | null;
   matching_choices?: { id: string; ar: string; en: string }[] | null;
-  correct_answer: string[] | boolean | null;
+  correct_answer: string[] | boolean;
   explanation_ar: string | null;
   explanation_en: string | null;
   depth?: "core" | "deep";
@@ -46,17 +47,12 @@ type RawQuestion = {
 };
 type RawTerm = { arabic: string; english: string; definition_ar: string; definition_en: string };
 
-const roleLabels: Record<string, string> = {
-  revelation_quran: "Qur’an",
-  early_tafsir: "Early tafsir",
-  later_tafsir: "Tafsir",
-  analytical_tafsir: "Analytical tafsir",
-  accessible_tafsir: "Accessible tafsir",
-  quranic_vocabulary_reference: "Qur’anic vocabulary",
-  primary_hadith_collection: "Primary hadith collection",
-  hadith_commentary: "Hadith commentary",
-  primary_hadith_collection_with_commentary: "Hadith collection with commentary",
-};
+function supportLevel(roles: string[]): Source["supportLevel"] {
+  if (roles.some(role=>role==="revelation_quran"||role==="primary_hadith_collection")) return "primary_evidence";
+  if (roles.some(role=>role==="hadith_commentary"||role==="primary_hadith_collection_with_commentary")) return "direct_commentary";
+  if (roles.some(role=>role.includes("tafsir"))) return "supporting_tafsir";
+  return "broader_comparative_support";
+}
 
 function sourceReason(roles: string[]): Record<"ar" | "en", string> {
   if (roles.includes("revelation_quran")) return { ar: "للتحقق من نص الآيات وموضع السورة.", en: "Used to verify the Qur’anic wording and Surah location." };
@@ -76,12 +72,14 @@ export function adaptLesson(raw: {
     key: `source-${index + 1}`,
     title: source.display_title,
     author: source.author,
-    roles: source.source_role.map((role) => roleLabels[role] ?? role.replaceAll("_", " ")),
+    roleCodes: [...source.source_role],
+    supportLevel: supportLevel(source.source_role),
     locations: source.locations.map((location) => ({
       volume: location.volume ?? undefined,
       page: location.pdf_page,
       printedPage: location.printed_page ?? undefined,
     })),
+    scriptureReferences: (source.scripture_references ?? []).map(reference=>({ar:reference.ar,en:reference.en})),
     hadithNumbers: source.hadith_numbers,
     reason: sourceReason(source.source_role),
   }));

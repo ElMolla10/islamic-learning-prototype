@@ -39,7 +39,9 @@ export function parseProgress(raw: string | null): ProgressState {
 }
 
 export function progressPercent(progress: ProgressState, blockCount: number) {
-  return Math.round((Math.min(progress.visitedCardIds.length, blockCount) / blockCount) * 100);
+  const visited = Math.min(progress.visitedCardIds.length, blockCount);
+  if (blockCount > 0 && visited === blockCount && progress.quizPassed) return 100;
+  return blockCount > 0 ? Math.min(99, Math.round((visited / blockCount) * 90)) : 0;
 }
 
 export function passesQuiz(score: number, total: number) { return total > 0 && score / total > 0.5; }
@@ -48,9 +50,9 @@ export function lessonRequirementsMet(progress: ProgressState, requiredCardIds: 
   return requiredCardIds.every((id) => progress.visitedCardIds.includes(id)) && progress.quizSubmitted && progress.quizPassed;
 }
 
-export function answersMatch(selected: string[] | boolean | string, correct: string[] | boolean | null) {
-  if (correct === null) return typeof selected === "string" && selected.trim().length > 0;
+export function answersMatch(selected: string[] | boolean, correct: string[] | boolean, ordered = false) {
   if (typeof correct === "boolean") return selected === correct;
   if (!Array.isArray(selected)) return false;
-  return selected.length === correct.length && selected.every((value, index) => value === correct[index]);
+  if (ordered) return selected.length === correct.length && selected.every((value, index) => value === correct[index]);
+  return selected.length === correct.length && selected.every(value=>correct.includes(value));
 }

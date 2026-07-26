@@ -326,23 +326,32 @@
     },
     {
       "question_id": "V3Q10",
-      "type": "short_recall",
+      "type": "scenario",
       "depth": "deep",
-      "prompt_ar": "في جملة واحدة: كيف ترتبط معرفة الله بالعبادة وطلب الهداية في بناء الفاتحة؟",
-      "prompt_en": "In one sentence, how are knowing Allah, worship, and asking for guidance connected in al-Fatihah's structure?",
-      "correct_answer": null,
-      "accepted_concepts": [
-        "knowledge",
-        "Allah",
-        "worship",
-        "help",
-        "guidance",
-        "path"
+      "prompt_ar": "قال متعلم: تبدو موضوعات الفاتحة منفصلة. أي خريطة تبيّن ترابط بنائها كما شرح الدرس؟",
+      "prompt_en": "A learner says al-Fatihah's themes seem disconnected. Which map best shows the structure explained in the lesson?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "معرفة الله والثناء عليه، ثم العبادة والاستعانة، ثم طلب الهداية",
+          "en": "Knowing and praising Allah, then worship and seeking help, then asking for guidance"
+        },
+        {
+          "id": "b",
+          "ar": "طلب الهداية أولًا، ثم ذكر أسماء السورة، ثم الاستغناء عن العبادة",
+          "en": "Asking for guidance first, then listing the surah's names, then no longer needing worship"
+        },
+        {
+          "id": "c",
+          "ar": "أحكام الترقيم، ثم أخبار التاريخ، ثم مسائل اللغة دون رابط",
+          "en": "Numbering rules, then historical reports, then unrelated language questions"
+        }
       ],
-      "sample_answer_ar": "تعرفنا السورة بربنا، ثم نعلن عبادته وافتقارنا إلى عونه، ثم نسأله أن يهدينا الطريق.",
-      "sample_answer_en": "The surah teaches us about our Lord, then we declare worship and dependence, and then ask Him to guide us along the path.",
-      "explanation_ar": "تنتقل السورة من معرفة الله والثناء عليه إلى العبادة والاستعانة ثم إلى سؤال الهداية.",
-      "explanation_en": "The surah moves from knowing and praising Allah to worship and dependence, then to asking for guidance.",
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "تنتقل السورة من معرفة الله والثناء عليه إلى إعلان العبادة والافتقار إلى العون، ثم إلى سؤال الهداية.",
+      "explanation_en": "The surah moves from knowing and praising Allah to declaring worship and dependence, then to asking for guidance.",
       "claim_ids": [
         "DCLM008",
         "DCLM011"

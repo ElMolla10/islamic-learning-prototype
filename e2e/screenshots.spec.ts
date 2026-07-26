@@ -27,6 +27,8 @@ test("capture and inspect the Batch 7B visual review set",async({page})=>{
 
   await page.setViewportSize({width:1440,height:1000});await resetPrototype(page);
   await page.screenshot({path:path.join(output,"1440-desktop-enlarged-typography.png"),fullPage:true});
+  await page.getByRole("button",{name:/عرض المصادر \(10\)/}).click();await page.getByRole("dialog").locator(".source-item>summary").first().click();
+  await page.screenshot({path:path.join(output,"1440-source-drawer-refined.png")});await page.keyboard.press("Escape");
   await page.getByRole("button",{name:"وضع التركيز"}).click();
   await page.screenshot({path:path.join(output,"1440-focus-mode.png"),fullPage:true});
   await page.getByRole("button",{name:"إنهاء وضع التركيز"}).click();
