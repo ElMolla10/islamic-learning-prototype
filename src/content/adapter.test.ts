@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { adaptLesson } from "./adapter";
 
 function fixture(name: string) {
-  const file = path.resolve(process.cwd(), "../../content_drafts/al_fatihah/lesson_01_uniqueness_v3", name);
+  const file = path.resolve(process.cwd(), "src/content/al_fatihah/lesson_01_uniqueness_v3", name);
   return JSON.parse(readFileSync(file, "utf8"));
 }
 
