@@ -3,17 +3,24 @@
 import Link from "next/link";
 import type { BiographyChapter, Companion } from "@/content/types";
 import { useLanguage } from "@/components/LanguageProvider";
-import { ArrowIcon, CheckIcon } from "@/components/icons";
+import { ArrowIcon, CheckIcon, UsersIcon } from "@/components/icons";
 
 export function CompanionCard({ companion }: { companion: Companion }) {
   const { language } = useLanguage();
   const active = companion.availability === "active";
+  const unavailableText = language === "ar" ? "عرض تخطيطي — غير متاح" : "Browse preview — unavailable";
+  // A single-letter initial isn't a reliable avatar here: several companion names share a first letter
+  // (e.g. Omar, Uthman, and Ali all start with ع), which made every disabled card show an identical glyph,
+  // and that glyph is easy to misread as an unrelated digit at this size. A shared, generic icon avoids
+  // both problems without fabricating a portrait or adding any information not already shown as text.
   const content = (
     <>
-      <span className="companion-initial">{companion.name[language].charAt(0)}</span>
+      <span className="companion-initial" aria-hidden="true">
+        <UsersIcon />
+      </span>
       <div>
         <h3>{companion.name[language]}</h3>
-        <p>{active ? companion.title[language] : language === "ar" ? "عرض تخطيطي — غير متاح" : "Browse preview — unavailable"}</p>
+        <p>{active ? companion.title[language] : unavailableText}</p>
       </div>
       {active && <ArrowIcon className="card-arrow" />}
     </>
@@ -23,7 +30,7 @@ export function CompanionCard({ companion }: { companion: Companion }) {
       {content}
     </Link>
   ) : (
-    <article className="companion-card" data-disabled="true">
+    <article className="companion-card" data-disabled="true" aria-label={`${companion.name[language]} — ${unavailableText}`}>
       {content}
     </article>
   );
