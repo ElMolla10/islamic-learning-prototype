@@ -33,6 +33,7 @@ export function ChapterCard({ chapter, progressStatus }: { chapter: BiographyCha
   const { language } = useLanguage();
   const active = chapter.state === "active";
   const statusText = language === "ar" ? { not_started: "لم يبدأ", in_progress: "قيد التقدم", completed: "اكتمل الفصل" } : { not_started: "Not started", in_progress: "In progress", completed: "Chapter completed" };
+  const inPreparation = language === "ar" ? "قيد الإعداد" : "In preparation";
   const content = (
     <>
       <span className="path-number">{active && progressStatus === "completed" ? <CheckIcon /> : chapter.number}</span>
@@ -40,17 +41,23 @@ export function ChapterCard({ chapter, progressStatus }: { chapter: BiographyCha
         <span className="eyebrow">{language === "ar" ? `الفصل ${chapter.number}` : `Chapter ${chapter.number}`}</span>
         <h3>{chapter.title[language]}</h3>
         <p className="path-card-description">{chapter.description[language]}</p>
-        <p className="path-card-status">{active ? statusText[progressStatus ?? "not_started"] : language === "ar" ? "مخطط لاحقًا" : "Planned"}</p>
+        {active ? (
+          <p className="path-card-status">{statusText[progressStatus ?? "not_started"]}</p>
+        ) : (
+          <span className="path-card-status-badge" data-state="in-preparation">
+            {inPreparation}
+          </span>
+        )}
       </div>
       {active && <ArrowIcon className="card-arrow" />}
     </>
   );
   return active ? (
-    <Link href={`/sahabah/abu-bakr/lesson-${chapter.number}`} className="path-card active">
+    <Link href={`/sahabah/abu-bakr/lesson-${chapter.number}`} className="path-card bio-chapter-card active">
       {content}
     </Link>
   ) : (
-    <article className="path-card" data-disabled="true">
+    <article className="path-card bio-chapter-card" data-disabled="true" aria-label={`${language === "ar" ? `الفصل ${chapter.number}` : `Chapter ${chapter.number}`} — ${chapter.title[language]} — ${inPreparation}`}>
       {content}
     </article>
   );

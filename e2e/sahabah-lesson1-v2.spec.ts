@@ -172,10 +172,12 @@ test.describe("Lesson 1 (v2) completion isolation", () => {
     await page.goto("/sahabah/abu-bakr");
     const progressCount = await page.locator("[data-testid='path-progress-count']").textContent();
     expect(progressCount).toMatch(/^(0|1) من 11/);
-    // Every chapter besides lesson 1 must remain completely untouched by this attempt.
-    for (const index of [1, 2, 3, 9]) {
-      const card = page.locator(".path-card.active").nth(index);
-      await expect(card.locator(".path-card-status")).toHaveText("لم يبدأ");
+    // Lessons 2-11 (disabled/"in preparation") must remain completely unaffected by this attempt --
+    // they always show the in-preparation badge, never a progress-tracking status.
+    const disabledCards = page.locator(".bio-chapter-card[data-disabled='true']");
+    await expect(disabledCards).toHaveCount(10);
+    for (const index of [0, 1, 2, 9]) {
+      await expect(disabledCards.nth(index).locator(".path-card-status-badge")).toHaveText("قيد الإعداد");
     }
   });
 });

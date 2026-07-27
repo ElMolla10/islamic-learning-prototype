@@ -190,7 +190,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
         <main className="lesson-page bio-page">
           <div className="shell bio-shell">
             <aside className="lesson-toc bio-toc" aria-label={language === "ar" ? "مراحل الفصل" : "Chapter phases"}>
-              <LifeTimeline phases={lesson.timelinePhases} language={language} currentBlockKey={currentBlock.key} visitedBlockKeys={progress.visitedBlockIds} onNavigate={navigate} />
+              <LifeTimeline blocks={lesson.blocks} language={language} currentBlockKey={currentBlock.key} visitedBlockKeys={progress.visitedBlockIds} onNavigate={navigate} />
             </aside>
             <div className="reading-column bio-reading-column">
               <BiographyHeader lesson={lesson} language={language} />
@@ -286,7 +286,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
         </main>
         <BottomSheet open={timelineOpen} onClose={() => setTimelineOpen(false)} titleId="bio-timeline-drawer-title" title={labels.openTimeline}>
           <LifeTimeline
-            phases={lesson.timelinePhases}
+            blocks={lesson.blocks}
             language={language}
             currentBlockKey={currentBlock.key}
             visitedBlockKeys={progress.visitedBlockIds}

@@ -36,15 +36,25 @@ test("lesson 12 (out of range) 404s", async ({ page }) => {
   expect(response?.status()).toBe(404);
 });
 
-test("path overview page renders all 11 chapter cards as active links in order", async ({ page }) => {
+test("path overview page renders 11 chapter cards in order: Lesson 1 active, Lessons 2-11 in preparation", async ({ page }) => {
   await clearStorage(page);
-  const cards = page.locator(".path-card.active");
-  await expect(cards).toHaveCount(LESSON_COUNT);
-  for (let index = 0; index < LESSON_COUNT; index += 1) {
-    await expect(cards.nth(index)).toHaveAttribute("href", `/sahabah/abu-bakr/lesson-${index + 1}`);
+  const allCards = page.locator(".bio-chapter-card");
+  await expect(allCards).toHaveCount(LESSON_COUNT);
+
+  const activeCards = page.locator(".path-card.active");
+  await expect(activeCards).toHaveCount(1);
+  await expect(activeCards.first()).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-1");
+
+  const disabledCards = page.locator(".bio-chapter-card[data-disabled='true']");
+  await expect(disabledCards).toHaveCount(10);
+  for (let index = 0; index < 10; index += 1) {
+    const card = disabledCards.nth(index);
+    // Every disabled card must show the restrained "in preparation" badge, never a raw [placeholder]
+    // marker or a progress-tracking status (not_started/in_progress/completed) meant for real lessons.
+    await expect(card.locator(".path-card-status-badge")).toHaveText("قيد الإعداد");
+    await expect(card).not.toContainText("[");
+    await expect(card).not.toContainText("مبدئي");
   }
-  // No disabled/"planned" chapter cards should remain now that every lesson has placeholder content.
-  await expect(page.locator(".path-card[data-disabled='true']")).toHaveCount(0);
 });
 
 test("path overview shows 0 of 11 complete before any lesson is finished", async ({ page }) => {
@@ -54,42 +64,55 @@ test("path overview shows 0 of 11 complete before any lesson is finished", async
 
 test("path overview reflects a completed lesson in its per-chapter status and the path-level count", async ({ page }) => {
   await clearStorage(page);
-  // Seed lesson 3's progress directly (isolating the path-overview aggregation logic from the quiz UI,
-  // which is already covered by the lesson-specific e2e suite for lesson 1).
+  // Seed Lesson 1's progress directly (isolating the path-overview aggregation logic from the quiz UI,
+  // which is already covered by the lesson-specific e2e suite). Lesson 1 is the only chapter whose card
+  // status is progress-driven now -- Lessons 2-11 are disabled/"in preparation" regardless of any seeded
+  // progress, which the second half of this test also verifies.
   await page.evaluate(() => {
     const completed = {
       version: 2,
       lessonOpened: true,
-      currentBlockId: "block-7",
-      visitedBlockIds: ["block-1", "block-2", "block-3", "block-4", "block-5", "block-6", "block-7"],
+      currentBlockId: "block-10",
+      visitedBlockIds: ["block-1", "block-2", "block-3", "block-4", "block-5", "block-6", "block-7", "block-8", "block-9", "block-10"],
       expandedDeepSectionIds: [],
       quizAttempts: 1,
       bestQuizScore: 1,
       quizSubmitted: true,
       quizPassed: true,
       lessonCompleted: true,
-      completedLessonIds: ["abu-bakr-lesson-3"],
+      completedLessonIds: ["abu-bakr-lesson-1"],
       preferredLanguage: "ar",
       focusMode: false,
     };
-    localStorage.setItem("islamic-library-sahabah-abu-bakr-lesson-3-progress", JSON.stringify(completed));
+    localStorage.setItem("islamic-library-sahabah-abu-bakr-lesson-1-progress", JSON.stringify(completed));
   });
   await page.reload();
   await expect(page.locator("[data-testid='path-progress-count']")).toHaveText("1 من 11 فصولًا مكتملة");
-  const thirdCard = page.locator(".path-card.active").nth(2);
-  await expect(thirdCard.locator(".path-card-status")).toHaveText("اكتمل الفصل");
-  // Every other chapter must remain unaffected (per-lesson keys stay independent of one another).
-  const firstCard = page.locator(".path-card.active").nth(0);
-  await expect(firstCard.locator(".path-card-status")).toHaveText("لم يبدأ");
+  const firstCard = page.locator(".path-card.active").first();
+  await expect(firstCard.locator(".path-card-status")).toHaveText("اكتمل الفصل");
+  // A disabled/"in preparation" chapter must never show a progress-tracking status, regardless of any
+  // seeded progress elsewhere (per-lesson keys stay independent of one another).
+  const secondCard = page.locator(".bio-chapter-card[data-disabled='true']").first();
+  await expect(secondCard.locator(".path-card-status-badge")).toHaveText("قيد الإعداد");
 });
 
-test("clicking a chapter card navigates to the correct lesson and breadcrumb links back to the path overview", async ({ page }) => {
+test("clicking the active chapter card navigates to the correct lesson and breadcrumb links back to the path overview", async ({ page }) => {
   await clearStorage(page);
-  await page.locator(".path-card.active").nth(4).click();
-  await expect(page).toHaveURL(/\/sahabah\/abu-bakr\/lesson-5$/);
+  // Lesson 1 is currently the only active (clickable) chapter card; Lessons 2-11 are disabled/"in
+  // preparation" and must not be clickable (see the dedicated placeholder-presentation test).
+  await page.locator(".path-card.active").first().click();
+  await expect(page).toHaveURL(/\/sahabah\/abu-bakr\/lesson-1$/);
   await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-1");
   await page.locator(".bio-breadcrumbs a").nth(1).click();
   await expect(page).toHaveURL(/\/sahabah\/abu-bakr$/);
+});
+
+test("disabled/'in preparation' chapter cards are not clickable", async ({ page }) => {
+  await clearStorage(page);
+  const disabledCard = page.locator(".bio-chapter-card[data-disabled='true']").first();
+  await expect(disabledCard).not.toHaveAttribute("href", /.+/);
+  const tagName = await disabledCard.evaluate((element) => element.tagName.toLowerCase());
+  expect(tagName).toBe("article");
 });
 
 test("completing lesson 2's quiz surfaces a next-chapter link to lesson 3 and a path-overview link", async ({ page }) => {

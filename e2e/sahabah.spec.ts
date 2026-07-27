@@ -36,20 +36,23 @@ test("Abu Bakr lesson-1 chapter navigation works and desktop nav / mobile drawer
   });
   await page.reload();
 
-  // v2 real content: 10 cards, 4 timeline phases -> AB01(block-1), AB05(block-5), AB07(block-7), AB09(block-9).
+  // The stage navigator now shows all 10 real guided cards in order (one entry per lesson.blocks item),
+  // not the 4 narrative "life phase" markers it used to derive from lesson.timelinePhases.
   await page.setViewportSize({ width: 1440, height: 1000 });
   await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-1");
+  await expect(page.locator(".bio-toc .bio-timeline li")).toHaveCount(10);
   await page.locator(".bio-toc .bio-timeline button").nth(1).click();
-  await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-5");
+  await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-2");
 
   await page.setViewportSize({ width: 390, height: 844 });
   await expect(page.locator(".bio-toc")).not.toBeVisible();
   await page.getByRole("button", { name: "مراحل الفصل" }).click();
   const drawer = page.getByRole("dialog", { name: "مراحل الفصل" });
   await expect(drawer).toBeVisible();
+  await expect(drawer.locator(".bio-timeline li")).toHaveCount(10);
   await drawer.locator(".bio-timeline button").nth(2).click();
   await expect(drawer).not.toBeVisible();
-  await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-7");
+  await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-3");
 });
 
 test("the side-rail person entry (AB06, 'Amir ibn Fuhayrah) opens a bottom sheet with matching content", async ({ page }) => {

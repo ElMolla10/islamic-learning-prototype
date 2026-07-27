@@ -1,29 +1,47 @@
 "use client";
 
-import type { Language, TimelinePhase } from "@/content/types";
+import { useEffect, useRef } from "react";
+import type { Language, LessonBlock } from "@/content/types";
 
-export function LifeTimeline({ phases, language, currentBlockKey, visitedBlockKeys, onNavigate, compact = false }: {
-  phases: TimelinePhase[];
+/**
+ * The lesson-stage navigator: one entry per guided card (lesson.blocks), in order. Deep sections are
+ * nested inside their parent block and are never rendered as separate stages here; this component only
+ * ever receives the top-level blocks array from the adapter, never a flattened deep-section list.
+ */
+export function LifeTimeline({ blocks, language, currentBlockKey, visitedBlockKeys, onNavigate, compact = false }: {
+  blocks: LessonBlock[];
   language: Language;
   currentBlockKey: string;
   visitedBlockKeys: string[];
   onNavigate: (blockKey: string) => void;
   compact?: boolean;
 }) {
+  const currentRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    currentRef.current?.scrollIntoView({ block: "nearest", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }, [currentBlockKey]);
+
   return (
-    <nav className={compact ? "bio-timeline compact" : "bio-timeline"} aria-label={language === "ar" ? "الخط الزمني للفصل" : "Chapter timeline"}>
+    <nav className={compact ? "bio-timeline compact" : "bio-timeline"} aria-label={language === "ar" ? "مراحل الفصل" : "Chapter phases"}>
       <span className="eyebrow">{language === "ar" ? "مراحل الفصل" : "Chapter phases"}</span>
       <ol>
-        {phases.map((phase) => {
-          const state = phase.blockKey === currentBlockKey ? "current" : visitedBlockKeys.includes(phase.blockKey) ? "visited" : "upcoming";
+        {blocks.map((block, index) => {
+          const state = block.key === currentBlockKey ? "current" : visitedBlockKeys.includes(block.key) ? "visited" : "upcoming";
           return (
-            <li key={phase.key}>
-              <button type="button" data-state={state} aria-current={state === "current" ? "step" : undefined} onClick={() => onNavigate(phase.blockKey)}>
-                <span className="bio-timeline-dot" aria-hidden="true" />
+            <li key={block.key}>
+              <button
+                type="button"
+                ref={state === "current" ? currentRef : undefined}
+                data-state={state}
+                aria-current={state === "current" ? "step" : undefined}
+                onClick={() => onNavigate(block.key)}
+              >
+                <span className="bio-timeline-dot" aria-hidden="true">
+                  {index + 1}
+                </span>
                 <span className="bio-timeline-copy">
-                  <small>{phase.dateLabel[language]}</small>
-                  <strong>{phase.label[language]}</strong>
-                  <span>{phase.summary[language]}</span>
+                  <strong>{block.title[language]}</strong>
                 </span>
               </button>
             </li>
