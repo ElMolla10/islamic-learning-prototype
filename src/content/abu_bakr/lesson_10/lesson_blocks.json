@@ -1,0 +1,175 @@
+{
+  "lesson_id": "abu_bakr.lesson_10",
+  "draft_version": 1,
+  "status": "placeholder_structure_only",
+  "note": "PLACEHOLDER — real content pending Mohamed's review of content_research/abu_bakr/ (see src/content/abu_bakr/README.md for the folder mapping for website lesson 10). Every string below is filler used only to verify the Sahabah component system renders correctly.",
+  "timeline_phases": [
+    {
+      "phase_id": "PH1",
+      "label_ar": "البداية [مبدئي]",
+      "label_en": "Start [placeholder]",
+      "date_label_ar": "مرحلة مبدئية أولى",
+      "date_label_en": "Placeholder early phase",
+      "summary_ar": "نص مبدئي لبداية هذا الفصل.",
+      "summary_en": "Placeholder summary of this chapter's opening.",
+      "block_id": "AB01"
+    },
+    {
+      "phase_id": "PH2",
+      "label_ar": "الوسط [مبدئي]",
+      "label_en": "Midpoint [placeholder]",
+      "date_label_ar": "مرحلة مبدئية وسطى",
+      "date_label_en": "Placeholder middle phase",
+      "summary_ar": "نص مبدئي لمنتصف هذا الفصل.",
+      "summary_en": "Placeholder summary of this chapter's middle.",
+      "block_id": "AB04"
+    },
+    {
+      "phase_id": "PH3",
+      "label_ar": "المراجعة [مبدئي]",
+      "label_en": "Review [placeholder]",
+      "date_label_ar": "ختام الفصل [مبدئي]",
+      "date_label_en": "End of chapter [placeholder]",
+      "summary_ar": "نص مبدئي لمراجعة الفصل.",
+      "summary_en": "Placeholder chapter-review summary.",
+      "block_id": "AB07"
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "AB01",
+      "block_type": "lesson_hook",
+      "title_ar": "أيامه الأخيرة وإرثه [عنوان مبدئي]",
+      "title_en": "His Final Days and Legacy [placeholder title]",
+      "content_items_ar": [
+        "نص تمهيدي مؤقت لهذا الفصل، الذي سيغطي لاحقًا: مرضه واستخلاف عمر ووفاته. هذا نص عنصر نائب فقط.",
+        "سيُستبدل هذا النص الكامل بمحتوى حقيقي بعد مراجعة محمد لمواد content_research."
+      ],
+      "content_items_en": [
+        "PLACEHOLDER lead paragraph for this chapter, which will eventually cover: his illness, appointing 'Umar, and his death. This text exists only to verify layout.",
+        "This entire block will be replaced with real content once Mohamed reviews the content_research material."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB02",
+      "block_type": "event_card",
+      "title_ar": "حدث مبدئي [عنوان مبدئي]",
+      "title_en": "A placeholder event [placeholder title]",
+      "content_items_ar": [
+        "وصف مؤقت لحدث افتراضي في هذا الفصل. عنصر نائب فقط.",
+        "التفاصيل الحقيقية والتواريخ ستأتي من البحث المعتمد لاحقًا."
+      ],
+      "content_items_en": [
+        "PLACEHOLDER description of a hypothetical event in this chapter. Structure only.",
+        "Real details and dates will come from the approved research pack later."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB03",
+      "block_type": "quotation_card",
+      "title_ar": "قول مأثور [مبدئي]",
+      "title_en": "A recorded quotation [placeholder]",
+      "content_items_ar": [
+        "﴿نص اقتباس مؤقت بديل هنا﴾",
+        "قائل الاقتباس [اسم مبدئي] — سياق الاقتباس عنصر نائب."
+      ],
+      "content_items_en": [
+        "“Placeholder quotation text goes here”",
+        "Quotation speaker [placeholder name] — the quotation's context is a placeholder."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB04",
+      "block_type": "hadith_evidence",
+      "title_ar": "دليل حديثي [مبدئي]",
+      "title_en": "Hadith evidence [placeholder]",
+      "content_items_ar": [
+        "مقدمة مؤقتة قبل نص الحديث.",
+        "﴿نص حديث بديل يستخدم كعنصر نائب فقط﴾",
+        "شرح مؤقت لدلالة الحديث."
+      ],
+      "content_items_en": [
+        "PLACEHOLDER lead-in before the hadith text.",
+        "“Placeholder hadith text used only as a structural filler”",
+        "PLACEHOLDER explanation of the hadith's significance."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB05",
+      "block_type": "chronology_clarification",
+      "title_ar": "توضيح زمني [مبدئي]",
+      "title_en": "Chronology clarification [placeholder]",
+      "content_items_ar": [
+        "ملخص مؤقت لخلاف علمي محتمل حول ترتيب الأحداث.",
+        "توضيح مطوّل مؤقت حول أوجه الخلاف بين الروايات."
+      ],
+      "content_items_en": [
+        "PLACEHOLDER short summary of a possible scholarly dating disagreement.",
+        "PLACEHOLDER longer clarification of how the narrations differ."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB06",
+      "block_type": "timeline_review",
+      "title_ar": "مراجعة الخط الزمني [مبدئية]",
+      "title_en": "Timeline review [placeholder]",
+      "content_items_ar": [
+        "١. مرحلة عنصر نائب أولى.",
+        "٢. مرحلة عنصر نائب ثانية.",
+        "٣. مرحلة عنصر نائب ثالثة."
+      ],
+      "content_items_en": [
+        "1. First placeholder phase.",
+        "2. Second placeholder phase.",
+        "3. Third placeholder phase."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB07",
+      "block_type": "quiz_sources",
+      "title_ar": "اختبر فهمك [مبدئي]",
+      "title_en": "Check your understanding [placeholder]",
+      "content_items_ar": [
+        "مقدمة مؤقتة للاختبار."
+      ],
+      "content_items_en": [
+        "PLACEHOLDER introduction to the quiz."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مصادر عنصر نائب",
+      "source_summary_en": "Placeholder sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    }
+  ]
+}

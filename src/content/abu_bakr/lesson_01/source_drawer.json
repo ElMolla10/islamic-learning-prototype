@@ -1,0 +1,219 @@
+{
+  "lesson_id": "abu_bakr.lesson_01_who_was_abu_bakr",
+  "status": "internal_unapproved",
+  "note": "Learner-facing source presentation only. Locations are grouped compactly by source and page. No internal file paths, OCR artefacts, or reviewer-only notes are exposed here.",
+  "sources": [
+    {
+      "work_id": "work_siyar_alam",
+      "display_title": "سير أعلام النبلاء (Siyar A'lam al-Nubala)",
+      "author": "محمد بن أحمد الذهبي (al-Dhahabi)",
+      "source_role": [
+        "dedicated_biography"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 7,
+          "printed_page": 7,
+          "claims_supported": [
+            "AB-L1-C01",
+            "AB-L1-C03",
+            "AB-L1-C03G",
+            "AB-L1-C04",
+            "AB-L1-C05",
+            "AB-L1-C08"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 8,
+          "printed_page": 8,
+          "claims_supported": [
+            "AB-L1-C09"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 11,
+          "printed_page": 11,
+          "claims_supported": [
+            "AB-L1-C11"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 12,
+          "printed_page": 12,
+          "claims_supported": [
+            "AB-L1-C14"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 13,
+          "printed_page": 13,
+          "claims_supported": [
+            "AB-L1-C06",
+            "AB-L1-C06G",
+            "AB-L1-C06X"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 14,
+          "printed_page": 14,
+          "claims_supported": [
+            "AB-L1-C20"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 15,
+          "printed_page": 15,
+          "claims_supported": [
+            "AB-L1-C15",
+            "AB-L1-C24"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 16,
+          "printed_page": 16,
+          "claims_supported": [
+            "AB-L1-C25"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 20,
+          "printed_page": 20,
+          "claims_supported": [
+            "AB-L1-C25B"
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "work_fadail_sahaba",
+      "display_title": "فضائل الصحابة (Fada'il al-Sahabah)",
+      "author": "أحمد بن حنبل",
+      "source_role": [
+        "primary_hadith_collection_with_commentary"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 65,
+          "printed_page": 65,
+          "claims_supported": [
+            "AB-L1-C01",
+            "AB-L1-C02",
+            "AB-L1-C06",
+            "AB-L1-C07",
+            "AB-L1-C08",
+            "AB-L1-C13B"
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "work_sahih_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري",
+      "source_role": [
+        "primary_hadith_collection"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 898,
+          "printed_page": 898,
+          "claims_supported": [
+            "AB-L1-C01",
+            "AB-L1-C16"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 899,
+          "printed_page": 899,
+          "claims_supported": [
+            "AB-L1-C11",
+            "AB-L1-C12",
+            "AB-L1-C13"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 956,
+          "printed_page": 956,
+          "claims_supported": [
+            "AB-L1-C19"
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "work_seerah_ibn_hisham",
+      "display_title": "السيرة النبوية لابن هشام (Sirat Ibn Hisham)",
+      "author": "عبدالملك بن هشام (رواية ابن إسحاق)",
+      "source_role": [
+        "early_narrative_history"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 116,
+          "printed_page": 116,
+          "claims_supported": [
+            "AB-L1-C10"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 223,
+          "printed_page": 223,
+          "claims_supported": [
+            "AB-L1-C18"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 224,
+          "printed_page": 224,
+          "claims_supported": [
+            "AB-L1-C21",
+            "AB-L1-C22"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 666,
+          "printed_page": 666,
+          "claims_supported": [
+            "AB-L1-C17"
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "work_bidaya_nihaya",
+      "display_title": "البداية والنهاية (al-Bidayah wa al-Nihayah)",
+      "author": "إسماعيل بن كثير",
+      "source_role": [
+        "later_historical_synthesis"
+      ],
+      "locations": [
+        {
+          "volume": 4,
+          "pdf_page": 7,
+          "printed_page": 7,
+          "claims_supported": [
+            "AB-L1-C06",
+            "AB-L1-C23"
+          ]
+        }
+      ]
+    }
+  ]
+}

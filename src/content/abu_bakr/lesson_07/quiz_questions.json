@@ -1,0 +1,81 @@
+{
+  "lesson_id": "abu_bakr.lesson_07",
+  "draft_version": 1,
+  "status": "placeholder_structure_only",
+  "note": "PLACEHOLDER — real questions pending Mohamed's review of content_research/abu_bakr/.",
+  "passing_rule": "score / total > 0.5",
+  "questions": [
+    {
+      "question_id": "ABQ01",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "سؤال عنصر نائب رقم واحد؟",
+      "prompt_en": "Placeholder question one?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "خيار عنصر نائب أ",
+          "en": "Placeholder option A"
+        },
+        {
+          "id": "b",
+          "ar": "خيار عنصر نائب ب",
+          "en": "Placeholder option B"
+        },
+        {
+          "id": "c",
+          "ar": "خيار عنصر نائب ج",
+          "en": "Placeholder option C"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
+      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
+      "review_card_id": "AB02"
+    },
+    {
+      "question_id": "ABQ02",
+      "type": "true_false",
+      "depth": "core",
+      "prompt_ar": "عبارة عنصر نائب رقم اثنين؟",
+      "prompt_en": "Placeholder statement two?",
+      "correct_answer": true,
+      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
+      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
+      "review_card_id": "AB04"
+    },
+    {
+      "question_id": "ABQ03",
+      "type": "select_all",
+      "depth": "deep",
+      "prompt_ar": "سؤال عنصر نائب باختيار متعدد؟",
+      "prompt_en": "Placeholder select-all question?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "خيار عنصر نائب أ",
+          "en": "Placeholder option A"
+        },
+        {
+          "id": "b",
+          "ar": "خيار عنصر نائب ب",
+          "en": "Placeholder option B"
+        },
+        {
+          "id": "c",
+          "ar": "خيار عنصر نائب ج",
+          "en": "Placeholder option C"
+        }
+      ],
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
+      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
+      "review_card_id": "AB05"
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "lesson_id": "abu_bakr.lesson_01_who_was_abu_bakr",
+  "draft_version": 2,
+  "status": "internal_unapproved",
+  "note": "No free-text questions. Every option and matching row uses a stable id, never a visible index, for grading. Every question links a review_card_id (and, where relevant, a review_deep_section_id) so an incorrect answer can open the right context.",
+  "passing_rule": "score / total > 0.5",
+  "questions": [
+    {
+      "question_id": "ABQ01",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "ما اسمُ أبي بكر الذي أعطاه إياه أهلُه، قبل أن يُعرَف بكنيته وألقابه؟",
+      "prompt_en": "What was Abu Bakr's given name, before he became known by his kunyah and titles?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "عبدالله",
+          "en": "'Abdullah"
+        },
+        {
+          "id": "b",
+          "ar": "بكر",
+          "en": "Bakr"
+        },
+        {
+          "id": "c",
+          "ar": "عتيق",
+          "en": "'Atiq"
+        },
+        {
+          "id": "d",
+          "ar": "عثمان",
+          "en": "'Uthman"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "اسمُه الذي سمّاه به أهلُه هو «عبدالله»، وإن كان قد اشتُهر بكنيته «أبو بكر» أكثر من اسمه. أما «عثمان» فهو اسمُ جدّه (أبي قحافة).",
+      "explanation_en": "His given name was 'Abdullah, though he became far better known by his kunyah, Abu Bakr. 'Uthman was actually his grandfather Abu Quhafah's own given name, not his.",
+      "review_card_id": "AB03"
+    },
+    {
+      "question_id": "ABQ02",
+      "type": "true_false",
+      "depth": "core",
+      "prompt_ar": "بحسب مصادر هذا الدرس، فإن لقب «الصدّيق» يُفسَّر بأنه جاء من تصديق أبي بكر الفوري لخبر الإسراء.",
+      "prompt_en": "According to this lesson's sources, the title 'al-Siddiq' is explained as coming from Abu Bakr's immediate belief in the account of the Night Journey (al-Isra').",
+      "correct_answer": false,
+      "explanation_ar": "هذه القصةُ الشائعة لم تُوجَد في أيٍّ من الصفحات المفحوصة لهذا الدرس، فلا يُفترَض أنها المصدر الثابت للقب.",
+      "explanation_en": "This popular story was not found in any of the pages examined for this lesson. Its origin is presented as an open question, not a settled fact.",
+      "review_card_id": "AB03",
+      "review_deep_section_id": "AB03-DS2"
+    },
+    {
+      "question_id": "ABQ03",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "ما الوصفُ الأدقّ لمكانة أبي بكر بين أوائل من آمنوا، بحسب مصادر هذا الدرس؟",
+      "prompt_en": "According to this lesson's sources, which of the following most precisely describes Abu Bakr's place among the earliest Muslims?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "أول إنسانٍ على الإطلاق آمن بالنبي ﷺ",
+          "en": "The first human being of any kind to believe in the Prophet ﷺ"
+        },
+        {
+          "id": "b",
+          "ar": "أول من آمن من الرجال الأحرار البالغين",
+          "en": "The first free adult man to believe in the Prophet ﷺ"
+        },
+        {
+          "id": "c",
+          "ar": "أول من آمن من كل الفئات دون استثناء",
+          "en": "The first believer in every category without exception"
+        },
+        {
+          "id": "d",
+          "ar": "لا تحدد المصادر مكانته إطلاقاً",
+          "en": "The sources do not specify his precedence at all"
+        }
+      ],
+      "correct_answer": [
+        "b"
+      ],
+      "explanation_ar": "هذا هو الوصفُ الحرفيُّ الذي تكرَّر في مصدرين مستقلين. المصادر التاريخية عموماً تُفرِّق بين فئاتٍ متعددة للسبق، لا فئة واحدة تشمل الجميع.",
+      "explanation_en": "This is the literal qualifier repeated in two independent sources. Historical sources generally distinguish several categories of precedence rather than one category covering everyone.",
+      "review_card_id": "AB04"
+    },
+    {
+      "question_id": "ABQ04",
+      "type": "select_all",
+      "depth": "core",
+      "prompt_ar": "أيُّ العبارات التالية وردت مباشرةً في مصادر هذا الدرس عن قرب أبي بكر من النبي ﷺ؟ اختر كل ما ينطبق.",
+      "prompt_en": "Which of the following are directly stated in this lesson's sources about Abu Bakr's closeness to the Prophet ﷺ? Select all that apply.",
+      "options": [
+        {
+          "id": "a",
+          "ar": "قال النبي ﷺ إنه لو اتخذ خليلاً لاتخذ أبا بكر",
+          "en": "The Prophet ﷺ said he would have taken Abu Bakr as an intimate friend (khalil), had he taken one at all"
+        },
+        {
+          "id": "b",
+          "ar": "كان بابُ أبي بكر الوحيد الذي لم يُؤمَر بسدّه في المسجد",
+          "en": "Abu Bakr's was the only door not ordered sealed in the mosque"
+        },
+        {
+          "id": "c",
+          "ar": "كتب النبي ﷺ وثيقةً رسمية معلنة تُنصِّب أبا بكر خليفةً قبل وفاته",
+          "en": "The Prophet ﷺ completed and published a formal document naming Abu Bakr his successor before he died"
+        },
+        {
+          "id": "d",
+          "ar": "أُمِر أبو بكر بإمامة الناس في الصلاة أثناء مرض النبي ﷺ الأخير",
+          "en": "Abu Bakr was ordered to lead the people in prayer during the Prophet's ﷺ final illness"
+        }
+      ],
+      "correct_answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation_ar": "أما (ج) فغير دقيق: الحديثُ يذكر أن النبي ﷺ طلب أن يُكتَب مثل هذا الكتاب خشية النزاع، لا أنه كُتِب وأُعلِن فعلاً.",
+      "explanation_en": "Option (c) is not accurate: the report states the Prophet ﷺ asked for such a document to be written, out of fear of future dispute — it does not say the document was actually completed and published.",
+      "review_card_id": "AB05"
+    },
+    {
+      "question_id": "ABQ05",
+      "type": "ordering",
+      "depth": "core",
+      "prompt_ar": "رتّب هذه المحطات من حياة أبي بكر بحسب ترتيبها الزمني الصحيح.",
+      "prompt_en": "Put these stages of Abu Bakr's life in their correct chronological order.",
+      "options": [
+        {
+          "id": "o1",
+          "ar": "أسلم وهو أول من آمن من الرجال الأحرار البالغين",
+          "en": "He accepted Islam as the first free adult man to believe"
+        },
+        {
+          "id": "o2",
+          "ar": "رافق النبي ﷺ في الهجرة وكان معه في الغار",
+          "en": "He accompanied the Prophet ﷺ on the Hijrah and was with him in the cave"
+        },
+        {
+          "id": "o3",
+          "ar": "أُمِر بإمامة الناس في الصلاة أثناء مرض النبي ﷺ الأخير",
+          "en": "He was ordered to lead the people in prayer during the Prophet's ﷺ final illness"
+        },
+        {
+          "id": "o4",
+          "ar": "صار أول خليفةٍ للمسلمين",
+          "en": "He became the first Caliph of the Muslims"
+        }
+      ],
+      "correct_answer": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "explanation_ar": "هذا هو الترتيبُ الزمني كما تعرضه خريطة حياته في هذا الدرس.",
+      "explanation_en": "This is the chronological order as presented in this lesson's life-timeline card.",
+      "review_card_id": "AB07"
+    },
+    {
+      "question_id": "ABQ06",
+      "type": "scenario",
+      "depth": "deep",
+      "prompt_ar": "يقول أحدُ المتعلمين: «بما أنّ البطاقة الأساسية تذكر أن خلافة أبي بكر استمرّت (نحو عامين) فقط، فهذا يعني أن المصادر لا تُقدّم أي تفاصيل أدق عن مدتها». هل هذا وصفٌ دقيق؟",
+      "prompt_en": "A learner says: \"Since the core card just says Abu Bakr's caliphate lasted about two years, that must mean the sources give no more specific figures at all.\" Is this an accurate description?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "نعم، هذا هو الرقم الوحيد الذي تذكره كل المصادر",
+          "en": "Yes, about two years is the only figure any source gives"
+        },
+        {
+          "id": "b",
+          "ar": "لا — البطاقة الأساسية تُقرِّب الرقم لتسهيل القراءة، بينما يحفظ قسم «تعمّق أكثر» رقمين دقيقين مختلفين من المصدر نفسه، دون ترجيح أحدهما",
+          "en": "No — the core card rounds the figure for readability, while the 'Go Deeper' section preserves two different exact figures from the source itself, without preferring either"
+        },
+        {
+          "id": "c",
+          "ar": "لا — المصادر لا تذكر أي تقدير لمدة خلافته إطلاقاً",
+          "en": "No — the sources give no estimate at all for the length of his caliphate"
+        },
+        {
+          "id": "d",
+          "ar": "نعم، لكن فقط لأن مؤرخين لاحقين صححوا خطأً سابقاً",
+          "en": "Yes, but only because later historians corrected an earlier mistake"
+        }
+      ],
+      "correct_answer": [
+        "b"
+      ],
+      "explanation_ar": "البطاقةُ الأساسية تُقرِّب المدة إلى «نحو عامين» تجنباً للإيحاء بدقة غير موجودة في المصدر. أما التفاصيل، ففي قسم «تعمّق أكثر»: الروايةُ الأولى تذكر «سنتين ومئة يوم»، وذكر أبو مَعْشَر رقماً بديلاً: «سنتان وأربعة أشهر إلا أربع ليالٍ». يحفظ هذا الدرسُ الرقمين معاً دون ترجيح.",
+      "explanation_en": "The core card rounds the duration to 'about two years' to avoid implying a precision the source itself doesn't settle on. The exact figures live in 'Go Deeper': the primary report gives 'two years and a hundred days,' while Abu Ma'shar gives an alternate figure of 'two years and four months less four nights.' This lesson preserves both figures rather than merging them into one.",
+      "review_card_id": "AB07",
+      "review_deep_section_id": "AB07-DS1"
+    },
+    {
+      "question_id": "ABQ07",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "أيُّ هذه الموضوعات لن يتناوله هذا الدرسُ بالتفصيل، بل يُترَك لدرسٍ لاحق في المسار؟",
+      "prompt_en": "Which of these topics will this lesson NOT explore in depth, leaving it for a later lesson in the path?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "اسمه ونسبه الكامل",
+          "en": "His full name and lineage"
+        },
+        {
+          "id": "b",
+          "ar": "التفاصيل الكاملة لرحلة الهجرة والغار",
+          "en": "The full detailed narrative of the Hijrah and the cave"
+        },
+        {
+          "id": "c",
+          "ar": "أشهر ألقابه",
+          "en": "His most famous titles"
+        },
+        {
+          "id": "d",
+          "ar": "أسماء أبنائه المذكورين في هذا الدرس",
+          "en": "The names of his children mentioned in this lesson"
+        }
+      ],
+      "correct_answer": [
+        "b"
+      ],
+      "explanation_ar": "هذا الدرسُ خريطةٌ فقط؛ التفاصيل الكاملة لرحلة الهجرة محجوزةٌ لدرسٍ مستقل لاحقاً في المسار.",
+      "explanation_en": "This lesson is only a map; the full Hijrah narrative is reserved for its own dedicated lesson later in the path.",
+      "review_card_id": "AB09"
+    },
+    {
+      "question_id": "ABQ08",
+      "type": "matching",
+      "depth": "core",
+      "prompt_ar": "طابِق كل فردٍ من أسرة أبي بكر بدوره كما ورد في هذا الدرس.",
+      "prompt_en": "Match each of Abu Bakr's family members to their role as described in this lesson.",
+      "matching_rows": [
+        {
+          "id": "r1",
+          "ar": "عائشة",
+          "en": "'A'ishah"
+        },
+        {
+          "id": "r2",
+          "ar": "أسماء",
+          "en": "Asma'"
+        },
+        {
+          "id": "r3",
+          "ar": "عبدالله",
+          "en": "'Abdullah"
+        },
+        {
+          "id": "r4",
+          "ar": "عامر بن فُهيرة",
+          "en": "'Amir ibn Fuhayrah"
+        }
+      ],
+      "matching_choices": [
+        {
+          "id": "m1",
+          "ar": "تزوّجها النبي ﷺ، وروت خبر تسليم أبيها ماله لبيت المال",
+          "en": "Married by the Prophet ﷺ; reported her father surrendering his wealth to the treasury"
+        },
+        {
+          "id": "m2",
+          "ar": "عُرِفت بذات النطاق لشقّها حزامها أثناء تجهيز الهجرة",
+          "en": "Known as Dhat al-Nitaq for tearing her sash during Hijrah preparations"
+        },
+        {
+          "id": "m3",
+          "ar": "نقل أخبار قريش بين مكة والغار أثناء الهجرة",
+          "en": "Relayed news of Quraysh between Makkah and the cave during the Hijrah"
+        },
+        {
+          "id": "m4",
+          "ar": "استخدم أثر قطيعه لإخفاء آثار عبدالله أثناء الهجرة",
+          "en": "Used his flock's tracks to help cover 'Abdullah's footprints during the Hijrah"
+        }
+      ],
+      "correct_answer": [
+        "r1=m1",
+        "r2=m2",
+        "r3=m3",
+        "r4=m4"
+      ],
+      "explanation_ar": "كل فردٍ من هؤلاء ورد دورُه بالتحديد في بطاقة «أسرته والعلاقات المحيطة به».",
+      "explanation_en": "Each of these roles is stated specifically in the 'Family and Relationships' card.",
+      "review_card_id": "AB06"
+    },
+    {
+      "question_id": "ABQ09",
+      "type": "true_false",
+      "depth": "deep",
+      "prompt_ar": "تذكر مصادرُ هذا الدرس تفسيراً واحداً فقط لسبب تلقيب أبي بكر بـ«عتيق»، وتُقدِّمه كأمرٍ محسوم.",
+      "prompt_en": "This lesson's sources give only one explanation for why Abu Bakr was called 'Atiq, and present it as settled.",
+      "correct_answer": false,
+      "explanation_ar": "بل يذكر المصدرُ تفسيرين مختلفين من عالِمَين مختلفَين، ويوردهما معاً دون ترجيح أحدهما.",
+      "explanation_en": "In fact, the source gives two different explanations from two different early scholars, presenting them side by side without preferring one.",
+      "review_card_id": "AB03",
+      "review_deep_section_id": "AB03-DS1"
+    }
+  ]
+}

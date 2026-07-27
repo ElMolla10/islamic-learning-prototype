@@ -1,0 +1,43 @@
+{
+  "lesson_id": "abu_bakr.lesson_10",
+  "status": "placeholder_structure_only",
+  "note": "PLACEHOLDER — real sources pending Mohamed's review of content_research/abu_bakr/.",
+  "sources": [
+    {
+      "work_id": "work_placeholder_primary",
+      "display_title": "مصدر عنصر نائب أول [مبدئي]",
+      "author": "—",
+      "source_role": [
+        "primary_hadith_collection"
+      ],
+      "claims_supported": [],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 1,
+          "printed_page": 1
+        }
+      ],
+      "hadith_numbers": [],
+      "scripture_references": []
+    },
+    {
+      "work_id": "work_placeholder_commentary",
+      "display_title": "مصدر عنصر نائب ثانٍ [مبدئي]",
+      "author": "مؤلف عنصر نائب",
+      "source_role": [
+        "hadith_commentary"
+      ],
+      "claims_supported": [],
+      "locations": [
+        {
+          "volume": 1,
+          "pdf_page": 10,
+          "printed_page": 12
+        }
+      ],
+      "hadith_numbers": [],
+      "scripture_references": []
+    }
+  ]
+}

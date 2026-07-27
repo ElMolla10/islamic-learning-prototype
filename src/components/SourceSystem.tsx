@@ -35,6 +35,9 @@ const roleLabels:Record<string,Record<Language,string>>={
   primary_hadith_collection:{ar:"حديث صحيح / مصدر أصلي",en:"Authentic hadith / primary source"},
   hadith_commentary:{ar:"شرح حديث",en:"Hadith commentary"},
   primary_hadith_collection_with_commentary:{ar:"حديث مع شرحه",en:"Hadith with commentary"},
+  dedicated_biography:{ar:"سيرة مخصصة",en:"Dedicated biography"},
+  early_narrative_history:{ar:"سيرة روائية مبكرة",en:"Early narrative history"},
+  later_historical_synthesis:{ar:"توليف تاريخي لاحق",en:"Later historical synthesis"},
 };
 const supportLabels:Record<Source["supportLevel"],Record<Language,string>>={
   primary_evidence:{ar:"دليل أصلي",en:"Primary evidence"},direct_commentary:{ar:"شرح مباشر",en:"Direct commentary"},supporting_tafsir:{ar:"تفسير داعم",en:"Supporting tafsir"},broader_comparative_support:{ar:"دعم مقارن أوسع",en:"Broader comparative support"},

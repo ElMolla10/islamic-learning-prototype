@@ -34,19 +34,20 @@ function correctAnswer(question:QuizQuestion,answer:QuizAnswer|undefined){
   return answer!==undefined&&answersMatch(answer,question.correctAnswer,question.type==="ordering");
 }
 
-export function QuizPlayer({ questions, language, onAttempt, onReview }: {
+export function QuizPlayer({ questions, language, onAttempt, onReview, storageKey=QUIZ_KEY }: {
   questions:QuizQuestion[];
   language:Language;
   onAttempt:(score:number,total:number)=>void;
   onReview:(cardKey:string,deepSectionKey?:string)=>void;
+  storageKey?:string;
 }) {
   const [state,setState]=useState<QuizState|null>(null);
   useEffect(()=>{
     // Quiz order is created after hydration to avoid random server/client markup differences.
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setState(restoredAttempt(sessionStorage.getItem(QUIZ_KEY),questions)??newAttempt(questions));
-  },[questions]);
-  useEffect(()=>{if(state)sessionStorage.setItem(QUIZ_KEY,JSON.stringify(state));},[state]);
+    setState(restoredAttempt(sessionStorage.getItem(storageKey),questions)??newAttempt(questions));
+  },[questions,storageKey]);
+  useEffect(()=>{if(state)sessionStorage.setItem(storageKey,JSON.stringify(state));},[state,storageKey]);
 
   const question=state?questions[state.current]:null;
   const answer=state&&question?state.answers[question.key]:undefined;

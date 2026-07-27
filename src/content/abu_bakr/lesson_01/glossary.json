@@ -1,0 +1,56 @@
+{
+  "lesson_id": "abu_bakr.lesson_01_who_was_abu_bakr",
+  "status": "internal_unapproved",
+  "note": "Only terms a beginner actually needs for this specific lesson. Not an exhaustive Islamic-studies glossary.",
+  "terms": [
+    {
+      "term_id": "kunyah",
+      "arabic": "كنية",
+      "english": "Kunyah",
+      "definition_ar": "اسمٌ يُستخدَم بديلاً عن الاسم الشخصي أو إلى جانبه، على صيغة «أبو ــ» أو «أمّ ــ». اسمُ أبي بكر الشخصي كان «عبدالله»، وكنيتُه «أبو بكر» هي التي اشتُهر بها.",
+      "definition_en": "An honorific name of the form \"father/mother of ___\", used instead of — or alongside — a person's given name. Abu Bakr's given name was 'Abdullah; \"Abu Bakr\" is the kunyah by which he became known."
+    },
+    {
+      "term_id": "al_siddiq",
+      "arabic": "الصدّيق",
+      "english": "al-Siddiq",
+      "definition_ar": "لقبٌ يعني «الصادق الثابت على تصديقه»، وهو أشهر ألقاب أبي بكر وأكثرها ثباتاً في المصادر. سبب حصوله على هذا اللقب تحديداً غير موثَّق بدقة في المصادر التي اعتمدها هذا الدرس.",
+      "definition_en": "A title meaning roughly \"the Truthful\" or \"the Testifier\" — Abu Bakr's most famous and most consistently used title in the sources. Exactly why he specifically received this title is not precisely documented in the sources this lesson draws on."
+    },
+    {
+      "term_id": "al_atiq",
+      "arabic": "عتيق",
+      "english": "'Atiq",
+      "definition_ar": "لقبٌ آخر لأبي بكر، ورد فيه تفسيران مختلفان في المصادر: أنه لُقِّب به لجمال وجهه، أو أنه كان مجرد لقبٍ دون تفسيرٍ إضافي.",
+      "definition_en": "Another byname for Abu Bakr, for which the sources give two different explanations: that he was so named for his handsome face, or that it was simply a byname with no further explanation given."
+    },
+    {
+      "term_id": "sahabi",
+      "arabic": "صحابي",
+      "english": "Sahabi (Companion)",
+      "definition_ar": "من التقى النبي ﷺ مؤمناً به ومات على ذلك. جمعُه «صحابة». أبو بكر من أبرز الصحابة وأقربهم إلى النبي ﷺ.",
+      "definition_en": "Someone who met the Prophet ﷺ as a believer and died a believer. The plural is \"Sahabah\" (Companions). Abu Bakr is among the most prominent Companions and the closest to the Prophet ﷺ."
+    },
+    {
+      "term_id": "khalil",
+      "arabic": "خليل",
+      "english": "Khalil",
+      "definition_ar": "صديقٌ حميمٌ خاص، وهي رابطةٌ أعمق من الأخوّة العامة بين المؤمنين. استخدم النبي ﷺ هذه الكلمة تحديداً وهو يصف مكانة أبي بكر عنده.",
+      "definition_en": "An intimate, singular best-friend bond, distinct from the general brotherhood shared among believers. The Prophet ﷺ used exactly this word when describing Abu Bakr's standing with him."
+    },
+    {
+      "term_id": "khalifah",
+      "arabic": "خليفة",
+      "english": "Khalifah (Caliph)",
+      "definition_ar": "لقبُ قائد المسلمين بعد النبي ﷺ، بدءاً بأبي بكر رضي الله عنه، وهو أول من حمل هذا اللقب.",
+      "definition_en": "The title for the leader of the Muslim community after the Prophet ﷺ. Abu Bakr was the first to hold this title."
+    },
+    {
+      "term_id": "hijrah",
+      "arabic": "الهجرة",
+      "english": "The Hijrah",
+      "definition_ar": "هجرة النبي ﷺ من مكة إلى المدينة، رافقه فيها أبو بكر وحده، وكانا معاً في الغار أثناءها.",
+      "definition_en": "The Prophet's ﷺ migration from Makkah to Madinah. Abu Bakr alone accompanied him, and the two were together in the cave during the journey."
+    }
+  ]
+}

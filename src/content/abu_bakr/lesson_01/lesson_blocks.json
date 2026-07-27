@@ -1,0 +1,498 @@
+{
+  "lesson_id": "abu_bakr.lesson_01_who_was_abu_bakr",
+  "draft_version": 2,
+  "status": "internal_unapproved",
+  "note": "Real content, internally drafted and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
+  "timeline_phases": [
+    {
+      "phase_id": "PH1",
+      "label_ar": "قبل الإسلام",
+      "label_en": "Before Islam",
+      "date_label_ar": "الفترة المكية المبكرة",
+      "date_label_en": "Early Meccan period",
+      "summary_ar": "نسبه ونشأته وثراؤه قبل الدعوة.",
+      "summary_en": "His lineage, upbringing, and wealth before the call to Islam.",
+      "block_id": "AB01"
+    },
+    {
+      "phase_id": "PH2",
+      "label_ar": "الإيمان والقرب من النبي ﷺ",
+      "label_en": "Faith and closeness to the Prophet ﷺ",
+      "date_label_ar": "بعد بدء الدعوة",
+      "date_label_en": "After the start of the mission",
+      "summary_ar": "سبقه إلى الإيمان وأدلة قربه من النبي ﷺ.",
+      "summary_en": "His precedence in belief and the evidence for his closeness to the Prophet ﷺ.",
+      "block_id": "AB05"
+    },
+    {
+      "phase_id": "PH3",
+      "label_ar": "خريطة الحياة",
+      "label_en": "Life in one timeline",
+      "date_label_ar": "من الميلاد إلى الوفاة",
+      "date_label_en": "From birth to death",
+      "summary_ar": "المحطات الكبرى في حياته، محطة محطة.",
+      "summary_en": "The major stages of his life, one by one.",
+      "block_id": "AB07"
+    },
+    {
+      "phase_id": "PH4",
+      "label_ar": "ما ينتظرك في هذا المسار",
+      "label_en": "What this path holds",
+      "date_label_ar": "ختام الدرس",
+      "date_label_en": "End of chapter",
+      "summary_ar": "لماذا يحتاج سيرته مساراً كاملاً من الدروس.",
+      "summary_en": "Why his biography needs a full path of lessons.",
+      "block_id": "AB09"
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "AB01",
+      "block_type": "lesson_hook",
+      "title_ar": "حياةٌ إلى جانب النبي ﷺ",
+      "title_en": "A Life Beside the Prophet ﷺ",
+      "content_items_ar": [
+        "لا يمكن أن تُفهَم سيرةُ أبي بكرٍ الصدّيق رضي الله عنه من خلال حادثةٍ واحدة، مهما كانت مؤثرة. فحياتُه سلسلةٌ من القرب: قربٌ من النبي ﷺ قبل الرسالة وبعدها، وقربٌ من كل محطةٍ كبرى مرَّ بها الإسلامُ في عقده الأول.",
+        "كان من أوائل من آمن بالنبي ﷺ، ورفيقَه في هجرته إلى المدينة، ثم أوّلَ من قاد المسلمين بعد وفاته ﷺ. قلَّما تجد فصلاً كبيراً في هذه الحقبة يخلو من ذكره.",
+        "هذا الدرسُ خريطةٌ لا سيرةٌ كاملة: يعرّفك بمن كان أبو بكر، قبل أن تخوض دروسٌ لاحقة في تفاصيل كل محطة من محطات حياته."
+      ],
+      "content_items_en": [
+        "Abu Bakr al-Siddiq's life cannot be understood through a single event, however moving. His story is one of nearness — nearness to the Prophet ﷺ both before and after the start of his mission, and nearness to nearly every major moment of Islam's first decade.",
+        "He was among the first to believe in the Prophet ﷺ, his companion on the migration to Madinah, and — after the Prophet's ﷺ death — the first to lead the Muslim community. There is hardly a major chapter of this period where his name is absent.",
+        "This lesson is a map, not a complete biography: it introduces who Abu Bakr was, before later lessons explore each stage of his life in depth."
+      ],
+      "claim_ids": [
+        "AB-L1-C08",
+        "AB-L1-C16",
+        "AB-L1-C23"
+      ],
+      "source_summary_ar": "مصادر متعددة، بمستوى الخريطة العامة",
+      "source_summary_en": "Multiple sources, at map level",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB02",
+      "block_type": "key_evidence",
+      "title_ar": "هويّته بإيجاز",
+      "title_en": "Quick Identity",
+      "content_items_ar": [
+        "عبدُ الله بن أبي قُحافة، من بني تَيْم بقريش، وأشهر أسمائه: أبو بكر، والصدّيق.",
+        "وُلِد بمكة بعد عام الفيل بنحو سنتين وستة أشهر، أي قبل الهجرة بنحو واحدٍ وخمسين عاماً.",
+        "أسلم وله أربعون ألف دينار، وكان معروفاً بثرائه ومكانته بين ساسة قريش.",
+        "صار أقرب أصحاب النبي ﷺ إليه، ورافقه في هجرته، وأصبح بعد وفاته أول خليفةٍ للمسلمين.",
+        "تُوفّي بعد خلافةٍ استمرت نحو عامين، عن نحو ثلاثٍ وستين سنة."
+      ],
+      "content_items_en": [
+        "'Abdullah ibn Abi Quhafah, of Banu Taym in Quraysh — best known as Abu Bakr, and as al-Siddiq.",
+        "Born in Makkah about two years and six months after 'Am al-Fil, roughly fifty-one years before the Hijrah.",
+        "He accepted Islam already possessing forty thousand dinars, known for his wealth and standing among Quraysh's leaders.",
+        "He became the Prophet's ﷺ closest companion, accompanied him on the Hijrah, and — after the Prophet's ﷺ death — became the first Caliph of the Muslims.",
+        "He died after a caliphate of about two years, at around sixty-three years of age."
+      ],
+      "claim_ids": [
+        "AB-L1-C01",
+        "AB-L1-C07",
+        "AB-L1-C09",
+        "AB-L1-C08",
+        "AB-L1-C16",
+        "AB-L1-C23",
+        "AB-L1-C25"
+      ],
+      "source_summary_ar": "سير أعلام النبلاء، فضائل الصحابة",
+      "source_summary_en": "Siyar A'lam al-Nubala, Fada'il al-Sahabah",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB03",
+      "block_type": "name_cards",
+      "title_ar": "اسمه، وكنيته، وألقابه",
+      "title_en": "His Name, Kunyah, and Titles",
+      "content_items_ar": [
+        "الاسم الذي أعطاه إياه أهلُه هو «عبدالله»، لكنّه اشتُهر بكنيته «أبو بكر» أكثر من اسمه، وبها يُعرَف في جميع المصادر.",
+        "ولم يرد في المصادر التي اعتمدها هذا الدرسُ تفسيرٌ لسبب هذه الكنية تحديداً، فلا يُقترَح هنا تفسيرٌ غير موثَّق.",
+        "كما عُرِف بلقب «عتيق»، حتى قالت عائشة رضي الله عنها إن هذا اللقب غلب على اسمه في الاستعمال الشائع.",
+        "ولُقِّب أيضاً بـ«الصدّيق»، وهو أشهر ألقابه وأكثرها ثباتاً، إذ استُخدِم عنواناً له في كتبٍ مستقلة متعددة.",
+        "ولخبرته الواسعة بأنساب القبائل وأخبارها، وصفه بعضُ من ترجم له بـ«عالم قريش»."
+      ],
+      "content_items_en": [
+        "The name his family gave him was 'Abdullah, but he became known — and remains known throughout the sources — far more by his kunyah, Abu Bakr, than by his given name.",
+        "None of the sources drawn on for this lesson explain why he specifically carried this kunyah, so no unverified explanation is offered here.",
+        "He was also called 'Atiq, to the point that 'A'ishah said this byname overtook his given name in common use.",
+        "He was further known as al-Siddiq — his most famous and most enduring title, used as a standing, independent heading for him across multiple separate works.",
+        "Because of his extensive knowledge of tribal lineage and history, some biographers described him as 'the scholar of Quraysh.'"
+      ],
+      "claim_ids": [
+        "AB-L1-C03",
+        "AB-L1-C03G",
+        "AB-L1-C04",
+        "AB-L1-C06",
+        "AB-L1-C02"
+      ],
+      "source_summary_ar": "سير أعلام النبلاء",
+      "source_summary_en": "Siyar A'lam al-Nubala",
+      "required_for_completion": true,
+      "deep_sections": [
+        {
+          "section_id": "AB03-DS1",
+          "title_ar": "لماذا لُقِّب بـ«عتيق»؟",
+          "title_en": "Why Was He Called 'Atiq?",
+          "content_items_ar": [
+            "اختلف أهلُ العلم في تفسير هذا اللقب. فقال ابنُ معين والليثُ بن سعد: إنه لُقِّب بذلك لجمال وجهه. وقال ابنُ أبي مُلَيكة: إنه كان مجرد لقبٍ له، دون أن يذكر له تفسيراً آخر.",
+            "والمصدرُ الذي ينقل هذين الرأيين يذكرهما معاً دون أن يرجِّح أحدهما على الآخر، فبقي هذا التفسير موضع اجتهادٍ لا يقينٍ قاطع."
+          ],
+          "content_items_en": [
+            "Early scholars differed on the explanation of this byname. Ibn Ma'in and al-Layth ibn Sa'd said he was so named because of his handsome face. Ibn Abi Mulaykah said it was simply a byname, without offering any further explanation.",
+            "The source that transmits both opinions records them side by side without preferring one over the other — the explanation remains a matter of scholarly opinion rather than settled certainty."
+          ],
+          "claim_ids": [
+            "AB-L1-C04",
+            "AB-L1-C05"
+          ]
+        },
+        {
+          "section_id": "AB03-DS2",
+          "title_ar": "من أين جاء لقب «الصدّيق»؟",
+          "title_en": "Where Does the Title al-Siddiq Come From?",
+          "content_items_ar": [
+            "لا يوجد في المصادر التي اعتمدها هذا الدرسُ نصٌّ صريحٌ يشرح سببَ تسميته تحديداً بـ«الصدّيق».",
+            "ورَد في أحد المصادر أن أبا بكر بن عيّاش ذكر أن قريشاً سمَّته «خليفة رسول الله» لأن القرآن وصف المهاجرين بـ«الصادقون» في سورة الحجرات — لكن هذا النص، بحسب لفظه، يفسِّر لقب «خليفة رسول الله» لا لقب «الصدّيق» نفسه، وإن شارَكه في الجذر القرآني.",
+            "أما القصةُ المشهورة عن تصديقه الفوريّ لخبر الإسراء، فلم تُوجَد في أيٍّ من الصفحات المفحوصة لهذا الدرس، فلا تُروى هنا كأمرٍ ثابت. هذا الباب لا يزال بحاجة إلى مزيدٍ من التحقق قبل أن يُدرَّس بيقين."
+          ],
+          "content_items_en": [
+            "None of the sources drawn on for this lesson directly explain why he specifically received the title al-Siddiq.",
+            "One source reports that Abu Bakr ibn 'Ayyash said Quraysh named him 'Khalifat Rasul Allah' (Successor of the Messenger of Allah) because the Qur'an describes the Muhajirun as 'the truthful ones' in Surah al-Hujurat — but, read literally, this statement explains the title 'Khalifat Rasul Allah,' not 'al-Siddiq' itself, even though the two share the same Qur'anic root.",
+            "As for the popular story that he earned the title by immediately affirming the Prophet's ﷺ account of the Night Journey (al-Isra'), it was not found in any of the pages examined for this lesson, and is not presented here as established. This question remains open pending further verification."
+          ],
+          "claim_ids": [
+            "AB-L1-C06",
+            "AB-L1-C06G",
+            "AB-L1-C06X"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "AB04",
+      "block_type": "chronology_clarification",
+      "title_ar": "من أوائل المؤمنين",
+      "title_en": "Among the Earliest Believers",
+      "content_items_ar": [
+        "يذكر مصدران مستقلان أن أبا بكر كان «أوّل من آمن من الرجال» بالنبي ﷺ — أي أول الرجال الأحرار البالغين الذين آمنوا به.",
+        "هذا وصفٌ دقيقٌ لا وصفٌ مطلق: فالمصادر التاريخية تُفرِّق عادةً بين عدة فئاتٍ لمن سبقوا إلى الإسلام، بحسب السنّ والحالة الاجتماعية، لا فئةً واحدة فقط.",
+        "فعلى سبيل المثال، وردَ في السيرة أن زيد بن حارثة رضي الله عنه كان أوّل ذَكَرٍ أسلم وصلّى بعد عليّ بن أبي طالب رضي الله عنه — وهو مثالٌ يوضح أن أكثر من شخصٍ يُذكَر بلقب «الأول» في فئته الخاصة.",
+        "وبناءً على هذا، فإن الوصف الأدق والأسلم لأبي بكر هو: أول من آمن من الرجال الأحرار البالغين — لا «أول مسلمٍ» على الإطلاق دون تحديد."
+      ],
+      "content_items_en": [
+        "Two independent sources describe Abu Bakr as 'the first of the men to believe' in the Prophet ﷺ — that is, the first free adult man to believe in him.",
+        "This is a precise description, not an absolute one. Sources on this period generally distinguish several categories of early precedence — by age and social standing — rather than a single undifferentiated category.",
+        "For example, the sirah reports that Zayd ibn Harithah was the first male to accept Islam and pray after 'Ali ibn Abi Talib — an example showing that more than one person is remembered as 'first' within their own specific category.",
+        "The safest and most precise description of Abu Bakr, then, is: the first free adult man to believe — not simply 'the first Muslim' without qualification."
+      ],
+      "claim_ids": [
+        "AB-L1-C08",
+        "AB-L1-C10"
+      ],
+      "source_summary_ar": "سير أعلام النبلاء، فضائل الصحابة، السيرة النبوية لابن هشام",
+      "source_summary_en": "Siyar A'lam al-Nubala, Fada'il al-Sahabah, Sirat Ibn Hisham",
+      "required_for_completion": true,
+      "deep_sections": [
+        {
+          "section_id": "AB04-DS1",
+          "title_ar": "فئات السبق إلى الإسلام",
+          "title_en": "Categories of Precedence in Islam",
+          "content_items_ar": [
+            "يُفرِّق كثيرٌ من أهل العلم بين عدة فئاتٍ للسبق إلى الإسلام: أول امرأة آمنت، وأول طفلٍ، وأول مُعتَقٍ (عبدٍ حُرِّر)، وأول رجلٍ حرٍّ بالغ.",
+            "اعتمد هذا الدرسُ فقط على ما تحقّق مباشرةً من مصادره الخاصة، فأثبتَ فئةَ أبي بكر بدقة، وأضاف مثالاً واحداً إضافياً (زيد بن حارثة وعليّ بن أبي طالب) من مصدرٍ تحقَّق في بحثٍ سابق ضمن هذا المشروع.",
+            "أما تفاصيل باقي الفئات، وأصحابها، فمعروفةٌ في التراث الإسلامي الأوسع، لكنها تحتاج تحققاً مستقلاً ضمن مصادر هذا المشروع قبل أن تُدرَّس هنا بأسماء محددة."
+          ],
+          "content_items_en": [
+            "Many scholars distinguish several categories of precedence in accepting Islam: the first woman to believe, the first child, the first freed slave, and the first free adult man.",
+            "This lesson relies only on what has been directly verified in its own sources: it establishes Abu Bakr's category precisely, and adds one further example (Zayd ibn Harithah and 'Ali ibn Abi Talib) from a citation verified elsewhere in this project.",
+            "The remaining categories, and who holds them, are well known in the wider Islamic tradition, but would need their own independent verification within this project's sources before being taught here by name."
+          ],
+          "claim_ids": [
+            "AB-L1-C10"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "AB05",
+      "block_type": "hadith_evidence",
+      "title_ar": "أقربُ الصحابة إليه",
+      "title_en": "The Closest Companion",
+      "content_items_ar": [
+        "لم يكن قربُ أبي بكر من النبي ﷺ أمراً عابراً، بل شهدت به أحاديثُ صريحة.",
+        "قال النبي ﷺ: «لو كنتُ متَّخذاً خليلاً لاتَّخذتُ أبا بكرٍ، ولكن أخي وصاحبي» — وروى ابنُ مسعود رضي الله عنه معنىً مماثلاً بإسنادٍ مستقل.",
+        "وقال ﷺ: «إنّ أمَنَّ الناسِ عليَّ في صحبته وماله أبو بكر»، وأمر أن تُسَدَّ كل أبواب المسجد المتصلة به إلا بابَ أبي بكر.",
+        "وشهد لماله بأثرٍ لم يُضاهِه مالُ أحد، فقال ﷺ: «ما نفعني مالٌ قطُّ ما نفعني مالُ أبي بكر»، فبكى أبو بكر وقال: «وهل أنا ومالي إلا لك يا رسول الله؟»",
+        "وكان الصحابةُ أنفسهم يرتِّبون الناس بحسب الفضل، فقال ابنُ عمر رضي الله عنهما: «كنّا نُخيّر بين الناس في زمن النبي ﷺ، فنُخيّر أبا بكر، ثم عمر بن الخطاب، ثم عثمان بن عفان».",
+        "وقال عمر بن الخطاب رضي الله عنه من على المنبر: «ألا إنّ أفضل هذه الأمّة بعد نبيّها أبو بكر».",
+        "وفي مرضه الأخير، قال النبي ﷺ لعائشة رضي الله عنها: «ادعُ لي أباكِ وأخاكِ حتى أكتبَ كتاباً، فإني أخافُ أن يتمنّى مُتَمَنٍّ ويقولَ قائلٌ، ويأبى اللهُ والمؤمنون إلا أبا بكر» — وهذا الحديثُ مصرَّحٌ بصحته.",
+        "ولمّا ثَقُل النبيُّ ﷺ عن إمامة الناس، قال: «مُروا أبا بكرٍ فليُصلِّ بالناس»، كما روت عائشة رضي الله عنها مباشرة.",
+        "وكان أبو بكر رفيقَه في الهجرة إلى المدينة، ومعه في الغار، حتى إنه لم يكن يعلم بخروج النبي ﷺ للهجرة، حين خرج، إلا عليٌّ وأبو بكر وأهل بيته."
+      ],
+      "content_items_en": [
+        "Abu Bakr's closeness to the Prophet ﷺ is not a matter of inference — it is stated directly, more than once, in the Prophet's ﷺ own words.",
+        "The Prophet ﷺ said: \"If I were to take an intimate friend, I would have taken Abu Bakr, but he is my brother and companion\" — a statement Ibn Mas'ud reported independently in similar words.",
+        "He also said: \"The most generous of people to me in his companionship and wealth is Abu Bakr,\" and ordered that every door opening onto the mosque be sealed except Abu Bakr's.",
+        "The Prophet ﷺ testified that no one's wealth had helped him as Abu Bakr's had, saying: \"No wealth has ever benefited me as Abu Bakr's wealth has benefited me,\" at which Abu Bakr wept and said, \"Am I, and my wealth, anything but yours, O Messenger of Allah?\"",
+        "The Companions themselves ranked people by this same standard. Ibn 'Umar reported: \"We used to compare people during the Prophet's ﷺ time, and we would rank Abu Bakr first, then 'Umar ibn al-Khattab, then 'Uthman ibn 'Affan.\"",
+        "'Umar ibn al-Khattab once said from the pulpit: \"The best of this nation after its Prophet is Abu Bakr.\"",
+        "During his final illness, the Prophet ﷺ told 'A'ishah: \"Call your father and your brother for me, so that I may write a document — for I fear someone may wish [for authority] or claim it, but Allah and the believers refuse anyone but Abu Bakr.\" This report is explicitly graded sahih by the source.",
+        "And when the Prophet ﷺ became too weak to lead the prayer himself, he said, \"Command Abu Bakr to lead the people in prayer\" — reported directly by 'A'ishah.",
+        "Abu Bakr was also his companion on the migration to Madinah, and with him in the cave — so much so that when the Prophet ﷺ left Makkah, no one else knew of his departure except 'Ali, Abu Bakr, and Abu Bakr's own household."
+      ],
+      "claim_ids": [
+        "AB-L1-C11",
+        "AB-L1-C12",
+        "AB-L1-C13B",
+        "AB-L1-C13",
+        "AB-L1-C15",
+        "AB-L1-C14",
+        "AB-L1-C17",
+        "AB-L1-C16",
+        "AB-L1-C18"
+      ],
+      "source_summary_ar": "صحيح البخاري، سير أعلام النبلاء، السيرة النبوية لابن هشام",
+      "source_summary_en": "Sahih al-Bukhari, Siyar A'lam al-Nubala, Sirat Ibn Hisham",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB06",
+      "block_type": "family_tree",
+      "title_ar": "أسرته والعلاقات المحيطة به",
+      "title_en": "Family and Relationships",
+      "content_items_ar": [
+        "عرفنا من هو أبو بكر بمفرده — لكنه لم يكن بمعزل عن أسرته، التي لعبت أدواراً مهمة، خصوصاً في أصعب لحظات حياته.",
+        "تزوّج النبيُّ ﷺ ابنتَه عائشة رضي الله عنها، فكان أبو بكر بذلك أحد أصهار النبي ﷺ. وهي أيضاً مصدرُ عددٍ من الأخبار المباشرة عن أبيها، منها أنه لمّا صار خليفة، سلَّم كل مالٍ كان يملكه إلى بيت مال المسلمين، قائلاً: «كنتُ أتَّجِرُ به وألتَمِسُ منه رزقي، فلمّا شغلني أمرُ المسلمين عنه، تركتُه».",
+        "وابنتُه الأخرى، أسماء رضي الله عنها، عُرِفت بـ«ذات النِّطاق»، لأنها شقّت حزامَها لتربط به زادَ النبي ﷺ وأبيها حين تجهَّزا للهجرة.",
+        "وابنُه عبدُالله كان يتردّد بين مكة والغار أثناء الهجرة لينقل لهما أخبار قريش، بينما كان مولاه عامرُ بن فُهيرة يرعى غنمَه قرب الغار ويستخدم أثر قطيعه لإخفاء آثار عبدالله.",
+        "وحين خرج النبيُّ ﷺ للهجرة، لم يكن أحدٌ يعلم بذلك سوى عليّ بن أبي طالب وأبي بكر وأهل بيته — وهو دليلٌ على عمق الثقة بينهم."
+      ],
+      "content_items_en": [
+        "We have now met Abu Bakr as an individual — but he was never apart from his family, who played important roles, especially in the hardest moments of his life.",
+        "The Prophet ﷺ married his daughter 'A'ishah, making Abu Bakr one of the Prophet's ﷺ fathers-in-law. She is also the source of several first-hand reports about her father, including that when he became Caliph, he handed over all his personal wealth to the public treasury, saying: \"I used to trade with it and earn my living by it, but once the affairs of the Muslims occupied me, I left it.\"",
+        "His other daughter, Asma', was known as 'Dhat al-Nitaq' ('she of the sash'), because she tore her waist-sash to tie the travel provisions when the Prophet ﷺ and her father prepared for the Hijrah.",
+        "His son 'Abdullah went back and forth between Makkah and the cave during the Hijrah to relay news of Quraysh, while his freedman 'Amir ibn Fuhayrah grazed Abu Bakr's flock near the cave and used its tracks to help cover 'Abdullah's footprints.",
+        "When the Prophet ﷺ left for the Hijrah, no one knew of it except 'Ali ibn Abi Talib, Abu Bakr, and Abu Bakr's own household — a sign of how deep the trust between them ran."
+      ],
+      "claim_ids": [
+        "AB-L1-C19",
+        "AB-L1-C20",
+        "AB-L1-C21",
+        "AB-L1-C22",
+        "AB-L1-C18"
+      ],
+      "source_summary_ar": "صحيح البخاري، سير أعلام النبلاء، السيرة النبوية لابن هشام",
+      "source_summary_en": "Sahih al-Bukhari, Siyar A'lam al-Nubala, Sirat Ibn Hisham",
+      "required_for_completion": true,
+      "deep_sections": [
+        {
+          "section_id": "AB06-DS1",
+          "title_ar": "نسبه الكامل",
+          "title_en": "His Full Lineage",
+          "content_items_ar": [
+            "عبدُ الله بن أبي قُحافة عثمانَ بن عامر بن عَمرو بن كعب بن سعد بن تَيْم بن مُرّة بن كعب بن لُؤَيّ، القُرَشِيّ التَّيْمِيّ."
+          ],
+          "content_items_en": [
+            "'Abdullah ibn Abi Quhafah 'Uthman ibn 'Amir ibn 'Amr ibn Ka'b ibn Sa'd ibn Taym ibn Murrah ibn Ka'b ibn Lu'ayy, of Quraysh, from Banu Taym."
+          ],
+          "claim_ids": [
+            "AB-L1-C01"
+          ]
+        }
+      ],
+      "people": [
+        {
+          "person_id": "P-AMIR",
+          "name_ar": "عامر بن فُهيرة",
+          "name_en": "'Amir ibn Fuhayrah",
+          "kunyah_ar": "",
+          "kunyah_en": "",
+          "relation_ar": "مولاه (خادمه المُعتَق)",
+          "relation_en": "His freedman (mawla)",
+          "note_ar": "رعى غنم أبي بكر قرب الغار، واستخدم أثر قطيعه لإخفاء آثار عبدالله بن أبي بكر أثناء الهجرة.",
+          "note_en": "Grazed Abu Bakr's flock near the cave and used its tracks to help cover 'Abdullah ibn Abi Bakr's footprints during the Hijrah."
+        }
+      ],
+      "family_tree": {
+        "node_id": "abu_quhafah",
+        "name_ar": "أبو قُحافة عثمان بن عامر",
+        "name_en": "Abu Quhafah 'Uthman ibn 'Amir",
+        "role_ar": "والد أبي بكر",
+        "role_en": "Father of Abu Bakr",
+        "children": [
+          {
+            "node_id": "abu_bakr",
+            "name_ar": "أبو بكر الصدّيق (عبدالله)",
+            "name_en": "Abu Bakr al-Siddiq ('Abdullah)",
+            "role_ar": "أوّل الخلفاء",
+            "role_en": "The first Caliph",
+            "children": [
+              {
+                "node_id": "aishah",
+                "name_ar": "عائشة",
+                "name_en": "'A'ishah",
+                "role_ar": "ابنته؛ زوج النبي ﷺ",
+                "role_en": "His daughter; wife of the Prophet ﷺ",
+                "children": []
+              },
+              {
+                "node_id": "asma",
+                "name_ar": "أسماء",
+                "name_en": "Asma'",
+                "role_ar": "ابنته؛ ذات النطاق",
+                "role_en": "His daughter; Dhat al-Nitaq",
+                "children": []
+              },
+              {
+                "node_id": "abdullah",
+                "name_ar": "عبدالله",
+                "name_en": "'Abdullah",
+                "role_ar": "ابنه",
+                "role_en": "His son",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "block_id": "AB07",
+      "block_type": "timeline_review",
+      "title_ar": "حياتُه في خطٍّ زمنيٍّ واحد",
+      "title_en": "His Life in One Timeline",
+      "content_items_ar": [
+        "١. قبل الإسلام: وُلِد بمكة بعد عام الفيل بنحو سنتين وستة أشهر، ونشأ تاجراً معروفاً بثرائه ومعرفته بأنساب قريش.",
+        "٢. أوائل المؤمنين: كان أول من آمن من الرجال الأحرار البالغين، وأسلم وله أربعون ألف دينار.",
+        "٣. التضحية في مكة: شهد له النبيُّ ﷺ بقوله: «ما نفعني مالٌ قطُّ ما نفعني مالُ أبي بكر».",
+        "٤. القرب من النبي ﷺ: وُصِف بأنه أمنُّ الناس عليه في صحبته وماله، وكان بابُه الوحيد الذي لم يُسَدّ في المسجد.",
+        "٥. الهجرة: رافق النبي ﷺ في هجرته إلى المدينة، وكان معه في الغار، ولم يعلم بخروجهما أحدٌ سوى أهل بيته وعليّ بن أبي طالب.",
+        "٦. مرض النبي ﷺ الأخير: أمَره النبيُّ ﷺ أن يؤمَّ الناسَ في الصلاة.",
+        "٧. الخلافة: بعد وفاة النبي ﷺ، صار أبو بكر أول خليفةٍ للمسلمين.",
+        "٨. حفظ القرآن: يُذكَر أنه أول من جمع القرآن بين لوحين، بإسنادٍ حَسَن.",
+        "٩. وفاته: تُوفّي بعد خلافةٍ استمرت نحو عامين، عن نحو ثلاثٍ وستين سنة."
+      ],
+      "content_items_en": [
+        "1. Before Islam: born in Makkah about two years and six months after 'Am al-Fil, and grew up as a merchant known for his wealth and his knowledge of Quraysh's lineages.",
+        "2. Among the earliest believers: the first free adult man to believe, accepting Islam already in possession of forty thousand dinars.",
+        "3. Sacrifice in Makkah: the Prophet ﷺ testified, \"No wealth has ever benefited me as Abu Bakr's wealth has benefited me.\"",
+        "4. Closeness to the Prophet ﷺ: described as the most generous person to him in companionship and wealth, and the only person whose door onto the mosque was never sealed.",
+        "5. The Hijrah: accompanied the Prophet ﷺ on the migration to Madinah and was with him in the cave; no one but his own household and 'Ali ibn Abi Talib knew of their departure.",
+        "6. The Prophet's ﷺ final illness: the Prophet ﷺ ordered him to lead the people in prayer.",
+        "7. The caliphate: after the Prophet's ﷺ death, Abu Bakr became the first Caliph of the Muslims.",
+        "8. Preserving the Qur'an: he is reported, through a chain graded hasan, to have been the first to have the Qur'an gathered between two covers.",
+        "9. His death: he died after a caliphate of about two years, at around sixty-three years of age."
+      ],
+      "claim_ids": [
+        "AB-L1-C07",
+        "AB-L1-C08",
+        "AB-L1-C09",
+        "AB-L1-C13B",
+        "AB-L1-C12",
+        "AB-L1-C16",
+        "AB-L1-C17",
+        "AB-L1-C23",
+        "AB-L1-C24",
+        "AB-L1-C25"
+      ],
+      "source_summary_ar": "جميع مصادر هذا الدرس",
+      "source_summary_en": "All sources used in this lesson",
+      "required_for_completion": true,
+      "deep_sections": [
+        {
+          "section_id": "AB07-DS1",
+          "title_ar": "اختلاف الروايات في مدة خلافته",
+          "title_en": "Source Differences on the Length of His Caliphate",
+          "content_items_ar": [
+            "الرواية الأولى تذكر أن خلافته استمرت سنتين ومئة يوم. وذكر أبو مَعْشَر روايةً بديلة: سنتان وأربعة أشهر إلا أربع ليالٍ. كلا الرقمين محفوظان هنا دون ترجيح أحدهما."
+          ],
+          "content_items_en": [
+            "The primary report states his caliphate lasted two years and a hundred days. Abu Ma'shar gives an alternate figure: two years and four months less four nights. Both figures are preserved here, without preferring one."
+          ],
+          "claim_ids": [
+            "AB-L1-C25"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "AB08",
+      "block_type": "character_theme",
+      "title_ar": "صفاتٌ ظهرت عبر حياته",
+      "title_en": "Qualities Revealed Across His Life",
+      "content_items_ar": [
+        "لا تُذكَر صفاتُ أبي بكر هنا كمديحٍ عام، بل كصفاتٍ يشهد لها دليلٌ محدد من سيرته.",
+        "الصدق والثبات: يظهر في تصديقه الفوري وثباته على الإيمان منذ اللحظة الأولى، وفي كونه أول من آمن من الرجال الأحرار البالغين — وهي الصفة التي ارتبط بها استخدام لقبه «الصدّيق» في المصادر.",
+        "البذل والتضحية: يشهد له بها قولُ النبي ﷺ: «ما نفعني مالٌ قطُّ ما نفعني مالُ أبي بكر»، وإسلامُه وهو صاحبُ أربعين ألف دينار، وتسليمُه كلَّ ماله لبيت المال حين صار خليفة. وستتوسّع دروسٌ لاحقة في تفاصيل هذا البذل خلال سنوات الاضطهاد بمكة.",
+        "القرب والملازمة: يشهد له بها كونُه رفيقَ الهجرة والغار، وصاحبَ الباب الذي لم يُسَدّ، ومن أمَره النبيُّ ﷺ بإمامة الناس في مرضه الأخير — وستتوسّع دروسٌ لاحقة في تفاصيل رحلة الهجرة.",
+        "الثقةُ والأمانة: يشهد لها كونُه من الاثنين الوحيدين، مع أهل بيته، الذين عَلِموا بخروج النبي ﷺ للهجرة قبل وقوعه."
+      ],
+      "content_items_en": [
+        "Abu Bakr's qualities are not presented here as generic praise, but as traits each tied to specific evidence from his life.",
+        "Truthfulness and steadiness: shown in his immediate belief and his steadfastness from the very first moment, and in his standing as the first free adult man to believe — the very quality the sources' use of his title al-Siddiq is tied to.",
+        "Generosity and sacrifice: shown in the Prophet's ﷺ own words, \"No wealth has ever benefited me as Abu Bakr's wealth has benefited me,\" in his accepting Islam while possessing forty thousand dinars, and in his surrendering all his personal wealth to the public treasury upon becoming Caliph. Later lessons will explore this generosity in more depth during the years of persecution in Makkah.",
+        "Closeness and constancy: shown in his role as companion of the Hijrah and the cave, as the one whose door alone was never sealed, and as the one the Prophet ﷺ chose to lead the prayer during his final illness. A later lesson will explore the Hijrah journey in full.",
+        "Trustworthiness: shown in his being one of only two people — along with his own household — who knew of the Prophet's ﷺ departure for the Hijrah before it happened."
+      ],
+      "claim_ids": [
+        "AB-L1-C08",
+        "AB-L1-C06",
+        "AB-L1-C13B",
+        "AB-L1-C09",
+        "AB-L1-C20",
+        "AB-L1-C16",
+        "AB-L1-C12",
+        "AB-L1-C17",
+        "AB-L1-C18"
+      ],
+      "source_summary_ar": "مصادر متعددة، مربوطة بدليل محدد لكل صفة",
+      "source_summary_en": "Multiple sources, each tied to specific evidence per quality",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB09",
+      "block_type": "summary",
+      "title_ar": "ما الذي سيستكشفه هذا المسار؟",
+      "title_en": "What This Path Will Explore",
+      "content_items_ar": [
+        "هذا الدرسُ خريطةٌ فقط. كل نقطةٍ ذُكِرت هنا بإيجاز ستُفصَّل في درسٍ مستقل ضمن هذا المسار:",
+        "الأيام الأولى للإسلام، والإيمان في زمن الاضطهاد بمكة، ورحلة الهجرة والغار بتفاصيلها، وحياته في المدينة، والمرض الأخير للنبي ﷺ ووفاته، ثم خلافتُه الأولى وسقيفةُ بني ساعدة، وأزمةُ الردة، وجمعُ القرآن، وأيامُه الأخيرة ووفاتُه.",
+        "لماذا لا تكفي حياةُ أبي بكر درساً واحداً؟ لأن كل محطةٍ من هذه المحطات تحتاج أدلتها الخاصة ومصادرها المستقلة، ولأن سيرته امتدت عبر عقودٍ من أهم أحداث الإسلام المبكر — واختصارها في درسٍ واحد يفقدها دقتها وعمقها."
+      ],
+      "content_items_en": [
+        "This lesson is only a map. Every point introduced briefly here will be developed in its own dedicated lesson within this path:",
+        "The first days of Islam, faith under persecution in Makkah, the Hijrah and the cave in full detail, his years in Madinah, the Prophet's ﷺ final illness and death, his own caliphate beginning at Saqifah, the Ridda crisis, the compilation of the Qur'an, and his own final days and legacy.",
+        "Why can't Abu Bakr's life fit into a single lesson? Because each of these stages needs its own evidence and its own sources, and because his life spanned decades of the most consequential events in early Islam — compressing it into one lesson would cost it both accuracy and depth."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "لا مطالبات جديدة — استعراضٌ للمسار فقط",
+      "source_summary_en": "No new claims — path preview only",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "AB10",
+      "block_type": "quiz_sources",
+      "title_ar": "اختبر فهمك",
+      "title_en": "Check Your Understanding",
+      "content_items_ar": [
+        "اختبر ما تعلّمتَه في هذا الدرس عن هوية أبي بكر الصديق وألقابه وسبقه إلى الإيمان وقربه من النبي ﷺ."
+      ],
+      "content_items_en": [
+        "Test what you've learned in this lesson about Abu Bakr al-Siddiq's identity, titles, precedence in Islam, and closeness to the Prophet ﷺ."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "مراجعة شاملة لمصادر الدرس",
+      "source_summary_en": "A full review of this lesson's sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    }
+  ]
+}

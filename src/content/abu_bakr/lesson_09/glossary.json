@@ -1,0 +1,21 @@
+{
+  "lesson_id": "abu_bakr.lesson_09",
+  "status": "placeholder_structure_only",
+  "note": "PLACEHOLDER — real glossary pending Mohamed's review of content_research/abu_bakr/.",
+  "terms": [
+    {
+      "term_id": "placeholder_term_1",
+      "arabic": "مصطلح عنصر نائب أول",
+      "english": "First placeholder term",
+      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
+      "definition_en": "PLACEHOLDER definition for this term."
+    },
+    {
+      "term_id": "placeholder_term_2",
+      "arabic": "مصطلح عنصر نائب ثانٍ",
+      "english": "Second placeholder term",
+      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
+      "definition_en": "PLACEHOLDER definition for this term."
+    }
+  ]
+}
