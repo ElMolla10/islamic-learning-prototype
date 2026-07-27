@@ -233,11 +233,29 @@ export function EstablishedVsReportedNote(props: BlockProps) {
   );
 }
 
+const LABELLED_ITEM = /^(.{2,40}?)[:：]\s*(.+)$/s;
+
 export function CharacterThemeBlock(props: BlockProps) {
   const { block, language } = props;
+  const items = block.items[language];
+  const lead = items.filter((item) => !LABELLED_ITEM.test(item));
+  const qualities = items.filter((item) => LABELLED_ITEM.test(item));
   return (
     <BiographyBlockShell {...props} className="bio-character-theme">
-      <div className="prose">{paragraphs(block.items[language])}</div>
+      {lead.length > 0 && <div className="prose">{paragraphs(lead)}</div>}
+      {qualities.length > 0 && (
+        <ul className="grouped-list">
+          {qualities.map((item, index) => {
+            const match = item.match(LABELLED_ITEM)!;
+            return (
+              <li className="grouped-list-item" key={index}>
+                <strong>{match[1]}</strong>
+                <p>{match[2]}</p>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </BiographyBlockShell>
   );
 }
