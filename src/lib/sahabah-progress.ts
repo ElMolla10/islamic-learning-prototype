@@ -40,6 +40,8 @@ export type SahabahProgressState = {
   completedLessonIds: string[];
   preferredLanguage: Language;
   focusMode: boolean;
+  /** Epoch ms of the most recent time this chapter was opened. 0 for progress saved before this field existed. */
+  lastVisitedAt: number;
 };
 
 export const emptySahabahProgress: SahabahProgressState = {
@@ -56,6 +58,7 @@ export const emptySahabahProgress: SahabahProgressState = {
   completedLessonIds: [],
   preferredLanguage: "ar",
   focusMode: false,
+  lastVisitedAt: 0,
 };
 
 const strings = (value: unknown) => (Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : []);
@@ -79,6 +82,7 @@ export function parseSahabahProgress(raw: string | null): SahabahProgressState {
       completedLessonIds: strings(parsed.completedLessonIds),
       preferredLanguage: parsed.preferredLanguage === "en" ? "en" : "ar",
       focusMode: false,
+      lastVisitedAt: Number.isFinite(parsed.lastVisitedAt) ? Number(parsed.lastVisitedAt) : 0,
     };
   } catch {
     return emptySahabahProgress;

@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import type { PathLesson, Subject, Surah } from "@/content/types";
+import { getContinueRecommendation, type ContinueRecommendation } from "@/lib/continue-learning";
 import { useLanguage } from "./LanguageProvider";
 import { ArrowIcon, BookIcon, CheckIcon } from "./icons";
 
@@ -13,7 +15,34 @@ export function SubjectCard({ subject }: { subject: Subject }) {
 
 export function ContinueLearningCard() {
   const { language } = useLanguage();
-  return <Link href="/quran/al-fatihah/lesson-1" className="continue-card"><div><span className="eyebrow">{language === "ar" ? "تابع التعلّم" : "Continue learning"}</span><h2>{language === "ar" ? "لماذا سورة الفاتحة سورة فريدة؟" : "Why Surah al-Fatihah Is Unique"}</h2><p>{language === "ar" ? "الدرس الأول · ٦–٨ دقائق للفكرة الأساسية" : "Lesson 1 · 6–8 minute core"}</p></div><span className="continue-action">{language === "ar" ? "ابدأ" : "Start"}<ArrowIcon /></span></Link>;
+  // Starts unset (rather than a hardcoded guess) so the server-rendered/pre-hydration markup never shows
+  // a recommendation that might not match the learner's real, localStorage-only progress; it fills in
+  // right after mount instead of ever showing a misleading "continue" state for the wrong lesson.
+  const [recommendation, setRecommendation] = useState<ContinueRecommendation | null>(null);
+  useEffect(() => {
+    const update = () => setRecommendation(getContinueRecommendation());
+    update();
+    window.addEventListener("prototype-progress-reset", update);
+    window.addEventListener("storage", update);
+    return () => {
+      window.removeEventListener("prototype-progress-reset", update);
+      window.removeEventListener("storage", update);
+    };
+  }, []);
+  if (!recommendation) return null;
+  return (
+    <Link href={recommendation.route} className="continue-card" data-mode={recommendation.mode}>
+      <div>
+        <span className="eyebrow">{recommendation.category[language]}</span>
+        <h2>{recommendation.title[language]}</h2>
+        <p>{recommendation.subtitle[language]}</p>
+      </div>
+      <span className="continue-action">
+        {recommendation.actionLabel[language]}
+        <ArrowIcon />
+      </span>
+    </Link>
+  );
 }
 
 export function SurahCard({ surah }: { surah: Surah }) {

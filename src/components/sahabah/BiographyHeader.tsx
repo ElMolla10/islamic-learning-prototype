@@ -15,9 +15,6 @@ const placeholderKunyah: Record<Language, string> = { ar: "كنية عنصر ن�
 export function BiographyHeader({ lesson, language }: { lesson: BiographyLesson; language: Language }) {
   return (
     <header className="bio-header">
-      <div className="bio-header-thumb" aria-hidden="true">
-        <span>{language === "ar" ? "خريطة الحياة" : "Life map"}</span>
-      </div>
       <div className="bio-header-copy">
         <span className="eyebrow">{language === "ar" ? "الصحابة" : "Sahabah"}</span>
         <h1>{lesson.personName[language]}</h1>

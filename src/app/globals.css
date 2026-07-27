@@ -107,6 +107,10 @@ html[dir="rtl"] .card-arrow, html[dir="rtl"] .continue-action svg { transform: s
 .surah-card h3 { margin:0;font-size:1.06rem; }.surah-card p { margin:.1rem 0 0;font-size:.75rem;color:var(--muted); }.surah-card .card-arrow{position:static;}
 
 .surah-hero-grid { display:grid;gap:2rem;align-items:end; }.surah-index { display:block;color:#9da9a2;font-size:3.5rem;font-weight:900;line-height:1; }.surah-hero h1{margin:.3rem 0;font-size:clamp(2.3rem,8vw,4.6rem);line-height:1.2}.surah-hero p{margin:0;color:var(--muted)}.surah-hero blockquote{margin:0;padding:1.5rem;border-inline-start:2px solid var(--sand);background:rgb(255 253 248 / 55%);font-size:clamp(1.2rem,3vw,1.8rem);line-height:2;}
+.path-hero-preview{display:grid;gap:.4rem;align-self:stretch;padding:1.5rem;border-inline-start:2px solid var(--sand);border-radius:var(--radius-sm);background:rgb(255 253 248 / 55%)}
+.path-hero-preview .eyebrow{color:var(--green)}
+.path-hero-preview strong{font-size:1.2rem;line-height:1.4;color:var(--ink)}
+.path-hero-preview p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.65}
 .path-layout { display:grid;gap:2rem;padding-block:3rem 5rem; }.path-list{display:grid;gap:.8rem}.path-card{position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;padding:1rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--muted)}.path-card.active{color:var(--ink);border-color:#a8bdb2;box-shadow:0 10px 30px rgb(35 72 61 / 6%)}.path-number{display:grid;place-items:center;width:2.55rem;height:2.55rem;border-radius:50%;background:#eceae2;font-weight:800}.path-card.active .path-number{background:var(--green);color:#fff}.path-number svg{width:1rem}.path-card h3{margin:.15rem 0;font-size:1rem}.path-card p{margin:0;font-size:.72rem}.path-card .card-arrow{position:static}.path-context{align-self:start;padding:1.5rem;border-radius:var(--radius-lg);background:var(--green-dark);color:#fff}.path-context .eyebrow{color:#c8dbce}.path-context h2{margin:.35rem 0 .75rem;font-size:1.5rem}.path-context p{margin:0;color:#d3ded8}
 
 .lesson-progress-sticky { position:sticky;z-index:30;top:0;border-bottom:1px solid #ccd5cf;background:rgb(247 243 233 / 94%);backdrop-filter:blur(10px); }.lesson-progress-sticky .shell{height:3rem;display:flex;align-items:center;gap:1rem}.progress-copy{min-width:7rem;display:flex;justify-content:space-between;gap:.5rem;font-size:.72rem}.progress-copy span{color:var(--muted)}.progress-track{flex:1;height:.28rem;overflow:hidden;border-radius:999px;background:#dbe2dc}.progress-track i{display:block;height:100%;border-radius:inherit;background:var(--green);transition:width .25s ease}
@@ -201,7 +205,6 @@ html[dir="rtl"] .card-arrow, html[dir="rtl"] .continue-action svg { transform: s
 .bio-toc,.bio-context-rail{display:none}
 .bio-reading-column{min-width:0;max-width:46rem;margin-inline:auto;width:100%}
 .bio-header{display:grid;gap:1.25rem;padding:1rem 0 1.5rem}
-.bio-header-thumb{display:grid;place-items:center;width:100%;min-height:6rem;border:1px dashed #b9c9bf;border-radius:var(--radius);background:#eef2ee;color:var(--muted);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 .bio-header-copy h1{margin:.4rem 0;font-size:clamp(1.7rem,6vw,3.6rem);line-height:1.18;letter-spacing:-.03em;text-wrap:balance}
 html[dir="rtl"] .bio-header-copy h1{letter-spacing:0}
 .bio-header-kunyah{margin:0;color:var(--muted);font-size:1rem}
@@ -294,4 +297,4 @@ html[dir="rtl"] .bio-map-pin{transform:translate(50%,-50%)}
 @media (min-width:768px){.bio-sheet{inset-block:0;inset-inline-start:auto;inset-inline-end:0;width:min(28rem,92vw);max-height:none;border-radius:0;padding:1.5rem}.bio-sheet-header{top:-1.5rem;padding-top:1.5rem}}
 @media (min-width:1024px){.bio-shell{grid-template-columns:14rem minmax(0,46rem);justify-content:center;align-items:start}.bio-toc{display:block;position:sticky;top:4rem;padding-top:1rem;max-height:calc(100dvh - 5rem);overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}.bio-toc::-webkit-scrollbar{width:.4rem}.bio-toc::-webkit-scrollbar-thumb{background:var(--line);border-radius:999px}.mobile-navigator-button{display:none}}
 @media (min-width:1280px){.bio-shell{width:min(100% - 3rem,88rem);grid-template-columns:14rem minmax(0,46rem) 16rem;gap:2.5rem}.bio-context-rail{display:block;position:sticky;top:4rem;padding-top:1rem}}
-@media (max-width:767px){.bio-header-thumb{min-height:4.5rem}.bio-person-grid{grid-template-columns:1fr}}
+@media (max-width:767px){.bio-person-grid{grid-template-columns:1fr}}

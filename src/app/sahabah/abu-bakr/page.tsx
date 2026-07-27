@@ -2,9 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { ChapterCard } from "@/components/sahabah/Cards";
+import { PathProgressPills, derivePathStatus } from "@/components/PathProgressPills";
 import { useLanguage } from "@/components/LanguageProvider";
 import { abuBakrPath } from "@/content/catalogue";
 import { ABU_BAKR_LESSON_COUNT, readAbuBakrPathProgress, type LessonProgressStatus } from "@/lib/sahabah-progress";
+
+const SCOPE_LABEL = { ar: "مسار السيرة", en: "Biography path" };
+const UNIT_LABEL = { ar: "فصولًا", en: "chapters" };
 
 export default function AbuBakrPathPage() {
   const { language } = useLanguage();
@@ -26,15 +30,7 @@ export default function AbuBakrPathPage() {
     };
   }, []);
 
-  const pathStatus: LessonProgressStatus = completedCount >= ABU_BAKR_LESSON_COUNT ? "completed" : statuses.some((status) => status !== "not_started") ? "in_progress" : "not_started";
-  const pathStatusText =
-    language === "ar"
-      ? { not_started: "لم يبدأ", in_progress: "قيد التقدم", completed: "اكتمل المسار" }[pathStatus]
-      : { not_started: "Not started", in_progress: "In progress", completed: "Path complete" }[pathStatus];
-  const countLabel =
-    language === "ar"
-      ? `${new Intl.NumberFormat("ar").format(completedCount)} من ${new Intl.NumberFormat("ar").format(ABU_BAKR_LESSON_COUNT)} فصولًا مكتملة`
-      : `${completedCount} of ${ABU_BAKR_LESSON_COUNT} chapters complete`;
+  const pathStatus = derivePathStatus(completedCount, ABU_BAKR_LESSON_COUNT, statuses.some((status) => status !== "not_started"));
 
   return (
     <main>
@@ -45,12 +41,13 @@ export default function AbuBakrPathPage() {
             <span className="eyebrow">{language === "ar" ? "مسار صحابي" : "Companion path"}</span>
             <h1>{language === "ar" ? "أبو بكر الصديق" : "Abu Bakr al-Siddiq"}</h1>
             <p>{language === "ar" ? "١١ فصلًا · الفصل الأول محتوًى حقيقيًا، والبقية بنية مبدئية قيد الإعداد" : "11 chapters · Chapter 1 has real content, the rest are draft structure in progress"}</p>
-            <span className="path-status">{language === "ar" ? `حالة مسار السيرة: ${pathStatusText}` : `Biography path status: ${pathStatusText}`}</span>
-            <span className="path-status path-progress-count" data-testid="path-progress-count">
-              {countLabel}
-            </span>
+            <PathProgressPills language={language} status={pathStatus} completedCount={completedCount} totalCount={ABU_BAKR_LESSON_COUNT} scopeLabel={SCOPE_LABEL} unitLabel={UNIT_LABEL} />
           </div>
-          <blockquote>{language === "ar" ? "﴿اقتباس عنصر نائب — بانتظار المراجعة﴾" : "“Placeholder quotation — pending review”"}</blockquote>
+          <div className="path-hero-preview" data-testid="path-hero-preview">
+            <span className="eyebrow">{language === "ar" ? "أول فصل متاح الآن" : "First chapter available now"}</span>
+            <strong>{abuBakrPath[0].title[language]}</strong>
+            <p>{abuBakrPath[0].description[language]}</p>
+          </div>
         </div>
       </section>
       <div className="shell path-layout">

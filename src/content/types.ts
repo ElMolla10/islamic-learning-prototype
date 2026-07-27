@@ -210,4 +210,6 @@ export type ProgressState = {
   completedLessonIds: string[];
   preferredLanguage: Language;
   focusMode: boolean;
+  /** Epoch ms of the most recent time this lesson was opened. 0 for progress saved before this field existed. */
+  lastVisitedAt: number;
 };

@@ -47,14 +47,14 @@ export function LessonExperience({ lesson }: { lesson: Lesson }) {
 
   useEffect(()=>{const restored=parseProgress(localStorage.getItem(PROGRESS_KEY));const sessionFocus=sessionStorage.getItem(FOCUS_KEY)==="true";const initialCard=lesson.blocks.some(block=>block.key===restored.currentCardId)?restored.currentCardId:"card-1";
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setProgress({...restored,currentCardId:initialCard,visitedCardIds:[...new Set([...restored.visitedCardIds,initialCard])],lessonOpened:true,focusMode:sessionFocus});hydrated.current=true;},[lesson.blocks]);
+    setProgress({...restored,currentCardId:initialCard,visitedCardIds:[...new Set([...restored.visitedCardIds,initialCard])],lessonOpened:true,focusMode:sessionFocus,lastVisitedAt:Date.now()});hydrated.current=true;},[lesson.blocks]);
   useEffect(()=>{if(skipPersist.current){skipPersist.current=false;return;}if(hydrated.current)localStorage.setItem(PROGRESS_KEY,JSON.stringify(progress));},[progress]);
   useEffect(()=>{
     // Mirror the independently persisted interface language into the versioned lesson-progress record.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setProgress(current=>current.preferredLanguage===language?current:{...current,preferredLanguage:language});
   },[language]);
-  useEffect(()=>{const reset=()=>{setProgress({...emptyProgress,lessonOpened:true,visitedCardIds:["card-1"]});sessionStorage.removeItem(FOCUS_KEY)};window.addEventListener("prototype-progress-reset",reset);return()=>window.removeEventListener("prototype-progress-reset",reset)},[]);
+  useEffect(()=>{const reset=()=>{setProgress({...emptyProgress,lessonOpened:true,visitedCardIds:["card-1"],lastVisitedAt:Date.now()});sessionStorage.removeItem(FOCUS_KEY)};window.addEventListener("prototype-progress-reset",reset);return()=>window.removeEventListener("prototype-progress-reset",reset)},[]);
 
   const currentIndex=Math.max(0,lesson.blocks.findIndex(block=>block.key===progress.currentCardId));
   const currentBlock=lesson.blocks[currentIndex];
@@ -78,7 +78,7 @@ export function LessonExperience({ lesson }: { lesson: Lesson }) {
         </div>
         {progress.lessonCompleted&&<section className="completion-card lesson-only-completion" data-testid="lesson-completed"><div className="completion-icon"><CheckIcon/></div><div><span className="eyebrow">{labels.path}</span><h2>{labels.finishTitle}</h2><p>{labels.finishBody}</p><div className="completion-actions"><button type="button" className="secondary-button" onClick={()=>navigate("card-1")}>{labels.review}</button><button type="button" className="primary-button" disabled>{labels.planned}</button></div></div></section>}
       </div>
-      <aside className="source-rail" aria-label={language==="ar"?"مصادر البطاقة الحالية":"Current card sources"}><div><SourceIcon/><span className="eyebrow">{labels.sources}</span><h2>{currentBlock.sourceSummary[language]}</h2><p>{language==="ar"?"تظهر هنا المصادر المباشرة لهذه البطاقة، ويمكن فتح القائمة الكاملة عند الحاجة.":"This card shows its direct evidence; open the full list when needed."}</p><SourceBadge sourceKeys={currentBlock.sourceKeys} label={currentBlock.sourceSummary[language]}/></div></aside>
+      <aside className="source-rail" aria-label={language==="ar"?"مصادر البطاقة الحالية":"Current card sources"}><div><SourceIcon/><span className="eyebrow">{labels.sources}</span><h2>{currentBlock.sourceSummary[language]}</h2><SourceBadge sourceKeys={currentBlock.sourceKeys}/></div></aside>
     </div></main>
     <NavigatorDrawer open={navigatorOpen} onClose={()=>setNavigatorOpen(false)} blocks={lesson.blocks} language={language} progress={progress} currentIndex={currentIndex} onNavigate={navigate}/>
   </div></SourceProvider>;

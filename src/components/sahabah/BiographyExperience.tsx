@@ -62,7 +62,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
     const sessionFocus = sessionStorage.getItem(SAHABAH_FOCUS_KEY) === "true";
     const initialBlock = lesson.blocks.some((block) => block.key === restored.currentBlockId) ? restored.currentBlockId : "block-1";
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setProgress({ ...restored, currentBlockId: initialBlock, visitedBlockIds: [...new Set([...restored.visitedBlockIds, initialBlock])], lessonOpened: true, focusMode: sessionFocus });
+    setProgress({ ...restored, currentBlockId: initialBlock, visitedBlockIds: [...new Set([...restored.visitedBlockIds, initialBlock])], lessonOpened: true, focusMode: sessionFocus, lastVisitedAt: Date.now() });
     hydrated.current = true;
     // Resetting hydration guards when the lesson (route) itself changes, not just its blocks.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -80,7 +80,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
   }, [language]);
   useEffect(() => {
     const reset = () => {
-      setProgress({ ...emptySahabahProgress, lessonOpened: true, visitedBlockIds: ["block-1"] });
+      setProgress({ ...emptySahabahProgress, lessonOpened: true, visitedBlockIds: ["block-1"], lastVisitedAt: Date.now() });
       sessionStorage.removeItem(SAHABAH_FOCUS_KEY);
     };
     window.addEventListener("prototype-progress-reset", reset);
@@ -264,7 +264,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
                 <SourceIcon />
                 <span className="eyebrow">{labels.sources}</span>
                 <h2>{currentBlock.sourceSummary[language]}</h2>
-                <SourceBadge sourceKeys={currentBlock.sourceKeys} label={currentBlock.sourceSummary[language]} />
+                <SourceBadge sourceKeys={currentBlock.sourceKeys} />
               </div>
               {currentPeople.length > 0 && (
                 <div className="bio-rail-people">

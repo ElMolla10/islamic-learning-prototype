@@ -7,7 +7,7 @@ export const LESSON_ID = "al-fatihah-lesson-1";
 export const emptyProgress: ProgressState = {
   version: 3, lessonOpened: false, currentCardId: "card-1", visitedCardIds: [], expandedDeepSectionIds: [],
   quizAttempts: 0, bestQuizScore: 0, quizSubmitted: false, quizPassed: false, lessonCompleted: false,
-  completedLessonIds: [], preferredLanguage: "ar", focusMode: false,
+  completedLessonIds: [], preferredLanguage: "ar", focusMode: false, lastVisitedAt: 0,
 };
 
 const strings = (value: unknown) => Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : [];
@@ -34,6 +34,7 @@ export function parseProgress(raw: string | null): ProgressState {
       completedLessonIds: isV3 ? strings(parsed.completedLessonIds) : [],
       preferredLanguage: parsed.preferredLanguage === "en" ? "en" : "ar",
       focusMode: false,
+      lastVisitedAt: Number.isFinite(parsed.lastVisitedAt) ? Number(parsed.lastVisitedAt) : 0,
     };
   } catch { return emptyProgress; }
 }
