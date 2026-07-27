@@ -8,6 +8,14 @@ test.beforeAll(() => mkdirSync(output, { recursive: true }));
 
 const routes = ["/sahabah", "/sahabah/abu-bakr", "/sahabah/abu-bakr/lesson-1"];
 
+test("the homepage's Sahabah subject card is clickable and navigates to /sahabah (not hard-coded to /quran)", async ({ page }) => {
+  await page.goto("/");
+  const card = page.locator(".subject-card.active", { hasText: "الصحابة" });
+  await expect(card).toHaveAttribute("href", "/sahabah");
+  await card.click();
+  await expect(page).toHaveURL(/\/sahabah$/);
+});
+
 test("all 3 Sahabah routes load with no console errors", async ({ page }) => {
   const errors: string[] = [];
   page.on("console", (message) => {

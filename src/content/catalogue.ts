@@ -3,7 +3,7 @@ import type { BiographyChapter, Companion, PathLesson, Subject, Surah } from "./
 export const subjects: Subject[] = [
   { slug: "quran", label: { ar: "القرآن", en: "Qur’an" }, active: true },
   { slug: "seerah", label: { ar: "السيرة", en: "Seerah" }, active: false },
-  { slug: "sahabah", label: { ar: "الصحابة", en: "Sahabah" }, active: false },
+  { slug: "sahabah", label: { ar: "الصحابة", en: "Sahabah" }, active: true },
   { slug: "hadith", label: { ar: "الحديث", en: "Hadith" }, active: false },
   { slug: "hanbali-fiqh", label: { ar: "الفقه الحنبلي", en: "Hanbali Fiqh" }, active: false },
   { slug: "aqeedah", label: { ar: "العقيدة", en: "Aqeedah" }, active: false },

@@ -8,7 +8,7 @@ import { ArrowIcon, BookIcon, CheckIcon } from "./icons";
 export function SubjectCard({ subject }: { subject: Subject }) {
   const { language } = useLanguage();
   const content = <><span className="card-icon"><BookIcon /></span><strong>{subject.label[language]}</strong><span className="card-meta">{subject.active ? (language === "ar" ? "ابدأ المسار" : "Begin the path") : (language === "ar" ? "قريبًا" : "Coming later")}</span>{subject.active && <ArrowIcon className="card-arrow" />}</>;
-  return subject.active ? <Link className="subject-card active" href="/quran">{content}</Link> : <article className="subject-card" data-disabled="true">{content}</article>;
+  return subject.active ? <Link className="subject-card active" href={`/${subject.slug}`}>{content}</Link> : <article className="subject-card" data-disabled="true">{content}</article>;
 }
 
 export function ContinueLearningCard() {
