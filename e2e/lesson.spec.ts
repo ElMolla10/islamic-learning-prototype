@@ -77,7 +77,7 @@ test("quiz response locks after checking and option order survives refresh",asyn
   await page.getByLabel("The longest surah",{exact:true}).check();await page.getByRole("button",{name:"Check answer",exact:true}).click();
   await expect(page.getByLabel("The longest surah",{exact:true})).toBeDisabled();await expect(page.getByText("Incorrect answer",{exact:true})).toBeVisible();await expect(page.getByRole("button",{name:"Next Question",exact:true})).toBeVisible();
   await page.getByRole("button",{name:"Next Question",exact:true}).click();await page.getByRole("button",{name:"Previous Question",exact:true}).click();const afterNavigation=await page.locator(".quiz-option").evaluateAll(nodes=>nodes.map(node=>node.getAttribute("data-option-id")));expect(afterNavigation).toEqual(before);
-  await page.reload();const after=await page.locator(".quiz-option").evaluateAll(nodes=>nodes.map(node=>node.getAttribute("data-option-id")));expect(after).toEqual(before);await expect(page.getByLabel("The longest surah",{exact:true})).toBeDisabled();
+  await page.reload();await expect(page.locator(".quiz-option").first()).toBeVisible();const after=await page.locator(".quiz-option").evaluateAll(nodes=>nodes.map(node=>node.getAttribute("data-option-id")));expect(after).toEqual(before);await expect(page.getByLabel("The longest surah",{exact:true})).toBeDisabled();
 });
 
 test("localized source drawer groups references and exposes the full list accessibly",async({page})=>{
