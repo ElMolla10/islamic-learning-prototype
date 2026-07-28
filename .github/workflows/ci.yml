@@ -64,8 +64,16 @@ jobs:
       - name: Install Playwright's Chrome
         run: npx playwright install --with-deps chrome
 
+      # `fullyParallel: false` in playwright.config.ts only serialises tests
+      # within a single spec file; different spec files still run across
+      # multiple workers by default (based on CPU count), which on a
+      # multi-core CI runner let two spec files race against the one shared
+      # webServer/localStorage-backed dev server and intermittently observe
+      # each other's state. --workers=1 makes the whole suite fully serial
+      # in CI, matching the config's evident intent, without changing the
+      # config's own default (and therefore local) worker count.
       - name: Playwright end-to-end tests (includes Axe accessibility checks)
-        run: npm run test:e2e
+        run: npm run test:e2e -- --workers=1
 
       # Traces/reports can only contain screenshots and DOM state captured
       # from the locally-running app during this job -- never repository
