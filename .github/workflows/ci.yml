@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+# Cancel a superseded run on the same branch/PR so only the latest commit's
+# checks matter.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Read-only by default. No secrets, no deployment credentials, no Vercel
+# dependency -- this workflow only checks out code and runs local commands.
+permissions:
+  contents: read
+
+env:
+  CI: "true"
+  NEXT_TELEMETRY_DISABLED: "1"
+
+jobs:
+  quality-gates:
+    name: Lint, typecheck, unit, build, e2e, and private-file safety scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies (deterministic, from lockfile)
+        run: npm ci
+
+      # Runs first and cheaply: fail fast if private/research material is
+      # tracked before spending time on the rest of the pipeline.
+      - name: Private-file safety scan
+        run: npm run safety:scan
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Production build
+        run: npm run build
+
+      # Only the Chrome channel actually used by playwright.config.ts
+      # (browserName: chromium, channel: chrome) -- not the full default
+      # browser set.
+      - name: Install Playwright's Chrome
+        run: npx playwright install --with-deps chrome
+
+      - name: Playwright end-to-end tests (includes Axe accessibility checks)
+        run: npm run test:e2e
+
+      # Traces/reports can only contain screenshots and DOM state captured
+      # from the locally-running app during this job -- never repository
+      # source files -- but are still uploaded only on failure, and kept
+      # briefly, since they are not needed once a run is green.
+      - name: Upload Playwright report (failure only)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
