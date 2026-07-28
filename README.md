@@ -13,7 +13,7 @@ This is the private Batch 7B learner prototype for Surah al-Fatihah, Lesson 1. I
 From any terminal:
 
 ```bash
-cd "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/apps/web"
+cd apps/web   # from your local clone of library_project
 npm ci
 npm run dev
 ```
@@ -30,12 +30,15 @@ npm run start
 ## Quality commands
 
 ```bash
+npm run safety:scan
 npm run lint
 npm run typecheck
 npm test
 npm run test:e2e
 npm run build
 ```
+
+These same checks run automatically in CI on every pull request and push to `main` — see `docs/CI.md` for what each one enforces, what the private-file safety scanner protects, and how to investigate a failed scan.
 
 `npm run test:e2e` starts the application on port 3100, checks guided navigation, strict quiz passing, Lesson 1 completion, responsive behaviour, and accessibility at browser level. `npm run screenshots` refreshes the Batch 7B visual review set.
 
