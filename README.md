@@ -13,7 +13,7 @@ This is the private Batch 7B learner prototype for Surah al-Fatihah, Lesson 1. I
 From any terminal:
 
 ```bash
-cd "/Users/mohamedehabelmolla/Desktop/Islamic books/library_project/apps/web"
+cd apps/web   # from your local clone of library_project
 npm ci
 npm run dev
 ```
