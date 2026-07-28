@@ -96,4 +96,9 @@ describe("private-file safety scanner", () => {
     expect(isTextLikePath("public/photo.jpg")).toBe(false);
     expect(isTextLikePath("public/photo.png")).toBe(false);
   });
+
+  it("exempts documentation that quotes the rule patterns as illustrative examples", () => {
+    const docText = "Detects absolute paths such as /Users/example/... or C:\\Users\\example\\..., file:// URIs, and evidence_images/ references.";
+    expect(scanTextContent("docs/CI.md", docText)).toEqual([]);
+  });
 });

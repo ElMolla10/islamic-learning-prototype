@@ -92,6 +92,11 @@ export const CONTENT_SCAN_EXEMPT_PATHS = new Set([
   // e2e/sahabah.spec.ts's "git ls-files shows no private research
   // material bundled into the app" test.
   "e2e/sahabah.spec.ts",
+  // This CI doc documents the scanner's own rules and necessarily quotes
+  // illustrative pattern examples (e.g. "/Users/...", "C:\\Users\\...",
+  // "file://", "evidence-image paths") as prose describing what the rules
+  // detect, not as real leaked references.
+  "docs/CI.md",
 ]);
 
 // Explicit, documented exceptions for specific tracked paths that would
