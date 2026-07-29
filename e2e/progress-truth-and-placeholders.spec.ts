@@ -75,8 +75,8 @@ test.describe("Abu Bakr path status accuracy (same three states)", () => {
 
   test("simulated full completion (only chapter with real content complete): status reads 'Completed' only once every real chapter is done", async ({ page }) => {
     await clearAll(page);
-    // Only chapter 1 has real content; the other 10 are "in preparation" and can never be completed, so the
-    // path-level status can never legitimately reach "completed" today -- this is intentional, not a bug.
+    // Only chapters 1-2 have real content; the other 9 are "in preparation" and can never be completed, so
+    // the path-level status can never legitimately reach "completed" today -- this is intentional, not a bug.
     await page.evaluate((key) => localStorage.setItem(key, JSON.stringify({
       version: 2, lessonOpened: true, currentBlockId: "block-10", visitedBlockIds: Array.from({ length: 10 }, (_, i) => `block-${i + 1}`),
       expandedDeepSectionIds: [], quizAttempts: 1, bestQuizScore: 1, quizSubmitted: true, quizPassed: true,

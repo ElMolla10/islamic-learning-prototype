@@ -36,18 +36,19 @@ test("lesson 12 (out of range) 404s", async ({ page }) => {
   expect(response?.status()).toBe(404);
 });
 
-test("path overview page renders 11 chapter cards in order: Lesson 1 active, Lessons 2-11 in preparation", async ({ page }) => {
+test("path overview page renders 11 chapter cards in order: Lessons 1-2 active, Lessons 3-11 in preparation", async ({ page }) => {
   await clearStorage(page);
   const allCards = page.locator(".bio-chapter-card");
   await expect(allCards).toHaveCount(LESSON_COUNT);
 
   const activeCards = page.locator(".path-card.active");
-  await expect(activeCards).toHaveCount(1);
-  await expect(activeCards.first()).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-1");
+  await expect(activeCards).toHaveCount(2);
+  await expect(activeCards.nth(0)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-1");
+  await expect(activeCards.nth(1)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-2");
 
   const disabledCards = page.locator(".bio-chapter-card[data-disabled='true']");
-  await expect(disabledCards).toHaveCount(10);
-  for (let index = 0; index < 10; index += 1) {
+  await expect(disabledCards).toHaveCount(9);
+  for (let index = 0; index < 9; index += 1) {
     const card = disabledCards.nth(index);
     // Every disabled card must show the restrained "in preparation" badge, never a raw [placeholder]
     // marker or a progress-tracking status (not_started/in_progress/completed) meant for real lessons.
@@ -118,17 +119,23 @@ test("disabled/'in preparation' chapter cards are not clickable", async ({ page 
 test("completing lesson 2's quiz surfaces a next-chapter link to lesson 3 and a path-overview link", async ({ page }) => {
   await clearStorage(page);
   await page.goto("/sahabah/abu-bakr/lesson-2");
-  for (let index = 0; index < 6; index += 1) await page.locator(".bio-controls").getByRole("button", { name: "التالي", exact: true }).click();
-  await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-7");
+  // Lesson 2 has 8 real cards (L2-B01..L2-B08); the quiz lives on the 8th.
+  for (let index = 0; index < 7; index += 1) await page.locator(".bio-controls").getByRole("button", { name: "التالي", exact: true }).click();
+  await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-8");
   const quiz = page.locator(".quiz-player");
-  await quiz.getByLabel("خيار عنصر نائب أ", { exact: true }).first().check();
+  // Answer all 4 questions correctly so the quiz passes and the lesson completes.
+  await quiz.locator('.quiz-option[data-option-id="b"] input').check(); // L2Q01
   await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
   await quiz.locator(".quiz-navigation").getByRole("button", { name: "السؤال التالي", exact: true }).click();
-  await quiz.getByLabel("صحيح", { exact: true }).check();
+  await quiz.getByLabel("خطأ", { exact: true }).check(); // L2Q02 (true_false, correct answer is false)
   await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
   await quiz.locator(".quiz-navigation").getByRole("button", { name: "السؤال التالي", exact: true }).click();
-  await quiz.getByLabel("خيار عنصر نائب أ", { exact: true }).check();
-  await quiz.getByLabel("خيار عنصر نائب ب", { exact: true }).check();
+  await quiz.locator('.quiz-option[data-option-id="a"] input').check(); // L2Q03 (select_all)
+  await quiz.locator('.quiz-option[data-option-id="b"] input').check();
+  await quiz.locator('.quiz-option[data-option-id="d"] input').check();
+  await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
+  await quiz.locator(".quiz-navigation").getByRole("button", { name: "السؤال التالي", exact: true }).click();
+  await quiz.locator('.quiz-option[data-option-id="a"] input').check(); // L2Q04
   await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
 
   const completion = page.locator("[data-testid='lesson-completed']");
@@ -148,7 +155,7 @@ test("Abu Bakr path routes have no serious automated accessibility violations", 
 
 test("capture desktop and mobile screenshots for the path overview and two placeholder lesson pages", async ({ page }) => {
   test.setTimeout(120_000);
-  const routes = ["/sahabah/abu-bakr", "/sahabah/abu-bakr/lesson-2", "/sahabah/abu-bakr/lesson-11"];
+  const routes = ["/sahabah/abu-bakr", "/sahabah/abu-bakr/lesson-3", "/sahabah/abu-bakr/lesson-11"];
   for (const width of [390, 1440] as const) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 1000 });
     for (const route of routes) {
