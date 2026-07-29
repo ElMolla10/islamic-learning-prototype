@@ -1,81 +1,122 @@
 {
-  "lesson_id": "abu_bakr.lesson_02",
-  "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real questions pending Mohamed's review of content_research/abu_bakr/.",
+  "lesson_id": "abu_bakr.lesson_02_first_days_of_islam",
+  "draft_version": 2,
+  "status": "internal_unapproved",
+  "note": "No free-text questions. Every option and matching row uses a stable id, never a visible index, for grading. Every question links a review_card_id (and, where relevant, a review_deep_section_id) so an incorrect answer can open the right context.",
   "passing_rule": "score / total > 0.5",
   "questions": [
     {
-      "question_id": "ABQ01",
+      "question_id": "L2Q01",
       "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "سؤال عنصر نائب رقم واحد؟",
-      "prompt_en": "Placeholder question one?",
+      "prompt_ar": "ما الوصفُ الدقيق لمكانة أبي بكر بين أوائل من آمنوا، بحسب مصادر هذا المسار؟",
+      "prompt_en": "According to this path's sources, which precisely describes Abu Bakr's place among the earliest believers?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "أول إنسانٍ على الإطلاق آمن بالنبي ﷺ",
+          "en": "The first human being of any kind to believe in the Prophet ﷺ"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "أول من آمن من الرجال الأحرار البالغين",
+          "en": "The first free adult man to believe in the Prophet ﷺ"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "أول من آمن من الرجال على الإطلاق، بمن فيهم العبيد والصبيان",
+          "en": "The first male believer of any kind, including slaves and children"
+        }
+      ],
+      "correct_answer": [
+        "b"
+      ],
+      "explanation_ar": "هذا هو الوصفُ الذي أثبته الدرسُ السابق من مصدرين مستقلين. زيد بن حارثة رضي الله عنه، على سبيل المثال، يُذكر بفئته الخاصة (أول ذَكَرٍ أسلم بعد عليّ)، وهذا لا يتعارض مع فئة أبي بكر.",
+      "explanation_en": "This is the precise description the previous lesson established from two independent sources. Zayd ibn Harithah, for example, is remembered in his own separate category (first male believer after 'Ali) -- this does not conflict with Abu Bakr's own category.",
+      "review_card_id": "L2-B02"
+    },
+    {
+      "question_id": "L2Q02",
+      "type": "true_false",
+      "depth": "core",
+      "prompt_ar": "بحسب مصادر السيرة المعتمدة في هذا الدرس، فإن كل من دعاهم النبي ﷺ إلى الإسلام قَبِلوا فوراً دون أي تردد.",
+      "prompt_en": "According to the Seerah sources used in this lesson, everyone the Prophet ﷺ called to Islam accepted immediately, without any hesitation.",
+      "correct_answer": false,
+      "explanation_ar": "على العكس: تنقل السيرةُ عن النبي ﷺ أن كل من دعاهم كانت عنده كَبْوَةٌ وتردد، إلا أبا بكر تحديداً، الذي لم يتردد فيه أبداً. هذا ما يجعل حالته مميزة في هذه الرواية.",
+      "explanation_en": "The opposite: the sirah reports the Prophet ﷺ saying that everyone he called showed some hesitation and delay -- except Abu Bakr specifically, who did not hesitate at all. This is exactly what makes his case distinctive in this report.",
+      "review_card_id": "L2-B03"
+    },
+    {
+      "question_id": "L2Q03",
+      "type": "select_all",
+      "depth": "core",
+      "prompt_ar": "أيٌّ من هؤلاء ذُكِر في هذا الدرس بأنه أسلم على يد أبي بكر؟ اختر كل ما ينطبق.",
+      "prompt_en": "Which of the following does this lesson name as having accepted Islam through Abu Bakr? Select all that apply.",
+      "options": [
+        {
+          "id": "a",
+          "ar": "عثمان بن عفّان",
+          "en": "'Uthman ibn 'Affan"
+        },
+        {
+          "id": "b",
+          "ar": "الزُّبير بن العوّام",
+          "en": "al-Zubayr ibn al-'Awwam"
+        },
+        {
+          "id": "c",
+          "ar": "بلال بن رباح",
+          "en": "Bilal ibn Rabah"
+        },
+        {
+          "id": "d",
+          "ar": "سعد بن أبي وقّاص",
+          "en": "Sa'd ibn Abi Waqqas"
+        },
+        {
+          "id": "e",
+          "ar": "خالد بن الوليد",
+          "en": "Khalid ibn al-Walid"
+        }
+      ],
+      "correct_answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation_ar": "هذا الدرسُ يذكر خمسةً تحديداً: عثمان، والزُّبير، وعبدَ الرحمن بن عوف، وسعداً، وطلحة. أما بلال وخالد فلم يردا في مصادر هذا الدرس ضمن هذه المجموعة.",
+      "explanation_en": "This lesson names exactly five: 'Uthman, al-Zubayr, 'Abd al-Rahman ibn 'Awf, Sa'd, and Talhah. Bilal and Khalid do not appear in this lesson's sources as part of this specific group.",
+      "review_card_id": "L2-B06"
+    },
+    {
+      "question_id": "L2Q04",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "بحسب هذا الدرس، أيُّ الصفات التالية ربطتها السيرةُ بنجاح أبي بكر في دعوة الناس إلى الإسلام؟",
+      "prompt_en": "According to this lesson, which trait does the sirah directly connect to Abu Bakr's success in calling people to Islam?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "معرفتُه الواسعة وثقةُ قومه به وحسنُ معاملته التجارية",
+          "en": "His broad knowledge, his people's trust in him, and his good conduct in trade"
+        },
+        {
+          "id": "b",
+          "ar": "منصبُه الرسمي كزعيمٍ سياسي لقريش",
+          "en": "His formal position as Quraysh's official political leader"
+        },
+        {
+          "id": "c",
+          "ar": "قوتُه البدنية وقدرتُه على المواجهة",
+          "en": "His physical strength and capacity for confrontation"
         }
       ],
       "correct_answer": [
         "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB02"
-    },
-    {
-      "question_id": "ABQ02",
-      "type": "true_false",
-      "depth": "core",
-      "prompt_ar": "عبارة عنصر نائب رقم اثنين؟",
-      "prompt_en": "Placeholder statement two?",
-      "correct_answer": true,
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB04"
-    },
-    {
-      "question_id": "ABQ03",
-      "type": "select_all",
-      "depth": "deep",
-      "prompt_ar": "سؤال عنصر نائب باختيار متعدد؟",
-      "prompt_en": "Placeholder select-all question?",
-      "options": [
-        {
-          "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
-        },
-        {
-          "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
-        },
-        {
-          "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
-        }
-      ],
-      "correct_answer": [
-        "a",
-        "b"
-      ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB05"
+      "explanation_ar": "تصفُ السيرةُ صراحةً أن الناس كانوا يأتونه لعلمه، وتجارته، وحسن مجالسته -- وهذا يتوافق مع وصفه في الدرس السابق بأنه «عالم قريش».",
+      "explanation_en": "The sirah explicitly describes people coming to him for his knowledge, his trade, and the excellence of his company -- consistent with how he is also described in the previous lesson as \"the scholar of Quraysh.\"",
+      "review_card_id": "L2-B04"
     }
   ]
 }

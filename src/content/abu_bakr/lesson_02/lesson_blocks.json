@@ -1,173 +1,181 @@
 {
-  "lesson_id": "abu_bakr.lesson_02",
-  "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real content pending Mohamed's review of content_research/abu_bakr/ (see src/content/abu_bakr/README.md for the folder mapping for website lesson 2). Every string below is filler used only to verify the Sahabah component system renders correctly.",
+  "lesson_id": "abu_bakr.lesson_02_first_days_of_islam",
+  "draft_version": 2,
+  "status": "internal_unapproved",
+  "note": "Real content, internally drafted and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
   "timeline_phases": [
     {
       "phase_id": "PH1",
-      "label_ar": "البداية [مبدئي]",
-      "label_en": "Start [placeholder]",
-      "date_label_ar": "مرحلة مبدئية أولى",
-      "date_label_en": "Placeholder early phase",
-      "summary_ar": "نص مبدئي لبداية هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's opening.",
-      "block_id": "AB01"
+      "label_ar": "إيمانه هو",
+      "label_en": "His own belief",
+      "date_label_ar": "لحظة إسلامه",
+      "date_label_en": "The moment he accepted Islam",
+      "summary_ar": "مكانته بين أوائل من آمنوا، وسرعة قبوله دون تردد.",
+      "summary_en": "His place among the earliest believers, and the immediacy of his acceptance.",
+      "block_id": "L2-B02"
     },
     {
       "phase_id": "PH2",
-      "label_ar": "الوسط [مبدئي]",
-      "label_en": "Midpoint [placeholder]",
-      "date_label_ar": "مرحلة مبدئية وسطى",
-      "date_label_en": "Placeholder middle phase",
-      "summary_ar": "نص مبدئي لمنتصف هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's middle.",
-      "block_id": "AB04"
-    },
-    {
-      "phase_id": "PH3",
-      "label_ar": "المراجعة [مبدئي]",
-      "label_en": "Review [placeholder]",
-      "date_label_ar": "ختام الفصل [مبدئي]",
-      "date_label_en": "End of chapter [placeholder]",
-      "summary_ar": "نص مبدئي لمراجعة الفصل.",
-      "summary_en": "Placeholder chapter-review summary.",
-      "block_id": "AB07"
+      "label_ar": "دعوته لغيره",
+      "label_en": "Calling others",
+      "date_label_ar": "بعد إسلامه مباشرة",
+      "date_label_en": "Immediately after his own acceptance",
+      "summary_ar": "أسلوبه في الدعوة، وصفاته التي أهّلته لها، ومن أسلم على يديه.",
+      "summary_en": "His method of da'wah, the traits that suited him to it, and those who accepted Islam through him.",
+      "block_id": "L2-B05"
     }
   ],
   "blocks": [
     {
-      "block_id": "AB01",
+      "block_id": "L2-B01",
       "block_type": "lesson_hook",
-      "title_ar": "الأيام الأولى للإسلام [عنوان مبدئي]",
-      "title_en": "The First Days of Islam [placeholder title]",
+      "title_ar": "أول من دعا إلى الإسلام بعد أن آمن به",
+      "title_en": "The First to Call Others After Believing Himself",
       "content_items_ar": [
-        "نص تمهيدي مؤقت لهذا الفصل، الذي سيغطي لاحقًا: قبوله الإسلام ودعوته المبكرة. هذا نص عنصر نائب فقط.",
-        "سيُستبدل هذا النص الكامل بمحتوى حقيقي بعد مراجعة محمد لمواد content_research."
+        "الدرسُ السابق عرّفك بمن كان أبو بكر. هذا الدرسُ يريك ما فعله في أوّل أيامه مسلماً: كيف قبِل الإيمانَ دون تردد، وكيف تحوّل مباشرةً من مؤمنٍ جديد إلى داعيةٍ لغيره.",
+        "خمسةٌ من كبار الصحابة الذين عرفتَهم لاحقاً في أحداثٍ كبرى من تاريخ الإسلام أسلموا على يديه في هذه الأيام الأولى نفسها."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead paragraph for this chapter, which will eventually cover: his acceptance of Islam and early da'wah. This text exists only to verify layout.",
-        "This entire block will be replaced with real content once Mohamed reviews the content_research material."
+        "The previous lesson introduced who Abu Bakr was. This lesson shows what he did in his very first days as a Muslim: how he accepted the faith without hesitation, and how he moved almost immediately from being a new believer to calling others toward the same belief.",
+        "Five men whose names you will meet again in major events of early Islamic history accepted Islam through him in these same first days."
       ],
       "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "source_summary_ar": "خريطة الدرس، بلا استشهاد مباشر",
+      "source_summary_en": "Lesson overview, no direct citation",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB02",
-      "block_type": "event_card",
-      "title_ar": "حدث مبدئي [عنوان مبدئي]",
-      "title_en": "A placeholder event [placeholder title]",
-      "content_items_ar": [
-        "وصف مؤقت لحدث افتراضي في هذا الفصل. عنصر نائب فقط.",
-        "التفاصيل الحقيقية والتواريخ ستأتي من البحث المعتمد لاحقًا."
-      ],
-      "content_items_en": [
-        "PLACEHOLDER description of a hypothetical event in this chapter. Structure only.",
-        "Real details and dates will come from the approved research pack later."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB03",
-      "block_type": "quotation_card",
-      "title_ar": "قول مأثور [مبدئي]",
-      "title_en": "A recorded quotation [placeholder]",
-      "content_items_ar": [
-        "﴿نص اقتباس مؤقت بديل هنا﴾",
-        "قائل الاقتباس [اسم مبدئي] — سياق الاقتباس عنصر نائب."
-      ],
-      "content_items_en": [
-        "“Placeholder quotation text goes here”",
-        "Quotation speaker [placeholder name] — the quotation's context is a placeholder."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB04",
-      "block_type": "hadith_evidence",
-      "title_ar": "دليل حديثي [مبدئي]",
-      "title_en": "Hadith evidence [placeholder]",
-      "content_items_ar": [
-        "مقدمة مؤقتة قبل نص الحديث.",
-        "﴿نص حديث بديل يستخدم كعنصر نائب فقط﴾",
-        "شرح مؤقت لدلالة الحديث."
-      ],
-      "content_items_en": [
-        "PLACEHOLDER lead-in before the hadith text.",
-        "“Placeholder hadith text used only as a structural filler”",
-        "PLACEHOLDER explanation of the hadith's significance."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB05",
+      "block_id": "L2-B02",
       "block_type": "chronology_clarification",
-      "title_ar": "توضيح زمني [مبدئي]",
-      "title_en": "Chronology clarification [placeholder]",
+      "title_ar": "مكانته بين أوائل المؤمنين",
+      "title_en": "His Place Among the Earliest Believers",
       "content_items_ar": [
-        "ملخص مؤقت لخلاف علمي محتمل حول ترتيب الأحداث.",
-        "توضيح مطوّل مؤقت حول أوجه الخلاف بين الروايات."
+        "أثبتَ الدرسُ السابق أن أبا بكر كان أوّل من آمن بالنبي ﷺ من الرجال الأحرار البالغين، استناداً إلى مصدرين مستقلين.",
+        "وهذا لا يتعارض مع أن يُذكر غيرُه بلقب «الأول» في فئته الخاصة: فقد وردَ في السيرة أن زيد بن حارثة رضي الله عنه كان أوّل ذَكَرٍ أسلم وصلّى بعد عليّ بن أبي طالب رضي الله عنه -- وهذا مثالٌ آخر يوضح أن فئات السبق إلى الإسلام متعددة، لا فئة واحدة تشمل الجميع."
       ],
       "content_items_en": [
-        "PLACEHOLDER short summary of a possible scholarly dating disagreement.",
-        "PLACEHOLDER longer clarification of how the narrations differ."
+        "The previous lesson established that Abu Bakr was the first free adult man to believe in the Prophet ﷺ, based on two independent sources.",
+        "This does not conflict with others being described as \"first\" within their own specific category: the sirah reports that Zayd ibn Harithah was the first male to accept Islam and pray after 'Ali ibn Abi Talib -- another example showing that precedence in early Islam has several categories, not one category covering everyone."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L2-C01",
+        "AB-L2-C02"
+      ],
+      "source_summary_ar": "درسٌ سابق من هذا المسار؛ السيرة النبوية لابن هشام",
+      "source_summary_en": "An earlier lesson in this path; Sirat Ibn Hisham",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB06",
-      "block_type": "timeline_review",
-      "title_ar": "مراجعة الخط الزمني [مبدئية]",
-      "title_en": "Timeline review [placeholder]",
+      "block_id": "L2-B03",
+      "block_type": "established_vs_reported",
+      "title_ar": "قَبِل الإيمانَ دون تردد",
+      "title_en": "He Accepted Without Hesitation",
       "content_items_ar": [
-        "١. مرحلة عنصر نائب أولى.",
-        "٢. مرحلة عنصر نائب ثانية.",
-        "٣. مرحلة عنصر نائب ثالثة."
+        "تنقل مصادرُ السيرة عن النبي ﷺ قولَه: «ما دَعَوْتُ أحداً إلى الإسلامِ إلا كانت فيه عندَه كَبْوَةٌ ونَظَرٌ وترَدُّدٌ، إلا ما كان من أبي بكرِ بن أبي قُحافة، ما عكَمَ عنه حينَ ذكرتُه له، وما تردَّدَ فيه».",
+        "هذا نقلٌ من مصادر السيرة، لا حديثٌ مصرَّحٌ بصحته في المصدر المعتمد هنا؛ ومع ذلك فهو استخدامٌ ثابتٌ ومتكرر لوصف سرعة استجابته."
       ],
       "content_items_en": [
-        "1. First placeholder phase.",
-        "2. Second placeholder phase.",
-        "3. Third placeholder phase."
+        "The Seerah sources relate that the Prophet ﷺ said: \"I never called anyone to Islam without some hesitation, reflection, and delay on their part -- except Abu Bakr ibn Abi Quhafah, who did not hold back when I mentioned it to him, and did not hesitate.\"",
+        "This comes from Seerah narrative sources, not a hadith explicitly graded sound in the source relied on here; even so, it is a stable, repeated way this trait of his is described."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L2-C07"
+      ],
+      "source_summary_ar": "السيرة النبوية لابن هشام",
+      "source_summary_en": "Sirat Ibn Hisham",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB07",
+      "block_id": "L2-B04",
+      "block_type": "character_theme",
+      "title_ar": "صفاتٌ هيّأته للدعوة",
+      "title_en": "Traits That Suited Him to Da'wah",
+      "content_items_ar": [
+        "وصفته السيرةُ بأنه كان رجلاً مُؤلَّفاً لقومه، مُحَبَّباً سَهلاً، وأنسبَ قريشٍ لقريشٍ وأعلمَهم بأخبارها، وتاجراً ذا خُلُقٍ ومعروفٍ.",
+        "وكان قومُه يأتونه ويألفونه لعلمِه، وتجارتِه، وحُسنِ مجالستِه -- وهي الصفاتُ نفسُها التي ورد ذكرُها في الدرس السابق حين وُصِف بـ«عالم قريش» لخبرته بأنساب القبائل."
+      ],
+      "content_items_en": [
+        "The sirah describes him as a man who brought his people together, likable and easygoing, the most knowledgeable of Quraysh regarding its genealogy and affairs, and a trader of good character and known good deeds.",
+        "People came to him and were at ease with him for his knowledge, his trade, and the excellence of his company -- the same qualities pointed to in the previous lesson, which calls him \"the scholar of Quraysh\" for his expertise in tribal lineage."
+      ],
+      "claim_ids": [
+        "AB-L2-C04"
+      ],
+      "source_summary_ar": "السيرة النبوية لابن هشام؛ بالتوافق مع سير أعلام النبلاء (الدرس السابق)",
+      "source_summary_en": "Sirat Ibn Hisham; corroborated by Siyar A'lam al-Nubala (previous lesson)",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L2-B05",
+      "block_type": "key_evidence",
+      "title_ar": "كيف دعا إلى الإسلام",
+      "title_en": "How He Called Others to Islam",
+      "content_items_ar": [
+        "لمّا أسلمَ أبو بكر، أظهرَ إسلامَه ودَعا إلى الله وإلى رسولِه.",
+        "فكان يدعو إلى الإسلام مَن وَثِقَ به من قومه ممّن كان يغشاه ويجلس إليه -- أي أنه بدأ بدائرته الأقرب، ممّن يعرفه ويثق بحكمته."
+      ],
+      "content_items_en": [
+        "When Abu Bakr accepted Islam, he made his faith public and called people to Allah and His Messenger.",
+        "He called to Islam those among his own circle who trusted him and used to sit with him -- that is, he began with his closest circle, those who already knew him and trusted his judgement."
+      ],
+      "claim_ids": [
+        "AB-L2-C03"
+      ],
+      "source_summary_ar": "السيرة النبوية لابن هشام",
+      "source_summary_en": "Sirat Ibn Hisham",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L2-B06",
+      "block_type": "name_cards",
+      "title_ar": "خمسةٌ أسلموا على يديه",
+      "title_en": "Five Who Accepted Islam Through Him",
+      "content_items_ar": [
+        "عثمانُ بن عفّان، والزُّبيرُ بن العوّام، وعبدُ الرحمن بن عوف، وسعدُ بن أبي وقّاص، وطلحةُ بن عُبيدالله -- خمسةٌ استجابوا لدعوته، فجاء بهم أبو بكر إلى رسولِ الله ﷺ، فأسلموا وصلّوا."
+      ],
+      "content_items_en": [
+        "'Uthman ibn 'Affan, al-Zubayr ibn al-'Awwam, 'Abd al-Rahman ibn 'Awf, Sa'd ibn Abi Waqqas, and Talhah ibn 'Ubaydullah -- five men who responded to his call; Abu Bakr brought them to the Messenger of Allah ﷺ, and they accepted Islam and prayed."
+      ],
+      "claim_ids": [
+        "AB-L2-C05"
+      ],
+      "source_summary_ar": "السيرة النبوية لابن هشام",
+      "source_summary_en": "Sirat Ibn Hisham",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L2-B07",
+      "block_type": "summary",
+      "title_ar": "ما ينتظرك في الدرس القادم",
+      "title_en": "What the Next Lesson Holds",
+      "content_items_ar": [
+        "هذا الدرسُ ركّز على إيمانه ودعوته المبكرة. أما ما واجهه هو والمسلمون الأوائل من أذى ومعارضة في هذه الفترة نفسها، فسيُفرَد له درسٌ خاص."
+      ],
+      "content_items_en": [
+        "This lesson focused on his belief and his early da'wah. The hardship and opposition that he and the earliest Muslims faced during this same period will be covered in its own dedicated lesson."
+      ],
+      "claim_ids": [],
+      "source_summary_ar": "تمهيدٌ للدرس القادم، بلا استشهاد جديد",
+      "source_summary_en": "Forward-pointer to the next lesson, no new citation",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L2-B08",
       "block_type": "quiz_sources",
-      "title_ar": "اختبر فهمك [مبدئي]",
-      "title_en": "Check your understanding [placeholder]",
-      "content_items_ar": [
-        "مقدمة مؤقتة للاختبار."
-      ],
-      "content_items_en": [
-        "PLACEHOLDER introduction to the quiz."
-      ],
+      "title_ar": "تحقق من فهمك",
+      "title_en": "Check Your Understanding",
+      "content_items_ar": [],
+      "content_items_en": [],
       "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "source_summary_ar": "",
+      "source_summary_en": "",
       "required_for_completion": true,
       "deep_sections": []
     }
