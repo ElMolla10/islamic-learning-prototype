@@ -123,7 +123,7 @@ test("completing lesson 2's quiz surfaces a next-chapter link to lesson 3 and a 
   for (let index = 0; index < 7; index += 1) await page.locator(".bio-controls").getByRole("button", { name: "التالي", exact: true }).click();
   await expect(page.locator(".bio-stage")).toHaveAttribute("data-current-card", "block-8");
   const quiz = page.locator(".quiz-player");
-  // Answer all 4 questions correctly so the quiz passes and the lesson completes.
+  // Answer all 5 questions correctly (v3 adds L2Q06) so the quiz passes and the lesson completes.
   await quiz.locator('.quiz-option[data-option-id="b"] input').check(); // L2Q01
   await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
   await quiz.locator(".quiz-navigation").getByRole("button", { name: "السؤال التالي", exact: true }).click();
@@ -136,6 +136,9 @@ test("completing lesson 2's quiz surfaces a next-chapter link to lesson 3 and a 
   await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
   await quiz.locator(".quiz-navigation").getByRole("button", { name: "السؤال التالي", exact: true }).click();
   await quiz.locator('.quiz-option[data-option-id="a"] input').check(); // L2Q04
+  await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
+  await quiz.locator(".quiz-navigation").getByRole("button", { name: "السؤال التالي", exact: true }).click();
+  await quiz.locator('.quiz-option[data-option-id="a"] input').check(); // L2Q06 (sahih testimony, RQ03)
   await quiz.getByRole("button", { name: "تحقق من الإجابة", exact: true }).click();
 
   const completion = page.locator("[data-testid='lesson-completed']");
