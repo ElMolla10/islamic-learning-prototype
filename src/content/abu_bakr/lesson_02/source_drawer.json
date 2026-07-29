@@ -27,7 +27,8 @@
             "AB-L2-C03",
             "AB-L2-C04",
             "AB-L2-C05",
-            "AB-L2-C07"
+            "AB-L2-C07",
+            "AB-L2-C16"
           ]
         }
       ]
@@ -65,6 +66,55 @@
           "printed_page": 65,
           "claims_supported": [
             "AB-L2-C01"
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "work_sahih_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري (al-Bukhari)",
+      "source_role": [
+        "primary_hadith_collection"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 900,
+          "printed_page": 900,
+          "claims_supported": [
+            "AB-L2-C08",
+            "AB-L2-C09"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 956,
+          "printed_page": 956,
+          "claims_supported": [
+            "AB-L2-C15"
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "work_bidaya_nihaya",
+      "display_title": "البداية والنهاية (al-Bidayah wa al-Nihayah)",
+      "author": "إسماعيل بن عمر بن كثير (Ibn Kathir)",
+      "source_role": [
+        "later_historical_compilation"
+      ],
+      "locations": [
+        {
+          "volume": "٢ (طبعة دار ابن كثير)",
+          "pdf_page": 227,
+          "printed_page": 227,
+          "claims_supported": [
+            "AB-L2-C02",
+            "AB-L2-C03",
+            "AB-L2-C04",
+            "AB-L2-C05",
+            "AB-L2-C10"
           ]
         }
       ]

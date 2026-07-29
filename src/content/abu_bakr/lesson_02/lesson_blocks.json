@@ -1,6 +1,6 @@
 {
   "lesson_id": "abu_bakr.lesson_02_first_days_of_islam",
-  "draft_version": 2,
+  "draft_version": 3,
   "status": "internal_unapproved",
   "note": "Real content, internally drafted and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
   "timeline_phases": [
@@ -29,19 +29,23 @@
     {
       "block_id": "L2-B01",
       "block_type": "lesson_hook",
-      "title_ar": "أول من دعا إلى الإسلام بعد أن آمن به",
-      "title_en": "The First to Call Others After Believing Himself",
+      "title_ar": "آمن ثم دعا غيره إلى الإسلام",
+      "title_en": "He Believed, Then Called Others to Islam",
       "content_items_ar": [
-        "الدرسُ السابق عرّفك بمن كان أبو بكر. هذا الدرسُ يريك ما فعله في أوّل أيامه مسلماً: كيف قبِل الإيمانَ دون تردد، وكيف تحوّل مباشرةً من مؤمنٍ جديد إلى داعيةٍ لغيره.",
-        "خمسةٌ من كبار الصحابة الذين عرفتَهم لاحقاً في أحداثٍ كبرى من تاريخ الإسلام أسلموا على يديه في هذه الأيام الأولى نفسها."
+        "الدرسُ السابق عرّفك بمن كان أبو بكر. هذا الدرسُ يقف عند أوّل أيامه مسلماً: كيف قبِل الإيمانَ دون تردد، وكيف تحوّل مباشرةً من مؤمنٍ جديد إلى من يفتح الطريقَ نفسَه لغيره.",
+        "في تلك الأيام كان أهلُ هذا الدين قلّةً قليلة؛ حتى وصف عمّارُ بن ياسر رضي الله عنه أوّلَ مشهدٍ رآه بعبارةٍ موجزة ستقرؤها في هذا الدرس.",
+        "خمسةٌ من كبار الصحابة الذين ستلقاهم لاحقاً في أحداثٍ كبرى من تاريخ الإسلام أسلموا على يديه في هذه الأيام الأولى نفسها."
       ],
       "content_items_en": [
-        "The previous lesson introduced who Abu Bakr was. This lesson shows what he did in his very first days as a Muslim: how he accepted the faith without hesitation, and how he moved almost immediately from being a new believer to calling others toward the same belief.",
+        "The previous lesson introduced who Abu Bakr was. This lesson stays inside his very first days as a Muslim: how he accepted the faith without hesitation, and how he turned almost at once from a new believer into someone opening that same path for others.",
+        "In those days the people of this religion were a small handful — 'Ammar ibn Yasir described the first scene he saw in one short sentence you will read in this lesson.",
         "Five men whose names you will meet again in major events of early Islamic history accepted Islam through him in these same first days."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "خريطة الدرس، بلا استشهاد مباشر",
-      "source_summary_en": "Lesson overview, no direct citation",
+      "claim_ids": [
+        "AB-L2-C08"
+      ],
+      "source_summary_ar": "خريطة الدرس؛ الإشارة إلى وصف عمّار من صحيح البخاري",
+      "source_summary_en": "Lesson overview; the 'Ammar description referenced is from Sahih al-Bukhari",
       "required_for_completion": true,
       "deep_sections": []
     },
@@ -51,40 +55,48 @@
       "title_ar": "مكانته بين أوائل المؤمنين",
       "title_en": "His Place Among the Earliest Believers",
       "content_items_ar": [
-        "أثبتَ الدرسُ السابق أن أبا بكر كان أوّل من آمن بالنبي ﷺ من الرجال الأحرار البالغين، استناداً إلى مصدرين مستقلين.",
-        "وهذا لا يتعارض مع أن يُذكر غيرُه بلقب «الأول» في فئته الخاصة: فقد وردَ في السيرة أن زيد بن حارثة رضي الله عنه كان أوّل ذَكَرٍ أسلم وصلّى بعد عليّ بن أبي طالب رضي الله عنه -- وهذا مثالٌ آخر يوضح أن فئات السبق إلى الإسلام متعددة، لا فئة واحدة تشمل الجميع."
+        "أثبتَ الدرسُ السابق أن أبا بكر كان أوّل من آمن بالنبي ﷺ من الرجال الأحرار البالغين — وهذا الدرسُ يبدأ من تلك اللحظة نفسها.",
+        "ولكي تُدرك حجمَ تلك اللحظة، اسمع وصفَ عمّار بن ياسر رضي الله عنه لأوّل الإسلام كما رآه بعينه: «رأيتُ رسولَ الله ﷺ وما معه إلا خمسةُ أعبُدٍ وامرأتان وأبو بكر». هكذا بدا المشهدُ يومَ رآه عمّار.",
+        "وسبقُ أبي بكر لا يُلغي سبقَ غيرِه في فئته: فقد نقل ابنُ كثير عن أبي حنيفة جمعَه بين الأقوال بأنّ أوّل من أسلم من الرجال الأحرار أبو بكر، ومن النساء خديجة، ومن الموالي زيدُ بن حارثة، ومن الغلمان عليُّ بن أبي طالب، رضي الله عنهم أجمعين.",
+        "فالسبقُ إلى الإسلام فئاتٌ متعددة لا فئةٌ واحدة. والذي يعنينا في هذا الدرس هو ما صنعه أبو بكر بسبقه: لم يقف عند أن يكون أوّلَ من آمن، بل جعل إيمانَه باباً دخل منه غيرُه."
       ],
       "content_items_en": [
-        "The previous lesson established that Abu Bakr was the first free adult man to believe in the Prophet ﷺ, based on two independent sources.",
-        "This does not conflict with others being described as \"first\" within their own specific category: the sirah reports that Zayd ibn Harithah was the first male to accept Islam and pray after 'Ali ibn Abi Talib -- another example showing that precedence in early Islam has several categories, not one category covering everyone."
+        "The previous lesson established that Abu Bakr was the first free adult man to believe in the Prophet ﷺ — and this lesson begins at that very moment.",
+        "To grasp the size of that moment, hear 'Ammar ibn Yasir describe the beginning of Islam as he himself saw it: \"I saw the Messenger of Allah ﷺ, and with him were only five slaves, two women, and Abu Bakr.\" That is how the scene looked on the day 'Ammar saw it.",
+        "His precedence does not erase anyone else's within their own category: Ibn Kathir relates that Abu Hanifah reconciled the reports this way — the first free adult man to accept Islam was Abu Bakr; the first woman, Khadijah; the first freedman, Zayd ibn Harithah; and the first youth, 'Ali ibn Abi Talib — may Allah be pleased with them all.",
+        "Precedence in Islam, then, has several categories, not one. What concerns this lesson is what Abu Bakr did with his: he did not stop at being first to believe — he made his belief a doorway others entered through."
       ],
       "claim_ids": [
         "AB-L2-C01",
+        "AB-L2-C08",
         "AB-L2-C02"
       ],
-      "source_summary_ar": "درسٌ سابق من هذا المسار؛ السيرة النبوية لابن هشام",
-      "source_summary_en": "An earlier lesson in this path; Sirat Ibn Hisham",
+      "source_summary_ar": "درسٌ سابق من هذا المسار؛ صحيح البخاري؛ البداية والنهاية لابن كثير",
+      "source_summary_en": "An earlier lesson in this path; Sahih al-Bukhari; Ibn Kathir's al-Bidayah wa al-Nihayah",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
       "block_id": "L2-B03",
-      "block_type": "established_vs_reported",
+      "block_type": "key_evidence",
       "title_ar": "قَبِل الإيمانَ دون تردد",
       "title_en": "He Accepted Without Hesitation",
       "content_items_ar": [
         "تنقل مصادرُ السيرة عن النبي ﷺ قولَه: «ما دَعَوْتُ أحداً إلى الإسلامِ إلا كانت فيه عندَه كَبْوَةٌ ونَظَرٌ وترَدُّدٌ، إلا ما كان من أبي بكرِ بن أبي قُحافة، ما عكَمَ عنه حينَ ذكرتُه له، وما تردَّدَ فيه».",
-        "هذا نقلٌ من مصادر السيرة، لا حديثٌ مصرَّحٌ بصحته في المصدر المعتمد هنا؛ ومع ذلك فهو استخدامٌ ثابتٌ ومتكرر لوصف سرعة استجابته."
+        "ولم يكن ترددُ الناس عجباً: فقَبولُ هذا الدين يومئذ خروجٌ عن دين الآباء ومألوفِ قريشٍ كلِّها؛ فكان قبولُ أبي بكر الفوريُّ أمراً يلفت النظر بحق.",
+        "وبعد سنين، وفي شهادةٍ محفوظةٍ في الصحيح، قال النبيُّ ﷺ: «إنَّ اللهَ بعثني إليكم، فقلتم: كذبتَ، وقال أبو بكرٍ: صدقَ، وواساني بنفسِه ومالِه». فلم يكن تصديقُه لحظةً عابرة، بل ثبت إلى جانب النبي ﷺ حين كذّبه كثيرٌ من الناس."
       ],
       "content_items_en": [
-        "The Seerah sources relate that the Prophet ﷺ said: \"I never called anyone to Islam without some hesitation, reflection, and delay on their part -- except Abu Bakr ibn Abi Quhafah, who did not hold back when I mentioned it to him, and did not hesitate.\"",
-        "This comes from Seerah narrative sources, not a hadith explicitly graded sound in the source relied on here; even so, it is a stable, repeated way this trait of his is described."
+        "The Seerah sources relate that the Prophet ﷺ said: \"I never called anyone to Islam without some hesitation, reflection, and delay on their part — except Abu Bakr ibn Abi Quhafah, who did not hold back when I mentioned it to him, and did not hesitate.\"",
+        "The hesitation of others was no surprise: accepting this religion then meant leaving the religion of one's fathers and everything familiar to all of Quraysh — which is exactly what makes Abu Bakr's immediate acceptance so striking.",
+        "Years later, in testimony preserved in the Sahih, the Prophet ﷺ said: \"Allah sent me to you, and you said: he has lied — while Abu Bakr said: he has spoken the truth, and he stood by me with himself and his wealth.\" His belief was not a passing moment: he remained firmly beside the Prophet ﷺ when many others denied him."
       ],
       "claim_ids": [
-        "AB-L2-C07"
+        "AB-L2-C07",
+        "AB-L2-C09"
       ],
-      "source_summary_ar": "السيرة النبوية لابن هشام",
-      "source_summary_en": "Sirat Ibn Hisham",
+      "source_summary_ar": "السيرة النبوية لابن هشام؛ صحيح البخاري",
+      "source_summary_en": "Sirat Ibn Hisham; Sahih al-Bukhari",
       "required_for_completion": true,
       "deep_sections": []
     },
@@ -94,18 +106,23 @@
       "title_ar": "صفاتٌ هيّأته للدعوة",
       "title_en": "Traits That Suited Him to Da'wah",
       "content_items_ar": [
-        "وصفته السيرةُ بأنه كان رجلاً مُؤلَّفاً لقومه، مُحَبَّباً سَهلاً، وأنسبَ قريشٍ لقريشٍ وأعلمَهم بأخبارها، وتاجراً ذا خُلُقٍ ومعروفٍ.",
-        "وكان قومُه يأتونه ويألفونه لعلمِه، وتجارتِه، وحُسنِ مجالستِه -- وهي الصفاتُ نفسُها التي ورد ذكرُها في الدرس السابق حين وُصِف بـ«عالم قريش» لخبرته بأنساب القبائل."
+        "وصفته السيرةُ بأنه كان رجلاً مُؤلَّفاً لقومه، مُحَبَّباً سَهلاً، وأنسبَ قريشٍ لقريشٍ وأعلمَهم بأخبارها، وتاجراً ذا خُلُقٍ ومعروفٍ، يأتيه رجالُ قومه ويألفونه لعلمِه وتجارتِه وحُسنِ مجالستِه.",
+        "ولكلِّ صفةٍ من هذه أثرُها في دعوته: علمُه بالأنساب جعل أحاديثَ البيوت وأخبارَها مألوفةً عنده وأبوابَها مفتوحةً له، وتجارتُه بخُلُقٍ ومعروفٍ بنت له ثقةً راسخة، وسهولتُه المحبَّبة جعلت مجلسَه مطلوباً لا مُتَجنَّباً.",
+        "وقد حفظ الصحيحُ صورةً مطابقةً لهذا من شهادة رجلٍ لم يكن يومئذ مسلماً، إذ قال له ابنُ الدَّغِنَة سيّدُ القارَة: «إنك تَكسِبُ المعدومَ، وتصِلُ الرحمَ، وتحمِلُ الكَلَّ، وتَقري الضيفَ، وتُعينُ على نوائبِ الحقِّ».",
+        "فحين دعا أبو بكر أحداً إلى الإسلام، لم تكن دعوتُه صوتَ رجلٍ غريبٍ، بل كلمةَ رجلٍ عرف قومُه صدقَه في تجارته، وعلمَه بأنسابهم وأخبارهم."
       ],
       "content_items_en": [
-        "The sirah describes him as a man who brought his people together, likable and easygoing, the most knowledgeable of Quraysh regarding its genealogy and affairs, and a trader of good character and known good deeds.",
-        "People came to him and were at ease with him for his knowledge, his trade, and the excellence of his company -- the same qualities pointed to in the previous lesson, which calls him \"the scholar of Quraysh\" for his expertise in tribal lineage."
+        "The sirah describes him as a man who brought his people together — likable and easygoing, the most knowledgeable of Quraysh about its genealogy and its history, a trader of good character and known good deeds — whose men would come to him and feel at ease with him for his knowledge, his trade, and the excellence of his company.",
+        "Each of these traits fed directly into his calling: his knowledge of lineage made every household's history familiar to him and its doors open to him; his trade, conducted with character and good deeds, built a settled trust; and his easy likability made his company something people sought rather than avoided.",
+        "The Sahih preserves a matching picture in the testimony of a man who was not then a Muslim — Ibn al-Daghinah, chief of al-Qarah, told him: \"You earn for the destitute, maintain the ties of kinship, carry others' burdens, host the guest, and give help against the blows of fate.\"",
+        "So when Abu Bakr invited someone to Islam, the invitation was not a stranger's voice — it was the word of a man whose people already knew his honesty in trade and his knowledge of their lineages and history."
       ],
       "claim_ids": [
-        "AB-L2-C04"
+        "AB-L2-C04",
+        "AB-L2-C15"
       ],
-      "source_summary_ar": "السيرة النبوية لابن هشام؛ بالتوافق مع سير أعلام النبلاء (الدرس السابق)",
-      "source_summary_en": "Sirat Ibn Hisham; corroborated by Siyar A'lam al-Nubala (previous lesson)",
+      "source_summary_ar": "السيرة النبوية لابن هشام؛ صحيح البخاري؛ ويَرِد وصفٌ قريبٌ في سير أعلام النبلاء (الدرس السابق)",
+      "source_summary_en": "Sirat Ibn Hisham; Sahih al-Bukhari; also described in Siyar A'lam al-Nubala (previous lesson)",
       "required_for_completion": true,
       "deep_sections": []
     },
@@ -115,18 +132,20 @@
       "title_ar": "كيف دعا إلى الإسلام",
       "title_en": "How He Called Others to Islam",
       "content_items_ar": [
-        "لمّا أسلمَ أبو بكر، أظهرَ إسلامَه ودَعا إلى الله وإلى رسولِه.",
-        "فكان يدعو إلى الإسلام مَن وَثِقَ به من قومه ممّن كان يغشاه ويجلس إليه -- أي أنه بدأ بدائرته الأقرب، ممّن يعرفه ويثق بحكمته."
+        "لمّا أسلمَ أبو بكر أظهرَ إسلامَه، ودعا إلى الله وإلى رسولِه، فكان يدعو إلى الإسلام مَن وَثِقَ به من قومه ممّن كان يغشاه ويجلس إليه.",
+        "بدأ حيث تكون الكلمةُ أثقلَ ما تكون: عند من يعرفونه عن قرب. فالذين جرّبوا صدقَه في المال والحديث سنينَ طويلة، لم يكن تصديقُهم له بعيداً حين أخبرهم أنه وجد الحق.",
+        "وكانت أولى ثمارِ هذا كلِّه خمسةَ رجالٍ من أهل ثقته ومجلسه، تلقاهم في الجزء التالي من هذا الدرس."
       ],
       "content_items_en": [
-        "When Abu Bakr accepted Islam, he made his faith public and called people to Allah and His Messenger.",
-        "He called to Islam those among his own circle who trusted him and used to sit with him -- that is, he began with his closest circle, those who already knew him and trusted his judgement."
+        "When Abu Bakr accepted Islam, he made his faith public and called people to Allah and His Messenger — inviting to Islam those of his people who trusted him, those who used to visit him and sit with him.",
+        "He began where a word carries most weight: with those who knew him closely. For men who had tested his honesty in money and speech over long years, believing him was no far step when he told them he had found the truth.",
+        "The first fruit of all this was five men from his circle of trust and company — you will meet them in the next part of this lesson."
       ],
       "claim_ids": [
         "AB-L2-C03"
       ],
-      "source_summary_ar": "السيرة النبوية لابن هشام",
-      "source_summary_en": "Sirat Ibn Hisham",
+      "source_summary_ar": "السيرة النبوية لابن هشام؛ البداية والنهاية لابن كثير",
+      "source_summary_en": "Sirat Ibn Hisham; Ibn Kathir's al-Bidayah wa al-Nihayah",
       "required_for_completion": true,
       "deep_sections": []
     },
@@ -136,18 +155,40 @@
       "title_ar": "خمسةٌ أسلموا على يديه",
       "title_en": "Five Who Accepted Islam Through Him",
       "content_items_ar": [
-        "عثمانُ بن عفّان، والزُّبيرُ بن العوّام، وعبدُ الرحمن بن عوف، وسعدُ بن أبي وقّاص، وطلحةُ بن عُبيدالله -- خمسةٌ استجابوا لدعوته، فجاء بهم أبو بكر إلى رسولِ الله ﷺ، فأسلموا وصلّوا."
+        "عثمانُ بن عفّان، والزُّبيرُ بن العوّام، وعبدُ الرحمن بن عوف، وسعدُ بن أبي وقّاص، وطلحةُ بن عُبيدالله — خمسةٌ استجابوا لدعوته في هذه الأيام الأولى نفسها.",
+        "فجاء بهم أبو بكر إلى رسول الله ﷺ حين استجابوا له، فعرَض عليهم رسولُ اللهِ ﷺ الإسلامَ، وقرأ عليهم القرآنَ، وأنبأهم بحقِّ الإسلام، فآمنوا وصلّوا.",
+        "ولم يخرج الخمسةُ من بيتٍ واحد، بل جاءوا من أربعة بطونٍ مختلفة من قريش — وتفصيلُ ذلك في الفقرة الموسَّعة أدناه.",
+        "ستلقى هذه الأسماءَ مراراً عبر تاريخ الإسلام المبكر؛ يكفيك الآن أن تعرف أنَّ طريقهم إلى الإسلام مرَّ بأبي بكر."
       ],
       "content_items_en": [
-        "'Uthman ibn 'Affan, al-Zubayr ibn al-'Awwam, 'Abd al-Rahman ibn 'Awf, Sa'd ibn Abi Waqqas, and Talhah ibn 'Ubaydullah -- five men who responded to his call; Abu Bakr brought them to the Messenger of Allah ﷺ, and they accepted Islam and prayed."
+        "'Uthman ibn 'Affan, al-Zubayr ibn al-'Awwam, 'Abd al-Rahman ibn 'Awf, Sa'd ibn Abi Waqqas, and Talhah ibn 'Ubaydullah — five men who answered his call in these same first days.",
+        "Abu Bakr brought them to the Messenger of Allah ﷺ once they had responded to him. The Messenger of Allah ﷺ then presented Islam to them, recited the Qur'an to them, told them of the truth of Islam, and they believed and prayed.",
+        "Nor did the five come from a single household: they came from four different clans of Quraysh — the expanded section below gives the detail.",
+        "You will meet these names repeatedly across the history of early Islam; for now, it is enough to know that their road to Islam passed through Abu Bakr."
       ],
       "claim_ids": [
-        "AB-L2-C05"
+        "AB-L2-C05",
+        "AB-L2-C10"
       ],
-      "source_summary_ar": "السيرة النبوية لابن هشام",
-      "source_summary_en": "Sirat Ibn Hisham",
+      "source_summary_ar": "السيرة النبوية لابن هشام؛ البداية والنهاية لابن كثير",
+      "source_summary_en": "Sirat Ibn Hisham; Ibn Kathir's al-Bidayah wa al-Nihayah",
       "required_for_completion": true,
-      "deep_sections": []
+      "deep_sections": [
+        {
+          "section_id": "L2-B06-D1",
+          "title_ar": "من أيِّ بيوت قريشٍ جاء الخمسة؟",
+          "title_en": "Which Quraysh Clans Did the Five Come From?",
+          "content_items_ar": [
+            "بحسب سياق الأنساب التي ساقها ابنُ هشام في الموضع نفسِه: عثمانُ من بني أميّة من عبد شمس، والزبيرُ من بني أسد بن عبد العُزّى، وعبدُ الرحمن وسعدٌ كلاهما من بني زُهرة، وطلحةُ من بني تَيْم — رهطِ أبي بكر نفسِه. فأولى دعواتِه وصلت إلى أربعةِ بطونٍ مختلفة من قريش، ولم تنحصر في أهله وأقربائه."
+          ],
+          "content_items_en": [
+            "Following the lineages Ibn Hisham himself records in the same passage: 'Uthman was of Banu Umayyah of 'Abd Shams; al-Zubayr of Banu Asad ibn 'Abd al-'Uzza; 'Abd al-Rahman and Sa'd both of Banu Zuhrah; and Talhah of Banu Taym — Abu Bakr's own clan. His earliest invitations reached four different clans of Quraysh; they were not confined to his own household and relatives."
+          ],
+          "claim_ids": [
+            "AB-L2-C16"
+          ]
+        }
+      ]
     },
     {
       "block_id": "L2-B07",
@@ -155,14 +196,16 @@
       "title_ar": "ما ينتظرك في الدرس القادم",
       "title_en": "What the Next Lesson Holds",
       "content_items_ar": [
-        "هذا الدرسُ ركّز على إيمانه ودعوته المبكرة. أما ما واجهه هو والمسلمون الأوائل من أذى ومعارضة في هذه الفترة نفسها، فسيُفرَد له درسٌ خاص."
+        "رأيتَ في هذا الدرس الحلقةَ الأولى كاملة: رجلٌ قَبِل الحقَّ ساعةَ سمعه، ثم جعل ثقةَ الناس به طريقاً يدخلون منه إلى الإسلام، حتى دخل منه خمسةٌ من أعلام هذا الدين.",
+        "أما ما واجهه هو والمسلمون الأوائل من أذى ومعارضةٍ في هذه الفترة نفسها، فسيُفرَد له درسٌ خاص."
       ],
       "content_items_en": [
-        "This lesson focused on his belief and his early da'wah. The hardship and opposition that he and the earliest Muslims faced during this same period will be covered in its own dedicated lesson."
+        "You have now seen the first link whole: a man who accepted the truth the hour he heard it, then turned people's trust in him into a road by which they entered Islam — five of this religion's great figures among them.",
+        "The hardship and opposition that he and the earliest Muslims faced during this same period will be covered in its own dedicated lesson."
       ],
       "claim_ids": [],
-      "source_summary_ar": "تمهيدٌ للدرس القادم، بلا استشهاد جديد",
-      "source_summary_en": "Forward-pointer to the next lesson, no new citation",
+      "source_summary_ar": "خلاصةٌ وتمهيدٌ للدرس القادم، بلا استشهاد جديد",
+      "source_summary_en": "Recap and forward-pointer to the next lesson, no new citation",
       "required_for_completion": true,
       "deep_sections": []
     },

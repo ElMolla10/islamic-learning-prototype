@@ -1,6 +1,6 @@
 {
   "lesson_id": "abu_bakr.lesson_02_first_days_of_islam",
-  "draft_version": 2,
+  "draft_version": 3,
   "status": "internal_unapproved",
   "note": "No free-text questions. Every option and matching row uses a stable id, never a visible index, for grading. Every question links a review_card_id (and, where relevant, a review_deep_section_id) so an incorrect answer can open the right context.",
   "passing_rule": "score / total > 0.5",
@@ -117,6 +117,41 @@
       "explanation_ar": "تصفُ السيرةُ صراحةً أن الناس كانوا يأتونه لعلمه، وتجارته، وحسن مجالسته -- وهذا يتوافق مع وصفه في الدرس السابق بأنه «عالم قريش».",
       "explanation_en": "The sirah explicitly describes people coming to him for his knowledge, his trade, and the excellence of his company -- consistent with how he is also described in the previous lesson as \"the scholar of Quraysh.\"",
       "review_card_id": "L2-B04"
+    },
+    {
+      "question_id": "L2Q06",
+      "type": "multiple_choice",
+      "depth": "core",
+      "prompt_ar": "في الحديث الصحيح، كيف وصف النبيُّ ﷺ موقفَ أبي بكر حين كذّبه الناس؟",
+      "prompt_en": "In the sahih hadith, how did the Prophet ﷺ describe Abu Bakr's stance when the people called him a liar?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "قال: صدقَ، وواساني بنفسه وماله",
+          "en": "He said 'he spoke the truth,' and stood by him with himself and his wealth"
+        },
+        {
+          "id": "b",
+          "ar": "تردّد أولاً ثم آمن بعد حين",
+          "en": "He hesitated at first, then believed after a time"
+        },
+        {
+          "id": "c",
+          "ar": "اعتزل الناسَ حتى هدأ الأمر",
+          "en": "He withdrew from people until matters calmed down"
+        },
+        {
+          "id": "d",
+          "ar": "آمن سراً ولم يُعِن النبيَّ ﷺ بشيء",
+          "en": "He believed secretly and gave the Prophet ﷺ no support"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "قال النبيُّ ﷺ في الصحيح: «إنَّ اللهَ بعثني إليكم، فقلتم: كذبتَ، وقال أبو بكرٍ: صدقَ، وواساني بنفسِه ومالِه». فجمعت شهادتُه بين التصديق الفوري والبذل المستمر.",
+      "explanation_en": "The Prophet ﷺ said in the Sahih: 'Allah sent me to you, and you said: he has lied — while Abu Bakr said: he has spoken the truth, and he stood by me with himself and his wealth.' The testimony, given years later, joins immediate belief with sustained support.",
+      "review_card_id": "L2-B03"
     }
   ]
 }
