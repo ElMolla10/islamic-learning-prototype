@@ -40,7 +40,7 @@ export const companions: Companion[] = [
 // folders (lessons 6 and 7 there are merged into website lesson 6).
 export const abuBakrPath: BiographyChapter[] = [
   { slug: "lesson-1", number: 1, title: { ar: "من كان أبو بكر الصدّيق؟", en: "Who Was Abu Bakr al-Siddiq?" }, description: { ar: "اسمه وكنيته وألقابه، وسبقه إلى الإيمان، وقربه من النبي ﷺ", en: "His name, kunyah, and titles; his precedence in faith; and his closeness to the Prophet ﷺ" }, state: "active", contentReady: true },
-  { slug: "lesson-2", number: 2, title: { ar: "الأيام الأولى للإسلام", en: "The First Days of Islam" }, description: { ar: "قبوله الإسلام ودعوته المبكرة في مكة.", en: "His acceptance of Islam and his early da'wah in Makkah." }, state: "planned" },
+  { slug: "lesson-2", number: 2, title: { ar: "الأيام الأولى للإسلام", en: "The First Days of Islam" }, description: { ar: "قبوله الإسلام ودعوته المبكرة في مكة.", en: "His acceptance of Islam and his early da'wah in Makkah." }, state: "active", contentReady: true },
   { slug: "lesson-3", number: 3, title: { ar: "الإيمان تحت الاضطهاد", en: "Faith Under Persecution" }, description: { ar: "الاضطهاد في مكة وعتقه للمستضعفين من المسلمين.", en: "Persecution in Makkah and his freeing of the weak among the early Muslims." }, state: "planned" },
   { slug: "lesson-4", number: 4, title: { ar: "رفيق الغار", en: "Companion of the Cave" }, description: { ar: "الهجرة النبوية ورحلة الغار.", en: "The Hijrah and the journey to the cave." }, state: "planned" },
   { slug: "lesson-5", number: 5, title: { ar: "أبو بكر في المدينة", en: "Abu Bakr in Madinah" }, description: { ar: "بدر وأُحد والغزوات اللاحقة.", en: "Badr, Uhud, and the later campaigns." }, state: "planned" },

@@ -1,43 +1,73 @@
 {
-  "lesson_id": "abu_bakr.lesson_02",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real sources pending Mohamed's review of content_research/abu_bakr/.",
+  "lesson_id": "abu_bakr.lesson_02_first_days_of_islam",
+  "status": "internal_unapproved",
+  "note": "Learner-facing source presentation only. Locations are grouped compactly by source and page. No internal file paths, OCR artefacts, or reviewer-only notes are exposed here.",
   "sources": [
     {
-      "work_id": "work_placeholder_primary",
-      "display_title": "مصدر عنصر نائب أول [مبدئي]",
-      "author": "—",
+      "work_id": "work_sirat_ibn_hisham",
+      "display_title": "السيرة النبوية لابن هشام (Sirat Ibn Hisham)",
+      "author": "عبدالملك بن هشام، عن رواية ابن إسحاق (Ibn Hisham, narrating Ibn Ishaq)",
       "source_role": [
-        "primary_hadith_collection"
+        "dedicated_seerah_narrative"
       ],
-      "claims_supported": [],
       "locations": [
         {
           "volume": null,
-          "pdf_page": 1,
-          "printed_page": 1
+          "pdf_page": 116,
+          "printed_page": 116,
+          "claims_supported": [
+            "AB-L2-C02"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 117,
+          "printed_page": 117,
+          "claims_supported": [
+            "AB-L2-C03",
+            "AB-L2-C04",
+            "AB-L2-C05",
+            "AB-L2-C07"
+          ]
         }
-      ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      ]
     },
     {
-      "work_id": "work_placeholder_commentary",
-      "display_title": "مصدر عنصر نائب ثانٍ [مبدئي]",
-      "author": "مؤلف عنصر نائب",
+      "work_id": "work_siyar_alam_reused",
+      "display_title": "سير أعلام النبلاء (Siyar A'lam al-Nubala)",
+      "author": "محمد بن أحمد الذهبي (al-Dhahabi)",
       "source_role": [
-        "hadith_commentary"
+        "dedicated_biography"
       ],
-      "claims_supported": [],
       "locations": [
         {
-          "volume": 1,
-          "pdf_page": 10,
-          "printed_page": 12
+          "volume": null,
+          "pdf_page": 7,
+          "printed_page": 7,
+          "claims_supported": [
+            "AB-L2-C01",
+            "AB-L2-C04"
+          ]
         }
+      ]
+    },
+    {
+      "work_id": "work_fadail_alsahabah_reused",
+      "display_title": "فضائل الصحابة (Fada'il al-Sahabah)",
+      "author": "أحمد بن حنبل (Ahmad ibn Hanbal)",
+      "source_role": [
+        "hadith_and_virtues_collection"
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 65,
+          "printed_page": 65,
+          "claims_supported": [
+            "AB-L2-C01"
+          ]
+        }
+      ]
     }
   ]
 }
