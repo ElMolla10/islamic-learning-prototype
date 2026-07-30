@@ -2,16 +2,30 @@
 
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { Language, Source } from "@/content/types";
+import { trackAnalytics, type PublicLessonSlug } from "@/lib/analytics";
 import { compactNumberRanges, groupSourceLocations } from "@/lib/source-display";
 import { useLanguage } from "./LanguageProvider";
 import { CloseIcon, SourceIcon } from "./icons";
 
 type SourceContextValue={openSources:(keys?:string[],trigger?:HTMLElement)=>void};
 const SourceContext=createContext<SourceContextValue|null>(null);
+type SourceAnalyticsContext = { lessonSlug: PublicLessonSlug; cardIndex: number; cardCount: number };
 
-export function SourceProvider({sources,children}:{sources:Source[];children:ReactNode}){
+export function SourceProvider({sources,children,analyticsContext}:{sources:Source[];children:ReactNode;analyticsContext?:SourceAnalyticsContext}){
+  const {language}=useLanguage();
   const [open,setOpen]=useState(false);const [keys,setKeys]=useState<string[]>([]);const triggerRef=useRef<HTMLElement|null>(null);
-  const value=useMemo(()=>({openSources(nextKeys:string[]=[],trigger?:HTMLElement){setKeys(nextKeys);triggerRef.current=trigger??null;setOpen(true);}}),[]);
+  const value=useMemo(()=>({openSources(nextKeys:string[]=[],trigger?:HTMLElement){
+    if(analyticsContext){
+      if(nextKeys.length)trackAnalytics("source_drawer_open",{
+        lesson_slug:analyticsContext.lessonSlug,language,source_context:"section_sources",
+        card_index:analyticsContext.cardIndex,card_count:analyticsContext.cardCount,
+      });
+      else trackAnalytics("source_drawer_open",{
+        lesson_slug:analyticsContext.lessonSlug,language,source_context:"all_sources",
+      });
+    }
+    setKeys(nextKeys);triggerRef.current=trigger??null;setOpen(true);
+  }}),[analyticsContext,language]);
   return <SourceContext.Provider value={value}>{children}{open&&<SourceDrawer sources={sources} selectedKeys={keys} onClose={()=>{setOpen(false);window.setTimeout(()=>triggerRef.current?.focus(),0);}}/>}</SourceContext.Provider>;
 }
 

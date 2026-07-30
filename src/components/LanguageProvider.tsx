@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { Language } from "@/content/types";
+import { normalizePublicPath, trackAnalytics } from "@/lib/analytics";
 
 const STORAGE_KEY = "islamic-library-language";
 type LanguageContextValue = { language: Language; setLanguage: (language: Language) => void };
@@ -37,10 +38,18 @@ export function useLanguage() {
 
 export function LanguageSwitch({ compact = false }: { compact?: boolean }) {
   const { language, setLanguage } = useLanguage();
+  function switchLanguage(nextLanguage: Language) {
+    if (nextLanguage === language) return;
+    const publicPath = normalizePublicPath(window.location.href);
+    if (publicPath) {
+      trackAnalytics("language_switch", { public_path: publicPath, previous_language: language, next_language: nextLanguage });
+    }
+    setLanguage(nextLanguage);
+  }
   return (
     <div className="language-switch" role="group" aria-label={language === "ar" ? "تغيير اللغة" : "Change language"} data-compact={compact}>
-      <button type="button" aria-pressed={language === "ar"} onClick={() => setLanguage("ar")}>ع</button>
-      <button type="button" aria-pressed={language === "en"} onClick={() => setLanguage("en")}>EN</button>
+      <button type="button" aria-pressed={language === "ar"} onClick={() => switchLanguage("ar")}>ع</button>
+      <button type="button" aria-pressed={language === "en"} onClick={() => switchLanguage("en")}>EN</button>
     </div>
   );
 }
