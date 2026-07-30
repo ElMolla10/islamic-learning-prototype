@@ -45,16 +45,6 @@ async function deliver(payload: FormspreePayload, endpoint: string) {
       signal: controller.signal,
     });
     if (!response.ok) return { ok: false as const, code: "delivery_failed", status: 502 };
-
-    let result: unknown;
-    try {
-      result = await response.json();
-    } catch {
-      return { ok: false as const, code: "delivery_failed", status: 502 };
-    }
-    if (result === null || typeof result !== "object" || Array.isArray(result) || (result as { ok?: unknown }).ok !== true) {
-      return { ok: false as const, code: "delivery_failed", status: 502 };
-    }
     return { ok: true as const };
   } catch (error) {
     return { ok: false as const, code: "delivery_failed", status: error instanceof DOMException && error.name === "AbortError" ? 504 : 502 };

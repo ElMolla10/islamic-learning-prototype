@@ -98,8 +98,29 @@ describe("feedback route", () => {
     expect(transport).not.toHaveBeenCalled();
   });
 
-  it("returns success only after Formspree explicitly accepts the submission", async () => {
+  it("returns success after Formspree completes with an HTTP success status", async () => {
     vi.stubGlobal("fetch", vi.fn().mockResolvedValue(accepted()));
+    const response = await POST(request(valid));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ ok: true });
+  });
+
+  it("accepts HTTP 200 with an empty body", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response(null, { status: 200 })));
+    const response = await POST(request(valid));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ ok: true });
+  });
+
+  it("accepts HTTP 204", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response(null, { status: 204 })));
+    const response = await POST(request(valid));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ ok: true });
+  });
+
+  it("accepts HTTP 200 without requiring an ok property or documented response body", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response("accepted upstream", { status: 200 })));
     const response = await POST(request(valid));
     expect(response.status).toBe(200);
     expect(await response.json()).toEqual({ ok: true });
@@ -110,17 +131,6 @@ describe("feedback route", () => {
     const response = await POST(request(valid));
     expect(response.status).toBe(502);
     expect(await response.json()).toEqual({ ok: false, code: "delivery_failed" });
-  });
-
-  it("treats malformed or non-acceptance provider output as failure", async () => {
-    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response("not-json", { status: 200 })));
-    let response = await POST(request(valid));
-    expect(response.status).toBe(502);
-    expect(await response.json()).toEqual({ ok: false, code: "delivery_failed" });
-
-    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response(JSON.stringify({ ok: false }), { status: 200 })));
-    response = await POST(request(valid));
-    expect(response.status).toBe(502);
   });
 
   it("handles timeout and network failure without throwing", async () => {
@@ -164,13 +174,20 @@ describe("feedback route", () => {
     expect(transport).toHaveBeenCalledOnce();
   });
 
-  it("never writes request text, contact details, provider response, or configuration to application logs", async () => {
+  it("never reads, echoes, or logs a successful provider body, request text, contact details, or configuration", async () => {
     const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
     const info = vi.spyOn(console, "info").mockImplementation(() => undefined);
     const warn = vi.spyOn(console, "warn").mockImplementation(() => undefined);
     const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
-    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(accepted()));
-    await POST(request({ ...valid, message: "Synthetic private text for log isolation.", contact: "tester@example.com", contactConsent: true }));
+    const providerResponse = new Response(JSON.stringify({ provider: "private upstream detail", ok: false }), { status: 200 });
+    const readJson = vi.spyOn(providerResponse, "json");
+    const readText = vi.spyOn(providerResponse, "text");
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(providerResponse));
+    const response = await POST(request({ ...valid, message: "Synthetic private text for log isolation.", contact: "tester@example.com", contactConsent: true }));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ ok: true });
+    expect(readJson).not.toHaveBeenCalled();
+    expect(readText).not.toHaveBeenCalled();
     expect(log).not.toHaveBeenCalled();
     expect(info).not.toHaveBeenCalled();
     expect(warn).not.toHaveBeenCalled();
