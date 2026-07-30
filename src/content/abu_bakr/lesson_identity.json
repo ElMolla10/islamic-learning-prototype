@@ -1,0 +1,123 @@
+[
+  {
+    "canonical_slug": "abu_bakr.lesson_01_who_was_abu_bakr",
+    "website_display_number": 1,
+    "public_route_slug": "lesson-1",
+    "public_content_folder": "lesson_01",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-1-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-1-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-1",
+    "public_analytics_slug": "abu-bakr-lesson-1",
+    "next_canonical_slug": "abu_bakr.lesson_02_first_days_of_islam"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_02_first_days_of_islam",
+    "website_display_number": 2,
+    "public_route_slug": "lesson-2",
+    "public_content_folder": "lesson_02",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-2-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-2-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-2",
+    "public_analytics_slug": "abu-bakr-lesson-2",
+    "next_canonical_slug": "abu_bakr.lesson_03_faith_under_persecution"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_03_faith_under_persecution",
+    "website_display_number": 3,
+    "public_route_slug": "lesson-3",
+    "public_content_folder": "lesson_03",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-3-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-3-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-3",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_04_companion_of_the_cave"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_04_companion_of_the_cave",
+    "website_display_number": 4,
+    "public_route_slug": "lesson-4",
+    "public_content_folder": "lesson_04",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-4-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-4-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-4",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_05_abu_bakr_in_madinah"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_05_abu_bakr_in_madinah",
+    "website_display_number": 5,
+    "public_route_slug": "lesson-5",
+    "public_content_folder": "lesson_05",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-5-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-5-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-5",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_06_final_illness_and_death"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_06_final_illness_and_death",
+    "website_display_number": 6,
+    "public_route_slug": "lesson-6",
+    "public_content_folder": "lesson_06_final_illness_and_death",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-6-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-6-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-6",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_08_the_first_caliph"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_08_the_first_caliph",
+    "website_display_number": 7,
+    "public_route_slug": "lesson-7",
+    "public_content_folder": "lesson_07",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-7-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-7-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-7",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_09_the_ridda_crisis"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_09_the_ridda_crisis",
+    "website_display_number": 8,
+    "public_route_slug": "lesson-8",
+    "public_content_folder": "lesson_08",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-8-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-8-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-8",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_10_preserving_the_quran"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_10_preserving_the_quran",
+    "website_display_number": 9,
+    "public_route_slug": "lesson-9",
+    "public_content_folder": "lesson_09",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-9-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-9-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-9",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_11_final_days_and_legacy"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_11_final_days_and_legacy",
+    "website_display_number": 10,
+    "public_route_slug": "lesson-10",
+    "public_content_folder": "lesson_10",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-10-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-10-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-10",
+    "public_analytics_slug": null,
+    "next_canonical_slug": "abu_bakr.lesson_12_timeline_review"
+  },
+  {
+    "canonical_slug": "abu_bakr.lesson_12_timeline_review",
+    "website_display_number": 11,
+    "public_route_slug": "lesson-11",
+    "public_content_folder": "lesson_11",
+    "legacy_progress_key": "islamic-library-sahabah-abu-bakr-lesson-11-progress",
+    "legacy_quiz_key": "islamic-library-sahabah-abu-bakr-lesson-11-quiz",
+    "legacy_completed_lesson_id": "abu-bakr-lesson-11",
+    "public_analytics_slug": null,
+    "next_canonical_slug": null
+  }
+]

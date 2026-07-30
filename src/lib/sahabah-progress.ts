@@ -1,23 +1,27 @@
 import type { Language } from "@/content/types";
+import { ABU_BAKR_LESSON_IDENTITIES, getAbuBakrLessonByCanonicalSlug, type AbuBakrCanonicalSlug } from "@/content/abu_bakr/identity";
+
+export { ABU_BAKR_LESSON_COUNT } from "@/content/abu_bakr/identity";
 
 export const SAHABAH_FOCUS_KEY = "islamic-library-sahabah-focus-mode";
 
-/** Number of lessons in the Abu Bakr path (website numbering — see src/content/abu_bakr/README.md). */
-export const ABU_BAKR_LESSON_COUNT = 11;
-
-/** Per-lesson progress storage key. Each lesson persists its own card position, quiz state, etc. independently. */
-export function sahabahProgressKey(lessonNumber: number) {
-  return `islamic-library-sahabah-abu-bakr-lesson-${lessonNumber}-progress`;
+function requireIdentity(canonicalSlug: AbuBakrCanonicalSlug) {
+  const identity = getAbuBakrLessonByCanonicalSlug(canonicalSlug);
+  if (!identity) throw new Error(`Unknown Abu Bakr canonical slug: ${canonicalSlug}`);
+  return identity;
 }
 
-/** Per-lesson quiz storage key (used by QuizPlayer to remember in-progress answers). */
-export function sahabahQuizKey(lessonNumber: number) {
-  return `islamic-library-sahabah-abu-bakr-lesson-${lessonNumber}-quiz`;
+/** Explicit compatibility aliases: their number-bearing values remain unchanged for existing learners. */
+export function sahabahProgressKey(canonicalSlug: AbuBakrCanonicalSlug) {
+  return requireIdentity(canonicalSlug).legacyProgressKey;
 }
 
-/** Stable completion-tracking id for a given website lesson number. */
-export function abuBakrLessonId(lessonNumber: number) {
-  return `abu-bakr-lesson-${lessonNumber}`;
+export function sahabahQuizKey(canonicalSlug: AbuBakrCanonicalSlug) {
+  return requireIdentity(canonicalSlug).legacyQuizKey;
+}
+
+export function abuBakrLessonId(canonicalSlug: AbuBakrCanonicalSlug) {
+  return requireIdentity(canonicalSlug).legacyCompletedLessonId;
 }
 
 /**
@@ -112,11 +116,11 @@ export function sahabahLessonStatus(progress: SahabahProgressState): LessonProgr
  * status plus how many of the path's lessons are complete. Client-only (guards for a missing `window`
  * so it can be called defensively, though callers should still only invoke this inside an effect).
  */
-export function readAbuBakrPathProgress(lessonCount: number = ABU_BAKR_LESSON_COUNT): { statuses: LessonProgressStatus[]; completedCount: number } {
-  const statuses: LessonProgressStatus[] = [];
-  for (let lessonNumber = 1; lessonNumber <= lessonCount; lessonNumber += 1) {
-    const raw = typeof window === "undefined" ? null : window.localStorage.getItem(sahabahProgressKey(lessonNumber));
-    statuses.push(sahabahLessonStatus(parseSahabahProgress(raw)));
-  }
-  return { statuses, completedCount: statuses.filter((status) => status === "completed").length };
+export function readAbuBakrPathProgress(): { statuses: Record<AbuBakrCanonicalSlug, LessonProgressStatus>; completedCount: number } {
+  const ordered = [...ABU_BAKR_LESSON_IDENTITIES].sort((a, b) => a.displayNumber - b.displayNumber);
+  const statuses = Object.fromEntries(ordered.map((identity) => {
+    const raw = typeof window === "undefined" ? null : window.localStorage.getItem(identity.legacyProgressKey);
+    return [identity.canonicalSlug, sahabahLessonStatus(parseSahabahProgress(raw))];
+  })) as Record<AbuBakrCanonicalSlug, LessonProgressStatus>;
+  return { statuses, completedCount: Object.values(statuses).filter((status) => status === "completed").length };
 }

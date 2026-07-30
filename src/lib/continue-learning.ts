@@ -1,5 +1,6 @@
 import type { Language } from "@/content/types";
 import { abuBakrPath, fatihahPath } from "@/content/catalogue";
+import { getAbuBakrLessonByCanonicalSlug } from "@/content/abu_bakr/identity";
 import { LESSON_ID, parseProgress, progressPercent, PROGRESS_KEY } from "./progress";
 import { abuBakrLessonId, parseSahabahProgress, sahabahProgressKey, sahabahProgressPercent, type LessonProgressStatus } from "./sahabah-progress";
 
@@ -12,7 +13,10 @@ const AL_FATIHAH_LESSON_1_BLOCK_COUNT = 10;
 const ABU_BAKR_LESSON_1_BLOCK_COUNT = 10;
 
 /** Deterministic tie-break order used only when two candidates have equal (including missing) timestamps. */
-const DETERMINISTIC_ORDER = [LESSON_ID, abuBakrLessonId(1)];
+const ABU_BAKR_LESSON_1 = getAbuBakrLessonByCanonicalSlug("abu_bakr.lesson_01_who_was_abu_bakr") ?? (() => {
+  throw new Error("Abu Bakr Lesson 1 identity is missing");
+})();
+const DETERMINISTIC_ORDER = [LESSON_ID, abuBakrLessonId(ABU_BAKR_LESSON_1.canonicalSlug)];
 
 export type ContinueMode = "start" | "continue" | "review";
 
@@ -53,10 +57,10 @@ function readFatihahCandidate(): Candidate | null {
 }
 
 function readAbuBakrCandidate(): Candidate | null {
-  const chapter = abuBakrPath.find((item) => item.state === "active" && item.number === 1);
+  const chapter = abuBakrPath.find((item) => item.canonicalSlug === ABU_BAKR_LESSON_1.canonicalSlug && item.state === "active");
   if (!chapter) return null;
-  const id = abuBakrLessonId(1);
-  const raw = typeof window === "undefined" ? null : window.localStorage.getItem(sahabahProgressKey(1));
+  const id = abuBakrLessonId(ABU_BAKR_LESSON_1.canonicalSlug);
+  const raw = typeof window === "undefined" ? null : window.localStorage.getItem(sahabahProgressKey(ABU_BAKR_LESSON_1.canonicalSlug));
   const progress = parseSahabahProgress(raw);
   const status: LessonProgressStatus = progress.lessonCompleted ? "completed" : progress.lessonOpened ? "in_progress" : "not_started";
   return {
@@ -64,7 +68,7 @@ function readAbuBakrCandidate(): Candidate | null {
     status,
     lastVisitedAt: progress.lastVisitedAt,
     percent: sahabahProgressPercent(progress, ABU_BAKR_LESSON_1_BLOCK_COUNT),
-    route: "/sahabah/abu-bakr/lesson-1",
+    route: `/sahabah/abu-bakr/${ABU_BAKR_LESSON_1.routeSlug}`,
     category: { ar: "السيرة", en: "Biography" },
     title: chapter.title,
   };

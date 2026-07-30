@@ -1,4 +1,5 @@
 import type { BiographyChapter, Companion, PathLesson, Subject, Surah } from "./types";
+import { ABU_BAKR_LESSON_IDENTITIES, type AbuBakrCanonicalSlug } from "./abu_bakr/identity";
 
 export const subjects: Subject[] = [
   { slug: "quran", label: { ar: "القرآن", en: "Qur’an" }, active: true },
@@ -34,20 +35,25 @@ export const companions: Companion[] = [
   { slug: "ali-ibn-abi-talib", name: { ar: "علي بن أبي طالب", en: "Ali ibn Abi Talib" }, title: { ar: "الخليفة الرابع", en: "The fourth Caliph" }, availability: "preview" },
 ];
 
-// Draft chapter structure only — titles and descriptions are placeholder topic-scope labels (structural
-// pointers to content_research/abu_bakr/, not real content) pending Mohamed's review. See
-// src/content/abu_bakr/README.md for how these 11 website lessons map onto the 12 content_research lesson
-// folders (lessons 6 and 7 there are merged into website lesson 6).
-export const abuBakrPath: BiographyChapter[] = [
-  { slug: "lesson-1", number: 1, title: { ar: "من كان أبو بكر الصدّيق؟", en: "Who Was Abu Bakr al-Siddiq?" }, description: { ar: "اسمه وكنيته وألقابه، وسبقه إلى الإيمان، وقربه من النبي ﷺ", en: "His name, kunyah, and titles; his precedence in faith; and his closeness to the Prophet ﷺ" }, state: "active", contentReady: true },
-  { slug: "lesson-2", number: 2, title: { ar: "الأيام الأولى للإسلام", en: "The First Days of Islam" }, description: { ar: "قبوله الإسلام ودعوته المبكرة في مكة.", en: "His acceptance of Islam and his early da'wah in Makkah." }, state: "active", contentReady: true },
-  { slug: "lesson-3", number: 3, title: { ar: "الإيمان تحت الاضطهاد", en: "Faith Under Persecution" }, description: { ar: "الاضطهاد في مكة وعتقه للمستضعفين من المسلمين.", en: "Persecution in Makkah and his freeing of the weak among the early Muslims." }, state: "planned" },
-  { slug: "lesson-4", number: 4, title: { ar: "رفيق الغار", en: "Companion of the Cave" }, description: { ar: "الهجرة النبوية ورحلة الغار.", en: "The Hijrah and the journey to the cave." }, state: "planned" },
-  { slug: "lesson-5", number: 5, title: { ar: "أبو بكر في المدينة", en: "Abu Bakr in Madinah" }, description: { ar: "بدر وأُحد والغزوات اللاحقة.", en: "Badr, Uhud, and the later campaigns." }, state: "planned" },
-  { slug: "lesson-6", number: 6, title: { ar: "المرض الأخير ووفاة النبي ﷺ", en: "The Final Illness and Death of the Prophet ﷺ" }, description: { ar: "مرض النبي ﷺ الأخير ووفاته.", en: "The Prophet's ﷺ final illness and death." }, state: "planned" },
-  { slug: "lesson-7", number: 7, title: { ar: "الخليفة الأول", en: "The First Caliph" }, description: { ar: "سقيفة بني ساعدة ومبايعة أبي بكر رضي الله عنه.", en: "Saqifah and the bay'ah given to Abu Bakr." }, state: "planned" },
-  { slug: "lesson-8", number: 8, title: { ar: "أزمة الردة", en: "The Ridda Crisis" }, description: { ar: "منع الزكاة، ومسيلمة الكذاب، وإنفاذ جيش أسامة.", en: "Zakah refusal, Musaylimah, and the dispatch of Usama's army." }, state: "planned" },
-  { slug: "lesson-9", number: 9, title: { ar: "حفظ القرآن", en: "Preserving the Qur'an" }, description: { ar: "معركة اليمامة وجمع القرآن في مصحف واحد.", en: "The battle of Yamamah and the compilation of the Qur'an." }, state: "planned" },
-  { slug: "lesson-10", number: 10, title: { ar: "أيامه الأخيرة وإرثه", en: "His Final Days and Legacy" }, description: { ar: "مرضه، واستخلافه عمر رضي الله عنه، ووفاته.", en: "His illness, his appointment of 'Umar as successor, and his death." }, state: "planned" },
-  { slug: "lesson-11", number: 11, title: { ar: "مراجعة الخط الزمني والتقييم الختامي", en: "Timeline Review and Final Assessment" }, description: { ar: "مراجعة زمنية شاملة لمسار سيرة أبي بكر رضي الله عنه.", en: "A consolidated chronological review of Abu Bakr's biography path." }, state: "planned" },
-];
+// Learner wording remains separate from identity. Route/display aliases are joined from the generated,
+// validated identity map so array position and arithmetic can never select a research lesson.
+const abuBakrPresentation: Record<AbuBakrCanonicalSlug, Omit<BiographyChapter, "canonicalSlug" | "slug" | "number">> = {
+  "abu_bakr.lesson_01_who_was_abu_bakr": { title: { ar: "من كان أبو بكر الصدّيق؟", en: "Who Was Abu Bakr al-Siddiq?" }, description: { ar: "اسمه وكنيته وألقابه، وسبقه إلى الإيمان، وقربه من النبي ﷺ", en: "His name, kunyah, and titles; his precedence in faith; and his closeness to the Prophet ﷺ" }, state: "active", contentReady: true },
+  "abu_bakr.lesson_02_first_days_of_islam": { title: { ar: "الأيام الأولى للإسلام", en: "The First Days of Islam" }, description: { ar: "قبوله الإسلام ودعوته المبكرة في مكة.", en: "His acceptance of Islam and his early da'wah in Makkah." }, state: "active", contentReady: true },
+  "abu_bakr.lesson_03_faith_under_persecution": { title: { ar: "الإيمان تحت الاضطهاد", en: "Faith Under Persecution" }, description: { ar: "الاضطهاد في مكة وعتقه للمستضعفين من المسلمين.", en: "Persecution in Makkah and his freeing of the weak among the early Muslims." }, state: "planned" },
+  "abu_bakr.lesson_04_companion_of_the_cave": { title: { ar: "رفيق الغار", en: "Companion of the Cave" }, description: { ar: "الهجرة النبوية ورحلة الغار.", en: "The Hijrah and the journey to the cave." }, state: "planned" },
+  "abu_bakr.lesson_05_abu_bakr_in_madinah": { title: { ar: "أبو بكر في المدينة", en: "Abu Bakr in Madinah" }, description: { ar: "بدر وأُحد والغزوات اللاحقة.", en: "Badr, Uhud, and the later campaigns." }, state: "planned" },
+  "abu_bakr.lesson_06_final_illness_and_death": { title: { ar: "المرض الأخير ووفاة النبي ﷺ", en: "The Final Illness and Death of the Prophet ﷺ" }, description: { ar: "مرض النبي ﷺ الأخير ووفاته.", en: "The Prophet's ﷺ final illness and death." }, state: "planned" },
+  "abu_bakr.lesson_08_the_first_caliph": { title: { ar: "الخليفة الأول", en: "The First Caliph" }, description: { ar: "سقيفة بني ساعدة ومبايعة أبي بكر رضي الله عنه.", en: "Saqifah and the bay'ah given to Abu Bakr." }, state: "planned" },
+  "abu_bakr.lesson_09_the_ridda_crisis": { title: { ar: "أزمة الردة", en: "The Ridda Crisis" }, description: { ar: "منع الزكاة، ومسيلمة الكذاب، وإنفاذ جيش أسامة.", en: "Zakah refusal, Musaylimah, and the dispatch of Usama's army." }, state: "planned" },
+  "abu_bakr.lesson_10_preserving_the_quran": { title: { ar: "حفظ القرآن", en: "Preserving the Qur'an" }, description: { ar: "معركة اليمامة وجمع القرآن في مصحف واحد.", en: "The battle of Yamamah and the compilation of the Qur'an." }, state: "planned" },
+  "abu_bakr.lesson_11_final_days_and_legacy": { title: { ar: "أيامه الأخيرة وإرثه", en: "His Final Days and Legacy" }, description: { ar: "مرضه، واستخلافه عمر رضي الله عنه، ووفاته.", en: "His illness, his appointment of 'Umar as successor, and his death." }, state: "planned" },
+  "abu_bakr.lesson_12_timeline_review": { title: { ar: "مراجعة الخط الزمني والتقييم الختامي", en: "Timeline Review and Final Assessment" }, description: { ar: "مراجعة زمنية شاملة لمسار سيرة أبي بكر رضي الله عنه.", en: "A consolidated chronological review of Abu Bakr's biography path." }, state: "planned" },
+};
+
+export const abuBakrPath: BiographyChapter[] = ABU_BAKR_LESSON_IDENTITIES.map((identity) => ({
+  canonicalSlug: identity.canonicalSlug,
+  slug: identity.routeSlug,
+  number: identity.displayNumber,
+  ...(abuBakrPresentation[identity.canonicalSlug] ?? (() => { throw new Error(`Missing Abu Bakr presentation for ${identity.canonicalSlug}`); })()),
+}));

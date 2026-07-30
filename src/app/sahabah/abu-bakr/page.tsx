@@ -5,6 +5,7 @@ import { ChapterCard } from "@/components/sahabah/Cards";
 import { PathProgressPills, derivePathStatus } from "@/components/PathProgressPills";
 import { useLanguage } from "@/components/LanguageProvider";
 import { abuBakrPath } from "@/content/catalogue";
+import { ABU_BAKR_LESSON_IDENTITIES, type AbuBakrCanonicalSlug } from "@/content/abu_bakr/identity";
 import { ABU_BAKR_LESSON_COUNT, readAbuBakrPathProgress, type LessonProgressStatus } from "@/lib/sahabah-progress";
 
 const SCOPE_LABEL = { ar: "مسار السيرة", en: "Biography path" };
@@ -12,7 +13,9 @@ const UNIT_LABEL = { ar: "فصولًا", en: "chapters" };
 
 export default function AbuBakrPathPage() {
   const { language } = useLanguage();
-  const [statuses, setStatuses] = useState<LessonProgressStatus[]>(() => Array(ABU_BAKR_LESSON_COUNT).fill("not_started"));
+  const [statuses, setStatuses] = useState<Record<AbuBakrCanonicalSlug, LessonProgressStatus>>(() =>
+    Object.fromEntries(ABU_BAKR_LESSON_IDENTITIES.map((identity) => [identity.canonicalSlug, "not_started"])) as Record<AbuBakrCanonicalSlug, LessonProgressStatus>,
+  );
   const [completedCount, setCompletedCount] = useState(0);
 
   useEffect(() => {
@@ -30,7 +33,9 @@ export default function AbuBakrPathPage() {
     };
   }, []);
 
-  const pathStatus = derivePathStatus(completedCount, ABU_BAKR_LESSON_COUNT, statuses.some((status) => status !== "not_started"));
+  const pathStatus = derivePathStatus(completedCount, ABU_BAKR_LESSON_COUNT, Object.values(statuses).some((status) => status !== "not_started"));
+  const firstAvailableChapter = abuBakrPath.find((chapter) => chapter.state === "active");
+  if (!firstAvailableChapter) throw new Error("Abu Bakr path has no active chapter");
 
   return (
     <main>
@@ -45,8 +50,8 @@ export default function AbuBakrPathPage() {
           </div>
           <div className="path-hero-preview" data-testid="path-hero-preview">
             <span className="eyebrow">{language === "ar" ? "أول فصل متاح الآن" : "First chapter available now"}</span>
-            <strong>{abuBakrPath[0].title[language]}</strong>
-            <p>{abuBakrPath[0].description[language]}</p>
+            <strong>{firstAvailableChapter.title[language]}</strong>
+            <p>{firstAvailableChapter.description[language]}</p>
           </div>
         </div>
       </section>
@@ -60,7 +65,7 @@ export default function AbuBakrPathPage() {
           </div>
           <div className="path-list">
             {abuBakrPath.map((chapter) => (
-              <ChapterCard chapter={chapter} progressStatus={chapter.state === "active" ? statuses[chapter.number - 1] : undefined} key={chapter.slug} />
+              <ChapterCard chapter={chapter} progressStatus={chapter.state === "active" ? statuses[chapter.canonicalSlug] : undefined} key={chapter.canonicalSlug} />
             ))}
           </div>
         </section>

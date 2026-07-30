@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { BiographyLesson, Language, LessonBlock, Person } from "@/content/types";
+import { getAbuBakrLessonByCanonicalSlug, getNextAbuBakrLesson } from "@/content/abu_bakr/identity";
 import { QuizPlayer } from "@/components/QuizPlayer";
 import { AllSourcesButton, SourceBadge, SourceProvider } from "@/components/SourceSystem";
 import { CheckIcon, MenuIcon, SourceIcon, UsersIcon } from "@/components/icons";
 import {
-  ABU_BAKR_LESSON_COUNT,
   abuBakrLessonId,
   emptySahabahProgress,
   parseSahabahProgress,
@@ -55,11 +55,14 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
   const lessonStartTracked = useRef<PublicLessonSlug | null>(null);
   const completionTracked = useRef<PublicLessonSlug | null>(null);
   const requiredIds = useMemo(() => lesson.blocks.filter((block) => block.requiredForCompletion).map((block) => block.key), [lesson.blocks]);
-  const progressKey = sahabahProgressKey(lesson.number);
-  const quizKey = sahabahQuizKey(lesson.number);
-  const lessonId = abuBakrLessonId(lesson.number);
-  const analyticsLessonSlug: PublicLessonSlug | null = lesson.number === 1 ? "abu-bakr-lesson-1" : lesson.number === 2 ? "abu-bakr-lesson-2" : null;
-  const isLastLesson = lesson.number >= ABU_BAKR_LESSON_COUNT;
+  const identity = getAbuBakrLessonByCanonicalSlug(lesson.canonicalSlug);
+  if (!identity) throw new Error(`Unknown Abu Bakr canonical slug: ${lesson.canonicalSlug}`);
+  const progressKey = sahabahProgressKey(lesson.canonicalSlug);
+  const quizKey = sahabahQuizKey(lesson.canonicalSlug);
+  const lessonId = abuBakrLessonId(lesson.canonicalSlug);
+  const analyticsLessonSlug: PublicLessonSlug | null = identity.publicAnalyticsSlug;
+  const nextLesson = getNextAbuBakrLesson(identity);
+  const isLastLesson = nextLesson === null;
 
   useEffect(() => {
     const restored = parseSahabahProgress(localStorage.getItem(progressKey));
@@ -268,7 +271,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
                           {labels.pathComplete}
                         </button>
                       ) : (
-                        <Link href={`/sahabah/abu-bakr/lesson-${lesson.number + 1}`} className="primary-button">
+                        <Link href={`/sahabah/abu-bakr/${nextLesson.routeSlug}`} className="primary-button">
                           {labels.nextChapter}
                         </Link>
                       )}

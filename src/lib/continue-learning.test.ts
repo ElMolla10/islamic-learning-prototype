@@ -3,7 +3,7 @@ import { getContinueRecommendation } from "./continue-learning";
 import { LESSON_ID, PROGRESS_KEY } from "./progress";
 import { sahabahProgressKey } from "./sahabah-progress";
 
-const ABU_BAKR_LESSON_1_KEY = sahabahProgressKey(1);
+const ABU_BAKR_LESSON_1_KEY = sahabahProgressKey("abu_bakr.lesson_01_who_was_abu_bakr");
 
 function fatihahProgress(overrides: Partial<{ lessonOpened: boolean; completedLessonIds: string[]; lastVisitedAt: number }>) {
   return JSON.stringify({

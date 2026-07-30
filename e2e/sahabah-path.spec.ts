@@ -1,4 +1,4 @@
-import { mkdirSync } from "node:fs";
+import { mkdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
@@ -6,8 +6,9 @@ import { expect, test } from "@playwright/test";
 const output = path.resolve(process.cwd(), "../../reports/screenshots/batch8c");
 test.beforeAll(() => mkdirSync(output, { recursive: true }));
 
-const LESSON_COUNT = 11;
-const lessonRoutes = Array.from({ length: LESSON_COUNT }, (_, index) => `/sahabah/abu-bakr/lesson-${index + 1}`);
+const identities = JSON.parse(readFileSync(path.resolve(process.cwd(), "src/content/abu_bakr/lesson_identity.json"), "utf8")) as { public_route_slug: string }[];
+const LESSON_COUNT = identities.length;
+const lessonRoutes = identities.map((identity) => `/sahabah/abu-bakr/${identity.public_route_slug}`);
 
 async function clearStorage(page: import("@playwright/test").Page) {
   await page.goto("/sahabah/abu-bakr");

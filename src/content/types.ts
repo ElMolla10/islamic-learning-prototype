@@ -124,6 +124,7 @@ export type BiographyBlockMeta = {
 };
 
 export type BiographyLesson = {
+  canonicalSlug: import("./abu_bakr/identity").AbuBakrCanonicalSlug;
   slug: string;
   number: number;
   personName: Record<Language, string>;
@@ -146,6 +147,7 @@ export type Companion = {
 };
 
 export type BiographyChapter = {
+  canonicalSlug: import("./abu_bakr/identity").AbuBakrCanonicalSlug;
   slug: string;
   number: number;
   title: Record<Language, string>;

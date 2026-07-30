@@ -1,11 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { abuBakrLessonId, emptySahabahProgress, parseSahabahProgress, sahabahLessonRequirementsMet, sahabahLessonStatus, sahabahProgressKey, sahabahProgressPercent, sahabahQuizKey } from "./sahabah-progress";
+import { abuBakrLessonId, emptySahabahProgress, parseSahabahProgress, readAbuBakrPathProgress, sahabahLessonRequirementsMet, sahabahLessonStatus, sahabahProgressKey, sahabahProgressPercent, sahabahQuizKey } from "./sahabah-progress";
 
 describe("sahabah-progress", () => {
-  it("keys are scoped per lesson number and independent of one another", () => {
-    expect(sahabahProgressKey(1)).not.toBe(sahabahProgressKey(2));
-    expect(sahabahQuizKey(1)).not.toBe(sahabahQuizKey(2));
-    expect(abuBakrLessonId(1)).toBe("abu-bakr-lesson-1");
+  it("keys are resolved by canonical slug and retain their existing values", () => {
+    const lesson1 = "abu_bakr.lesson_01_who_was_abu_bakr" as const;
+    const lesson2 = "abu_bakr.lesson_02_first_days_of_islam" as const;
+    expect(sahabahProgressKey(lesson1)).toBe("islamic-library-sahabah-abu-bakr-lesson-1-progress");
+    expect(sahabahProgressKey(lesson1)).not.toBe(sahabahProgressKey(lesson2));
+    expect(sahabahQuizKey(lesson1)).toBe("islamic-library-sahabah-abu-bakr-lesson-1-quiz");
+    expect(sahabahQuizKey(lesson1)).not.toBe(sahabahQuizKey(lesson2));
+    expect(abuBakrLessonId(lesson1)).toBe("abu-bakr-lesson-1");
   });
 
   it("discards stale (pre-migration) progress instead of reinterpreting it against new content", () => {
@@ -37,6 +41,32 @@ describe("sahabah-progress", () => {
     expect(parsed.currentBlockId).toBe("block-3");
     expect(parsed.bestQuizScore).toBe(1); // clamped to [0,1]
     expect(parsed.focusMode).toBe(false); // always reset on parse, matching existing session-only focus behavior
+  });
+
+  it("restores existing Lesson 1 and Lesson 2 completion records without migration", () => {
+    for (const [canonicalSlug, completedId] of [
+      ["abu_bakr.lesson_01_who_was_abu_bakr", "abu-bakr-lesson-1"],
+      ["abu_bakr.lesson_02_first_days_of_islam", "abu-bakr-lesson-2"],
+    ] as const) {
+      const stored = JSON.stringify({ ...emptySahabahProgress, lessonOpened: true, lessonCompleted: true, quizSubmitted: true, quizPassed: true, completedLessonIds: [completedId] });
+      localStorage.setItem(sahabahProgressKey(canonicalSlug), stored);
+      const restored = parseSahabahProgress(localStorage.getItem(sahabahProgressKey(canonicalSlug)));
+      expect(restored.lessonCompleted).toBe(true);
+      expect(restored.completedLessonIds).toContain(abuBakrLessonId(canonicalSlug));
+    }
+  });
+
+  it("retains the existing quiz-storage aliases for both integrated lessons", () => {
+    expect(sahabahQuizKey("abu_bakr.lesson_01_who_was_abu_bakr")).toBe("islamic-library-sahabah-abu-bakr-lesson-1-quiz");
+    expect(sahabahQuizKey("abu_bakr.lesson_02_first_days_of_islam")).toBe("islamic-library-sahabah-abu-bakr-lesson-2-quiz");
+  });
+
+  it("aggregates path progress by canonical slug rather than array position", () => {
+    localStorage.clear();
+    localStorage.setItem(sahabahProgressKey("abu_bakr.lesson_02_first_days_of_islam"), JSON.stringify({ ...emptySahabahProgress, lessonOpened: true }));
+    const result = readAbuBakrPathProgress();
+    expect(result.statuses["abu_bakr.lesson_01_who_was_abu_bakr"]).toBe("not_started");
+    expect(result.statuses["abu_bakr.lesson_02_first_days_of_islam"]).toBe("in_progress");
   });
 
   it("returns emptySahabahProgress for null/invalid input", () => {
