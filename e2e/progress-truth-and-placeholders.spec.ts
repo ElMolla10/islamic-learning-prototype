@@ -15,6 +15,17 @@ async function clearAll(page: Page) {
   await page.reload();
 }
 
+async function expectStoredProgress(page: Page, key: string, expected: Record<string, unknown>) {
+  await expect
+    .poll(() =>
+      page.evaluate((storageKey) => {
+        const raw = localStorage.getItem(storageKey);
+        return raw ? (JSON.parse(raw) as Record<string, unknown>) : null;
+      }, key),
+    )
+    .toMatchObject(expected);
+}
+
 test.describe("Al-Fatihah path status accuracy", () => {
   test("new learner: status reads 'Not started', not a hardcoded 'in progress'", async ({ page }) => {
     await clearAll(page);
@@ -27,6 +38,7 @@ test.describe("Al-Fatihah path status accuracy", () => {
     await clearAll(page);
     await page.goto("/quran/al-fatihah/lesson-1");
     await advanceToQuiz(page, "ar");
+    await expectStoredProgress(page, FATIHAH_PROGRESS_KEY, { lessonOpened: true, currentCardId: "card-10" });
     await page.goto("/quran/al-fatihah");
     await expect(page.locator(".path-status").first()).toHaveText("حالة مسار السورة: قيد التقدم");
     await expect(page.locator("[data-testid='path-progress-count']")).toHaveText("0 من 6 دروسٍ مكتملة");
@@ -40,6 +52,7 @@ test.describe("Al-Fatihah path status accuracy", () => {
     await advanceToQuiz(page, "ar");
     await completeQuiz(page, "ar", passingQuestions);
     await expect(page.locator("[data-testid='lesson-completed']")).toBeVisible();
+    await expectStoredProgress(page, FATIHAH_PROGRESS_KEY, { lessonCompleted: true, completedLessonIds: [FATIHAH_LESSON_ID] });
     await page.goto("/quran/al-fatihah");
     await expect(page.locator(".path-status").first()).toHaveText("حالة مسار السورة: قيد التقدم");
     await expect(page.locator("[data-testid='path-progress-count']")).toHaveText("1 من 6 دروسٍ مكتملة");
@@ -106,6 +119,7 @@ test.describe("Path progress-pattern consistency", () => {
     const notStartedText = await page.locator(".path-status").first().textContent();
     await page.goto("/quran/al-fatihah/lesson-1");
     await advanceToQuiz(page, "ar");
+    await expectStoredProgress(page, FATIHAH_PROGRESS_KEY, { lessonOpened: true, currentCardId: "card-10" });
     await page.goto("/quran/al-fatihah");
     const inProgressText = await page.locator(".path-status").first().textContent();
     expect(notStartedText).not.toBe(inProgressText);

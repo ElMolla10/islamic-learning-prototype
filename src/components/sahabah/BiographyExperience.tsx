@@ -19,6 +19,7 @@ import {
   type SahabahProgressState,
 } from "@/lib/sahabah-progress";
 import { passesQuiz } from "@/lib/progress";
+import { trackAnalytics, type PublicLessonSlug } from "@/lib/analytics";
 import { useLanguage, LanguageSwitch } from "@/components/LanguageProvider";
 import { BiographyBlockRenderer } from "./BiographyBlocks";
 import { BiographyHeader } from "./BiographyHeader";
@@ -51,22 +52,30 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
   const hydrated = useRef(false);
   const stageRef = useRef<HTMLDivElement>(null);
   const skipPersist = useRef(true);
+  const lessonStartTracked = useRef<PublicLessonSlug | null>(null);
+  const completionTracked = useRef<PublicLessonSlug | null>(null);
   const requiredIds = useMemo(() => lesson.blocks.filter((block) => block.requiredForCompletion).map((block) => block.key), [lesson.blocks]);
   const progressKey = sahabahProgressKey(lesson.number);
   const quizKey = sahabahQuizKey(lesson.number);
   const lessonId = abuBakrLessonId(lesson.number);
+  const analyticsLessonSlug: PublicLessonSlug | null = lesson.number === 1 ? "abu-bakr-lesson-1" : lesson.number === 2 ? "abu-bakr-lesson-2" : null;
   const isLastLesson = lesson.number >= ABU_BAKR_LESSON_COUNT;
 
   useEffect(() => {
     const restored = parseSahabahProgress(localStorage.getItem(progressKey));
     const sessionFocus = sessionStorage.getItem(SAHABAH_FOCUS_KEY) === "true";
     const initialBlock = lesson.blocks.some((block) => block.key === restored.currentBlockId) ? restored.currentBlockId : "block-1";
+    completionTracked.current = restored.lessonCompleted ? analyticsLessonSlug : null;
+    if (analyticsLessonSlug && !restored.lessonOpened && lessonStartTracked.current !== analyticsLessonSlug) {
+      lessonStartTracked.current = analyticsLessonSlug;
+      const storedLanguage = localStorage.getItem("islamic-library-language");
+      trackAnalytics("lesson_start", { lesson_slug: analyticsLessonSlug, language: storedLanguage === "en" ? "en" : "ar" });
+    }
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setProgress({ ...restored, currentBlockId: initialBlock, visitedBlockIds: [...new Set([...restored.visitedBlockIds, initialBlock])], lessonOpened: true, focusMode: sessionFocus, lastVisitedAt: Date.now() });
     hydrated.current = true;
     // Resetting hydration guards when the lesson (route) itself changes, not just its blocks.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lesson.number, lesson.blocks]);
+  }, [analyticsLessonSlug, lesson.number, lesson.blocks, progressKey]);
   useEffect(() => {
     if (skipPersist.current) {
       skipPersist.current = false;
@@ -86,6 +95,11 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
     window.addEventListener("prototype-progress-reset", reset);
     return () => window.removeEventListener("prototype-progress-reset", reset);
   }, []);
+  useEffect(() => {
+    if (!analyticsLessonSlug || !hydrated.current || !progress.lessonCompleted || completionTracked.current === analyticsLessonSlug) return;
+    completionTracked.current = analyticsLessonSlug;
+    trackAnalytics("lesson_complete", { lesson_slug: analyticsLessonSlug, language });
+  }, [analyticsLessonSlug, language, progress.lessonCompleted]);
 
   const currentIndex = Math.max(0, lesson.blocks.findIndex((block) => block.key === progress.currentBlockId));
   const currentBlock = lesson.blocks[currentIndex];
@@ -118,13 +132,14 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
     [],
   );
   const onAttempt = useCallback(
-    (score: number, total: number) =>
+    (score: number, total: number) => {
       setProgress((current) => {
         const quizPassed = current.quizPassed || passesQuiz(score, total);
         const next = { ...current, quizAttempts: current.quizAttempts + 1, bestQuizScore: Math.max(current.bestQuizScore, score / total), quizSubmitted: true, quizPassed };
         const complete = sahabahLessonRequirementsMet(next, requiredIds);
         return { ...next, lessonCompleted: complete, completedLessonIds: complete ? [...new Set([...next.completedLessonIds, lessonId])] : next.completedLessonIds };
-      }),
+      });
+    },
     [requiredIds, lessonId],
   );
 
@@ -170,7 +185,10 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
   const currentPeople = currentBlock.meta?.people ?? [];
 
   return (
-    <SourceProvider sources={lesson.sources}>
+    <SourceProvider
+      sources={lesson.sources}
+      analyticsContext={analyticsLessonSlug ? { lessonSlug: analyticsLessonSlug, cardIndex: currentIndex + 1, cardCount: lesson.blocks.length } : undefined}
+    >
       <div className="bio-lesson">
         <nav className="lesson-progress-sticky bio-progress-bar" aria-label={labels.progress}>
           <div className="shell">
@@ -225,7 +243,7 @@ export function BiographyExperience({ lesson }: { lesson: BiographyLesson }) {
                       <SourceBadge sourceKeys={quizBlock.sourceKeys} label={quizBlock.sourceSummary[language]} />
                     </header>
                     <p className="quiz-intro">{quizBlock.items[language][0]}</p>
-                    <QuizPlayer questions={lesson.quiz} language={language} onAttempt={onAttempt} onReview={navigate} storageKey={quizKey} />
+                    <QuizPlayer questions={lesson.quiz} language={language} onAttempt={onAttempt} onReview={navigate} storageKey={quizKey} analyticsLessonSlug={analyticsLessonSlug ?? undefined} />
                   </section>
                 )}
                 <CardControls index={currentIndex} total={lesson.blocks.length} language={language} onPrevious={() => navigate(lesson.blocks[currentIndex - 1].key)} onNext={() => navigate(lesson.blocks[currentIndex + 1].key)} />

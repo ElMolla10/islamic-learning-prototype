@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Language, QuizQuestion } from "@/content/types";
+import { trackAnalytics, type PublicLessonSlug } from "@/lib/analytics";
 import { answersMatch, passesQuiz, QUIZ_KEY } from "@/lib/progress";
 import { attemptOrdersAreValid, createAttemptOrders, initialAnswers, orderedOptions, type AttemptOrders, type QuizAnswer, validQuizAnswer } from "@/lib/quiz";
 import { CheckIcon, MoveDownIcon, MoveUpIcon } from "./icons";
@@ -34,12 +35,13 @@ function correctAnswer(question:QuizQuestion,answer:QuizAnswer|undefined){
   return answer!==undefined&&answersMatch(answer,question.correctAnswer,question.type==="ordering");
 }
 
-export function QuizPlayer({ questions, language, onAttempt, onReview, storageKey=QUIZ_KEY }: {
+export function QuizPlayer({ questions, language, onAttempt, onReview, storageKey=QUIZ_KEY, analyticsLessonSlug }: {
   questions:QuizQuestion[];
   language:Language;
   onAttempt:(score:number,total:number)=>void;
   onReview:(cardKey:string,deepSectionKey?:string)=>void;
   storageKey?:string;
+  analyticsLessonSlug?:PublicLessonSlug;
 }) {
   const [state,setState]=useState<QuizState|null>(null);
   useEffect(()=>{
@@ -78,6 +80,7 @@ export function QuizPlayer({ questions, language, onAttempt, onReview, storageKe
     setState(next);
     if(nowComplete&&!state!.attemptRecorded){
       const nextScore=questions.filter(item=>nextSubmitted.includes(item.key)&&correctAnswer(item,next.answers[item.key])).length;
+      if(analyticsLessonSlug)trackAnalytics("quiz_submit",{lesson_slug:analyticsLessonSlug,language,correct:nextScore,total:questions.length});
       window.setTimeout(()=>onAttempt(nextScore,questions.length),0);
     }
   }
