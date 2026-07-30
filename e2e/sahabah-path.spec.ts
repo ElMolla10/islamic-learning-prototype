@@ -1,14 +1,14 @@
-import { mkdirSync, readFileSync } from "node:fs";
+import { mkdirSync } from "node:fs";
 import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
+import { ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER } from "../src/content/abu_bakr/identity";
 
 const output = path.resolve(process.cwd(), "../../reports/screenshots/batch8c");
 test.beforeAll(() => mkdirSync(output, { recursive: true }));
 
-const identities = JSON.parse(readFileSync(path.resolve(process.cwd(), "src/content/abu_bakr/lesson_identity.json"), "utf8")) as { public_route_slug: string }[];
-const LESSON_COUNT = identities.length;
-const lessonRoutes = identities.map((identity) => `/sahabah/abu-bakr/${identity.public_route_slug}`);
+const LESSON_COUNT = ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.length;
+const lessonRoutes = ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.map((identity) => `/sahabah/abu-bakr/${identity.routeSlug}`);
 
 async function clearStorage(page: import("@playwright/test").Page) {
   await page.goto("/sahabah/abu-bakr");

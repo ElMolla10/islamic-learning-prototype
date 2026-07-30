@@ -1,5 +1,5 @@
 import type { Language } from "@/content/types";
-import { ABU_BAKR_LESSON_IDENTITIES, getAbuBakrLessonByCanonicalSlug, type AbuBakrCanonicalSlug } from "@/content/abu_bakr/identity";
+import { ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER, getAbuBakrLessonByCanonicalSlug, type AbuBakrCanonicalSlug } from "@/content/abu_bakr/identity";
 
 export { ABU_BAKR_LESSON_COUNT } from "@/content/abu_bakr/identity";
 
@@ -117,8 +117,7 @@ export function sahabahLessonStatus(progress: SahabahProgressState): LessonProgr
  * so it can be called defensively, though callers should still only invoke this inside an effect).
  */
 export function readAbuBakrPathProgress(): { statuses: Record<AbuBakrCanonicalSlug, LessonProgressStatus>; completedCount: number } {
-  const ordered = [...ABU_BAKR_LESSON_IDENTITIES].sort((a, b) => a.displayNumber - b.displayNumber);
-  const statuses = Object.fromEntries(ordered.map((identity) => {
+  const statuses = Object.fromEntries(ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.map((identity) => {
     const raw = typeof window === "undefined" ? null : window.localStorage.getItem(identity.legacyProgressKey);
     return [identity.canonicalSlug, sahabahLessonStatus(parseSahabahProgress(raw))];
   })) as Record<AbuBakrCanonicalSlug, LessonProgressStatus>;

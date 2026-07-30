@@ -1,5 +1,5 @@
 import type { BiographyChapter, Companion, PathLesson, Subject, Surah } from "./types";
-import { ABU_BAKR_LESSON_IDENTITIES, type AbuBakrCanonicalSlug } from "./abu_bakr/identity";
+import { ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER, type AbuBakrCanonicalSlug } from "./abu_bakr/identity";
 
 export const subjects: Subject[] = [
   { slug: "quran", label: { ar: "القرآن", en: "Qur’an" }, active: true },
@@ -51,7 +51,7 @@ const abuBakrPresentation: Record<AbuBakrCanonicalSlug, Omit<BiographyChapter, "
   "abu_bakr.lesson_12_timeline_review": { title: { ar: "مراجعة الخط الزمني والتقييم الختامي", en: "Timeline Review and Final Assessment" }, description: { ar: "مراجعة زمنية شاملة لمسار سيرة أبي بكر رضي الله عنه.", en: "A consolidated chronological review of Abu Bakr's biography path." }, state: "planned" },
 };
 
-export const abuBakrPath: BiographyChapter[] = ABU_BAKR_LESSON_IDENTITIES.map((identity) => ({
+export const abuBakrPath: BiographyChapter[] = ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.map((identity) => ({
   canonicalSlug: identity.canonicalSlug,
   slug: identity.routeSlug,
   number: identity.displayNumber,

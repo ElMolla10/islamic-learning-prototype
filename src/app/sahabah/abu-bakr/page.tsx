@@ -5,7 +5,7 @@ import { ChapterCard } from "@/components/sahabah/Cards";
 import { PathProgressPills, derivePathStatus } from "@/components/PathProgressPills";
 import { useLanguage } from "@/components/LanguageProvider";
 import { abuBakrPath } from "@/content/catalogue";
-import { ABU_BAKR_LESSON_IDENTITIES, type AbuBakrCanonicalSlug } from "@/content/abu_bakr/identity";
+import { ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER, type AbuBakrCanonicalSlug } from "@/content/abu_bakr/identity";
 import { ABU_BAKR_LESSON_COUNT, readAbuBakrPathProgress, type LessonProgressStatus } from "@/lib/sahabah-progress";
 
 const SCOPE_LABEL = { ar: "مسار السيرة", en: "Biography path" };
@@ -14,7 +14,7 @@ const UNIT_LABEL = { ar: "فصولًا", en: "chapters" };
 export default function AbuBakrPathPage() {
   const { language } = useLanguage();
   const [statuses, setStatuses] = useState<Record<AbuBakrCanonicalSlug, LessonProgressStatus>>(() =>
-    Object.fromEntries(ABU_BAKR_LESSON_IDENTITIES.map((identity) => [identity.canonicalSlug, "not_started"])) as Record<AbuBakrCanonicalSlug, LessonProgressStatus>,
+    Object.fromEntries(ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.map((identity) => [identity.canonicalSlug, "not_started"])) as Record<AbuBakrCanonicalSlug, LessonProgressStatus>,
   );
   const [completedCount, setCompletedCount] = useState(0);
 

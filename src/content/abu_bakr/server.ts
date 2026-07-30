@@ -2,10 +2,10 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { adaptBiographyLesson } from "./adapter";
-import { ABU_BAKR_LESSON_IDENTITIES, getAbuBakrLessonByRouteSlug, type AbuBakrLessonIdentity } from "./identity";
+import { ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER, getAbuBakrLessonByRouteSlug, type AbuBakrLessonIdentity } from "./identity";
 import { abuBakrPath } from "@/content/catalogue";
 
-export const ABU_BAKR_LESSON_ROUTE_SLUGS = ABU_BAKR_LESSON_IDENTITIES.map((identity) => identity.routeSlug);
+export const ABU_BAKR_LESSON_ROUTE_SLUGS = ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.map((identity) => identity.routeSlug);
 
 async function readJson(identity: AbuBakrLessonIdentity, name: string) {
   const source = path.resolve(process.cwd(), "src/content/abu_bakr", identity.contentFolder, name);

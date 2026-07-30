@@ -67,6 +67,8 @@ describe("sahabah-progress", () => {
     const result = readAbuBakrPathProgress();
     expect(result.statuses["abu_bakr.lesson_01_who_was_abu_bakr"]).toBe("not_started");
     expect(result.statuses["abu_bakr.lesson_02_first_days_of_islam"]).toBe("in_progress");
+    expect(Object.keys(result.statuses)[0]).toBe("abu_bakr.lesson_01_who_was_abu_bakr");
+    expect(Object.keys(result.statuses).at(-1)).toBe("abu_bakr.lesson_12_timeline_review");
   });
 
   it("returns emptySahabahProgress for null/invalid input", () => {
