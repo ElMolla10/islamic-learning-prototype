@@ -15,7 +15,7 @@ type BlockProps = {
   onOpenMap?: (block: LessonBlock) => void;
 };
 
-const genericTypes: LessonBlock["type"][] = ["lesson_hook", "surah_facts", "key_evidence", "name_cards", "seven_oft_repeated", "hadith_conversation", "theme_journey", "reflection", "summary"];
+const genericTypes: LessonBlock["type"][] = ["lesson_hook", "surah_facts", "key_evidence", "name_cards", "seven_oft_repeated", "hadith_conversation", "theme_journey", "reflection", "summary", "representative_event", "context_and_consequence", "event_consequence_meaning"];
 
 function BiographyBlockShell({ block, language, children, className = "", expandedDeepIds, onToggleDeep }: BlockProps & { children: React.ReactNode; className?: string }) {
   return (
