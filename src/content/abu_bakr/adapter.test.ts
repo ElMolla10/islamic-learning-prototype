@@ -10,7 +10,7 @@ function fixture(name: string) {
 
 export function adaptedLesson1Fixture() {
   return adaptBiographyLesson({
-    meta: { slug: "lesson-1", number: 1, personName: { ar: "أبو بكر الصديق", en: "Abu Bakr al-Siddiq" }, title: { ar: "من كان أبو بكر الصدّيق؟", en: "Who Was Abu Bakr al-Siddiq?" }, readingTime: { ar: "١٠–١٢ دقيقة", en: "10–12 minutes" }, contentReady: true },
+    meta: { canonicalSlug: "abu_bakr.lesson_01_who_was_abu_bakr", slug: "lesson-1", number: 1, personName: { ar: "أبو بكر الصديق", en: "Abu Bakr al-Siddiq" }, title: { ar: "من كان أبو بكر الصدّيق؟", en: "Who Was Abu Bakr al-Siddiq?" }, readingTime: { ar: "١٠–١٢ دقيقة", en: "10–12 minutes" }, contentReady: true },
     blocks: fixture("lesson_blocks.json"),
     quiz: fixture("quiz_questions.json"),
     sources: fixture("source_drawer.json"),

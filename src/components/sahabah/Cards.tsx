@@ -60,7 +60,7 @@ export function ChapterCard({ chapter, progressStatus }: { chapter: BiographyCha
     </>
   );
   return active ? (
-    <Link href={`/sahabah/abu-bakr/lesson-${chapter.number}`} className="path-card bio-chapter-card active">
+    <Link href={`/sahabah/abu-bakr/${chapter.slug}`} className="path-card bio-chapter-card active">
       {content}
     </Link>
   ) : (

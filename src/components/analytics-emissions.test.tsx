@@ -18,6 +18,7 @@ function adaptedLesson1Fixture() {
   const fixture = (name: string) => JSON.parse(readFileSync(path.resolve(process.cwd(), "src/content/abu_bakr/lesson_01", name), "utf8"));
   return adaptBiographyLesson({
     meta: {
+      canonicalSlug: "abu_bakr.lesson_01_who_was_abu_bakr",
       slug: "lesson-1",
       number: 1,
       personName: { ar: "أبو بكر الصديق", en: "Abu Bakr al-Siddiq" },
@@ -114,7 +115,7 @@ describe("approved analytics emission points", () => {
     first.unmount();
 
     events.length = 0;
-    const lesson2 = { ...lesson1, number: 2, slug: "lesson-2" };
+    const lesson2 = { ...lesson1, canonicalSlug: "abu_bakr.lesson_02_first_days_of_islam" as const, number: 2, slug: "lesson-2" };
     render(<LanguageProvider><BiographyExperience lesson={lesson2} /></LanguageProvider>);
     await waitFor(() => expect(events.filter((event) => event.name === "lesson_start")).toEqual([{
       name: "lesson_start",
@@ -124,7 +125,7 @@ describe("approved analytics emission points", () => {
 
   it("does not re-emit biography lifecycle events from restored completed state", async () => {
     const lesson = adaptedLesson1Fixture();
-    localStorage.setItem(sahabahProgressKey(1), JSON.stringify({
+    localStorage.setItem(sahabahProgressKey(lesson.canonicalSlug), JSON.stringify({
       ...emptySahabahProgress,
       lessonOpened: true,
       lessonCompleted: true,

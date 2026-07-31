@@ -2,12 +2,13 @@ import { mkdirSync } from "node:fs";
 import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
+import { ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER } from "../src/content/abu_bakr/identity";
 
 const output = path.resolve(process.cwd(), "../../reports/screenshots/batch8c");
 test.beforeAll(() => mkdirSync(output, { recursive: true }));
 
-const LESSON_COUNT = 11;
-const lessonRoutes = Array.from({ length: LESSON_COUNT }, (_, index) => `/sahabah/abu-bakr/lesson-${index + 1}`);
+const LESSON_COUNT = ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.length;
+const lessonRoutes = ABU_BAKR_LESSON_IDENTITIES_IN_DISPLAY_ORDER.map((identity) => `/sahabah/abu-bakr/${identity.routeSlug}`);
 
 async function clearStorage(page: import("@playwright/test").Page) {
   await page.goto("/sahabah/abu-bakr");

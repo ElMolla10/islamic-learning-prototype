@@ -1,4 +1,5 @@
 import type { BiographyLesson, FamilyNode, GlossaryTerm, LessonBlock, MapPin, PlaceEntry, Person, QuizQuestion, Source, TimelinePhase } from "../types";
+import type { AbuBakrCanonicalSlug } from "./identity";
 
 type RawDeepSection = {
   section_id: string;
@@ -118,7 +119,7 @@ function toFamilyNode(raw: RawFamilyNode): FamilyNode {
 }
 
 export function adaptBiographyLesson(raw: {
-  meta: { slug: string; number: number; personName: Record<"ar" | "en", string>; title: Record<"ar" | "en", string>; readingTime: Record<"ar" | "en", string>; contentReady?: boolean };
+  meta: { canonicalSlug: AbuBakrCanonicalSlug; slug: string; number: number; personName: Record<"ar" | "en", string>; title: Record<"ar" | "en", string>; readingTime: Record<"ar" | "en", string>; contentReady?: boolean };
   blocks: { blocks: RawBlock[]; timeline_phases: RawTimelinePhase[] };
   quiz: { questions: RawQuestion[] };
   sources: { sources: RawSource[] };
@@ -193,5 +194,5 @@ export function adaptBiographyLesson(raw: {
     definition: { ar: term.definition_ar, en: term.definition_en },
   }));
 
-  return { slug: raw.meta.slug, number: raw.meta.number, personName: raw.meta.personName, title: raw.meta.title, readingTime: raw.meta.readingTime, contentReady: raw.meta.contentReady ?? false, timelinePhases, blocks, sources, quiz, glossary };
+  return { canonicalSlug: raw.meta.canonicalSlug, slug: raw.meta.slug, number: raw.meta.number, personName: raw.meta.personName, title: raw.meta.title, readingTime: raw.meta.readingTime, contentReady: raw.meta.contentReady ?? false, timelinePhases, blocks, sources, quiz, glossary };
 }
