@@ -47,11 +47,11 @@ describe("Abu Bakr Lesson 3 v2 public package", () => {
     expect(identity.publicAnalyticsSlug).toBeNull();
   });
 
-  it("makes only Lesson 3 newly available in the existing display-ordered path", () => {
+  it("makes Lesson 3 available in the existing display-ordered path", () => {
     const lesson3 = abuBakrPath.find((chapter) => chapter.canonicalSlug === CANONICAL_SLUG)!;
     expect(lesson3).toMatchObject({ slug: "lesson-3", number: 3, state: "active", contentReady: true });
-    expect(abuBakrPath.slice(0, 3).map((chapter) => chapter.state)).toEqual(["active", "active", "active"]);
-    expect(abuBakrPath.slice(3).every((chapter) => chapter.state === "planned")).toBe(true);
+    expect(abuBakrPath.slice(0, 4).map((chapter) => chapter.state)).toEqual(["active", "active", "active", "active"]);
+    expect(abuBakrPath.slice(4).every((chapter) => chapter.state === "planned")).toBe(true);
     expect(abuBakrPath.map((chapter) => chapter.number)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
   });
 

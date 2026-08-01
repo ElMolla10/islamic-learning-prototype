@@ -172,11 +172,11 @@ test.describe("Lesson 1 (v2) completion isolation", () => {
     await page.goto("/sahabah/abu-bakr");
     const progressCount = await page.locator("[data-testid='path-progress-count']").textContent();
     expect(progressCount).toMatch(/^(0|1) من 11/);
-    // Lessons 4-11 (disabled/"in preparation") must remain completely unaffected by this attempt --
+    // Lessons 5-11 (disabled/"in preparation") must remain completely unaffected by this attempt --
     // they always show the in-preparation badge, never a progress-tracking status.
     const disabledCards = page.locator(".bio-chapter-card[data-disabled='true']");
-    await expect(disabledCards).toHaveCount(8);
-    for (const index of [0, 1, 2, 7]) {
+    await expect(disabledCards).toHaveCount(7);
+    for (const index of [0, 1, 2, 6]) {
       await expect(disabledCards.nth(index).locator(".path-card-status-badge")).toHaveText("قيد الإعداد");
     }
   });

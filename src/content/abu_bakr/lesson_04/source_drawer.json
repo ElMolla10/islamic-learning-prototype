@@ -1,43 +1,119 @@
 {
   "lesson_id": "abu_bakr.lesson_04_companion_of_the_cave",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real sources pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Three works cited, matching the R10 evidence package's secure anchors.",
   "sources": [
     {
-      "work_id": "work_placeholder_primary",
-      "display_title": "مصدر عنصر نائب أول [مبدئي]",
-      "author": "—",
+      "work_id": "work_sahih_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري (Muhammad ibn Isma'il al-Bukhari)",
       "source_role": [
         "primary_hadith_collection"
       ],
-      "claims_supported": [],
       "locations": [
         {
           "volume": null,
-          "pdf_page": 1,
-          "printed_page": 1
+          "pdf_page": 898,
+          "printed_page": 898,
+          "claims_supported": [
+            "AB-L4-C03"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 898,
+          "printed_page": 898,
+          "claims_supported": [
+            "AB-L4-C04"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 957,
+          "printed_page": 957,
+          "claims_supported": [
+            "AB-L4-C01",
+            "AB-L4-C05",
+            "AB-L4-C08"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 958,
+          "printed_page": 958,
+          "claims_supported": [
+            "AB-L4-C02",
+            "AB-L4-C06"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 959,
+          "printed_page": 959,
+          "claims_supported": [
+            "AB-L4-C07",
+            "AB-L4-C08"
+          ]
         }
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "hadith_numbers": [
+        "3652",
+        "3653",
+        "3906",
+        "3907"
+      ]
     },
     {
-      "work_id": "work_placeholder_commentary",
-      "display_title": "مصدر عنصر نائب ثانٍ [مبدئي]",
-      "author": "مؤلف عنصر نائب",
+      "work_id": "work_seerah_ibn_hisham",
+      "display_title": "السيرة النبوية لابن هشام (Sirat Ibn Hisham)",
+      "author": "عبد الملك بن هشام، عن رواية ابن إسحاق (Ibn Hisham, narrating Ibn Ishaq)",
       "source_role": [
-        "hadith_commentary"
+        "early_seerah_source"
       ],
-      "claims_supported": [],
       "locations": [
         {
-          "volume": 1,
-          "pdf_page": 10,
-          "printed_page": 12
+          "volume": null,
+          "pdf_page": 226,
+          "printed_page": 226,
+          "claims_supported": [
+            "AB-L4-C06"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 227,
+          "printed_page": 227,
+          "claims_supported": [
+            "AB-L4-C07"
+          ]
         }
+      ]
+    },
+    {
+      "work_id": "work_tafsir_ibn_kathir",
+      "display_title": "تفسير القرآن العظيم (Tafsir al-Qur'an al-'Azim)",
+      "author": "إسماعيل بن عمر ابن كثير (Isma'il ibn 'Umar Ibn Kathir)",
+      "source_role": [
+        "later_tafsir"
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "locations": [
+        {
+          "volume": 2,
+          "pdf_page": 358,
+          "printed_page": 358,
+          "claims_supported": [
+            "AB-L4-C04"
+          ]
+        },
+        {
+          "volume": 2,
+          "pdf_page": 359,
+          "printed_page": 359,
+          "claims_supported": [
+            "AB-L4-C04"
+          ]
+        }
+      ]
     }
   ]
 }
