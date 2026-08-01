@@ -1,7 +1,7 @@
 {
   "lesson_id": "abu_bakr.lesson_05_abu_bakr_in_madinah",
   "status": "internal_unapproved",
-  "note": "Three works cited, matching the R11 evidence package's secure anchors.",
+  "note": "Three works cited, matching the R11 evidence package's secure anchors: Ibn Hisham's early seerah, al-Tirmidhi's Jami', and Sahih al-Bukhari, all directly inspected.",
   "sources": [
     {
       "work_id": "work_seerah_ibn_hisham",
@@ -67,29 +67,24 @@
       ]
     },
     {
-      "work_id": "work_seerah_sources",
-      "display_title": "السيرة النبوية في ضوء المصادر الأصلية (Al-Seerah al-Nabawiyyah fi Daw' al-Masadir al-Asliyyah)",
-      "author": "مهدي رزق الله أحمد (Mahdi Rizq Allah Ahmad)",
+      "work_id": "work_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري (Muhammad ibn Isma'il al-Bukhari)",
       "source_role": [
-        "verified_seerah_synthesis"
+        "primary_hadith_collection"
       ],
       "locations": [
         {
           "volume": null,
-          "pdf_page": 675,
-          "printed_page": 675,
+          "pdf_page": 1068,
+          "printed_page": 1068,
           "claims_supported": [
             "AB-L5-C03"
           ]
-        },
-        {
-          "volume": null,
-          "pdf_page": 676,
-          "printed_page": 676,
-          "claims_supported": [
-            "AB-L5-C04"
-          ]
         }
+      ],
+      "hadith_numbers": [
+        "4363"
       ]
     }
   ]

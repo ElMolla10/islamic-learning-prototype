@@ -80,20 +80,20 @@
       "title_ar": "أُمِّر على حجّ المسلمين",
       "title_en": "Appointed Over the Muslims' Hajj",
       "content_items_ar": [
-        "في السنة التاسعة من الهجرة، أمّر النبي ﷺ أبا بكرٍ رضي الله عنه على الحج، فخرج بثلاثمائة من الصحابة إلى مكة، ومعهم عشرون بدنة، ومع أبي بكرٍ خمسُ بدَنات.",
-        "هذا التعيين مذكورٌ في سيرة ابن هشام بعنوان الفصل نفسه: حجّ أبي بكرٍ بالناس، وهو ثابتٌ أيضاً بإسنادٍ صحيح متفقٍ عليه بين البخاري ومسلم.",
-        "بعد خروج الحجاج من المدينة، نزلت سورة براءة، فأرسل النبي ﷺ عليّ بن أبي طالب ليتلو أوائلها على الناس يوم النحر، وهو ما سيكون موضوع الموقف التالي."
+        "في السنة التاسعة من الهجرة، أمّر النبي ﷺ أبا بكرٍ رضي الله عنه على حجّ المسلمين، وذلك قبل حجة الوداع.",
+        "هذا التعيين ثابتٌ في صحيح البخاري من رواية أبي هريرة رضي الله عنه، ومذكورٌ أيضاً بعنوان الفصل نفسه في سيرة ابن هشام: حجّ أبي بكرٍ بالناس.",
+        "يوم النحر، بعث أبو بكرٌ أبا هريرة في رهطٍ يُؤذِّنون في الناس بأمرين: لا يحجُّ بعد العام مشركٌ، ولا يطوفُ بالبيت عريانٌ -- وهو ما سيتصل بالموقف التالي."
       ],
       "content_items_en": [
-        "In the ninth year of the Hijrah, the Prophet ﷺ appointed Abu Bakr رضي الله عنه over the Hajj; he set out with three hundred Companions to Makkah, with twenty sacrificial camels among them and five specifically with Abu Bakr.",
-        "This appointment is recorded in Ibn Hisham's seerah by the chapter's own title, 'Abu Bakr's leading the Hajj for the people,' and is also established by a sahih chain agreed upon between Bukhari and Muslim.",
-        "After the pilgrims left Madinah, Surat Bara'ah was revealed, and the Prophet ﷺ sent 'Ali ibn Abi Talib to recite its opening verses to the people on the Day of Sacrifice -- the subject of the next moment."
+        "In the ninth year of the Hijrah, the Prophet ﷺ appointed Abu Bakr رضي الله عنه over the Muslims' Hajj, before the Farewell Hajj.",
+        "This appointment is established in Sahih al-Bukhari through Abu Hurairah's own account, and is also recorded by the chapter's own title in Ibn Hisham's seerah: 'Abu Bakr's leading the Hajj for the people.'",
+        "On the Day of Sacrifice, Abu Bakr sent Abu Hurairah among a group proclaiming two rulings to the people: no polytheist would perform Hajj after that year, and no one would circle the Ka'bah unclothed -- connecting directly to the next moment."
       ],
       "claim_ids": [
         "AB-L5-C03"
       ],
-      "source_summary_ar": "السيرة النبوية في ضوء المصادر الأصلية (بخاري ومسلم) وسيرة ابن هشام",
-      "source_summary_en": "Al-Seerah al-Nabawiyyah fi Daw' al-Masadir al-Asliyyah (Bukhari and Muslim) and Ibn Hisham's seerah",
+      "source_summary_ar": "صحيح البخاري (حديث ٤٣٦٣) وسيرة ابن هشام",
+      "source_summary_en": "Sahih al-Bukhari (hadith 4363) and Ibn Hisham's seerah",
       "required_for_completion": true,
       "deep_sections": []
     },
@@ -105,12 +105,12 @@
       "content_items_ar": [
         "يوم النحر، قام عليّ بن أبي طالب فأذَّن في الناس بما أمره به النبي ﷺ، فقال: أيها الناس، إنه لا يدخلُ الجنةَ كافرٌ، ولا يحجُّ بعد العام مشركٌ، ولا يطوفُ بالبيت عريانٌ.",
         "وأضاف: ومَن كان له عند رسول الله ﷺ عهدٌ فهو له إلى مدَّته. فلم يحجَّ بعد ذلك العام مشركٌ، ولم يطُف بالبيت عريانٌ.",
-        "هذا الإعلان جاء في الحجّ الذي قاده أبو بكرٍ نفسه؛ عليٌّ هو من تلا الإعلان بأمر النبي ﷺ، لا أبو بكر، وهو ما يُوضَّح سببه في القسم التالي."
+        "هذا الإعلان الكامل، بما فيه ذكر عليّ رضي الله عنه بالاسم وتفاصيل العهود، مذكورٌ في سيرة ابن هشام؛ وصحيح البخاري يثبت من جهته أن أبا بكر نفسه أرسل من ينادي بأصل هاتين القاعدتين في اليوم نفسه."
       ],
       "content_items_en": [
         "On the Day of Sacrifice, 'Ali ibn Abi Talib stood and proclaimed to the people what the Prophet ﷺ had instructed him: 'O people, no disbeliever shall enter Paradise, no polytheist shall perform Hajj after this year, and no one shall circle the Ka'bah unclothed.'",
         "He added, 'Whoever has a treaty with the Messenger of Allah ﷺ, it stands until its term.' After that year, no polytheist performed Hajj, and no one circled the Ka'bah unclothed.",
-        "This proclamation took place at the very Hajj Abu Bakr himself led; it was 'Ali who delivered it by the Prophet's ﷺ instruction, not Abu Bakr -- the reason for which is explained in the section below."
+        "This fuller proclamation, including 'Ali being named and the treaty details, is recorded in Ibn Hisham's seerah; Sahih al-Bukhari, for its part, establishes that Abu Bakr himself sent someone to proclaim the substance of these same two rulings that same day."
       ],
       "claim_ids": [
         "AB-L5-C03"
@@ -118,26 +118,7 @@
       "source_summary_ar": "سيرة ابن هشام، إعلان براءة",
       "source_summary_en": "Ibn Hisham's seerah, the proclamation of Bara'ah",
       "required_for_completion": true,
-      "deep_sections": [
-        {
-          "section_id": "L5-B05-D1",
-          "title_ar": "هل كان إرسال عليّ تراجعاً عن تعيين أبي بكر؟",
-          "title_en": "Was Sending 'Ali a Reversal of Abu Bakr's Appointment?",
-          "content_items_ar": [
-            "قد يظن بعض من يسمع هذا الترتيب أن إرسال عليّ بدل أبي بكر لتلاوة براءة كان تراجعاً عن الثقة به أو تفضيلاً لعليّ عليه في المنزلة. هذا الفهم لا يستند إلى تفسيرٍ معتمد.",
-            "يذكر الإمام البغوي أن العادة عند العرب جرت بألّا يتولى نقض عهدٍ إلا سيّدُ القوم أو رجلٌ من رهطه؛ فأُرسل عليٌّ لهذا السبب الإجرائي، ولئلا يُقال إن هذا خلاف ما يُعرف عندهم في إلغاء العهود.",
-            "بقي تعيين أبي بكرٍ قائداً للحجّ كما هو؛ ما تغيّر هو الجهة التي تتولى تحديداً نقض عهدٍ سابق، وهو أمرٌ منفصل عن قيادة الحجّ نفسها."
-          ],
-          "content_items_en": [
-            "Some who hear of this arrangement might assume that sending 'Ali instead of Abu Bakr to deliver Bara'ah was a withdrawal of trust in him, or a preference for 'Ali's rank over his. This reading is not supported by any established explanation.",
-            "Imam al-Baghawi explains that Arab custom held that only a tribal chief or a man of his own close kin could undertake the voiding of a treaty; 'Ali was sent for this specific, procedural reason, so that no one could say this departed from the custom recognized among them for annulling treaties.",
-            "Abu Bakr's appointment as leader of the Hajj remained unchanged; what changed was specifically who carried out the voiding of an earlier treaty -- a separate matter from the Hajj leadership itself."
-          ],
-          "claim_ids": [
-            "AB-L5-C04"
-          ]
-        }
-      ]
+      "deep_sections": []
     },
     {
       "block_id": "L5-B06",
@@ -147,13 +128,13 @@
       "content_items_ar": [
         "في بدر، كان أبو بكر وحده مع النبي ﷺ في أشد لحظات الشدة، يشهد دعاءه ويتلقى بشارته.",
         "في تبوك، سابق أبو بكر إلى البذل الكامل، فجاء بكل ما يملك حين اكتفى غيره بالنصف.",
-        "وفي آخر حجٍّ قاده النبي ﷺ، كان أبو بكر قائداً موثوقاً به، من غير أن يُفهم من تكليف عليٍّ بأمرٍ آخر أي تراجعٍ عن تلك الثقة.",
+        "وفي آخر حجٍّ قاده النبي ﷺ، كان أبو بكر القائد المعيَّن للحج، وأرسل من ينادي بأصل الإعلان يوم النحر؛ وتولى عليّ بن أبي طالب، بأمر النبي ﷺ، تلاوة الإعلان الكامل بتفاصيله.",
         "هذه المواقف الثلاثة، وإن تباعدت زمنياً، تُظهر الصفة نفسها التي عُرف بها أبو بكر في مكة: حضورٌ لصيق، وبذلٌ كامل، وثقةٌ متبادلة -- إلى أن نصل في الدرس التالي إلى مرض النبي ﷺ الأخير ووفاته."
       ],
       "content_items_en": [
         "At Badr, Abu Bakr alone was with the Prophet ﷺ at the moment of greatest pressure, witnessing his supplication and receiving his good news.",
         "At Tabuk, Abu Bakr outpaced everyone in total giving, bringing everything he owned when others were satisfied with half.",
-        "At the last Hajj the Prophet ﷺ led, Abu Bakr was a trusted leader, and assigning 'Ali a separate task should not be read as any withdrawal of that trust.",
+        "And at the last Hajj the Prophet ﷺ led, Abu Bakr was the Hajj's appointed leader and sent someone to proclaim the substance of the announcement on the Day of Sacrifice; 'Ali ibn Abi Talib, by the Prophet's ﷺ instruction, delivered the fuller proclamation with its details.",
         "These three moments, though distant in time, show the same character Abu Bakr was known for in Makkah: close presence, total giving, and mutual trust -- carrying us, in the next lesson, to the Prophet's ﷺ final illness and death."
       ],
       "claim_ids": [

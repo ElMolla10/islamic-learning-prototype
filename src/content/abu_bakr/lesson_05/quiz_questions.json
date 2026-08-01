@@ -2,7 +2,7 @@
   "lesson_id": "abu_bakr.lesson_05_abu_bakr_in_madinah",
   "draft_version": 1,
   "status": "internal_unapproved",
-  "note": "Six questions drawn only from secure R11 evidence. Q5's distractor is deliberately used to correct the most consequential possible misreading (that sending 'Ali to proclaim Bara'ah demoted Abu Bakr), consistent with the L5-B05-D1 deep section.",
+  "note": "Six questions drawn only from secure R11 evidence, matching the bounded three-episode arc (Badr, Tabuk, the year-9 Hajj).",
   "passing_rule": "score / total > 0.5",
   "questions": [
     {
@@ -129,30 +129,30 @@
       "question_id": "L5Q05",
       "type": "multiple_choice",
       "depth": "meaning",
-      "prompt_ar": "لماذا أرسل النبي ﷺ عليّاً لا أبا بكر ليتلو إعلان براءة؟",
-      "prompt_en": "Why did the Prophet ﷺ send 'Ali, not Abu Bakr, to deliver the Bara'ah proclamation?",
+      "prompt_ar": "بحسب سيرة ابن هشام، من الذي تلا الإعلان الكامل لبراءة بتفاصيله عند منى؟",
+      "prompt_en": "According to Ibn Hisham's account, who delivered the fuller Bara'ah proclamation, with its details, at Mina?",
       "options": [
         {
           "id": "a",
-          "ar": "لأن العادة عند العرب لا تُجيز نقض العهد إلا لسيّد القوم أو رجلٍ من أهل بيته",
-          "en": "Because Arab custom permitted only a tribal chief or a man of his own household to void a treaty"
+          "ar": "عليّ بن أبي طالب",
+          "en": "'Ali ibn Abi Talib"
         },
         {
           "id": "b",
-          "ar": "لأن النبي ﷺ سحب ثقته من أبي بكر بعد تعيينه",
-          "en": "Because the Prophet ﷺ had withdrawn his trust in Abu Bakr after appointing him"
+          "ar": "أبو بكر الصديق نفسه",
+          "en": "Abu Bakr al-Siddiq himself"
         },
         {
           "id": "c",
-          "ar": "لأن عليّاً كان أميراً على الحج بدل أبي بكر",
-          "en": "Because 'Ali, not Abu Bakr, was actually the Hajj's appointed leader"
+          "ar": "أبو هريرة",
+          "en": "Abu Hurairah"
         }
       ],
       "correct_answer": [
         "a"
       ],
-      "explanation_ar": "يذكر الإمام البغوي أن هذا إجراءٌ يتعلق بعادة نقض العهود تحديداً؛ لا علاقة له بقيادة الحج، التي بقيت لأبي بكر.",
-      "explanation_en": "Imam al-Baghawi explains this was a procedural matter specific to voiding treaties; it has nothing to do with the Hajj leadership itself, which remained Abu Bakr's.",
+      "explanation_ar": "سيرة ابن هشام تذكر عليّاً بالاسم كمن تلا الإعلان الكامل. صحيح البخاري يثبت من جهته أن أبا بكر أرسل من ينادي بأصل قاعدتين من الإعلان في اليوم نفسه، لكنه لا يذكر عليّاً بالاسم.",
+      "explanation_en": "Ibn Hisham's account names 'Ali as the one who delivered the fuller proclamation. Sahih al-Bukhari, for its part, establishes that Abu Bakr sent someone to proclaim the substance of two of its rulings that same day, but does not itself name 'Ali.",
       "review_card_id": "L5-B05"
     },
     {
