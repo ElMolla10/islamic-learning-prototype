@@ -1,81 +1,189 @@
 {
   "lesson_id": "abu_bakr.lesson_03_faith_under_persecution",
-  "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real questions pending Mohamed's review of content_research/abu_bakr/.",
+  "draft_version": 2,
+  "status": "internal_unapproved",
+  "note": "No free-text questions. Every option and matching row uses a stable id, never a visible index, for grading. Every question links a review_card_id (and, where relevant, a review_deep_section_id) so an incorrect answer can open the right context.",
   "passing_rule": "score / total > 0.5",
   "questions": [
     {
-      "question_id": "ABQ01",
+      "question_id": "L3Q01",
       "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "سؤال عنصر نائب رقم واحد؟",
-      "prompt_en": "Placeholder question one?",
+      "prompt_ar": "ما الفعل الذي يثبته خبر البخاري عن دفاع أبي بكر عن النبي ﷺ؟",
+      "prompt_en": "What action does al-Bukhari's report establish about Abu Bakr defending the Prophet ﷺ?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "دفع المعتدي عن النبي ﷺ وهو يصلي",
+          "en": "He pushed the attacker away from the Prophet ﷺ while he was praying"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "رد جوار ابن الدغنة",
+          "en": "He returned Ibn al-Dughunnah's protection"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "خرج نحو أرض الحبشة",
+          "en": "He set out toward the land of Abyssinia"
         }
       ],
       "correct_answer": [
         "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB02"
+      "explanation_ar": "دفع أبو بكر المعتدي عن النبي ﷺ وهو يصلي. أما رد الجوار والخروج نحو الحبشة فهما حدثان آخران في الدرس.",
+      "explanation_en": "Abu Bakr pushed the attacker away from the Prophet ﷺ while he was praying. Returning the protection and setting out toward Abyssinia are separate events in the lesson.",
+      "review_card_id": "L3-B02"
     },
     {
-      "question_id": "ABQ02",
-      "type": "true_false",
+      "question_id": "L3Q02",
+      "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "عبارة عنصر نائب رقم اثنين؟",
-      "prompt_en": "Placeholder statement two?",
-      "correct_answer": true,
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB04"
-    },
-    {
-      "question_id": "ABQ03",
-      "type": "select_all",
-      "depth": "deep",
-      "prompt_ar": "سؤال عنصر نائب باختيار متعدد؟",
-      "prompt_en": "Placeholder select-all question?",
+      "prompt_ar": "ما المعنى الذي يعلّمه قول النبي ﷺ عن مال أبي بكر؟",
+      "prompt_en": "What does the Prophet's ﷺ statement about Abu Bakr's wealth teach?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "أن المال يمكن أن يصير خدمةً ونصرةً حين يُستعمل بمسؤولية",
+          "en": "Wealth can become service and support when it is used responsibly"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "أن قيمة المال الأساسية في إظهار المكانة",
+          "en": "The main value of wealth is displaying social standing"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "أن النصرة زمن المشقة لا صلة لها بالموارد المادية",
+          "en": "Material resources have no place in supporting others during hardship"
         }
       ],
       "correct_answer": [
-        "a",
-        "b"
+        "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB05"
+      "explanation_ar": "كان مال أبي بكر عظيم النفع للرسول ﷺ؛ فصار ما يملكه وسيلةً للخدمة والنصرة، من غير أن يحدد النص مجموعاً لما أنفق.",
+      "explanation_en": "Abu Bakr's wealth greatly benefited the Messenger ﷺ, so what he possessed became a means of service and support; the report does not give a total for his spending.",
+      "review_card_id": "L3-B03"
+    },
+    {
+      "question_id": "L3Q03",
+      "type": "multiple_choice",
+      "depth": "connection",
+      "prompt_ar": "ماذا يبيّن ذكر بلال ومشهد النهدية وابنتها؟",
+      "prompt_en": "What do the mention of Bilal and the scene of al-Nahdiyyah and her daughter show?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "أن أبا بكر استخدم ما يملك ليفتح للمستضعفين طريقاً إلى الحرية",
+          "en": "Abu Bakr used what he possessed to open a path to freedom for oppressed believers"
+        },
+        {
+          "id": "b",
+          "ar": "أن الغرض يقتصر على معرفة أسماء وردت في خبر السيرة",
+          "en": "The point is limited to knowing names found in a seerah report"
+        },
+        {
+          "id": "c",
+          "ar": "أن المال في هذه المرحلة كان علامة مكانة فحسب",
+          "en": "Wealth in this period was only a sign of social standing"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "يبين الخبران أن المال صار عوناً عملياً للمستضعفين: سمّى ابن هشام بلالاً ضمن من أعتقهم أبو بكر، ويعرض مشهد النهدية وابنتها الانتقال إلى الحرية.",
+      "explanation_en": "The reports show wealth becoming practical help for oppressed believers: Ibn Hisham names Bilal among those Abu Bakr freed, and the scene of al-Nahdiyyah and her daughter shows a movement into freedom.",
+      "review_card_id": "L3-B04"
+    },
+    {
+      "question_id": "L3Q04",
+      "type": "multiple_choice",
+      "depth": "chronology",
+      "prompt_ar": "ما العلاقة الصحيحة بين خروج أبي بكر نحو الحبشة والهجرة التي سيعرضها الدرس التالي؟",
+      "prompt_en": "What is the correct relationship between Abu Bakr's journey toward Abyssinia and the Hijrah taught in the next lesson?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "كانت محاولة الحبشة حدثاً مبكراً منفصلاً، وتوضح ازدياد الحاجة إلى مكان آمن للعبادة",
+          "en": "The attempted journey toward Abyssinia was a distinct earlier event showing the growing need for a safe place to worship"
+        },
+        {
+          "id": "b",
+          "ar": "ينبغي فهم الحدثين على أنهما رحلة واحدة متصلة",
+          "en": "The two events should be understood as one continuous journey"
+        },
+        {
+          "id": "c",
+          "ar": "محاولة الحبشة هي الحدث نفسه الذي سيشرحه درس الهجرة التالي",
+          "en": "The attempted journey toward Abyssinia is the same event taught in the next Hijrah lesson"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "خرج أبو بكر نحو الحبشة في مرحلة الاضطهاد بمكة، ثم أعاده ابن الدغنة. أما الهجرة مع النبي ﷺ إلى المدينة فتأتي لاحقاً.",
+      "explanation_en": "Abu Bakr set out toward Abyssinia during the Makkan persecution and was brought back by Ibn al-Dughunnah. The Hijrah with the Prophet ﷺ to Madinah came later.",
+      "review_card_id": "L3-B05"
+    },
+    {
+      "question_id": "L3Q05",
+      "type": "multiple_choice",
+      "depth": "cause_and_consequence",
+      "prompt_ar": "لماذا انتهى جوار ابن الدغنة؟",
+      "prompt_en": "Why did Ibn al-Dughunnah's protection come to an end?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "لأن قريشاً اعترضت على قراءته العلنية، فاختار رد الجوار بدل تقييد عبادته",
+          "en": "Because Quraysh objected to his public recitation, and he chose to return the protection rather than restrict his worship"
+        },
+        {
+          "id": "b",
+          "ar": "لمجرد أن الجوار أعاد أبا بكر إلى مكة",
+          "en": "Simply because the protection had brought Abu Bakr back to Makkah"
+        },
+        {
+          "id": "c",
+          "ar": "بسبب محاولته السابقة الخروج نحو الحبشة",
+          "en": "Because of his earlier attempt to leave toward Abyssinia"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "ربطت قريش الجوار بقيود على ظهور العبادة. وحين خُيّر أبو بكر رد الجوار ورضي بجوار الله.",
+      "explanation_en": "Quraysh tied the protection to restrictions on visible worship. When given the choice, Abu Bakr returned it and accepted Allah's protection.",
+      "review_card_id": "L3-B07"
+    },
+    {
+      "question_id": "L3Q06",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "ما المعنى الذي يجمع مواقف الدرس من غير أن يجعلها حادثةً واحدة؟",
+      "prompt_en": "What meaning connects the lesson's events without turning them into one incident?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "الإيمان ظهر في الدفاع والبذل وإعانة المستضعفين والثبات على العبادة",
+          "en": "Faith appeared through defence, material support, aid to the oppressed, and steadfast worship"
+        },
+        {
+          "id": "b",
+          "ar": "الإيمان في هذه المرحلة ظهر في الدفاع المباشر وحده",
+          "en": "Faith in this period appeared only through direct defence"
+        },
+        {
+          "id": "c",
+          "ar": "الفكرة الأساسية في الدرس هي الخروج من مكة فقط",
+          "en": "The lesson is mainly about leaving Makkah"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "تجمع هذه الخلاصة الوقائع المتفرقة: دفاعاً عن النبي ﷺ، وبذلاً للمال، وعوناً للمستضعفين، وثباتاً على العبادة.",
+      "explanation_en": "This synthesis connects the distinct events: defence of the Prophet ﷺ, material support, aid to oppressed believers, and steadfast worship.",
+      "review_card_id": "L3-B08"
     }
   ]
 }

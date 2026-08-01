@@ -63,7 +63,10 @@ export type LessonBlockType =
   | "established_vs_reported"
   | "character_theme"
   | "leadership_decision"
-  | "timeline_review";
+  | "timeline_review"
+  | "representative_event"
+  | "context_and_consequence"
+  | "event_consequence_meaning";
 
 export type LessonBlock = {
   key: string;

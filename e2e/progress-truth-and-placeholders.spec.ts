@@ -116,12 +116,19 @@ test.describe("Path progress-pattern consistency", () => {
   test("no hardcoded 'in progress' remains: Al-Fatihah's own status pill actually changes across states", async ({ page }) => {
     await clearAll(page);
     await page.goto("/quran/al-fatihah");
-    const notStartedText = await page.locator(".path-status").first().textContent();
+    const notStartedPill = page.locator(".path-status").first();
+    // Wait for the hydrated, localStorage-derived text rather than reading immediately after
+    // navigation -- a bare .textContent() here can race ahead of client hydration and capture
+    // the pre-hydration default on a slower runner.
+    await expect(notStartedPill).toHaveText("حالة مسار السورة: لم يبدأ");
+    const notStartedText = await notStartedPill.textContent();
     await page.goto("/quran/al-fatihah/lesson-1");
     await advanceToQuiz(page, "ar");
     await expectStoredProgress(page, FATIHAH_PROGRESS_KEY, { lessonOpened: true, currentCardId: "card-10" });
     await page.goto("/quran/al-fatihah");
-    const inProgressText = await page.locator(".path-status").first().textContent();
+    const inProgressPill = page.locator(".path-status").first();
+    await expect(inProgressPill).toHaveText("حالة مسار السورة: قيد التقدم");
+    const inProgressText = await inProgressPill.textContent();
     expect(notStartedText).not.toBe(inProgressText);
   });
 });

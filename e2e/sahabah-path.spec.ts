@@ -37,19 +37,20 @@ test("lesson 12 (out of range) 404s", async ({ page }) => {
   expect(response?.status()).toBe(404);
 });
 
-test("path overview page renders 11 chapter cards in order: Lessons 1-2 active, Lessons 3-11 in preparation", async ({ page }) => {
+test("path overview page renders 11 chapter cards in order: Lessons 1-3 active, Lessons 4-11 in preparation", async ({ page }) => {
   await clearStorage(page);
   const allCards = page.locator(".bio-chapter-card");
   await expect(allCards).toHaveCount(LESSON_COUNT);
 
   const activeCards = page.locator(".path-card.active");
-  await expect(activeCards).toHaveCount(2);
+  await expect(activeCards).toHaveCount(3);
   await expect(activeCards.nth(0)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-1");
   await expect(activeCards.nth(1)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-2");
+  await expect(activeCards.nth(2)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-3");
 
   const disabledCards = page.locator(".bio-chapter-card[data-disabled='true']");
-  await expect(disabledCards).toHaveCount(9);
-  for (let index = 0; index < 9; index += 1) {
+  await expect(disabledCards).toHaveCount(8);
+  for (let index = 0; index < 8; index += 1) {
     const card = disabledCards.nth(index);
     // Every disabled card must show the restrained "in preparation" badge, never a raw [placeholder]
     // marker or a progress-tracking status (not_started/in_progress/completed) meant for real lessons.
@@ -157,7 +158,7 @@ test("Abu Bakr path routes have no serious automated accessibility violations", 
   }
 });
 
-test("capture desktop and mobile screenshots for the path overview and two placeholder lesson pages", async ({ page }) => {
+test("capture desktop and mobile screenshots for the path overview and two lesson pages", async ({ page }) => {
   test.setTimeout(120_000);
   const routes = ["/sahabah/abu-bakr", "/sahabah/abu-bakr/lesson-3", "/sahabah/abu-bakr/lesson-11"];
   for (const width of [390, 1440] as const) {

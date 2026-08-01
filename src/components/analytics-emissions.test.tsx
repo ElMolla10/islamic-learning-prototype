@@ -33,6 +33,25 @@ function adaptedLesson1Fixture() {
   });
 }
 
+function adaptedLesson3Fixture() {
+  const fixture = (name: string) => JSON.parse(readFileSync(path.resolve(process.cwd(), "src/content/abu_bakr/lesson_03", name), "utf8"));
+  return adaptBiographyLesson({
+    meta: {
+      canonicalSlug: "abu_bakr.lesson_03_faith_under_persecution",
+      slug: "lesson-3",
+      number: 3,
+      personName: { ar: "أبو بكر الصديق", en: "Abu Bakr al-Siddiq" },
+      title: { ar: "الإيمان تحت الاضطهاد", en: "Faith Under Persecution" },
+      readingTime: { ar: "١٠–١٢ دقيقة", en: "10–12 minutes" },
+      contentReady: true,
+    },
+    blocks: fixture("lesson_blocks.json"),
+    quiz: fixture("quiz_questions.json"),
+    sources: fixture("source_drawer.json"),
+    glossary: fixture("glossary.json"),
+  });
+}
+
 describe("approved analytics emission points", () => {
   const events: AnalyticsEvent[] = [];
 
@@ -121,6 +140,15 @@ describe("approved analytics emission points", () => {
       name: "lesson_start",
       properties: { lesson_slug: "abu-bakr-lesson-2", language: "ar" },
     }]));
+  });
+
+  it("keeps Lesson 3 analytics entirely inactive because it has no approved public slug", async () => {
+    const lesson = adaptedLesson3Fixture();
+    const view = render(<LanguageProvider><BiographyExperience lesson={lesson} /></LanguageProvider>);
+    await screen.findByRole("heading", { name: "حين صار الإيمان فعلاً" });
+    view.rerender(<LanguageProvider><BiographyExperience lesson={lesson} /></LanguageProvider>);
+    await userEvent.click(screen.getByRole("button", { name: /عرض المصادر/ }));
+    expect(events).toEqual([]);
   });
 
   it("does not re-emit biography lifecycle events from restored completed state", async () => {

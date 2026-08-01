@@ -1,21 +1,35 @@
 {
   "lesson_id": "abu_bakr.lesson_03_faith_under_persecution",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real glossary pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Only terms directly used in this lesson's content. Not an exhaustive Islamic-studies glossary.",
   "terms": [
     {
-      "term_id": "placeholder_term_1",
-      "arabic": "مصطلح عنصر نائب أول",
-      "english": "First placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L3-G01",
+      "arabic": "الاضطهاد",
+      "english": "Persecution",
+      "definition_ar": "إيقاع الأذى والضغط بالناس بسبب إيمانهم أو هويتهم، ومحاولة منعهم من ممارسة دينهم.",
+      "definition_en": "Harm and pressure directed at people because of their faith or identity, including attempts to prevent them from practising their religion."
     },
     {
-      "term_id": "placeholder_term_2",
-      "arabic": "مصطلح عنصر نائب ثانٍ",
-      "english": "Second placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L3-G02",
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "definition_ar": "البلاد التي قصدها بعض المسلمين في هجرتهم المبكرة، في منطقة القرن الإفريقي.",
+      "definition_en": "The land sought by some Muslims in the early migration, in the region of the Horn of Africa."
+    },
+    {
+      "term_id": "L3-G03",
+      "arabic": "الجوار",
+      "english": "Protection (jiwar)",
+      "definition_ar": "عهد حماية اجتماعي تعلنه شخصية أو قبيلة لشخص، وتلتزم بمنع الاعتداء عليه ضمن شروطه.",
+      "definition_en": "A publicly declared social guarantee of protection offered by a person or tribe, within its stated conditions."
+    },
+    {
+      "term_id": "L3-G04",
+      "arabic": "برك الغماد",
+      "english": "Bark al-Ghimad",
+      "definition_ar": "الموضع الذي بلغ إليه أبو بكر في طريقه نحو الحبشة قبل أن يلقاه ابن الدغنة.",
+      "definition_en": "The place Abu Bakr reached while travelling toward Abyssinia before Ibn al-Dughunnah met him."
     }
   ]
 }

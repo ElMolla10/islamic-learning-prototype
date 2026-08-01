@@ -1,43 +1,86 @@
 {
   "lesson_id": "abu_bakr.lesson_03_faith_under_persecution",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real sources pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Learner-facing source presentation only. Locations are grouped compactly by source and page. No internal file paths, OCR artefacts, or reviewer-only notes are exposed here.",
   "sources": [
     {
-      "work_id": "work_placeholder_primary",
-      "display_title": "مصدر عنصر نائب أول [مبدئي]",
-      "author": "—",
+      "work_id": "work_sahih_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري (Muhammad ibn Isma'il al-Bukhari)",
       "source_role": [
         "primary_hadith_collection"
       ],
-      "claims_supported": [],
       "locations": [
         {
           "volume": null,
-          "pdf_page": 1,
-          "printed_page": 1
+          "pdf_page": 904,
+          "printed_page": 904,
+          "claims_supported": [
+            "AB-L3-C01"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 956,
+          "printed_page": 956,
+          "claims_supported": [
+            "AB-L3-C05",
+            "AB-L3-C06"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 957,
+          "printed_page": 957,
+          "claims_supported": [
+            "AB-L3-C07",
+            "AB-L3-C08"
+          ]
         }
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "hadith_numbers": [
+        "3678"
+      ]
     },
     {
-      "work_id": "work_placeholder_commentary",
-      "display_title": "مصدر عنصر نائب ثانٍ [مبدئي]",
-      "author": "مؤلف عنصر نائب",
+      "work_id": "work_fadail_sahaba",
+      "display_title": "فضائل الصحابة (Fada'il al-Sahabah)",
+      "author": "أحمد بن حنبل (Ahmad ibn Hanbal)",
       "source_role": [
-        "hadith_commentary"
+        "hadith_and_virtues_collection"
       ],
-      "claims_supported": [],
       "locations": [
         {
-          "volume": 1,
-          "pdf_page": 10,
-          "printed_page": 12
+          "volume": null,
+          "pdf_page": 65,
+          "printed_page": 65,
+          "claims_supported": [
+            "AB-L3-C02"
+          ]
         }
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "hadith_numbers": [
+        "25"
+      ]
+    },
+    {
+      "work_id": "work_seerah_ibn_hisham",
+      "display_title": "السيرة النبوية لابن هشام (Sirat Ibn Hisham)",
+      "author": "عبد الملك بن هشام، عن رواية ابن إسحاق (Ibn Hisham, narrating Ibn Ishaq)",
+      "source_role": [
+        "dedicated_seerah_narrative"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 147,
+          "printed_page": 147,
+          "claims_supported": [
+            "AB-L3-C03",
+            "AB-L3-C04"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,173 +1,239 @@
 {
   "lesson_id": "abu_bakr.lesson_03_faith_under_persecution",
-  "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real content pending Mohamed's review of content_research/abu_bakr/ (see src/content/abu_bakr/README.md for the folder mapping for website lesson 3). Every string below is filler used only to verify the Sahabah component system renders correctly.",
-  "timeline_phases": [
-    {
-      "phase_id": "PH1",
-      "label_ar": "البداية [مبدئي]",
-      "label_en": "Start [placeholder]",
-      "date_label_ar": "مرحلة مبدئية أولى",
-      "date_label_en": "Placeholder early phase",
-      "summary_ar": "نص مبدئي لبداية هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's opening.",
-      "block_id": "AB01"
-    },
-    {
-      "phase_id": "PH2",
-      "label_ar": "الوسط [مبدئي]",
-      "label_en": "Midpoint [placeholder]",
-      "date_label_ar": "مرحلة مبدئية وسطى",
-      "date_label_en": "Placeholder middle phase",
-      "summary_ar": "نص مبدئي لمنتصف هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's middle.",
-      "block_id": "AB04"
-    },
-    {
-      "phase_id": "PH3",
-      "label_ar": "المراجعة [مبدئي]",
-      "label_en": "Review [placeholder]",
-      "date_label_ar": "ختام الفصل [مبدئي]",
-      "date_label_en": "End of chapter [placeholder]",
-      "summary_ar": "نص مبدئي لمراجعة الفصل.",
-      "summary_en": "Placeholder chapter-review summary.",
-      "block_id": "AB07"
-    }
-  ],
+  "draft_version": 2,
+  "status": "internal_unapproved",
+  "note": "Real content, internally drafted and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
+  "timeline_phases": [],
   "blocks": [
     {
-      "block_id": "AB01",
+      "block_id": "L3-B01",
       "block_type": "lesson_hook",
-      "title_ar": "الإيمان تحت الاضطهاد [عنوان مبدئي]",
-      "title_en": "Faith Under Persecution [placeholder title]",
+      "title_ar": "حين صار الإيمان فعلاً",
+      "title_en": "When Faith Became Action",
       "content_items_ar": [
-        "نص تمهيدي مؤقت لهذا الفصل، الذي سيغطي لاحقًا: الاضطهاد في مكة وعتق المستضعفين. هذا نص عنصر نائب فقط.",
-        "سيُستبدل هذا النص الكامل بمحتوى حقيقي بعد مراجعة محمد لمواد content_research."
+        "في الأيام الأولى للإسلام لم يبقَ الإيمان فكرةً في القلب فقط. اشتد الأذى، وصار على المؤمنين أن يختاروا كيف يحمون الحق، ويسندون بعضهم بعضاً، ويواصلون العبادة.",
+        "سنرى في هذا الدرس مواقف متفرقة من حياة أبي بكر رضي الله عنه، لا حادثةً واحدة: دفاعاً، وبذلاً للمال، وتحريراً لمستضعفين، وثباتاً على تلاوة القرآن.",
+        "الخيط الذي يجمعها أن الإيمان زمن الاضطهاد ظهر في مسؤوليةٍ عملية، لا في كلمات الإعجاب وحدها."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead paragraph for this chapter, which will eventually cover: persecution in Makkah and freeing the weak. This text exists only to verify layout.",
-        "This entire block will be replaced with real content once Mohamed reviews the content_research material."
+        "In Islam's earliest days, faith did not remain an idea held quietly in the heart. Harm intensified, and believers had to decide how they would protect the truth, support one another, and continue worship.",
+        "This lesson follows several distinct moments from Abu Bakr's life—not one continuous incident: defence, material support, freeing oppressed people, and steadfast Qur'an recitation.",
+        "What joins them is faith under persecution becoming practical responsibility, not merely words of admiration."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L3-C09"
+      ],
+      "source_summary_ar": "تركيب تعليمي محدود من أدلة الدرس المتعددة",
+      "source_summary_en": "Bounded teaching synthesis from the lesson's separate evidence",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB02",
-      "block_type": "event_card",
-      "title_ar": "حدث مبدئي [عنوان مبدئي]",
-      "title_en": "A placeholder event [placeholder title]",
+      "block_id": "L3-B02",
+      "block_type": "key_evidence",
+      "title_ar": "دفاعٌ في لحظة خطر",
+      "title_en": "Defence in a Moment of Danger",
       "content_items_ar": [
-        "وصف مؤقت لحدث افتراضي في هذا الفصل. عنصر نائب فقط.",
-        "التفاصيل الحقيقية والتواريخ ستأتي من البحث المعتمد لاحقًا."
+        "سأل عروةُ بن الزبير عبدَ الله بن عمرو رضي الله عنهما عن أشد ما صنع المشركون برسول الله ﷺ. فذكر أنه رأى عقبة بن أبي معيط يخنق النبي ﷺ بردائه وهو يصلي.",
+        "جاء أبو بكر فدفعه عن النبي ﷺ، وقال: ﴿أَتَقْتُلُونَ رَجُلًا أَنْ يَقُولَ رَبِّيَ اللَّهُ وَقَدْ جَاءَكُمْ بِالْبَيِّنَاتِ مِنْ رَبِّكُمْ﴾.",
+        "لم يكن دفاعه وصفاً للشجاعة من بعيد؛ دخل في الخطر القائم ليمنع الأذى عن رسول الله ﷺ. في تلك اللحظة صار الإيمان حمايةً ونصرة."
       ],
       "content_items_en": [
-        "PLACEHOLDER description of a hypothetical event in this chapter. Structure only.",
-        "Real details and dates will come from the approved research pack later."
+        "'Urwah ibn al-Zubayr asked 'Abd Allah ibn 'Amr what the polytheists had done most severely to the Messenger of Allah ﷺ. He recalled seeing 'Uqbah ibn Abi Mu'ayt choking the Prophet ﷺ with his garment while he prayed.",
+        "Abu Bakr came, pushed him away from the Prophet ﷺ, and said: “Would you kill a man for saying, ‘My Lord is Allah,’ when he has brought you clear proofs from your Lord?”",
+        "His defence was not admiration from a safe distance; he entered the immediate danger to stop harm reaching the Messenger of Allah ﷺ. In that moment, faith became protection and support."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L3-C01"
+      ],
+      "source_summary_ar": "صحيح البخاري، حديث 3678",
+      "source_summary_en": "Sahih al-Bukhari, hadith 3678",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB03",
-      "block_type": "quotation_card",
-      "title_ar": "قول مأثور [مبدئي]",
-      "title_en": "A recorded quotation [placeholder]",
+      "block_id": "L3-B03",
+      "block_type": "character_theme",
+      "title_ar": "حين صار المال نصرة",
+      "title_en": "When Wealth Became Support",
       "content_items_ar": [
-        "﴿نص اقتباس مؤقت بديل هنا﴾",
-        "قائل الاقتباس [اسم مبدئي] — سياق الاقتباس عنصر نائب."
+        "كان لأبي بكر مالٌ ومكانة، لكن قيمة المال في هذه المرحلة ظهرت فيما صنعه به، لا في امتلاكه وحده.",
+        "قال النبي ﷺ: «ما نفعني مالٌ قط ما نفعني مالُ أبي بكر».",
+        "يبين هذا القول عِظَم ما قدّمه مال أبي بكر من نفعٍ للرسول ﷺ، ولا يحدد مجموعاً حسابياً لما أنفق أو يقرر أنه أنفق كل ما يملك.",
+        "هكذا يتحول المال من علامة مكانة إلى أداة مسؤولية: يسند الدعوة، ويحمي الإنسان، ويفتح للمستضعف طريقاً إلى الحرية."
       ],
       "content_items_en": [
-        "“Placeholder quotation text goes here”",
-        "Quotation speaker [placeholder name] — the quotation's context is a placeholder."
+        "Abu Bakr possessed wealth and standing, but the value of that wealth in this period appeared in what he did with it, not in possession alone.",
+        "The Prophet ﷺ said, “No wealth ever benefited me as Abu Bakr's wealth benefited me.”",
+        "This statement shows how greatly Abu Bakr's wealth benefited the Messenger ﷺ. It does not supply a lifetime total or say that he gave away everything he owned.",
+        "Wealth thus moved from being a sign of status to a means of responsibility: supporting the mission, protecting people, and opening a path from oppression toward freedom."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L3-C02",
+        "AB-L3-C09"
+      ],
+      "source_summary_ar": "فضائل الصحابة لأحمد بن حنبل، الرواية 25",
+      "source_summary_en": "Ahmad ibn Hanbal's Fada'il al-Sahabah, report 25",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB04",
-      "block_type": "hadith_evidence",
-      "title_ar": "دليل حديثي [مبدئي]",
-      "title_en": "Hadith evidence [placeholder]",
+      "block_id": "L3-B04",
+      "block_type": "representative_event",
+      "title_ar": "المال يفتح باب الحرية",
+      "title_en": "Wealth Opens a Door to Freedom",
       "content_items_ar": [
-        "مقدمة مؤقتة قبل نص الحديث.",
-        "﴿نص حديث بديل يستخدم كعنصر نائب فقط﴾",
-        "شرح مؤقت لدلالة الحديث."
+        "يذكر ابن هشام بلالاً رضي الله عنه ضمن جماعة أعتقهم أبو بكر قبل الهجرة.",
+        "ثم تروي السيرة مشهداً آخر: كانت النهدية وابنتها مملوكتين لامرأة قالت إنها لن تعتقهما. سأل أبو بكر عن ثمنهما، فلما اتفقا قال: «قد أخذتُهما، وهما حرتان».",
+        "وحين سألتاه هل تُكملان طحن طحين سيدتهما قبل ردّه، ترك لهما الاختيار. في هذه اللحظة انتقلت قدرته المالية إلى حرية إنسانين.",
+        "يأتي بلال اسماً محورياً في هذا الباب، وتقدم النهدية وابنتها مشهداً يوضح المعنى الأوسع: الإيمان حمّل صاحب المال مسؤوليةً تجاه من وقع عليهم الاضطهاد."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead-in before the hadith text.",
-        "“Placeholder hadith text used only as a structural filler”",
-        "PLACEHOLDER explanation of the hadith's significance."
+        "Ibn Hisham names Bilal رضي الله عنه among a group whom Abu Bakr freed before the Hijrah.",
+        "The seerah then relates another scene. Al-Nahdiyyah and her daughter belonged to a woman who said she would never free them. Abu Bakr asked their price; once they agreed, he said, “I have taken them, and they are free.”",
+        "When they asked whether they should finish grinding their owner's flour before returning it, he left them the choice. In that moment, financial capacity became the freedom of two people.",
+        "Bilal provides a named anchor in this part of the story, while al-Nahdiyyah and her daughter give a scene that shows the wider meaning: faith gave a person with resources responsibility toward those suffering oppression."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L3-C03",
+        "AB-L3-C04",
+        "AB-L3-C09"
+      ],
+      "source_summary_ar": "السيرة النبوية لابن هشام، ص147",
+      "source_summary_en": "Ibn Hisham's Sirat, p.147",
       "required_for_completion": true,
-      "deep_sections": []
+      "deep_sections": [
+        {
+          "section_id": "L3-B04-D1",
+          "title_ar": "من المنع إلى الحرية والاختيار",
+          "title_en": "From Denial to Freedom and Choice",
+          "content_items_ar": [
+            "بدأ المشهد بقول المالكة إنها لن تعتقهما، ثم تغيّرت حال النهدية وابنتها حين اشتراهما أبو بكر وقال: «وهما حرتان».",
+            "وبعد إعلان حريتهما لم يأمرهما بإكمال طحن الدقيق؛ ترك لهما أن تختارا. يجمع المشهد بين انتقالهما إلى الحرية وبقاء الاختيار لهما في العمل الذي كان بأيديهما."
+          ],
+          "content_items_en": [
+            "The scene begins with their owner saying that she would never free them. The condition of al-Nahdiyyah and her daughter then changed when Abu Bakr bought them and said, “They are free.”",
+            "After declaring them free, he did not command them to finish grinding the flour; he left them to choose. The scene joins their movement into freedom with a choice about the work already in their hands."
+          ],
+          "claim_ids": [
+            "AB-L3-C04",
+            "AB-L3-C09"
+          ]
+        }
+      ]
     },
     {
-      "block_id": "AB05",
+      "block_id": "L3-B05",
       "block_type": "chronology_clarification",
-      "title_ar": "توضيح زمني [مبدئي]",
-      "title_en": "Chronology clarification [placeholder]",
+      "title_ar": "حين صار البقاء صعباً",
+      "title_en": "When Remaining Became Difficult",
       "content_items_ar": [
-        "ملخص مؤقت لخلاف علمي محتمل حول ترتيب الأحداث.",
-        "توضيح مطوّل مؤقت حول أوجه الخلاف بين الروايات."
+        "تروي عائشة رضي الله عنها في صحيح البخاري: «فلما ابتُلي المسلمون، خرج أبو بكر مهاجراً نحو أرض الحبشة». بلغ برك الغماد في طريقه.",
+        "وحين سُئل عن وجهته قال: «أخرجني قومي، فأريد أن أسيح في الأرض وأعبد ربي». حتى رجلٌ معروف في مكة بمكانته ونفعه للناس صار يبحث عن مكان يستطيع أن يعبد الله فيه.",
+        "هذه محاولة خروج نحو الحبشة، وليست الهجرة اللاحقة إلى المدينة مع النبي ﷺ. تلك الرحلة تأتي في الدرس التالي.",
+        "يشرح هذا المشهد أثر الاضطهاد: لم يعد السؤال كيف يؤمن المرء فقط، بل أين يستطيع أن يعيش إيمانه ويعبد ربه."
       ],
       "content_items_en": [
-        "PLACEHOLDER short summary of a possible scholarly dating disagreement.",
-        "PLACEHOLDER longer clarification of how the narrations differ."
+        "In Sahih al-Bukhari, 'Aishah رضي الله عنها relates: “When the Muslims were subjected to hardship, Abu Bakr set out migrating toward the land of Abyssinia.” He reached Bark al-Ghimad on his way.",
+        "Asked where he was going, he answered, “My people have driven me out, so I wish to travel through the land and worship my Lord.” Even a man known in Makkah for his standing and service to others was searching for a place where he could worship Allah.",
+        "This was an attempted departure toward Abyssinia, not the later Hijrah to Madinah with the Prophet ﷺ. That journey belongs to the next lesson.",
+        "The scene shows what persecution changed: the question was no longer only how a person would believe, but where that faith and worship could be lived."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L3-C05"
+      ],
+      "source_summary_ar": "صحيح البخاري، رواية عائشة في خروج أبي بكر نحو الحبشة",
+      "source_summary_en": "Sahih al-Bukhari, Aishah's account of Abu Bakr setting out toward Abyssinia",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB06",
-      "block_type": "timeline_review",
-      "title_ar": "مراجعة الخط الزمني [مبدئية]",
-      "title_en": "Timeline review [placeholder]",
+      "block_id": "L3-B06",
+      "block_type": "context_and_consequence",
+      "title_ar": "جوارٌ أعاده إلى مكة",
+      "title_en": "Protection That Brought Him Back",
       "content_items_ar": [
-        "١. مرحلة عنصر نائب أولى.",
-        "٢. مرحلة عنصر نائب ثانية.",
-        "٣. مرحلة عنصر نائب ثالثة."
+        "عند برك الغماد لقيه ابن الدغنة، سيد القارة، وسأله عن وجهته. فلما سمع جوابه قال إن مثل أبي بكر لا يخرج ولا يُخرج، وعرض عليه جواره.",
+        "ذكّره بأعمالٍ كان أهل مكة يعرفونها من نفعه للآخرين؛ وهي الصفات التي مرّت كاملةً في الدرس السابق. ثم عاد معه وأعلن لقريش أنه في حمايته.",
+        "قبلت قريش الجوار بشرط أن يعبد أبو بكر ربه في داره، وألا يعلن صلاته وقراءته بحيث يسمعه الناس.",
+        "أتاح له هذا الجوار أن يعود، لكنه كشف أيضاً حدود الحماية البشرية: كانت مرتبطةً بقيودٍ على ظهور عبادته."
       ],
       "content_items_en": [
-        "1. First placeholder phase.",
-        "2. Second placeholder phase.",
-        "3. Third placeholder phase."
+        "At Bark al-Ghimad, Ibn al-Dughunnah—the chief of al-Qarah—met Abu Bakr and asked where he was going. Hearing his answer, he said that a man like Abu Bakr should neither leave nor be driven out, and offered him protection.",
+        "He reminded Abu Bakr of forms of service to others that Makkans already knew—the qualities taught in full in the previous lesson. He then returned with Abu Bakr and announced his protection to Quraysh.",
+        "Quraysh accepted the arrangement on the condition that Abu Bakr worship in his home and not make his prayer and recitation public where people would hear.",
+        "The protection allowed him to return, but it also revealed the limits of human protection: it was tied to restrictions on the visibility of his worship."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L3-C06",
+        "AB-L3-C07"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر جوار ابن الدغنة",
+      "source_summary_en": "Sahih al-Bukhari, the account of Ibn al-Dughunnah's protection",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB07",
+      "block_id": "L3-B07",
+      "block_type": "event_consequence_meaning",
+      "title_ar": "القرآن في فناء الدار",
+      "title_en": "Qur'an in the Courtyard",
+      "content_items_ar": [
+        "بعد ذلك بنى أبو بكر موضعاً للصلاة في فناء داره، وكان يصلي فيه ويقرأ القرآن. فتجمّع حوله نساء المشركين وأبناؤهم، يعجبون منه وينظرون إليه.",
+        "خاف أشراف قريش أن تؤثر قراءته فيهم، فطلبوا من ابن الدغنة أن يلزمه بشرط الجوار: إما أن يقصر عبادته على داخل داره، وإما أن يرد الحماية.",
+        "اختار أبو بكر أن يرد الجوار، وقال: «فإني أرد إليك جوارك، وأرضى بجوار الله عز وجل».",
+        "في تلك اللحظة اختار أن يواصل عبادته ظاهرةً، مع أن بقاء الحماية البشرية كان مشروطاً بتقييدها. وهنا يظهر جانب آخر من الثبات على العبادة تحت الضغط."
+      ],
+      "content_items_en": [
+        "Later, Abu Bakr made a place of prayer in his courtyard, where he prayed and recited the Qur'an. Women and children of the polytheists gathered around him, marvelling and watching.",
+        "Quraysh's leaders feared that his recitation would influence them. They asked Ibn al-Dughunnah to enforce the protection's condition: Abu Bakr must either confine his worship to the inside of his home or return the protection.",
+        "Abu Bakr chose to return it, saying, “I return your protection and am content with the protection of Allah, Mighty and Majestic.”",
+        "In that moment, he chose to continue visible worship even though his human protection depended on restricting it. Here is another form of steadfast worship under pressure."
+      ],
+      "claim_ids": [
+        "AB-L3-C07",
+        "AB-L3-C08",
+        "AB-L3-C09"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر الصلاة والقراءة ورد الجوار",
+      "source_summary_en": "Sahih al-Bukhari, the account of public prayer, recitation, and returned protection",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L3-B08",
+      "block_type": "summary",
+      "title_ar": "من الاضطهاد إلى طريق الهجرة",
+      "title_en": "From Persecution Toward Migration",
+      "content_items_ar": [
+        "لا يختصر هذا الدرس الإيمان في موقفٍ بطولي واحد. لقد ظهر في حمايةٍ مباشرة، ومالٍ صار نصرة، وحريةٍ لمستضعفين، وعبادةٍ استمرت تحت الضغط.",
+        "ومحاولة الخروج إلى الحبشة تبين لماذا صار البحث عن مكانٍ آمن للعبادة ضرورةً متزايدة. أما الهجرة مع النبي ﷺ والغار فلهما سياقهما في الدرس التالي.",
+        "للتأمل: عندما يهبك الله علماً أو وقتاً أو مالاً أو مكانة، كيف يمكن أن تتحول هذه النعمة إلى عونٍ لمن يواجه مشقة؟"
+      ],
+      "content_items_en": [
+        "This lesson does not reduce faith to one dramatic act of courage. It appeared through direct defence, wealth becoming support, freedom for oppressed people, and worship continuing under pressure.",
+        "The attempted departure toward Abyssinia helps explain why the search for a safe place to worship became increasingly necessary. The Hijrah with the Prophet ﷺ and the cave have their own setting in the next lesson.",
+        "For reflection: when Allah gives you knowledge, time, wealth, or standing, how might that blessing become help for someone facing hardship?"
+      ],
+      "claim_ids": [
+        "AB-L3-C05",
+        "AB-L3-C09"
+      ],
+      "source_summary_ar": "خلاصة تعليمية محدودة وتمهيد للدرس الرابع",
+      "source_summary_en": "Bounded teaching summary and bridge to Lesson 4",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L3-B09",
       "block_type": "quiz_sources",
-      "title_ar": "اختبر فهمك [مبدئي]",
-      "title_en": "Check your understanding [placeholder]",
-      "content_items_ar": [
-        "مقدمة مؤقتة للاختبار."
-      ],
-      "content_items_en": [
-        "PLACEHOLDER introduction to the quiz."
-      ],
+      "title_ar": "راجع فهمك والمصادر",
+      "title_en": "Check Your Understanding and Sources",
+      "content_items_ar": [],
+      "content_items_en": [],
       "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "source_summary_ar": "أسئلة المراجعة ومصادر الدرس",
+      "source_summary_en": "Review questions and lesson sources",
       "required_for_completion": true,
       "deep_sections": []
     }
