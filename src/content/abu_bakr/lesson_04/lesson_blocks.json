@@ -1,173 +1,260 @@
 {
   "lesson_id": "abu_bakr.lesson_04_companion_of_the_cave",
   "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real content pending Mohamed's review of content_research/abu_bakr/ (see src/content/abu_bakr/README.md for the folder mapping for website lesson 4). Every string below is filler used only to verify the Sahabah component system renders correctly.",
-  "timeline_phases": [
-    {
-      "phase_id": "PH1",
-      "label_ar": "البداية [مبدئي]",
-      "label_en": "Start [placeholder]",
-      "date_label_ar": "مرحلة مبدئية أولى",
-      "date_label_en": "Placeholder early phase",
-      "summary_ar": "نص مبدئي لبداية هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's opening.",
-      "block_id": "AB01"
-    },
-    {
-      "phase_id": "PH2",
-      "label_ar": "الوسط [مبدئي]",
-      "label_en": "Midpoint [placeholder]",
-      "date_label_ar": "مرحلة مبدئية وسطى",
-      "date_label_en": "Placeholder middle phase",
-      "summary_ar": "نص مبدئي لمنتصف هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's middle.",
-      "block_id": "AB04"
-    },
-    {
-      "phase_id": "PH3",
-      "label_ar": "المراجعة [مبدئي]",
-      "label_en": "Review [placeholder]",
-      "date_label_ar": "ختام الفصل [مبدئي]",
-      "date_label_en": "End of chapter [placeholder]",
-      "summary_ar": "نص مبدئي لمراجعة الفصل.",
-      "summary_en": "Placeholder chapter-review summary.",
-      "block_id": "AB07"
-    }
-  ],
+  "status": "internal_unapproved",
+  "note": "Real content, drafted from the R10 evidence package and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
+  "timeline_phases": [],
   "blocks": [
     {
-      "block_id": "AB01",
+      "block_id": "L4-B01",
       "block_type": "lesson_hook",
-      "title_ar": "رفيق الغار [عنوان مبدئي]",
-      "title_en": "Companion of the Cave [placeholder title]",
+      "title_ar": "رفيق الغار",
+      "title_en": "Companion of the Cave",
       "content_items_ar": [
-        "نص تمهيدي مؤقت لهذا الفصل، الذي سيغطي لاحقًا: الهجرة ورحلة الغار. هذا نص عنصر نائب فقط.",
-        "سيُستبدل هذا النص الكامل بمحتوى حقيقي بعد مراجعة محمد لمواد content_research."
+        "بعد سنوات من الاضطهاد في مكة، جاء الإذن بالهجرة إلى المدينة. لم تكن هذه الرحلة عبوراً عادياً؛ كانت اختباراً للاستعداد، والمرافقة، والاتكال على الله مع الأخذ بالأسباب.",
+        "سنتابع في هذا الدرس أبا بكر رضي الله عنه رفيقاً للنبي ﷺ: في التحضير، وفي الغار، وفي الطريق، وفي الوصول إلى المدينة.",
+        "الخيط الذي يجمع هذه المواقف أن الإيمان هنا لم يظهر في التخطيط وحده ولا في الاتكال وحده، بل في اجتماعهما معاً."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead paragraph for this chapter, which will eventually cover: the Hijrah and the journey to the cave. This text exists only to verify layout.",
-        "This entire block will be replaced with real content once Mohamed reviews the content_research material."
+        "After years of persecution in Makkah, permission for the Hijrah to Madinah finally came. This journey was not an ordinary crossing; it tested readiness, companionship, and reliance on Allah alongside careful means.",
+        "This lesson follows Abu Bakr رضي الله عنه as the Prophet's ﷺ companion: in preparation, in the cave, on the road, and on arrival in Madinah.",
+        "What connects these moments is that faith here appeared neither in planning alone nor in reliance alone, but in both together."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L4-C09"
+      ],
+      "source_summary_ar": "تركيب تعليمي محدود من أدلة الدرس المتعددة",
+      "source_summary_en": "Bounded teaching synthesis from the lesson's separate evidence",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB02",
+      "block_id": "L4-B02",
+      "block_type": "key_evidence",
+      "title_ar": "استعدادٌ لم يُترك للمصادفة",
+      "title_en": "Preparation Left to Nothing",
+      "content_items_ar": [
+        "حين همّ المسلمون بالهجرة، طلب النبي ﷺ من أبي بكر أن ينتظر، راجياً أن يُؤذَن له هو بالمرافقة. فحبس أبو بكر نفسه على صحبته، وأعلف راحلتين كان يملكهما ورق السَّمُر أربعة أشهر استعداداً لتلك اللحظة.",
+        "حين جاء الإذن أخيراً، جاء النبي ﷺ إلى بيت أبي بكر في ساعة غير معتادة معلناً أن الإذن بالخروج قد حصل، وأن أبا بكر سيكون رفيقه. عرض أبو بكر إحدى راحلتيه، فأصرّ النبي ﷺ على شرائها بثمنها لا قبولها هديةً.",
+        "لم يكن الاستعداد هنا انتظاراً سلبياً؛ كان عملاً محدداً امتد أربعة أشهر، انتهى بقرارٍ واضح وصفقة عادلة."
+      ],
+      "content_items_en": [
+        "When the Muslims prepared to migrate, the Prophet ﷺ asked Abu Bakr to wait, hoping he himself would be given permission to accompany him. Abu Bakr held himself back for that companionship and fed two camels he owned on acacia leaves for four months in preparation for that moment.",
+        "When permission finally came, the Prophet ﷺ visited Abu Bakr's home at an unusual hour to announce that leave to depart had been granted, and that Abu Bakr would be his companion. Abu Bakr offered one of his camels, and the Prophet ﷺ insisted on buying it at its price rather than accepting it as a gift.",
+        "This was not passive waiting; it was specific, sustained effort across four months, ending in a clear decision and a fair transaction."
+      ],
+      "claim_ids": [
+        "AB-L4-C01"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر التجهيز والإذن بالمرافقة",
+      "source_summary_en": "Sahih al-Bukhari, the report of preparation and the grant of companionship",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L4-B03",
       "block_type": "event_card",
-      "title_ar": "حدث مبدئي [عنوان مبدئي]",
-      "title_en": "A placeholder event [placeholder title]",
+      "title_ar": "دليلٌ موثوقٌ من غير أهل الدين",
+      "title_en": "A Trusted Guide, Not Yet of the Faith",
       "content_items_ar": [
-        "وصف مؤقت لحدث افتراضي في هذا الفصل. عنصر نائب فقط.",
-        "التفاصيل الحقيقية والتواريخ ستأتي من البحث المعتمد لاحقًا."
+        "لتأمين طريق الهجرة، استأجر النبي ﷺ وأبو بكر رجلاً من بني الدِّيل يُعرف بمهارته في الطرق، مع أنه كان يومئذٍ على دين قريش المشركة، لا على دين الإسلام.",
+        "مع ذلك، ائتمناه على أرواحهما، ودفعا إليه راحلتيهما، ووعداه أن يلقاهما عند غار ثور بعد ثلاث ليالٍ ليأخذ بهما طريق السواحل.",
+        "يُظهر هذا القرار جانباً عملياً من التخطيط: الثقة بالكفاءة والأمانة الفعلية، لا بالانتماء الديني وحده."
       ],
       "content_items_en": [
-        "PLACEHOLDER description of a hypothetical event in this chapter. Structure only.",
-        "Real details and dates will come from the approved research pack later."
+        "To secure the route of the Hijrah, the Prophet ﷺ and Abu Bakr hired a man from Banu al-Dil known for his skill with the roads, even though he was, at the time, still upon the religion of disbelieving Quraysh, not Islam.",
+        "Even so, they entrusted him with their lives, handed him their two riding-camels, and arranged to meet him at the cave of Thawr after three nights so he could lead them by the coastal route.",
+        "This decision shows a practical side of the planning: trust placed in demonstrated skill and reliability, not in religious affiliation alone."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L4-C02"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر استئجار الدليل",
+      "source_summary_en": "Sahih al-Bukhari, the report of hiring the guide",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB03",
-      "block_type": "quotation_card",
-      "title_ar": "قول مأثور [مبدئي]",
-      "title_en": "A recorded quotation [placeholder]",
+      "block_id": "L4-B04",
+      "block_type": "representative_event",
+      "title_ar": "لا تحزن، إن الله معنا",
+      "title_en": "Do Not Grieve; Allah Is With Us",
       "content_items_ar": [
-        "﴿نص اقتباس مؤقت بديل هنا﴾",
-        "قائل الاقتباس [اسم مبدئي] — سياق الاقتباس عنصر نائب."
+        "روى البخاري عن أبي بكر نفسه، بواسطة البراء بن عازب: بعد خروجهما من مكة، سارا ليلتهما ويومهما حتى قام قائم الظهيرة، فبحث أبو بكر عن ظلٍ يأوي إليه النبي ﷺ، فوجد صخرة، فسوّى ظلها وفرش للنبي ﷺ فيها.",
+        "ثم دبّر له لبناً من راعي غنمٍ مرّ بهما، فبرّده حتى شربه النبي ﷺ. وحين لحق بهما الطلب ولم يدركهما أحد إلا سراقة بن مالك بن جعشم، قال أبو بكر: هذا الطلب قد لحقنا يا رسول الله، فقال النبي ﷺ: لا تحزن، إن الله معنا.",
+        "هذا موقفٌ في الطريق المفتوح، قبل بلوغهما الغار، ويجمع بين رعاية عملية دقيقة وطمأنة مباشرة وقت الخطر."
       ],
       "content_items_en": [
-        "“Placeholder quotation text goes here”",
-        "Quotation speaker [placeholder name] — the quotation's context is a placeholder."
+        "Al-Bukhari relates, through al-Bara' ibn 'Azib, Abu Bakr's own account: after leaving Makkah, they travelled through the night and day until midday, when Abu Bakr searched for shade for the Prophet ﷺ, found a rock, arranged its shade, and laid out a place for him there.",
+        "He then arranged milk from a shepherd's flock that passed by, cooling it until the Prophet ﷺ drank. When pursuers caught up and only Suraqah ibn Malik ibn Ju'shum reached them, Abu Bakr said, 'This pursuit has reached us, O Messenger of Allah,' and the Prophet ﷺ replied, 'Do not grieve; Allah is with us.'",
+        "This moment takes place on the open road, before they reached the cave, combining careful practical care with direct reassurance at a moment of real danger."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L4-C03"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر البراء بن عازب",
+      "source_summary_en": "Sahih al-Bukhari, al-Bara' ibn 'Azib's report",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB04",
-      "block_type": "hadith_evidence",
-      "title_ar": "دليل حديثي [مبدئي]",
-      "title_en": "Hadith evidence [placeholder]",
+      "block_id": "L4-B05",
+      "block_type": "representative_event",
+      "title_ar": "ثاني اثنين إذ هما في الغار",
+      "title_en": "The Second of Two, in the Cave",
       "content_items_ar": [
-        "مقدمة مؤقتة قبل نص الحديث.",
-        "﴿نص حديث بديل يستخدم كعنصر نائب فقط﴾",
-        "شرح مؤقت لدلالة الحديث."
+        "بلغ النبي ﷺ وأبو بكر غار ثور، وخشي أبو بكر أن يراهما أحد الطلب وهما بداخله، فقال للنبي ﷺ: لو أن أحدهم نظر تحت قدميه لأبصرنا. فقال له النبي ﷺ: ما ظنك يا أبا بكر باثنين الله ثالثهما؟",
+        "وفي هذا الموقف نزلت آية سورة التوبة: ﴿إلا تنصروه فقد نصره الله إذ أخرجه الذين كفروا ثاني اثنين إذ هما في الغار إذ يقول لصاحبه لا تحزن إن الله معنا فأنزل الله سكينته عليه وأيده بجنود لم تروها﴾.",
+        "هذا الحوار مرويٌ في صحيح البخاري بلفظه الدقيق، من غير أي تفصيلٍ إضافي عن حادثة أو جرح أو حيوان عند مدخل الغار."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead-in before the hadith text.",
-        "“Placeholder hadith text used only as a structural filler”",
-        "PLACEHOLDER explanation of the hadith's significance."
+        "The Prophet ﷺ and Abu Bakr reached the cave of Thawr, and Abu Bakr feared that one of the pursuers would see them inside it. He said to the Prophet ﷺ, 'If one of them were to look down at his own feet, he would see us.' The Prophet ﷺ replied, 'What do you think, Abu Bakr, of two when Allah is their third?'",
+        "It was in connection with this moment that Qur'an 9:40 was revealed: 'If you do not aid him, Allah has already aided him when those who disbelieved had driven him out... he said to his companion, Do not grieve; indeed Allah is with us. And Allah sent down His tranquility upon him and supported him with soldiers you did not see.'",
+        "This exchange is related in Sahih al-Bukhari in its exact wording, without any additional detail about an incident, a wound, or an animal at the cave's entrance."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L4-C04"
+      ],
+      "source_summary_ar": "صحيح البخاري وتفسير ابن كثير لسورة التوبة ٤٠",
+      "source_summary_en": "Sahih al-Bukhari and Ibn Kathir's tafsir on Qur'an 9:40",
+      "required_for_completion": true,
+      "deep_sections": [
+        {
+          "section_id": "L4-B05-D1",
+          "title_ar": "لماذا لا تعني عبارة \"ثاني اثنين\" تفضيلاً مطلقاً؟",
+          "title_en": "Why 'The Second of Two' Isn't a Claim of Absolute Superiority",
+          "content_items_ar": [
+            "بعض المتحدثين يفهمون عبارة \"ثاني اثنين\" على أنها تثبت لأبي بكر مرتبةً مطلقة لا تُنازَع فوق سائر الصحابة. لكن الآية والتفسير المتصل بها لا يقيمان هذا الاستنتاج.",
+            "يذكر ابن كثير في تفسيره أن السكينة في الآية نزلت -على أشهر القولين عنده- على النبي ﷺ نفسه، لا على أبي بكر، وأن \"الجنود التي لم تروها\" هم الملائكة. أما \"ثاني اثنين\" فهي وصفٌ عددي لواقعة: كان في الغار اثنان، لا حكمٌ مقارنٌ في الفضل.",
+            "هذا الدرس يقتصر على ما يثبته النص: طمأنة النبي ﷺ ونصر الله له في تلك اللحظة، من غير الدخول في نقاشٍ عقديٍ أوسع حول مراتب الصحابة."
+          ],
+          "content_items_en": [
+            "Some popular accounts read 'the second of two' as establishing an absolute, unquestionable rank for Abu Bakr above every other Companion. But the verse and its connected commentary do not support that conclusion.",
+            "Ibn Kathir's tafsir explains that the tranquility mentioned in the verse -- according to the more well-known opinion he records -- descended upon the Prophet ﷺ himself, not upon Abu Bakr, and that 'the soldiers you did not see' are the angels. 'The second of two' is a numerical description of what happened: two people were in the cave, not a comparative ruling about merit.",
+            "This lesson keeps to what the text itself establishes: the Prophet's ﷺ reassurance and Allah's support in that moment, without entering the wider theological discussion of the Companions' relative ranks."
+          ],
+          "claim_ids": [
+            "AB-L4-C04"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "L4-B06",
+      "block_type": "context_and_consequence",
+      "title_ar": "ثلاث ليالٍ ونظام دعمٍ متكامل",
+      "title_en": "Three Nights and a Complete Support System",
+      "content_items_ar": [
+        "مكث النبي ﷺ وأبو بكر في الغار ثلاث ليالٍ. كان عبدالله بن أبي بكر يبيت عندهما ثم يذهب سحراً ليصبح في مكة كمن بات فيها، فلا يسمع خبراً يُدبَّر ضدهما إلا نقله إليهما مع حلول الظلام.",
+        "وكان عامر بن فُهيرة، مولى أبي بكر، يرعى عليهما غنماً فيريحها قريباً منهما مساءً، فيشربان من لبنها، ثم يسوقها في الصباح ليُخفي بذلك آثار الأقدام حولهما.",
+        "وقد شاركت أسماء بنت أبي بكر في التجهيز: حين لم تجد ما تربط به سُفرة الزاد، شقّت قطعةً من نطاقها لذلك، فلُقّبت -في الروايات- ذات النطاقين أو ذات النطاق.",
+        "هذا نظام دعمٍ بشريٌّ منظم، لا مجرد انتظارٍ في الغار: ابنٌ ينقل الأخبار، ومولى يرعى الغنم ويُخفي الأثر، وابنةٌ تُجهّز الزاد."
+      ],
+      "content_items_en": [
+        "The Prophet ﷺ and Abu Bakr stayed in the cave for three nights. Abu Bakr's son 'Abdullah would spend the night with them, then leave before dawn to appear in Makkah as if he had spent the night there, so that any plan against them would reach the cave once darkness fell.",
+        "Abu Bakr's freedman, 'Amir ibn Fuhayrah, grazed a flock of sheep and brought them to rest nearby each evening, so the two could drink its milk; he would then drive the flock out in the morning to erase the footprints around them.",
+        "Asma' bint Abi Bakr took part in the preparations too: finding nothing to tie the provisions bag with, she tore a piece from her own waist-sash for it, and was known afterward in the reports as 'the one with two sashes' or 'the one with the sash.'",
+        "This was an organized human support system, not simply waiting in a cave: a son relaying news, a freedman grazing sheep and erasing tracks, and a daughter preparing the provisions."
+      ],
+      "claim_ids": [
+        "AB-L4-C05",
+        "AB-L4-C08"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر الليالي الثلاث ونطاق أسماء",
+      "source_summary_en": "Sahih al-Bukhari, the report of the three nights and Asma's sash",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB05",
-      "block_type": "chronology_clarification",
-      "title_ar": "توضيح زمني [مبدئي]",
-      "title_en": "Chronology clarification [placeholder]",
+      "block_id": "L4-B07",
+      "block_type": "event_consequence_meaning",
+      "title_ar": "مطاردة سراقة ونهايتها",
+      "title_en": "Suraqah's Pursuit and Its Resolution",
       "content_items_ar": [
-        "ملخص مؤقت لخلاف علمي محتمل حول ترتيب الأحداث.",
-        "توضيح مطوّل مؤقت حول أوجه الخلاف بين الروايات."
+        "روى سراقة بن مالك بن جعشم بنفسه: جاءت رسل قريش تُعلن جُعالةً لمن يقتل النبي ﷺ أو أبا بكر أو يأسرهما. فخرج سراقة يطلبهما طمعاً في الجُعالة، حتى دنا منهما.",
+        "لكن قوائم فرسه ساخت في الأرض مرتين، وتصاعد من أثرها دخانٌ كالإعصار. أدرك سراقة عندها أن أمر النبي ﷺ سيظهر، فطلب منهما كتاب أمانٍ، فأمر النبي ﷺ عامر بن فهيرة أن يكتبه له.",
+        "لم تنتهِ المطاردة بمواجهة، بل بانصراف المطارِد نفسه طالباً الأمان. هذه هي الرواية الثابتة عن هذه الحادثة في هذا الدرس؛ وأي رواية أخرى عن مطاردٍ منفرد لم يُحدَّد أنها الحادثة نفسها، فلا تُستعمل هنا لتوسيع القصة."
       ],
       "content_items_en": [
-        "PLACEHOLDER short summary of a possible scholarly dating disagreement.",
-        "PLACEHOLDER longer clarification of how the narrations differ."
+        "Suraqah ibn Malik ibn Ju'shum narrated his own account: messengers from Quraysh announced a bounty for whoever killed or captured the Prophet ﷺ or Abu Bakr. Suraqah set out after them for the reward, until he drew near.",
+        "But his horse's legs sank into the ground twice, with smoke rising like a whirlwind from where it had sunk. Suraqah realized then that the Prophet's ﷺ cause would prevail, and asked for a written guarantee of safety, which the Prophet ﷺ had 'Amir ibn Fuhayrah write for him.",
+        "The pursuit ended not in confrontation, but with the pursuer himself withdrawing and asking for safety. This is the established account of this incident used in this lesson; a separate report of a lone rider is not stated by any source to be the same event, so it is not used here to expand the story."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L4-C06"
+      ],
+      "source_summary_ar": "صحيح البخاري وسيرة ابن هشام، خبر سراقة",
+      "source_summary_en": "Sahih al-Bukhari and Ibn Hisham's seerah, Suraqah's report",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB06",
-      "block_type": "timeline_review",
-      "title_ar": "مراجعة الخط الزمني [مبدئية]",
-      "title_en": "Timeline review [placeholder]",
+      "block_id": "L4-B08",
+      "block_type": "event_card",
+      "title_ar": "الوصول إلى قباء",
+      "title_en": "Arrival at Quba",
       "content_items_ar": [
-        "١. مرحلة عنصر نائب أولى.",
-        "٢. مرحلة عنصر نائب ثانية.",
-        "٣. مرحلة عنصر نائب ثالثة."
+        "عند اقترابهما من المدينة، لقي النبي ﷺ الزبيرَ بن العوام في ركبٍ من التجار عائدين من الشام، فكساهما ثياباً بيضاء. وسمع أهل المدينة بخروج النبي ﷺ فكانوا يخرجون كل صباحٍ إلى الحرّة ينتظرونه حتى يردّهم حرّ الظهيرة.",
+        "أعلن رجلٌ من يهود المدينة، بعد أن رآهما من فوق أُطُمٍ، وصولهما بأعلى صوته، فتلقّاهما المسلمون بالسلاح فرحاً، ونزلا في بني عمرو بن عوف يوم الإثنين من شهر ربيع الأول.",
+        "قام أبو بكر يستقبل الناس بينما جلس النبي ﷺ صامتاً، حتى بلغت الشمس النبي ﷺ، فأقبل أبو بكر وظلّله برداء من فوقه. عندها فقط عرف كثيرٌ من الأنصار -ممن لم يروا النبي ﷺ من قبل- أيهما رسول الله ﷺ.",
+        "أقام النبي ﷺ في بني عمرو بن عوف أكثر من عشر ليالٍ، وأسّس هناك مسجد قباء، أول مسجدٍ أُسِّس على التقوى."
       ],
       "content_items_en": [
-        "1. First placeholder phase.",
-        "2. Second placeholder phase.",
-        "3. Third placeholder phase."
+        "As they neared Madinah, the Prophet ﷺ met al-Zubayr ibn al-'Awwam among a group of traders returning from Syria, who gave them white clothing. The people of Madinah had heard of the Prophet's ﷺ departure and went out every morning to the outskirts to wait for him until the midday heat turned them back.",
+        "A Jewish resident of Madinah, spotting them from a lookout post, announced their arrival at the top of his voice; the Muslims came out joyfully in arms to meet them, and they settled among Banu 'Amr ibn 'Awf on a Monday in the month of Rabi' al-Awwal.",
+        "Abu Bakr stood to receive the people while the Prophet ﷺ sat silently, until the sun reached him -- at which point Abu Bakr came forward and shaded him with his own cloak. Only then did many of the Ansar, who had never seen the Prophet ﷺ before, recognize which of the two men he was.",
+        "The Prophet ﷺ stayed among Banu 'Amr ibn 'Awf for more than ten nights and founded the mosque of Quba there, the first mosque built on piety."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L4-C07"
+      ],
+      "source_summary_ar": "صحيح البخاري وسيرة ابن هشام، خبر الوصول إلى قباء",
+      "source_summary_en": "Sahih al-Bukhari and Ibn Hisham's seerah, the report of arrival at Quba",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB07",
+      "block_id": "L4-B09",
+      "block_type": "summary",
+      "title_ar": "ما الذي يجمع رفقة الغار؟",
+      "title_en": "What Connects the Companionship of the Cave?",
+      "content_items_ar": [
+        "استعدّ أبو بكر للهجرة بعملٍ محدد امتد أشهراً، لا بانتظارٍ سلبي.",
+        "خطّط النبي ﷺ وأبو بكر لتفاصيل الطريق -الدليل والموعد والوجهة- بجهدٍ بشريٍّ واضح.",
+        "في أشد لحظات الخطر، جاءت طمأنة الله مباشرة: لا تحزن إن الله معنا، وهي الآية التي سجّلها القرآن في سورة التوبة.",
+        "لم يحل الاتكال على الله دون تنظيم دعمٍ بشري كامل: ابنٌ، ومولى، وابنة، كلٌ بدورٍ محدد.",
+        "انتهت المطاردة بسلام، وانتهت الرحلة بوصولٍ آمن ومسجدٍ أُسِّس على التقوى."
+      ],
+      "content_items_en": [
+        "Abu Bakr prepared for the Hijrah through months of specific effort, not passive waiting.",
+        "The Prophet ﷺ and Abu Bakr planned the journey's details -- the guide, the timing, the destination -- through clear human effort.",
+        "At the moment of greatest danger, Allah's reassurance came directly: 'Do not grieve; Allah is with us' -- the same wording the Qur'an records in Surah al-Tawbah.",
+        "Reliance on Allah did not replace a full human support system: a son, a freedman, and a daughter, each with a defined role.",
+        "The pursuit ended peacefully, and the journey ended in safe arrival and a mosque built on piety."
+      ],
+      "claim_ids": [
+        "AB-L4-C07",
+        "AB-L4-C09"
+      ],
+      "source_summary_ar": "تركيب تعليمي من مصادر الدرس",
+      "source_summary_en": "Teaching synthesis from the lesson's sources",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L4-B10",
       "block_type": "quiz_sources",
-      "title_ar": "اختبر فهمك [مبدئي]",
-      "title_en": "Check your understanding [placeholder]",
+      "title_ar": "راجع فهمك والمصادر",
+      "title_en": "Check Your Understanding and Sources",
       "content_items_ar": [
-        "مقدمة مؤقتة للاختبار."
+        "راجع فهمك للدرس عبر ستة أسئلة قصيرة، ثم تحقق من المصادر الثلاثة التي استند إليها."
       ],
       "content_items_en": [
-        "PLACEHOLDER introduction to the quiz."
+        "Review your understanding of the lesson through six short questions, then check the three sources it draws on."
       ],
       "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "source_summary_ar": "مصادر الدرس الثلاثة",
+      "source_summary_en": "The lesson's three sources",
       "required_for_completion": true,
       "deep_sections": []
     }

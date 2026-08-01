@@ -1,21 +1,35 @@
 {
   "lesson_id": "abu_bakr.lesson_04_companion_of_the_cave",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real glossary pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Four bilingual glossary terms drawn from the lesson's secure evidence.",
   "terms": [
     {
-      "term_id": "placeholder_term_1",
-      "arabic": "مصطلح عنصر نائب أول",
-      "english": "First placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L4-G01",
+      "arabic": "الهجرة",
+      "english": "Hijrah",
+      "definition_ar": "انتقال النبي ﷺ وأصحابه من مكة إلى المدينة، هرباً بدينهم من الاضطهاد وبداية لمرحلة جديدة من الدعوة.",
+      "definition_en": "The migration of the Prophet ﷺ and his Companions from Makkah to Madinah, escaping persecution with their faith and beginning a new phase of the mission."
     },
     {
-      "term_id": "placeholder_term_2",
-      "arabic": "مصطلح عنصر نائب ثانٍ",
-      "english": "Second placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L4-G02",
+      "arabic": "السكينة",
+      "english": "Sakinah",
+      "definition_ar": "طمأنينة وثبات ينزلهما الله على قلب من يشاء في لحظات الشدة، كما ورد في آية سورة التوبة عن حادثة الغار.",
+      "definition_en": "A tranquility and steadiness that Allah sends down upon whomever He wills at moments of hardship, as mentioned in the Qur'an 9:40 verse about the cave episode."
+    },
+    {
+      "term_id": "L4-G03",
+      "arabic": "غار ثور",
+      "english": "Cave of Thawr",
+      "definition_ar": "الغار الذي اختبأ فيه النبي ﷺ وأبو بكر ثلاث ليالٍ جنوب مكة قبل متابعة طريق الهجرة إلى المدينة.",
+      "definition_en": "The cave south of Makkah where the Prophet ﷺ and Abu Bakr hid for three nights before continuing the Hijrah route to Madinah."
+    },
+    {
+      "term_id": "L4-G04",
+      "arabic": "قباء",
+      "english": "Quba",
+      "definition_ar": "المكان الذي وصل إليه النبي ﷺ وأبو بكر أولاً عند اقترابهما من المدينة، وفيه أُسِّس أول مسجدٍ على التقوى.",
+      "definition_en": "The place the Prophet ﷺ and Abu Bakr first reached on approaching Madinah, where the first mosque built on piety was founded."
     }
   ]
 }

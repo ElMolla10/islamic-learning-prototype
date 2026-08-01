@@ -45,7 +45,7 @@ export default function AbuBakrPathPage() {
             <span className="surah-index">01</span>
             <span className="eyebrow">{language === "ar" ? "مسار صحابي" : "Companion path"}</span>
             <h1>{language === "ar" ? "أبو بكر الصديق" : "Abu Bakr al-Siddiq"}</h1>
-            <p>{language === "ar" ? "١١ فصلًا · الفصول الثلاثة الأولى محتوى حقيقي، والبقية بنية مبدئية قيد الإعداد" : "11 chapters · Chapters 1–3 have real content, the rest are draft structure in progress"}</p>
+            <p>{language === "ar" ? "١١ فصلًا · الفصول الأربعة الأولى محتوى حقيقي، والبقية بنية مبدئية قيد الإعداد" : "11 chapters · Chapters 1–4 have real content, the rest are draft structure in progress"}</p>
             <PathProgressPills language={language} status={pathStatus} completedCount={completedCount} totalCount={ABU_BAKR_LESSON_COUNT} scopeLabel={SCOPE_LABEL} unitLabel={UNIT_LABEL} />
           </div>
           <div className="path-hero-preview" data-testid="path-hero-preview">
@@ -72,7 +72,7 @@ export default function AbuBakrPathPage() {
         <aside className="path-context">
           <span className="eyebrow">{language === "ar" ? "ما الذي ستتعلمه؟" : "What will you learn?"}</span>
           <h2>{language === "ar" ? "من كان أبو بكر الصدّيق؟" : "Who Was Abu Bakr al-Siddiq?"}</h2>
-          <p>{language === "ar" ? "الفصول الثلاثة الأولى محتوى حقيقي موثّق بالأدلة، ولا تزال داخلية وبانتظار المراجعة العلمية النهائية قبل أي نشر. بقية الفصول (٤–١١) لا تزال بنية مسار بمحتوى عنصر نائب بانتظار إعدادها." : "Chapters 1–3 have real, evidence-traced content — still internal and pending final scholarly review before any publication. Chapters 4–11 remain a path structure with placeholder content, pending preparation."}</p>
+          <p>{language === "ar" ? "الفصول الأربعة الأولى محتوى حقيقي موثّق بالأدلة، ولا تزال داخلية وبانتظار المراجعة العلمية النهائية قبل أي نشر. بقية الفصول (٥–١١) لا تزال بنية مسار بمحتوى عنصر نائب بانتظار إعدادها." : "Chapters 1–4 have real, evidence-traced content — still internal and pending final scholarly review before any publication. Chapters 5–11 remain a path structure with placeholder content, pending preparation."}</p>
         </aside>
       </div>
     </main>

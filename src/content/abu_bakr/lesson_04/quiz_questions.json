@@ -1,81 +1,189 @@
 {
   "lesson_id": "abu_bakr.lesson_04_companion_of_the_cave",
   "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real questions pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Six questions drawn only from secure R10 evidence. Distractors in Q4 and Q6 are deliberately used to correct the two most consequential popular overstatements (an absolute-superiority reading of 'the second of two', and the claim that every logistical detail was directly commanded), consistent with disputed_cave_narratives_assessment.md.",
   "passing_rule": "score / total > 0.5",
   "questions": [
     {
-      "question_id": "ABQ01",
+      "question_id": "L4Q01",
       "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "سؤال عنصر نائب رقم واحد؟",
-      "prompt_en": "Placeholder question one?",
+      "prompt_ar": "ماذا فعل أبو بكر في الأشهر الأربعة السابقة على الإذن بالهجرة؟",
+      "prompt_en": "What did Abu Bakr do in the four months before permission for the Hijrah came?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "أعلف راحلتين استعداداً لمرافقة النبي ﷺ",
+          "en": "He fed two riding-camels in preparation to accompany the Prophet ﷺ"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "بنى مسجداً في فناء داره",
+          "en": "He built a mosque in his courtyard"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "كتب كتاب أمانٍ لقريش",
+          "en": "He wrote a guarantee of safety for Quraysh"
         }
       ],
       "correct_answer": [
         "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB02"
+      "explanation_ar": "أعدّ أبو بكر راحلتين على مدى أربعة أشهر، راجياً أن يُؤذَن له بمرافقة النبي ﷺ. الخياران الآخران يصفان أحداثاً من دروسٍ أخرى.",
+      "explanation_en": "Abu Bakr prepared two riding-camels over four months, hoping to be given permission to accompany the Prophet ﷺ. The other options describe events from other lessons.",
+      "review_card_id": "L4-B02"
     },
     {
-      "question_id": "ABQ02",
-      "type": "true_false",
-      "depth": "core",
-      "prompt_ar": "عبارة عنصر نائب رقم اثنين؟",
-      "prompt_en": "Placeholder statement two?",
-      "correct_answer": true,
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB04"
-    },
-    {
-      "question_id": "ABQ03",
-      "type": "select_all",
-      "depth": "deep",
-      "prompt_ar": "سؤال عنصر نائب باختيار متعدد؟",
-      "prompt_en": "Placeholder select-all question?",
+      "question_id": "L4Q02",
+      "type": "multiple_choice",
+      "depth": "connection",
+      "prompt_ar": "لماذا استأجر النبي ﷺ وأبو بكر دليلاً لم يكن مسلماً بعد؟",
+      "prompt_en": "Why did the Prophet ﷺ and Abu Bakr hire a guide who was not yet Muslim?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "لثقتهما بمهارته وأمانته الفعلية في معرفة الطرق",
+          "en": "Because of their trust in his demonstrated skill and reliability with the roads"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "لأنه لم يوجد أي دليلٍ مسلم في مكة",
+          "en": "Because no Muslim guide existed in Makkah at all"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "لأن النبي ﷺ أراد اختبار إيمانه",
+          "en": "Because the Prophet ﷺ wanted to test his faith"
         }
       ],
       "correct_answer": [
-        "a",
-        "b"
+        "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB05"
+      "explanation_ar": "يذكر الخبر صراحةً أنه كان على دين قريش يومئذٍ، ومع ذلك ائتمناه لمهارته وأمانته الفعلية -- لا لانتمائه الديني.",
+      "explanation_en": "The report states plainly that he was upon Quraysh's religion at the time; even so, they trusted him for his demonstrated skill and reliability -- not his religious affiliation.",
+      "review_card_id": "L4-B03"
+    },
+    {
+      "question_id": "L4Q03",
+      "type": "multiple_choice",
+      "depth": "chronology",
+      "prompt_ar": "بحسب رواية البراء بن عازب، أين قال النبي ﷺ لأبي بكر: لا تحزن، إن الله معنا؟",
+      "prompt_en": "According to al-Bara' ibn 'Azib's report, where did the Prophet ﷺ tell Abu Bakr, 'Do not grieve; Allah is with us'?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "في الطريق المفتوح أثناء المطاردة، قبل بلوغ الغار",
+          "en": "On the open road during the pursuit, before they reached the cave"
+        },
+        {
+          "id": "b",
+          "ar": "داخل الغار وهما مختبئان",
+          "en": "Inside the cave while they were hiding"
+        },
+        {
+          "id": "c",
+          "ar": "عند وصولهما إلى قباء",
+          "en": "On their arrival at Quba"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "هذه الكلمات وردت في رواية البراء عن موقفٍ في الطريق المفتوح. الحوار المشابه داخل الغار له لفظٌ مختلف: ما ظنك باثنين الله ثالثهما، وهو أصل آية سورة التوبة.",
+      "explanation_en": "This wording appears in al-Bara's report about a moment on the open road. The similar cave-interior exchange has different wording -- 'what do you think of two when Allah is their third' -- which is the basis of the Qur'an 9:40 verse.",
+      "review_card_id": "L4-B04"
+    },
+    {
+      "question_id": "L4Q04",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "ماذا تثبت آية سورة التوبة وتفسيرها عن حادثة الغار؟",
+      "prompt_en": "What do Qur'an 9:40 and its tafsir establish about the cave episode?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "طمأنة النبي ﷺ ونصر الله له في تلك اللحظة، من غير حكمٍ مقارنٍ في الفضل بين الصحابة",
+          "en": "The Prophet's ﷺ reassurance and Allah's support in that moment, without a comparative ruling about merit among the Companions"
+        },
+        {
+          "id": "b",
+          "ar": "أن عبارة \"ثاني اثنين\" تثبت أفضلية أبي بكر المطلقة على كل الصحابة",
+          "en": "That the phrase 'the second of two' establishes Abu Bakr's absolute superiority over every other Companion"
+        },
+        {
+          "id": "c",
+          "ar": "أن عنكبوتاً نسج شبكةً على باب الغار فحجب الطلب عنهما",
+          "en": "That a spider wove a web across the cave entrance and hid them from the pursuers"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "لا الآية ولا تفسير ابن كثير عليها يقيمان حكماً مقارناً في الفضل، ولم يرد ذكر العنكبوت في أي مصدرٍ فُحص لهذا الدرس.",
+      "explanation_en": "Neither the verse nor Ibn Kathir's tafsir on it makes a comparative ruling about merit, and no spider appears in any source checked for this lesson.",
+      "review_card_id": "L4-B05"
+    },
+    {
+      "question_id": "L4Q05",
+      "type": "multiple_choice",
+      "depth": "cause_and_consequence",
+      "prompt_ar": "كيف انتهت مطاردة سراقة بن مالك بن جعشم؟",
+      "prompt_en": "How did Suraqah ibn Malik ibn Ju'shum's pursuit end?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "بطلبه كتاب أمانٍ بعد أن ساخت قوائم فرسه مرتين",
+          "en": "With him requesting a written guarantee of safety after his horse's legs sank twice"
+        },
+        {
+          "id": "b",
+          "ar": "بمواجهةٍ مباشرة بينه وبين أبي بكر",
+          "en": "With a direct confrontation between him and Abu Bakr"
+        },
+        {
+          "id": "c",
+          "ar": "بأسر النبي ﷺ وأبي بكر",
+          "en": "With the capture of the Prophet ﷺ and Abu Bakr"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "روى سراقة بنفسه أن فرسه ساخت قوائمها في الأرض مرتين، فطلب كتاب أمانٍ بدل مواصلة المطاردة.",
+      "explanation_en": "Suraqah himself narrated that his horse's legs sank into the ground twice, after which he requested a written guarantee of safety instead of continuing the pursuit.",
+      "review_card_id": "L4-B07"
+    },
+    {
+      "question_id": "L4Q06",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "ما المعنى الذي يجمع مواقف هذا الدرس؟",
+      "prompt_en": "What meaning connects this lesson's events?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "اجتماع الاستعداد العملي والاتكال على الله معاً، لا أحدهما بديلاً عن الآخر",
+          "en": "Practical preparation and reliance on Allah appearing together, neither replacing the other"
+        },
+        {
+          "id": "b",
+          "ar": "أن كل تفصيل في خطة الهجرة كان بأمرٍ مباشرٍ من الوحي لا باجتهادٍ بشري",
+          "en": "That every detail of the Hijrah plan was directly revealed rather than human effort"
+        },
+        {
+          "id": "c",
+          "ar": "أن قصة الغار تثبت تفضيلاً مطلقاً لا يُنازَع",
+          "en": "That the cave episode establishes an uncontested, absolute superiority"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "تجمع أدلة هذا الدرس بين استعدادٍ عملي محدد (الراحلتان، الدليل) وطمأنةٍ إلهية مباشرة وقت الخطر، من غير أن يلغي أحدهما الآخر.",
+      "explanation_en": "This lesson's evidence combines specific practical preparation (the camels, the guide) with direct divine reassurance at moments of danger, with neither element cancelling the other.",
+      "review_card_id": "L4-B09"
     }
   ]
 }
