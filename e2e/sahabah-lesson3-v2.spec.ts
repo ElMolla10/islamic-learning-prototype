@@ -131,14 +131,14 @@ test("completing Lesson 3 records its legacy ID and links explicitly to Lesson 4
 test("the path exposes Chapter 3 as active among the currently active chapters", async ({ page }) => {
   await page.goto("/sahabah/abu-bakr");
   const active = page.locator(".path-card.active");
-  await expect(active).toHaveCount(4);
+  await expect(active).toHaveCount(5);
   await expect(active.nth(0)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-1");
   await expect(active.nth(1)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-2");
   await expect(active.nth(2)).toHaveAttribute("href", ROUTE);
   await expect(active.nth(2)).toContainText("الإيمان تحت الاضطهاد");
   await expect(active.nth(2).locator('[data-state="in-preparation"]')).toHaveCount(0);
-  await expect(page.locator('.path-card[data-disabled="true"]')).toHaveCount(7);
-  await expect(page.locator(".bio-companion-hero")).toContainText("الفصول الأربعة الأولى");
+  await expect(page.locator('.path-card[data-disabled="true"]')).toHaveCount(6);
+  await expect(page.locator(".bio-companion-hero")).toContainText("الفصول الخمسة الأولى");
 });
 
 test("Lesson 3 is accessible in both directions and sends no analytics, CAPTCHA, or Formspree request", async ({ page }) => {

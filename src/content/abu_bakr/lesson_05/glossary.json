@@ -1,21 +1,35 @@
 {
   "lesson_id": "abu_bakr.lesson_05_abu_bakr_in_madinah",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real glossary pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Four bilingual glossary terms drawn from the lesson's secure evidence.",
   "terms": [
     {
-      "term_id": "placeholder_term_1",
-      "arabic": "مصطلح عنصر نائب أول",
-      "english": "First placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L5-G01",
+      "arabic": "غزوة بدر",
+      "english": "The Battle of Badr",
+      "definition_ar": "أول معركةٍ كبرى بين المسلمين وقريش، وقعت في السنة الثانية للهجرة، ودعا فيها النبي ﷺ ربه بالنصر وأبو بكر وحده معه في العريش.",
+      "definition_en": "The first major battle between the Muslims and Quraysh, fought in year 2 AH, during which the Prophet ﷺ supplicated for victory with Abu Bakr alone beside him in the shelter."
     },
     {
-      "term_id": "placeholder_term_2",
-      "arabic": "مصطلح عنصر نائب ثانٍ",
-      "english": "Second placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L5-G02",
+      "arabic": "غزوة تبوك",
+      "english": "The Expedition of Tabuk",
+      "definition_ar": "التعبئة العسكرية إلى تبوك في السنة التاسعة للهجرة، جمع فيها المسلمون التبرعات، وفيها سابق أبو بكر عمر بن الخطاب في البذل الكامل.",
+      "definition_en": "The military mobilization to Tabuk in year 9 AH, during which the Muslims raised donations, and in whose traditional setting Abu Bakr outgave 'Umar ibn al-Khattab in total generosity."
+    },
+    {
+      "term_id": "L5-G03",
+      "arabic": "سورة براءة",
+      "english": "Surat Bara'ah (At-Tawbah)",
+      "definition_ar": "سورةٌ نزلت بعد خروج حجاج السنة التاسعة، أرسل النبي ﷺ عليّ بن أبي طالب ليتلو أوائلها على الناس يوم النحر بمنى.",
+      "definition_en": "A surah revealed after the year-9 pilgrims had already departed; the Prophet ﷺ sent 'Ali ibn Abi Talib to recite its opening verses to the people on the Day of Sacrifice at Mina."
+    },
+    {
+      "term_id": "L5-G04",
+      "arabic": "حسن صحيح",
+      "english": "Hasan Sahih",
+      "definition_ar": "درجة تصحيحٍ يستعملها الترمذي لحديثٍ اجتمع فيه معنى الحسن ومعنى الصحيح عنده، كما في حديث عمر عن بذل أبي بكر في تبوك.",
+      "definition_en": "A grading al-Tirmidhi uses for a hadith combining, in his assessment, the qualities of both 'hasan' and 'sahih,' as with 'Umar's own hadith about Abu Bakr's giving at Tabuk."
     }
   ]
 }
