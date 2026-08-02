@@ -1,43 +1,113 @@
 {
   "lesson_id": "abu_bakr.lesson_06_final_illness_and_death",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real sources pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Two works cited, matching the R12 evidence package's secure anchors -- Ibn Hisham's early seerah as the primary continuous narrative, independently corroborated at nearly every step by Sahih al-Bukhari.",
   "sources": [
     {
-      "work_id": "work_placeholder_primary",
-      "display_title": "مصدر عنصر نائب أول [مبدئي]",
-      "author": "—",
+      "work_id": "work_seerah_ibn_hisham",
+      "display_title": "السيرة النبوية لابن هشام (Sirat Ibn Hisham)",
+      "author": "عبد الملك بن هشام، رواية ابن إسحاق (Ibn Hisham, narrating Ibn Ishaq)",
       "source_role": [
-        "primary_hadith_collection"
+        "early_seerah_source"
       ],
-      "claims_supported": [],
       "locations": [
         {
           "volume": null,
-          "pdf_page": 1,
-          "printed_page": 1
+          "pdf_page": 664,
+          "printed_page": 664,
+          "claims_supported": [
+            "AB-L6-C01"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 666,
+          "printed_page": 666,
+          "claims_supported": [
+            "AB-L6-C01",
+            "AB-L6-C02"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 667,
+          "printed_page": 667,
+          "claims_supported": [
+            "AB-L6-C04",
+            "AB-L6-C05",
+            "AB-L6-C06",
+            "AB-L6-C10"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 668,
+          "printed_page": 668,
+          "claims_supported": [
+            "AB-L6-C07",
+            "AB-L6-C08",
+            "AB-L6-C09",
+            "AB-L6-C10"
+          ]
         }
-      ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      ]
     },
     {
-      "work_id": "work_placeholder_commentary",
-      "display_title": "مصدر عنصر نائب ثانٍ [مبدئي]",
-      "author": "مؤلف عنصر نائب",
+      "work_id": "work_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري (Muhammad ibn Isma'il al-Bukhari)",
       "source_role": [
-        "hadith_commentary"
+        "primary_hadith_collection"
       ],
-      "claims_supported": [],
       "locations": [
         {
-          "volume": 1,
-          "pdf_page": 10,
-          "printed_page": 12
+          "volume": null,
+          "pdf_page": 1088,
+          "printed_page": 1088,
+          "claims_supported": [
+            "AB-L6-C06"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 1089,
+          "printed_page": 1089,
+          "claims_supported": [
+            "AB-L6-C03"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 1089,
+          "printed_page": 1089,
+          "claims_supported": [
+            "AB-L6-C02"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 1091,
+          "printed_page": 1091,
+          "claims_supported": [
+            "AB-L6-C09"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 1092,
+          "printed_page": 1092,
+          "claims_supported": [
+            "AB-L6-C08"
+          ]
         }
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "hadith_numbers": [
+        "4438",
+        "4442",
+        "4445",
+        "4454",
+        "4455"
+      ]
     }
   ]
 }

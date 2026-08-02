@@ -37,22 +37,23 @@ test("lesson 12 (out of range) 404s", async ({ page }) => {
   expect(response?.status()).toBe(404);
 });
 
-test("path overview page renders 11 chapter cards in order: Lessons 1-5 active, Lessons 6-11 in preparation", async ({ page }) => {
+test("path overview page renders 11 chapter cards in order: Lessons 1-6 active, Lessons 7-11 in preparation", async ({ page }) => {
   await clearStorage(page);
   const allCards = page.locator(".bio-chapter-card");
   await expect(allCards).toHaveCount(LESSON_COUNT);
 
   const activeCards = page.locator(".path-card.active");
-  await expect(activeCards).toHaveCount(5);
+  await expect(activeCards).toHaveCount(6);
   await expect(activeCards.nth(0)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-1");
   await expect(activeCards.nth(1)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-2");
   await expect(activeCards.nth(2)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-3");
   await expect(activeCards.nth(3)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-4");
   await expect(activeCards.nth(4)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-5");
+  await expect(activeCards.nth(5)).toHaveAttribute("href", "/sahabah/abu-bakr/lesson-6");
 
   const disabledCards = page.locator(".bio-chapter-card[data-disabled='true']");
-  await expect(disabledCards).toHaveCount(6);
-  for (let index = 0; index < 6; index += 1) {
+  await expect(disabledCards).toHaveCount(5);
+  for (let index = 0; index < 5; index += 1) {
     const card = disabledCards.nth(index);
     // Every disabled card must show the restrained "in preparation" badge, never a raw [placeholder]
     // marker or a progress-tracking status (not_started/in_progress/completed) meant for real lessons.
