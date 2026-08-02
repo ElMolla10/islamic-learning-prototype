@@ -50,8 +50,8 @@ describe("Abu Bakr Lesson 3 v2 public package", () => {
   it("makes Lesson 3 available in the existing display-ordered path", () => {
     const lesson3 = abuBakrPath.find((chapter) => chapter.canonicalSlug === CANONICAL_SLUG)!;
     expect(lesson3).toMatchObject({ slug: "lesson-3", number: 3, state: "active", contentReady: true });
-    expect(abuBakrPath.slice(0, 4).map((chapter) => chapter.state)).toEqual(["active", "active", "active", "active"]);
-    expect(abuBakrPath.slice(4).every((chapter) => chapter.state === "planned")).toBe(true);
+    expect(abuBakrPath.slice(0, 5).map((chapter) => chapter.state)).toEqual(["active", "active", "active", "active", "active"]);
+    expect(abuBakrPath.slice(5).every((chapter) => chapter.state === "planned")).toBe(true);
     expect(abuBakrPath.map((chapter) => chapter.number)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
   });
 

@@ -1,81 +1,189 @@
 {
   "lesson_id": "abu_bakr.lesson_05_abu_bakr_in_madinah",
   "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real questions pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Six questions drawn only from secure R11 evidence, matching the bounded three-episode arc (Badr, Tabuk, the year-9 Hajj).",
   "passing_rule": "score / total > 0.5",
   "questions": [
     {
-      "question_id": "ABQ01",
+      "question_id": "L5Q01",
       "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "سؤال عنصر نائب رقم واحد؟",
-      "prompt_en": "Placeholder question one?",
+      "prompt_ar": "من كان مع النبي ﷺ في العريش يوم بدر وقت الدعاء بالنصر؟",
+      "prompt_en": "Who was with the Prophet ﷺ in the shelter at Badr while he supplicated for victory?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "أبو بكر وحده، لا معهما أحد",
+          "en": "Abu Bakr alone, with no one else present"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "عمر بن الخطاب وعثمان بن عفان",
+          "en": "'Umar ibn al-Khattab and 'Uthman ibn 'Affan"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "جماعة من كبار الصحابة",
+          "en": "A group of senior Companions"
         }
       ],
       "correct_answer": [
         "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB02"
+      "explanation_ar": "دخل النبي ﷺ العريش ومعه أبو بكر وحده، لا معهما فيه أحد آخر.",
+      "explanation_en": "The Prophet ﷺ entered the shelter with Abu Bakr alone; no one else was present with them.",
+      "review_card_id": "L5-B02"
     },
     {
-      "question_id": "ABQ02",
-      "type": "true_false",
+      "question_id": "L5Q02",
+      "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "عبارة عنصر نائب رقم اثنين؟",
-      "prompt_en": "Placeholder statement two?",
-      "correct_answer": true,
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB04"
-    },
-    {
-      "question_id": "ABQ03",
-      "type": "select_all",
-      "depth": "deep",
-      "prompt_ar": "سؤال عنصر نائب باختيار متعدد؟",
-      "prompt_en": "Placeholder select-all question?",
+      "prompt_ar": "في تعبئة تبوك، ماذا أجاب أبو بكر حين سُئل ماذا أبقى لأهله؟",
+      "prompt_en": "In the Tabuk mobilization, what did Abu Bakr answer when asked what he had kept for his family?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "أبقيت لهم الله ورسوله",
+          "en": "'I kept for them Allah and His Messenger'"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "أبقيت لهم نصف مالي",
+          "en": "'I kept half my wealth for them'"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "لم يُسأل أبو بكر هذا السؤال",
+          "en": "Abu Bakr was not asked this question"
         }
       ],
       "correct_answer": [
-        "a",
-        "b"
+        "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB05"
+      "explanation_ar": "بعد أن جاء بكل ما يملك، سُئل ما أبقيت لأهلك، فقال: أبقيت لهم الله ورسوله؛ وهذا هو جواب عمر (مثله) لا أبي بكر.",
+      "explanation_en": "After bringing everything he owned, Abu Bakr was asked what he had kept for his family and answered, 'I kept for them Allah and His Messenger'; 'the same amount' was 'Umar's own answer, not Abu Bakr's.",
+      "review_card_id": "L5-B03"
+    },
+    {
+      "question_id": "L5Q03",
+      "type": "multiple_choice",
+      "depth": "connection",
+      "prompt_ar": "بأي درجةٍ صحّح الترمذي حديث عمر عن مسابقته لأبي بكر في الصدقة؟",
+      "prompt_en": "What grade did al-Tirmidhi give 'Umar's own hadith about competing with Abu Bakr in charity?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "حسن صحيح",
+          "en": "Hasan sahih"
+        },
+        {
+          "id": "b",
+          "ar": "ضعيف جداً",
+          "en": "Very weak"
+        },
+        {
+          "id": "c",
+          "ar": "لم يذكر الترمذي درجته",
+          "en": "Al-Tirmidhi did not grade it"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "يختم الترمذي روايته بقوله: هذا حديثٌ حسنٌ صحيحٌ.",
+      "explanation_en": "Al-Tirmidhi closes his narration of this hadith with his own words: 'This is a hasan sahih hadith.'",
+      "review_card_id": "L5-B03"
+    },
+    {
+      "question_id": "L5Q04",
+      "type": "multiple_choice",
+      "depth": "chronology",
+      "prompt_ar": "من الذي أمّره النبي ﷺ على حجّ المسلمين في السنة التاسعة؟",
+      "prompt_en": "Whom did the Prophet ﷺ appoint to lead the Muslims' Hajj in year 9?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "أبو بكر الصديق",
+          "en": "Abu Bakr al-Siddiq"
+        },
+        {
+          "id": "b",
+          "ar": "عليّ بن أبي طالب",
+          "en": "'Ali ibn Abi Talib"
+        },
+        {
+          "id": "c",
+          "ar": "خرج النبي ﷺ بنفسه في تلك السنة",
+          "en": "The Prophet ﷺ himself led it that year"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "أمّر النبي ﷺ أبا بكرٍ على الحج في السنة التاسعة، ثم أرسل عليّاً بعد ذلك لمهمةٍ محددة: تلاوة براءة.",
+      "explanation_en": "The Prophet ﷺ appointed Abu Bakr over the Hajj in year 9; 'Ali was sent afterward for a specific, separate task: proclaiming Bara'ah.",
+      "review_card_id": "L5-B04"
+    },
+    {
+      "question_id": "L5Q05",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "بحسب سيرة ابن هشام، من الذي تلا الإعلان الكامل لبراءة بتفاصيله عند منى؟",
+      "prompt_en": "According to Ibn Hisham's account, who delivered the fuller Bara'ah proclamation, with its details, at Mina?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "عليّ بن أبي طالب",
+          "en": "'Ali ibn Abi Talib"
+        },
+        {
+          "id": "b",
+          "ar": "أبو بكر الصديق نفسه",
+          "en": "Abu Bakr al-Siddiq himself"
+        },
+        {
+          "id": "c",
+          "ar": "أبو هريرة",
+          "en": "Abu Hurairah"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "سيرة ابن هشام تذكر عليّاً بالاسم كمن تلا الإعلان الكامل. صحيح البخاري يثبت من جهته أن أبا بكر أرسل من ينادي بأصل قاعدتين من الإعلان في اليوم نفسه، لكنه لا يذكر عليّاً بالاسم.",
+      "explanation_en": "Ibn Hisham's account names 'Ali as the one who delivered the fuller proclamation. Sahih al-Bukhari, for its part, establishes that Abu Bakr sent someone to proclaim the substance of two of its rulings that same day, but does not itself name 'Ali.",
+      "review_card_id": "L5-B05"
+    },
+    {
+      "question_id": "L5Q06",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "ما المعنى الذي يجمع مواقف بدر وتبوك والحج في هذا الدرس؟",
+      "prompt_en": "What meaning connects the Badr, Tabuk, and Hajj moments in this lesson?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "استمرار الحضور اللصيق والبذل الكامل والثقة المتبادلة، من غير ادعاء شمولٍ لكل حدث",
+          "en": "The continuation of close presence, total giving, and mutual trust, without claiming totality across every event"
+        },
+        {
+          "id": "b",
+          "ar": "أن أبا بكر كان حاضراً في كل حدثٍ مدنيّ من غير استثناء",
+          "en": "That Abu Bakr was present at every single Madinan event without exception"
+        },
+        {
+          "id": "c",
+          "ar": "أن هذه المواقف تثبت أفضليةً مطلقة لا تُنازَع",
+          "en": "That these moments establish an uncontested, absolute superiority"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "الدرس يختار ثلاثة مواقف موثّقة تُظهر الصفة نفسها التي عُرفت عن أبي بكر في مكة، من غير أن يُستنتج منها شمولٌ أو أفضليةٌ مطلقة.",
+      "explanation_en": "The lesson selects three well-documented moments showing the same character Abu Bakr was known for in Makkah, without inferring totality or absolute superiority from them.",
+      "review_card_id": "L5-B06"
     }
   ]
 }

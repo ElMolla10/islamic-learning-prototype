@@ -1,43 +1,91 @@
 {
   "lesson_id": "abu_bakr.lesson_05_abu_bakr_in_madinah",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real sources pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Three works cited, matching the R11 evidence package's secure anchors: Ibn Hisham's early seerah, al-Tirmidhi's Jami', and Sahih al-Bukhari, all directly inspected.",
   "sources": [
     {
-      "work_id": "work_placeholder_primary",
-      "display_title": "مصدر عنصر نائب أول [مبدئي]",
-      "author": "—",
+      "work_id": "work_seerah_ibn_hisham",
+      "display_title": "السيرة النبوية لابن هشام (Sirat Ibn Hisham)",
+      "author": "عبد الملك بن هشام، رواية ابن إسحاق (Ibn Hisham, narrating Ibn Ishaq)",
       "source_role": [
-        "primary_hadith_collection"
+        "early_seerah_source"
       ],
-      "claims_supported": [],
       "locations": [
         {
           "volume": null,
-          "pdf_page": 1,
-          "printed_page": 1
+          "pdf_page": 300,
+          "printed_page": 300,
+          "claims_supported": [
+            "AB-L5-C01"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 598,
+          "printed_page": 598,
+          "claims_supported": [
+            "AB-L5-C02"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 611,
+          "printed_page": 611,
+          "claims_supported": [
+            "AB-L5-C03"
+          ]
+        },
+        {
+          "volume": null,
+          "pdf_page": 613,
+          "printed_page": 613,
+          "claims_supported": [
+            "AB-L5-C03"
+          ]
         }
-      ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      ]
     },
     {
-      "work_id": "work_placeholder_commentary",
-      "display_title": "مصدر عنصر نائب ثانٍ [مبدئي]",
-      "author": "مؤلف عنصر نائب",
+      "work_id": "work_jami_tirmidhi",
+      "display_title": "الجامع (سنن الترمذي) (Jami' al-Tirmidhi)",
+      "author": "محمد بن عيسى الترمذي (Muhammad ibn 'Isa al-Tirmidhi)",
       "source_role": [
-        "hadith_commentary"
+        "primary_hadith_collection"
       ],
-      "claims_supported": [],
       "locations": [
         {
-          "volume": 1,
-          "pdf_page": 10,
-          "printed_page": 12
+          "volume": null,
+          "pdf_page": 575,
+          "printed_page": 575,
+          "claims_supported": [
+            "AB-L5-C02"
+          ]
         }
       ],
-      "hadith_numbers": [],
-      "scripture_references": []
+      "hadith_numbers": [
+        "3675"
+      ]
+    },
+    {
+      "work_id": "work_bukhari",
+      "display_title": "صحيح البخاري (Sahih al-Bukhari)",
+      "author": "محمد بن إسماعيل البخاري (Muhammad ibn Isma'il al-Bukhari)",
+      "source_role": [
+        "primary_hadith_collection"
+      ],
+      "locations": [
+        {
+          "volume": null,
+          "pdf_page": 1068,
+          "printed_page": 1068,
+          "claims_supported": [
+            "AB-L5-C03"
+          ]
+        }
+      ],
+      "hadith_numbers": [
+        "4363"
+      ]
     }
   ]
 }

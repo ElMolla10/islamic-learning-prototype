@@ -1,173 +1,165 @@
 {
   "lesson_id": "abu_bakr.lesson_05_abu_bakr_in_madinah",
   "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real content pending Mohamed's review of content_research/abu_bakr/ (see src/content/abu_bakr/README.md for the folder mapping for website lesson 5). Every string below is filler used only to verify the Sahabah component system renders correctly.",
-  "timeline_phases": [
-    {
-      "phase_id": "PH1",
-      "label_ar": "البداية [مبدئي]",
-      "label_en": "Start [placeholder]",
-      "date_label_ar": "مرحلة مبدئية أولى",
-      "date_label_en": "Placeholder early phase",
-      "summary_ar": "نص مبدئي لبداية هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's opening.",
-      "block_id": "AB01"
-    },
-    {
-      "phase_id": "PH2",
-      "label_ar": "الوسط [مبدئي]",
-      "label_en": "Midpoint [placeholder]",
-      "date_label_ar": "مرحلة مبدئية وسطى",
-      "date_label_en": "Placeholder middle phase",
-      "summary_ar": "نص مبدئي لمنتصف هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's middle.",
-      "block_id": "AB04"
-    },
-    {
-      "phase_id": "PH3",
-      "label_ar": "المراجعة [مبدئي]",
-      "label_en": "Review [placeholder]",
-      "date_label_ar": "ختام الفصل [مبدئي]",
-      "date_label_en": "End of chapter [placeholder]",
-      "summary_ar": "نص مبدئي لمراجعة الفصل.",
-      "summary_en": "Placeholder chapter-review summary.",
-      "block_id": "AB07"
-    }
-  ],
+  "status": "internal_unapproved",
+  "note": "Real content, drafted from the R11 evidence package and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
+  "timeline_phases": [],
   "blocks": [
     {
-      "block_id": "AB01",
+      "block_id": "L5-B01",
       "block_type": "lesson_hook",
-      "title_ar": "أبو بكر في المدينة [عنوان مبدئي]",
-      "title_en": "Abu Bakr in Madinah [placeholder title]",
+      "title_ar": "أبو بكر في المدينة",
+      "title_en": "Abu Bakr in Madinah",
       "content_items_ar": [
-        "نص تمهيدي مؤقت لهذا الفصل، الذي سيغطي لاحقًا: بدر وأحد والغزوات اللاحقة. هذا نص عنصر نائب فقط.",
-        "سيُستبدل هذا النص الكامل بمحتوى حقيقي بعد مراجعة محمد لمواد content_research."
+        "بعد الوصول إلى المدينة ورفقة الغار، لم تتغير صفة أبي بكر رضي الله عنه؛ استمر حضوره اللصيق بالنبي ﷺ في الشدة والبذل والخدمة، لكن في ميدانٍ جديد.",
+        "نتابع في هذا الدرس ثلاثة مواقف متباعدة زمنياً ومتصلة في المعنى: في بدر، وفي تعبئة تبوك، وفي آخر حجٍّ قاده النبي ﷺ قبل وفاته.",
+        "هذا الدرس لا يستعرض كل حدثٍ مدنيّ؛ بل يختار ثلاثة مواقف موثّقة توصلنا إلى عتبة الدرس التالي: مرض النبي ﷺ الأخير ووفاته."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead paragraph for this chapter, which will eventually cover: Badr, Uhud, and the later campaigns. This text exists only to verify layout.",
-        "This entire block will be replaced with real content once Mohamed reviews the content_research material."
+        "After the arrival in Madinah and the companionship of the cave, Abu Bakr's رضي الله عنه character did not change; his close presence with the Prophet ﷺ in hardship, giving, and service continued -- now in a new setting.",
+        "This lesson follows three moments, distant in time but connected in meaning: at Badr, in the Tabuk mobilization, and at the last Hajj the Prophet ﷺ led before his death.",
+        "This lesson does not survey every Madinan event; it selects three well-documented moments that carry us to the threshold of the next lesson: the Prophet's ﷺ final illness and death."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L5-C05"
+      ],
+      "source_summary_ar": "تركيب تعليمي محدود من أدلة الدرس المتعددة",
+      "source_summary_en": "Bounded teaching synthesis from the lesson's separate evidence",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB02",
+      "block_id": "L5-B02",
+      "block_type": "representative_event",
+      "title_ar": "وحده مع النبي ﷺ في بدر",
+      "title_en": "Alone With the Prophet ﷺ at Badr",
+      "content_items_ar": [
+        "في بدر، بعد أن سوّى النبي ﷺ صفوف المسلمين، رجع إلى العريش، فدخله ومعه أبو بكر وحده، لا معهما فيه أحد.",
+        "وبينما كان النبي ﷺ يناشد ربه ما وعده من النصر ويقول: اللهمَّ، إن تُهلِك هذه العصابةُ اليومَ لا تُعبَد، جاءته كلمات تطمئنه بأن الله منجزٌ له ما وعده.",
+        "ثم خفَق النبي ﷺ خفقةً وهو في العريش، فانتبه وقال: أبشِر يا أبا بكرٍ، أتاك نصرُ الله، هذا جبريلُ آخذٌ بعِنانِ فرسٍ يقودُه، على ثَناياه النَّقْعُ."
+      ],
+      "content_items_en": [
+        "At Badr, after arranging the Muslims' ranks, the Prophet ﷺ returned to the shelter, and Abu Bakr entered it with him -- the two of them alone, no one else present.",
+        "As the Prophet ﷺ supplicated for the victory Allah had promised him, saying, 'O Allah, if this small band is destroyed today, You will not be worshipped,' he was reassured that Allah would fulfil what He had promised.",
+        "The Prophet ﷺ then dozed briefly in the shelter, woke, and said, 'Rejoice, O Abu Bakr, Allah's help has come to you; this is Gabriel, leading a horse by its rein, with dust upon its front teeth.'"
+      ],
+      "claim_ids": [
+        "AB-L5-C01"
+      ],
+      "source_summary_ar": "سيرة ابن هشام، خبر العريش يوم بدر",
+      "source_summary_en": "Ibn Hisham's seerah, the report of the shelter at Badr",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L5-B03",
+      "block_type": "key_evidence",
+      "title_ar": "أبقيت لهم الله ورسوله",
+      "title_en": "I Kept for Them Allah and His Messenger",
+      "content_items_ar": [
+        "في تعبئة تبوك، دعا النبي ﷺ إلى الصدقة، فأنفق عثمانُ بن عفان ألف دينارٍ فدعا له النبي ﷺ بالرضا، وحضّ أهلَ الغنى عموماً على البذل.",
+        "يروي عمر بن الخطاب بنفسه أنه أراد يوماً أن يسبق أبا بكر في الصدقة، فجاء بنصف ماله، فسأله النبي ﷺ: ما أبقيتَ لأهلك؟ فقال: مثلَه.",
+        "ثم أتى أبو بكرٍ بكل ما عنده، فسُئل: ما أبقيتَ لأهلك؟ فقال: أبقيتُ لهم الله ورسولَه. فقال عمر: لا أسابقُك إلى شيءٍ أبداً. هذا الحديث الذي يرويه عمر عن نفسه صحّحه الترمذي بقوله: هذا حديثٌ حسنٌ صحيحٌ."
+      ],
+      "content_items_en": [
+        "In the Tabuk mobilization, the Prophet ﷺ called for charity; 'Uthman ibn 'Affan gave a thousand dinars and the Prophet ﷺ prayed for his acceptance, and the wealthy in general were urged to give.",
+        "'Umar ibn al-Khattab himself narrates that he once wanted to finally outgive Abu Bakr, so he brought half his wealth; the Prophet ﷺ asked him, 'What have you kept for your family?' He said, 'The same amount.'",
+        "Then Abu Bakr brought everything he owned; asked the same question, he answered, 'I kept for them Allah and His Messenger.' 'Umar said, 'I will never race you to anything again.' Al-Tirmidhi, who preserves 'Umar's own account of this, graded it: 'This is a hasan sahih hadith.'"
+      ],
+      "claim_ids": [
+        "AB-L5-C02"
+      ],
+      "source_summary_ar": "الجامع للترمذي (حسن صحيح) وسيرة ابن هشام، خبر تعبئة تبوك",
+      "source_summary_en": "Al-Tirmidhi's Jami' (hasan sahih) and Ibn Hisham's seerah, the report of the Tabuk mobilization",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L5-B04",
       "block_type": "event_card",
-      "title_ar": "حدث مبدئي [عنوان مبدئي]",
-      "title_en": "A placeholder event [placeholder title]",
+      "title_ar": "أُمِّر على حجّ المسلمين",
+      "title_en": "Appointed Over the Muslims' Hajj",
       "content_items_ar": [
-        "وصف مؤقت لحدث افتراضي في هذا الفصل. عنصر نائب فقط.",
-        "التفاصيل الحقيقية والتواريخ ستأتي من البحث المعتمد لاحقًا."
+        "في السنة التاسعة من الهجرة، أمّر النبي ﷺ أبا بكرٍ رضي الله عنه على حجّ المسلمين، وذلك قبل حجة الوداع.",
+        "هذا التعيين ثابتٌ في صحيح البخاري من رواية أبي هريرة رضي الله عنه، ومذكورٌ أيضاً بعنوان الفصل نفسه في سيرة ابن هشام: حجّ أبي بكرٍ بالناس.",
+        "يوم النحر، بعث أبو بكرٌ أبا هريرة في رهطٍ يُؤذِّنون في الناس بأمرين: لا يحجُّ بعد العام مشركٌ، ولا يطوفُ بالبيت عريانٌ -- وهو ما سيتصل بالموقف التالي."
       ],
       "content_items_en": [
-        "PLACEHOLDER description of a hypothetical event in this chapter. Structure only.",
-        "Real details and dates will come from the approved research pack later."
+        "In the ninth year of the Hijrah, the Prophet ﷺ appointed Abu Bakr رضي الله عنه over the Muslims' Hajj, before the Farewell Hajj.",
+        "This appointment is established in Sahih al-Bukhari through Abu Hurairah's own account, and is also recorded by the chapter's own title in Ibn Hisham's seerah: 'Abu Bakr's leading the Hajj for the people.'",
+        "On the Day of Sacrifice, Abu Bakr sent Abu Hurairah among a group proclaiming two rulings to the people: no polytheist would perform Hajj after that year, and no one would circle the Ka'bah unclothed -- connecting directly to the next moment."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L5-C03"
+      ],
+      "source_summary_ar": "صحيح البخاري (حديث ٤٣٦٣) وسيرة ابن هشام",
+      "source_summary_en": "Sahih al-Bukhari (hadith 4363) and Ibn Hisham's seerah",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB03",
-      "block_type": "quotation_card",
-      "title_ar": "قول مأثور [مبدئي]",
-      "title_en": "A recorded quotation [placeholder]",
+      "block_id": "L5-B05",
+      "block_type": "representative_event",
+      "title_ar": "إعلان براءة عند منى",
+      "title_en": "The Proclamation of Bara'ah at Mina",
       "content_items_ar": [
-        "﴿نص اقتباس مؤقت بديل هنا﴾",
-        "قائل الاقتباس [اسم مبدئي] — سياق الاقتباس عنصر نائب."
+        "يوم النحر، قام عليّ بن أبي طالب فأذَّن في الناس بما أمره به النبي ﷺ، فقال: أيها الناس، إنه لا يدخلُ الجنةَ كافرٌ، ولا يحجُّ بعد العام مشركٌ، ولا يطوفُ بالبيت عريانٌ.",
+        "وأضاف: ومَن كان له عند رسول الله ﷺ عهدٌ فهو له إلى مدَّته. فلم يحجَّ بعد ذلك العام مشركٌ، ولم يطُف بالبيت عريانٌ.",
+        "هذا الإعلان الكامل، بما فيه ذكر عليّ رضي الله عنه بالاسم وتفاصيل العهود، مذكورٌ في سيرة ابن هشام؛ وصحيح البخاري يثبت من جهته أن أبا بكر نفسه أرسل من ينادي بأصل هاتين القاعدتين في اليوم نفسه."
       ],
       "content_items_en": [
-        "“Placeholder quotation text goes here”",
-        "Quotation speaker [placeholder name] — the quotation's context is a placeholder."
+        "On the Day of Sacrifice, 'Ali ibn Abi Talib stood and proclaimed to the people what the Prophet ﷺ had instructed him: 'O people, no disbeliever shall enter Paradise, no polytheist shall perform Hajj after this year, and no one shall circle the Ka'bah unclothed.'",
+        "He added, 'Whoever has a treaty with the Messenger of Allah ﷺ, it stands until its term.' After that year, no polytheist performed Hajj, and no one circled the Ka'bah unclothed.",
+        "This fuller proclamation, including 'Ali being named and the treaty details, is recorded in Ibn Hisham's seerah; Sahih al-Bukhari, for its part, establishes that Abu Bakr himself sent someone to proclaim the substance of these same two rulings that same day."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L5-C03"
+      ],
+      "source_summary_ar": "سيرة ابن هشام، إعلان براءة",
+      "source_summary_en": "Ibn Hisham's seerah, the proclamation of Bara'ah",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB04",
-      "block_type": "hadith_evidence",
-      "title_ar": "دليل حديثي [مبدئي]",
-      "title_en": "Hadith evidence [placeholder]",
+      "block_id": "L5-B06",
+      "block_type": "summary",
+      "title_ar": "ما الذي يجمع هذه المواقف الثلاثة؟",
+      "title_en": "What Connects These Three Moments?",
       "content_items_ar": [
-        "مقدمة مؤقتة قبل نص الحديث.",
-        "﴿نص حديث بديل يستخدم كعنصر نائب فقط﴾",
-        "شرح مؤقت لدلالة الحديث."
+        "في بدر، كان أبو بكر وحده مع النبي ﷺ في أشد لحظات الشدة، يشهد دعاءه ويتلقى بشارته.",
+        "في تبوك، سابق أبو بكر إلى البذل الكامل، فجاء بكل ما يملك حين اكتفى غيره بالنصف.",
+        "وفي آخر حجٍّ قاده النبي ﷺ، كان أبو بكر القائد المعيَّن للحج، وأرسل من ينادي بأصل الإعلان يوم النحر؛ وتولى عليّ بن أبي طالب، بأمر النبي ﷺ، تلاوة الإعلان الكامل بتفاصيله.",
+        "هذه المواقف الثلاثة، وإن تباعدت زمنياً، تُظهر الصفة نفسها التي عُرف بها أبو بكر في مكة: حضورٌ لصيق، وبذلٌ كامل، وثقةٌ متبادلة -- إلى أن نصل في الدرس التالي إلى مرض النبي ﷺ الأخير ووفاته."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead-in before the hadith text.",
-        "“Placeholder hadith text used only as a structural filler”",
-        "PLACEHOLDER explanation of the hadith's significance."
+        "At Badr, Abu Bakr alone was with the Prophet ﷺ at the moment of greatest pressure, witnessing his supplication and receiving his good news.",
+        "At Tabuk, Abu Bakr outpaced everyone in total giving, bringing everything he owned when others were satisfied with half.",
+        "And at the last Hajj the Prophet ﷺ led, Abu Bakr was the Hajj's appointed leader and sent someone to proclaim the substance of the announcement on the Day of Sacrifice; 'Ali ibn Abi Talib, by the Prophet's ﷺ instruction, delivered the fuller proclamation with its details.",
+        "These three moments, though distant in time, show the same character Abu Bakr was known for in Makkah: close presence, total giving, and mutual trust -- carrying us, in the next lesson, to the Prophet's ﷺ final illness and death."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L5-C03",
+        "AB-L5-C05"
+      ],
+      "source_summary_ar": "تركيب تعليمي من مصادر الدرس",
+      "source_summary_en": "Teaching synthesis from the lesson's sources",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB05",
-      "block_type": "chronology_clarification",
-      "title_ar": "توضيح زمني [مبدئي]",
-      "title_en": "Chronology clarification [placeholder]",
-      "content_items_ar": [
-        "ملخص مؤقت لخلاف علمي محتمل حول ترتيب الأحداث.",
-        "توضيح مطوّل مؤقت حول أوجه الخلاف بين الروايات."
-      ],
-      "content_items_en": [
-        "PLACEHOLDER short summary of a possible scholarly dating disagreement.",
-        "PLACEHOLDER longer clarification of how the narrations differ."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB06",
-      "block_type": "timeline_review",
-      "title_ar": "مراجعة الخط الزمني [مبدئية]",
-      "title_en": "Timeline review [placeholder]",
-      "content_items_ar": [
-        "١. مرحلة عنصر نائب أولى.",
-        "٢. مرحلة عنصر نائب ثانية.",
-        "٣. مرحلة عنصر نائب ثالثة."
-      ],
-      "content_items_en": [
-        "1. First placeholder phase.",
-        "2. Second placeholder phase.",
-        "3. Third placeholder phase."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB07",
+      "block_id": "L5-B07",
       "block_type": "quiz_sources",
-      "title_ar": "اختبر فهمك [مبدئي]",
-      "title_en": "Check your understanding [placeholder]",
+      "title_ar": "راجع فهمك والمصادر",
+      "title_en": "Check Your Understanding and Sources",
       "content_items_ar": [
-        "مقدمة مؤقتة للاختبار."
+        "راجع فهمك للدرس عبر ستة أسئلة قصيرة، ثم تحقق من المصادر الثلاثة التي استند إليها."
       ],
       "content_items_en": [
-        "PLACEHOLDER introduction to the quiz."
+        "Review your understanding of the lesson through six short questions, then check the three sources it draws on."
       ],
       "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "source_summary_ar": "مصادر الدرس الثلاثة",
+      "source_summary_en": "The lesson's three sources",
       "required_for_completion": true,
       "deep_sections": []
     }
