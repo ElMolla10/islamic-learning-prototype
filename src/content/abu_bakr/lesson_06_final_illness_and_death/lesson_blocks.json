@@ -1,173 +1,294 @@
 {
   "lesson_id": "abu_bakr.lesson_06_final_illness_and_death",
   "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real content pending Mohamed's review of content_research/abu_bakr/ (see src/content/abu_bakr/README.md for the folder mapping for website lesson 6). Every string below is filler used only to verify the Sahabah component system renders correctly.",
-  "timeline_phases": [
-    {
-      "phase_id": "PH1",
-      "label_ar": "البداية [مبدئي]",
-      "label_en": "Start [placeholder]",
-      "date_label_ar": "مرحلة مبدئية أولى",
-      "date_label_en": "Placeholder early phase",
-      "summary_ar": "نص مبدئي لبداية هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's opening.",
-      "block_id": "AB01"
-    },
-    {
-      "phase_id": "PH2",
-      "label_ar": "الوسط [مبدئي]",
-      "label_en": "Midpoint [placeholder]",
-      "date_label_ar": "مرحلة مبدئية وسطى",
-      "date_label_en": "Placeholder middle phase",
-      "summary_ar": "نص مبدئي لمنتصف هذا الفصل.",
-      "summary_en": "Placeholder summary of this chapter's middle.",
-      "block_id": "AB04"
-    },
-    {
-      "phase_id": "PH3",
-      "label_ar": "المراجعة [مبدئي]",
-      "label_en": "Review [placeholder]",
-      "date_label_ar": "ختام الفصل [مبدئي]",
-      "date_label_en": "End of chapter [placeholder]",
-      "summary_ar": "نص مبدئي لمراجعة الفصل.",
-      "summary_en": "Placeholder chapter-review summary.",
-      "block_id": "AB07"
-    }
-  ],
+  "status": "internal_unapproved",
+  "note": "Real content, drafted from the R12 evidence package and reviewed against verified Islamic source material. Status: internal_unapproved -- pending final scholarly review before any public release. Rendered via the Sahabah biography component system; see src/content/abu_bakr/README.md for how this maps to the wider Abu Bakr path.",
+  "timeline_phases": [],
   "blocks": [
     {
-      "block_id": "AB01",
+      "block_id": "L6-B01",
       "block_type": "lesson_hook",
-      "title_ar": "المرض الأخير ووفاة النبي ﷺ [عنوان مبدئي]",
-      "title_en": "The Final Illness and Death of the Prophet ﷺ [placeholder title]",
+      "title_ar": "أبو بكر في يوم الفراق",
+      "title_en": "Abu Bakr on the Day of Parting",
       "content_items_ar": [
-        "نص تمهيدي مؤقت لهذا الفصل، الذي سيغطي لاحقًا: مرض النبي ﷺ ووفاته. هذا نص عنصر نائب فقط.",
-        "سيُستبدل هذا النص الكامل بمحتوى حقيقي بعد مراجعة محمد لمواد content_research."
+        "يتتبّع هذا الدرس اليومَ الأثقل في حياة أبي بكر رضي الله عنه: مرضَ النبي ﷺ الأخير، ووفاتَه، وكيف تصرَّف أبو بكر في تلك الساعات.",
+        "سنرى أبا بكر يُؤمَر بأن يقود الصلاة، ثم يعود ليجد النبي ﷺ قد فارق الحياة، فيدخل عليه بحبٍّ وثباتٍ معاً، ثم يخرج ليخاطب أمةً صُدمت، فيوجِّه قلوبها من التعلّق بالنبي ﷺ إلى التعلّق بالله.",
+        "هذا الدرس لا يروي سيرة النبي ﷺ العامة في مرضه؛ بل يتابع أبا بكر تحديداً: حبَّه، وقبولَه لقضاء الله، ووضوحَه في لحظة عمّت فيها الصدمة."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead paragraph for this chapter, which will eventually cover: the Prophet's ﷺ final illness and death. This text exists only to verify layout.",
-        "This entire block will be replaced with real content once Mohamed reviews the content_research material."
+        "This lesson follows the heaviest day in Abu Bakr's رضي الله عنه life: the Prophet's ﷺ final illness, his death, and how Abu Bakr responded in those hours.",
+        "We will see Abu Bakr commanded to lead the prayer, then returning to find the Prophet ﷺ had passed away -- entering upon him with both love and composure, then going out to address a shocked community, redirecting their hearts from attachment to the Prophet ﷺ toward attachment to Allah.",
+        "This lesson does not narrate the Prophet's ﷺ final illness as a general biography; it follows Abu Bakr specifically: his love, his acceptance of Allah's decree, and his clarity at a moment of widespread shock."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L6-C10"
+      ],
+      "source_summary_ar": "تركيب تعليمي محدود من أدلة الدرس المتعددة",
+      "source_summary_en": "Bounded teaching synthesis from the lesson's separate evidence",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB02",
+      "block_id": "L6-B02",
+      "block_type": "key_evidence",
+      "title_ar": "اشتدَّ المرض",
+      "title_en": "The Illness Grows Severe",
+      "content_items_ar": [
+        "حين اشتدَّ مرضُ النبي ﷺ، استأذنَ أزواجَه أن يُمرَّض في بيت عائشة، فأذِنَّ له، فخرَج يمشي بين رجلين من أهله -أحدُهما الفضلُ بن العباس- عاصباً رأسَه، تخُطُّ قدَماه في الأرض، حتى دخل بيتَها."
+      ],
+      "content_items_en": [
+        "As the Prophet's ﷺ illness grew severe, he asked his wives' permission to be nursed in 'A'ishah's house; they agreed, and he walked there between two men of his household -- one of them al-Fadl ibn al-'Abbas -- his head bound, his feet dragging on the ground, until he entered her house."
+      ],
+      "claim_ids": [
+        "AB-L6-C01"
+      ],
+      "source_summary_ar": "سيرة ابن هشام وصحيح البخاري، بداية المرض",
+      "source_summary_en": "Ibn Hisham's seerah and Sahih al-Bukhari, the onset of the illness",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L6-B03",
+      "block_type": "leadership_decision",
+      "title_ar": "مُروا أبا بكرٍ فليُصلِّ بالناس",
+      "title_en": "'Command Abu Bakr to Lead the People'",
+      "content_items_ar": [
+        "لما اشتُدَّ بالنبي ﷺ قال: مُروا أبا بكرٍ فليُصلِّ بالناس. فقالت عائشة: يا نبيَّ الله، إنّ أبا بكرٍ رجلٌ رقيقٌ ضعيفُ الصوتِ كثيرُ البكاء إذا قرأ القرآن. قال: مُروه فليُصلِّ بالناس.",
+        "عادت عائشة بمثل قولها، فقال النبي ﷺ: إنكنَّ صواحبُ يوسف، مُروه فليُصلِّ بالناس. وأصرَّ على ذلك في المرة الثالثة.",
+        "أوضحت عائشة لاحقاً سبب إلحاحها: لم يكن شكّاً في القرار، بل خشيةً على أبي بكر؛ قالت: لم يقَع في قلبي أن يُحبَّ الناسُ بعدَه رجلاً قام مقامَه أبداً، ولا أرى أن يقومَ أحدٌ مقامَه إلا تشاءَمَ الناسُ به، فأردتُ أن يُصرَفَ ذلك عن أبي بكر."
+      ],
+      "content_items_en": [
+        "When the Prophet's ﷺ illness intensified, he said, 'Command Abu Bakr to lead the people in prayer.' 'A'ishah said, 'O Messenger of Allah, Abu Bakr is a tender man, weak of voice, given to much weeping when he recites the Qur'an.' He said, 'Command him to lead the people in prayer.'",
+        "She repeated her objection, and the Prophet ﷺ said, 'You are like the women of Yusuf' -- commanding him a third time to lead the people, and insisting.",
+        "'A'ishah later explained her own reason for insisting: it was not doubt about the decision, but protective concern for Abu Bakr. She said it never occurred to her that people would love anyone who stood in his place afterward, and she felt certain people would consider it a bad omen concerning whoever stood there -- so she wanted that turned away from Abu Bakr specifically."
+      ],
+      "claim_ids": [
+        "AB-L6-C02"
+      ],
+      "source_summary_ar": "سيرة ابن هشام وصحيح البخاري، أمر النبي ﷺ بإمامة أبي بكر",
+      "source_summary_en": "Ibn Hisham's seerah and Sahih al-Bukhari, the Prophet's ﷺ instruction that Abu Bakr lead",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L6-B04",
+      "block_type": "representative_event",
+      "title_ar": "أهريقوا عليَّ من سبعِ قِرَبٍ",
+      "title_en": "'Pour Upon Me From Seven Waterskins'",
+      "content_items_ar": [
+        "لما اشتدَّ به الوجعُ في بيت عائشة قال: هَريقوا عليَّ من سبعِ قِرَبٍ لم تُحلَل أوكيتُهُنَّ، لعلي أعهَدُ إلى الناس.",
+        "أجلَسوه في مِخضَبٍ لحفصة زوجِ النبي ﷺ، وطفِقوا يصُبّون عليه من تلك القِرَب، حتى أشار إليهم أن قد فعلوا ما يكفي.",
+        "ثم خرج إلى الناس فصلّى بهم وخطبهم، رغم شدة مرضه."
+      ],
+      "content_items_en": [
+        "As the pain intensified in 'A'ishah's house, he said, 'Pour upon me from seven waterskins whose knots have not been undone, so that I may go out and instruct the people.'",
+        "They sat him in a basin belonging to Hafsah, wife of the Prophet ﷺ, and poured water on him from those skins until he gestured that they had done enough.",
+        "He then went out to the people, prayed with them, and addressed them despite the severity of his illness."
+      ],
+      "claim_ids": [
+        "AB-L6-C03"
+      ],
+      "source_summary_ar": "صحيح البخاري، خبر القِرَب السبع",
+      "source_summary_en": "Sahih al-Bukhari, the report of the seven waterskins",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L6-B05",
+      "block_type": "context_and_consequence",
+      "title_ar": "صَلِّ بالناس",
+      "title_en": "'Lead the People in Prayer'",
+      "content_items_ar": [
+        "يوم الاثنين، خرج النبي ﷺ عاصباً رأسَه إلى الناس، وأبو بكر يُصلّي بهم الصبح. فلما خرج النبي ﷺ تفرَّج الناسُ، فعرَف أبو بكر أن ذلك لم يكن إلا للنبي ﷺ، فبدأ يتراجع عن مكانه.",
+        "فدفَعه النبي ﷺ في ظهرِه وقال: صَلِّ بالناس. وجلس النبي ﷺ قاعداً عن يمين أبي بكر إلى جنبِه.",
+        "صلّى النبي ﷺ قاعداً، وأبو بكر قائماً يقتدي بصلاة النبي ﷺ، والناسُ يقتدون بصلاة أبي بكر."
+      ],
+      "content_items_en": [
+        "On Monday, the Prophet ﷺ came out to the people, his head bound, while Abu Bakr was leading them in the dawn prayer. When the Prophet ﷺ appeared, the congregation parted, and Abu Bakr, realizing this was for the Prophet ﷺ, began to step back from his place.",
+        "The Prophet ﷺ pushed him forward from behind and said, 'Lead the people in prayer.' He then sat down at Abu Bakr's right side, beside him.",
+        "The Prophet ﷺ prayed seated, Abu Bakr standing and following the Prophet's ﷺ prayer, and the people following Abu Bakr's."
+      ],
+      "claim_ids": [
+        "AB-L6-C04"
+      ],
+      "source_summary_ar": "سيرة ابن هشام، مشهد الدفع للصلاة",
+      "source_summary_en": "Ibn Hisham's seerah, the pushed-forward prayer scene",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L6-B06",
       "block_type": "event_card",
-      "title_ar": "حدث مبدئي [عنوان مبدئي]",
-      "title_en": "A placeholder event [placeholder title]",
+      "title_ar": "خطبةٌ في أيام المرض وأملٌ عابر",
+      "title_en": "An Address During the Illness and a Passing Hope",
       "content_items_ar": [
-        "وصف مؤقت لحدث افتراضي في هذا الفصل. عنصر نائب فقط.",
-        "التفاصيل الحقيقية والتواريخ ستأتي من البحث المعتمد لاحقًا."
+        "بعد الصلاة، أقبل النبي ﷺ على الناس فكلَّمهم رافعاً صوتَه حتى خرج صوتُه من باب المسجد: أيها الناسُ، سُعِّرت النارُ، وأقبَلت الفتنُ كقِطَعِ الليل المظلم، وإني والله ما تُمسَّكون عليَّ بشيء، إني لم أُحلَّ إلا ما أحلَّ القرآنُ، ولم أُحرِّم إلا ما حرَّم القرآنُ.",
+        "قال له أبو بكر: يا نبي الله، إني أراك قد أصبحتَ بنعمةٍ من الله وفضلٍ كما نُحبّ، واليومُ يومُ بنتِ خارجةَ، أفآتيها؟ قال: نعم.",
+        "دخل النبي ﷺ، وخرج أبو بكر إلى أهله بالسُّنح، وقد بدا له أن حال النبي ﷺ قد تحسَّنت."
       ],
       "content_items_en": [
-        "PLACEHOLDER description of a hypothetical event in this chapter. Structure only.",
-        "Real details and dates will come from the approved research pack later."
+        "After the prayer, the Prophet ﷺ addressed the people, his voice rising until it carried outside the mosque's door: 'O people, the Fire has been lit, and trials are approaching like pieces of a dark night. By Allah, you can hold nothing against me -- I have made lawful only what the Qur'an made lawful, and forbidden only what the Qur'an forbade.'",
+        "Abu Bakr said to him, 'O Messenger of Allah, I see you this morning in health and favor from Allah as we would wish -- today is the turn of bint Kharijah [Abu Bakr's wife]; shall I go to her?' He said, 'Yes.'",
+        "The Prophet ﷺ went back inside, and Abu Bakr left for his home at al-Sunh, having understood that the Prophet's ﷺ condition appeared to have improved."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L6-C05"
+      ],
+      "source_summary_ar": "سيرة ابن هشام، الخطبة الأخيرة وخروج أبي بكر",
+      "source_summary_en": "Ibn Hisham's seerah, the final address and Abu Bakr's departure",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB03",
+      "block_id": "L6-B07",
+      "block_type": "representative_event",
+      "title_ar": "بل الرَّفيقَ الأعلى",
+      "title_en": "'Rather, the Highest Companion'",
+      "content_items_ar": [
+        "عاد النبي ﷺ إلى بيت عائشة واضطجَع في حِجرها. دخل رجلٌ من آل أبي بكر -سمّاه البخاري: عبدُالرحمن بن أبي بكر- ومعه سواكٌ أخضَر، فنظر النبي ﷺ إليه نظراً عرفت عائشة أنه يريدُه.",
+        "أخذت عائشة السواكَ فليَّنته له، فاستنَّ به النبي ﷺ كأشدِّ ما رأته يستنُّ به قط، ثم وضَعه.",
+        "ثقُل النبي ﷺ في حِجرها، فنظرت في وجهه فإذا بصرُه قد شخَص، وهو يقول: بل الرَّفيقَ الأعلى من الجنّة. قالت: خُيِّرتَ فاخترتَ، والذي بعثَك بالحق. وقُبض رسولُ الله ﷺ."
+      ],
+      "content_items_en": [
+        "The Prophet ﷺ returned to 'A'ishah's house and lay in her lap. A man from Abu Bakr's household -- named by Bukhari as 'Abd al-Rahman ibn Abi Bakr -- entered with a green tooth-stick, and the Prophet ﷺ looked at it in a way 'A'ishah recognized as wanting it.",
+        "She took the tooth-stick and softened it for him; he used it more vigorously than she had ever seen him use one, then set it down.",
+        "He grew heavy in her lap; she looked at his face and saw his gaze fix -- he said, 'Rather, the Highest Companion, from Paradise.' She said, 'You were given the choice, and you chose -- by the One who sent you with the truth.' And the Messenger of Allah ﷺ passed away."
+      ],
+      "claim_ids": [
+        "AB-L6-C06"
+      ],
+      "source_summary_ar": "سيرة ابن هشام وصحيح البخاري، السواك ولحظة الوفاة",
+      "source_summary_en": "Ibn Hisham's seerah and Sahih al-Bukhari, the siwak and the moment of death",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L6-B08",
+      "block_type": "event_consequence_meaning",
+      "title_ar": "أنكر عمر الخبر",
+      "title_en": "'Umar Denied the News'",
+      "content_items_ar": [
+        "لما توفي رسولُ الله ﷺ، قام عمر بن الخطاب في الناس فقال: إنّ رجالاً من المنافقين يزعُمون أنّ رسولَ الله ﷺ قد تُوفِّي، وإنّ رسولَ الله ﷺ والله ما مات، ولكنه ذهَب إلى ربِّه كما ذهَب موسى بن عمران؛ فقد غاب عن قومه أربعين ليلة ثم رجَع إليهم بعد أن قيل: قد مات.",
+        "وأقسَم عمر: والله ليَرجِعنَّ رسولُ الله ﷺ كما رجَع موسى، فليَقطَعنَّ أيديَ رجالٍ وأرجُلَهم زعَموا أنّ رسولَ الله ﷺ قد مات.",
+        "ويُفهَم موقف عمر في سياق الصدمة والحزن الشديد، لا على أنه شكٌّ في إيمانه؛ فقد كان الخبر أكبر من أن يستوعبه في تلك اللحظة."
+      ],
+      "content_items_en": [
+        "When the Messenger of Allah ﷺ died, 'Umar ibn al-Khattab stood before the people and said, 'Some hypocrites claim the Messenger of Allah ﷺ has died. By Allah, the Messenger of Allah ﷺ has not died -- he has gone to his Lord just as Musa ibn 'Imran did, who was absent from his people forty nights and then returned to them after it was said he had died.'",
+        "'Umar swore: 'By Allah, the Messenger of Allah ﷺ will surely return just as Musa returned, and he will cut off the hands and feet of any man who claims the Messenger of Allah ﷺ has died.'",
+        "'Umar's reaction is best understood in the context of overwhelming shock and grief, not as doubt in his faith; in that moment, the news was more than he could absorb."
+      ],
+      "claim_ids": [
+        "AB-L6-C07"
+      ],
+      "source_summary_ar": "سيرة ابن هشام، مقالة عمر حين سمع بالوفاة",
+      "source_summary_en": "Ibn Hisham's seerah, what 'Umar said when he heard of the death",
+      "required_for_completion": true,
+      "deep_sections": []
+    },
+    {
+      "block_id": "L6-B09",
       "block_type": "quotation_card",
-      "title_ar": "قول مأثور [مبدئي]",
-      "title_en": "A recorded quotation [placeholder]",
+      "title_ar": "بأبي أنتَ وأمي",
+      "title_en": "'May My Father and Mother Be Sacrificed for You'",
       "content_items_ar": [
-        "﴿نص اقتباس مؤقت بديل هنا﴾",
-        "قائل الاقتباس [اسم مبدئي] — سياق الاقتباس عنصر نائب."
+        "بأبي أنتَ وأمي، أما الموتةُ التي كتَب اللهُ عليك فقد ذُقتَها، ثم لن تُصيبَك موتةٌ بعدها أبداً.",
+        "حين بلَغَه الخبرُ -وعمرُ يُكلِّم الناس- أقبَل أبو بكر حتى نزَل على باب المسجد، فلم يلتفتْ إلى شيء حتى دخَل على النبي ﷺ في بيت عائشة، وهو مُسَجًّى ببُردِ حِبَرَة.",
+        "كشَف أبو بكر عن وجه النبي ﷺ، ثم أقبَل عليه فقبَّله، وقال هذه الكلمات، ثم ردَّ البُردَ على وجهه. وتَرِدُ هذه الحادثة في رواياتٍ أخرى بألفاظٍ مختلفة قليلاً."
       ],
       "content_items_en": [
-        "“Placeholder quotation text goes here”",
-        "Quotation speaker [placeholder name] — the quotation's context is a placeholder."
+        "'May my father and mother be sacrificed for you -- you have tasted the death Allah decreed for you, and no death will ever befall you after this one.'",
+        "When the news reached him -- while 'Umar was addressing the people -- Abu Bakr came and dismounted at the mosque's door, and without turning to anything else went straight in to the Prophet ﷺ in 'A'ishah's house, where he lay covered with a striped cloak.",
+        "Abu Bakr uncovered the Prophet's ﷺ face, kissed him, and spoke these words, then replaced the cloak over his face. The same event is also reported elsewhere with slightly different wording."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L6-C08"
+      ],
+      "source_summary_ar": "سيرة ابن هشام وصحيح البخاري، عودة أبي بكر ودخوله على النبي ﷺ",
+      "source_summary_en": "Ibn Hisham's seerah and Sahih al-Bukhari, Abu Bakr's return and entering upon the Prophet ﷺ",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB04",
-      "block_type": "hadith_evidence",
-      "title_ar": "دليل حديثي [مبدئي]",
-      "title_en": "Hadith evidence [placeholder]",
+      "block_id": "L6-B10",
+      "block_type": "quran_connection",
+      "title_ar": "﴿وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ﴾",
+      "title_en": "'Muhammad Is Not But a Messenger'",
       "content_items_ar": [
-        "مقدمة مؤقتة قبل نص الحديث.",
-        "﴿نص حديث بديل يستخدم كعنصر نائب فقط﴾",
-        "شرح مؤقت لدلالة الحديث."
+        "﴿وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ قَدْ خَلَتْ مِن قَبْلِهِ الرُّسُلُ أَفَإِن مَّاتَ أَوْ قُتِلَ انقَلَبْتُمْ عَلَىٰ أَعْقَابِكُمْ وَمَن يَنقَلِبْ عَلَىٰ عَقِبَيْهِ فَلَن يَضُرَّ اللَّهَ شَيْئًا وَسَيَجْزِي اللَّهُ الشَّاكِرِينَ﴾ [آل عمران: ١٤٤]",
+        "خرج أبو بكر إلى الناس، وعمرُ يُكلِّمهم، فقال: على رِسلِك يا عمر، أنصِتْ. فأبى عمر إلا أن يتكلَّم، فلما رآه أبو بكر لا يُنصِت أقبَل على الناس، فتركوا عمر وأقبلوا إليه. فحَمِد الله وأثنى عليه، ثم قال: أيها الناسُ، إنه مَن كان يَعبُدُ محمداً فإنَّ محمداً قد مات، ومَن كان يعبُدُ اللهَ فإنَّ اللهَ حيٌّ لا يموت. ثم تلا هذه الآية.",
+        "قال راوي الحادثة: فوالله، لكأنَّ الناسَ لم يعلَموا أنَّ هذه الآيةَ نزَلت، حتى تلاها أبو بكر يومئذٍ، فأخَذَها الناسُ عن أبي بكر، فإنما هي في أفواهِهِم. وذكر أحدُ مَن حضَر أنه ما إن سمِع أبا بكر يتلوها حتى سقَط إلى الأرض، لا تحمِله رجلاه، وعرَف أنّ رسولَ الله ﷺ قد مات حقّاً."
       ],
       "content_items_en": [
-        "PLACEHOLDER lead-in before the hadith text.",
-        "“Placeholder hadith text used only as a structural filler”",
-        "PLACEHOLDER explanation of the hadith's significance."
+        "'Muhammad is not but a messenger; messengers have passed on before him. So if he was to die or be killed, would you turn back on your heels [into disbelief]? And he who turns back on his heels will not harm Allah at all; but Allah will reward the grateful.' (Aal 'Imran 3:144)",
+        "Abu Bakr went out to the people while 'Umar was addressing them, and said, 'Take it easy, 'Umar, be silent.' But 'Umar refused to stop, so when Abu Bakr saw he would not be quiet, he turned to the people directly; they left 'Umar and came to him. He praised Allah, then said: 'O people, whoever used to worship Muhammad -- Muhammad has died. Whoever worships Allah -- Allah is living and does not die.' Then he recited this verse.",
+        "The narrator of the account said: 'By Allah, it was as if the people had not known this verse had been revealed until Abu Bakr recited it that day -- the people took it up from him, until it was on everyone's lips.' One of those present reports that as soon as he heard Abu Bakr recite it, he sank to the ground, his legs unable to hold him, and he understood then that the Messenger of Allah ﷺ had truly died."
       ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "claim_ids": [
+        "AB-L6-C09"
+      ],
+      "source_summary_ar": "سيرة ابن هشام وصحيح البخاري، خطبة أبي بكر وتلاوة الآية",
+      "source_summary_en": "Ibn Hisham's seerah and Sahih al-Bukhari, Abu Bakr's address and recitation of the verse",
+      "required_for_completion": true,
+      "deep_sections": [
+        {
+          "section_id": "L6-B10-D1",
+          "title_ar": "لماذا أعادت هذه الآية توازن الناس؟",
+          "title_en": "Why Did This Verse Restore the Community's Balance?",
+          "content_items_ar": [
+            "تُقرّر الآية أن محمداً ﷺ رسولٌ قد سبقه رسلٌ ماتوا، وأن موت الرسول لا يبرّر الرجوع عن الدين.",
+            "وحين تلاها أبو بكر، أعادت الناس إلى حقيقةٍ كانوا يعرفونها في الوحي لكن الصدمة حجبتها عنهم في تلك اللحظة.",
+            "فثبّت أبو بكر قلوبهم بالقرآن: الحزن على الرسول ﷺ حق، أمّا العبادة والثبات فهما لله الحي الذي لا يموت."
+          ],
+          "content_items_en": [
+            "The verse establishes that Muhammad ﷺ is a messenger preceded by other messengers who passed away, and that a messenger's death cannot justify turning back from the religion.",
+            "When Abu Bakr recited it, he returned the people to a truth already present in revelation but obscured by the shock of that moment.",
+            "He steadied them through the Qur'an: grief for the Messenger ﷺ was real, but worship and steadfastness belong to Allah, the Ever-Living who does not die."
+          ],
+          "claim_ids": [
+            "AB-L6-C09"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "L6-B11",
+      "block_type": "summary",
+      "title_ar": "ما الذي يكشفه هذا اليوم عن أبي بكر؟",
+      "title_en": "What This Day Reveals About Abu Bakr",
+      "content_items_ar": [
+        "أُمِر أبو بكر بقيادة الصلاة، وأصرَّ النبي ﷺ أن يتقدّم لها، حتى حين ظهر بين الناس في مرضه وأراد أبو بكر أن يتراجع.",
+        "وحين مات النبي ﷺ، عاد أبو بكر وتحقَّق من الخبر بنفسه، ثم ودّعه بحبٍّ وقبّله، من غير أن يمنعه حزنه من إدراك الحقيقة وقولها.",
+        "ثم خرج إلى الناس مستشهداً بكتاب الله، فأعاد توجيه الأمة إلى الحقيقة التي يقوم عليها إيمانها: أن الرسول ﷺ يموت، وأن الله حيٌّ لا يموت.",
+        "لم تكن قوة أبي بكر في غياب الحب أو الحزن، بل في أن مشاعره لم تمنعه من الثبات على الحق وتحمل المسؤولية. وقد كشف هذا اليوم عن صفاتٍ ستظهر أهميتها فيما سيُطلب منه بعد ذلك."
+      ],
+      "content_items_en": [
+        "Abu Bakr was commanded to lead the prayer, and the Prophet ﷺ insisted that he remain in that position, even when he appeared among the people during his illness and Abu Bakr began to step back.",
+        "When the Prophet ﷺ died, Abu Bakr returned and verified the news himself. He then bade him farewell with love and kissed him, without his grief preventing him from recognizing and declaring the truth.",
+        "He went out to the people and grounded his address in the Book of Allah, returning the community to the foundation of its faith: the Messenger ﷺ dies, while Allah is living and does not die.",
+        "Abu Bakr's strength was not an absence of love or grief, but that his emotions did not prevent him from standing firm in the truth and carrying responsibility. That day revealed qualities whose importance would become clear in what was asked of him afterward."
+      ],
+      "claim_ids": [
+        "AB-L6-C10"
+      ],
+      "source_summary_ar": "تركيب تعليمي من مصادر الدرس",
+      "source_summary_en": "Teaching synthesis from the lesson's sources",
       "required_for_completion": true,
       "deep_sections": []
     },
     {
-      "block_id": "AB05",
-      "block_type": "chronology_clarification",
-      "title_ar": "توضيح زمني [مبدئي]",
-      "title_en": "Chronology clarification [placeholder]",
-      "content_items_ar": [
-        "ملخص مؤقت لخلاف علمي محتمل حول ترتيب الأحداث.",
-        "توضيح مطوّل مؤقت حول أوجه الخلاف بين الروايات."
-      ],
-      "content_items_en": [
-        "PLACEHOLDER short summary of a possible scholarly dating disagreement.",
-        "PLACEHOLDER longer clarification of how the narrations differ."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB06",
-      "block_type": "timeline_review",
-      "title_ar": "مراجعة الخط الزمني [مبدئية]",
-      "title_en": "Timeline review [placeholder]",
-      "content_items_ar": [
-        "١. مرحلة عنصر نائب أولى.",
-        "٢. مرحلة عنصر نائب ثانية.",
-        "٣. مرحلة عنصر نائب ثالثة."
-      ],
-      "content_items_en": [
-        "1. First placeholder phase.",
-        "2. Second placeholder phase.",
-        "3. Third placeholder phase."
-      ],
-      "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
-      "required_for_completion": true,
-      "deep_sections": []
-    },
-    {
-      "block_id": "AB07",
+      "block_id": "L6-B12",
       "block_type": "quiz_sources",
-      "title_ar": "اختبر فهمك [مبدئي]",
-      "title_en": "Check your understanding [placeholder]",
+      "title_ar": "راجع فهمك والمصادر",
+      "title_en": "Check Your Understanding and Sources",
       "content_items_ar": [
-        "مقدمة مؤقتة للاختبار."
+        "راجع فهمك للدرس عبر ستة أسئلة قصيرة، ثم تحقق من المصادر التي استند إليها."
       ],
       "content_items_en": [
-        "PLACEHOLDER introduction to the quiz."
+        "Review your understanding of the lesson through six short questions, then check the sources it draws on."
       ],
       "claim_ids": [],
-      "source_summary_ar": "مصادر عنصر نائب",
-      "source_summary_en": "Placeholder sources",
+      "source_summary_ar": "مصادر الدرس",
+      "source_summary_en": "The lesson's sources",
       "required_for_completion": true,
       "deep_sections": []
     }

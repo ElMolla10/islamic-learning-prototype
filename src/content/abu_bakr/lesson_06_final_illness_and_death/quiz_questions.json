@@ -1,81 +1,170 @@
 {
   "lesson_id": "abu_bakr.lesson_06_final_illness_and_death",
   "draft_version": 1,
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real questions pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Six questions drawn only from secure R12 evidence, testing understanding of the arc rather than trivial recall. Q6's distractors are deliberately used to reject the two most consequential overstatements (that this day formally appointed Abu Bakr caliph, and that his composure meant an absence of grief).",
   "passing_rule": "score / total > 0.5",
   "questions": [
     {
-      "question_id": "ABQ01",
+      "question_id": "L6Q01",
       "type": "multiple_choice",
-      "depth": "core",
-      "prompt_ar": "سؤال عنصر نائب رقم واحد؟",
-      "prompt_en": "Placeholder question one?",
+      "depth": "meaning",
+      "prompt_ar": "لماذا كان أمر النبي ﷺ بأن يؤمّ أبو بكر الناس مهمّاً بحسب الأدلة؟",
+      "prompt_en": "Why did the Prophet's ﷺ instruction that Abu Bakr lead the prayer matter, according to the evidence?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "لأنه أصرَّ عليه ثلاث مرات، وواصل دفعه للإمامة حتى في آخر ظهورٍ له بين الناس",
+          "en": "Because he insisted on it three times, and kept pushing him toward it even during his final appearance among the people"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "لأنه كان أول تكليفٍ رسمي وحيد لأبي بكر في حياته",
+          "en": "Because it was the only formal responsibility Abu Bakr ever received in his life"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "لأن عائشة اقترحته ابتداءً من غير أن يأمر به النبي ﷺ",
+          "en": "Because 'A'ishah proposed it herself, without the Prophet ﷺ having ordered it"
         }
       ],
       "correct_answer": [
         "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB02"
+      "explanation_ar": "أمر النبي ﷺ بإمامة أبي بكر ثلاث مرات رغم اعتراض عائشة، ثم حين ظهر بنفسه ووجد أبا بكر يتراجع، دفعه للأمام وأصرَّ أن يواصل.",
+      "explanation_en": "The Prophet ﷺ commanded Abu Bakr's leadership three times despite 'A'ishah's objection, and when he later appeared himself and found Abu Bakr stepping back, he pushed him forward and insisted he continue.",
+      "review_card_id": "L6-B05"
     },
     {
-      "question_id": "ABQ02",
-      "type": "true_false",
+      "question_id": "L6Q02",
+      "type": "multiple_choice",
       "depth": "core",
-      "prompt_ar": "عبارة عنصر نائب رقم اثنين؟",
-      "prompt_en": "Placeholder statement two?",
-      "correct_answer": true,
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB04"
-    },
-    {
-      "question_id": "ABQ03",
-      "type": "select_all",
-      "depth": "deep",
-      "prompt_ar": "سؤال عنصر نائب باختيار متعدد؟",
-      "prompt_en": "Placeholder select-all question?",
+      "prompt_ar": "ماذا فعل أبو بكر أولاً حين بلَغه خبر وفاة النبي ﷺ؟",
+      "prompt_en": "What did Abu Bakr do first when the news of the Prophet's ﷺ death reached him?",
       "options": [
         {
           "id": "a",
-          "ar": "خيار عنصر نائب أ",
-          "en": "Placeholder option A"
+          "ar": "عاد فوراً ودخل مباشرةً على النبي ﷺ ليتحقق بنفسه، قبل أن يتكلم مع أحد",
+          "en": "He returned immediately and went straight in to the Prophet ﷺ to verify it himself, before speaking to anyone"
         },
         {
           "id": "b",
-          "ar": "خيار عنصر نائب ب",
-          "en": "Placeholder option B"
+          "ar": "أرسل من يستفسر عن صحة الخبر بدلاً من الذهاب بنفسه",
+          "en": "He sent someone to inquire whether the news was true instead of going himself"
         },
         {
           "id": "c",
-          "ar": "خيار عنصر نائب ج",
-          "en": "Placeholder option C"
+          "ar": "خاطب الناس في المسجد أولاً، ثم دخل على النبي ﷺ بعد ذلك",
+          "en": "He addressed the people at the mosque first, then went in to the Prophet ﷺ afterward"
         }
       ],
       "correct_answer": [
-        "a",
-        "b"
+        "a"
       ],
-      "explanation_ar": "شرح عنصر نائب للإجابة الصحيحة.",
-      "explanation_en": "PLACEHOLDER explanation of the correct answer.",
-      "review_card_id": "AB05"
+      "explanation_ar": "أقبل أبو بكر حتى نزل على باب المسجد، فلم يلتفت إلى شيء حتى دخل على النبي ﷺ في بيت عائشة.",
+      "explanation_en": "Abu Bakr came and dismounted at the mosque's door, and without turning to anything else went straight in to the Prophet ﷺ in 'A'ishah's house.",
+      "review_card_id": "L6-B09"
+    },
+    {
+      "question_id": "L6Q03",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "ما المبدأ العقدي الذي أعلنه أبو بكر في خطبته؟",
+      "prompt_en": "What theological principle did Abu Bakr declare in his address?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "مَن كان يعبد محمداً فإن محمداً قد مات، ومن كان يعبد الله فإن الله حيٌّ لا يموت",
+          "en": "Whoever worships Muhammad -- Muhammad has died; whoever worships Allah -- Allah is living and does not die"
+        },
+        {
+          "id": "b",
+          "ar": "إنّ وفاة النبي ﷺ تعني توقُّف الوحي والدين معاً",
+          "en": "That the Prophet's ﷺ death meant the end of revelation and religion together"
+        },
+        {
+          "id": "c",
+          "ar": "إنّ من ينكر وفاة النبي ﷺ يُعدّ من المنافقين",
+          "en": "That anyone who denied the Prophet's ﷺ death should be considered a hypocrite"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "هذا هو نصّ إعلان أبي بكر، مميّزاً بين التعلّق بشخص النبي ﷺ والتعلّق بالله الذي لا يموت.",
+      "explanation_en": "This is the exact wording of Abu Bakr's declaration, distinguishing attachment to the person of the Prophet ﷺ from attachment to Allah, who does not die.",
+      "review_card_id": "L6-B10"
+    },
+    {
+      "question_id": "L6Q04",
+      "type": "multiple_choice",
+      "depth": "connection",
+      "prompt_ar": "كيف أعادت آيةُ آل عمران ١٤٤ توازنَ الناس، بحسب الرواية؟",
+      "prompt_en": "How did Aal 'Imran 3:144 restore the community's balance, according to the report?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "بدت الآية وكأنها لم تكن معروفةً حتى تلاها أبو بكر، فذكَّرت الناس بأن الرسالة لا تتوقف بموت الرسول",
+          "en": "The verse seemed unknown to the people until Abu Bakr recited it, reminding them that the message does not end with the messenger's death"
+        },
+        {
+          "id": "b",
+          "ar": "لأنها نزلت في تلك اللحظة تحديداً لأول مرة",
+          "en": "Because it was revealed for the very first time at that exact moment"
+        },
+        {
+          "id": "c",
+          "ar": "لأنها أمرت الناس مباشرةً ببيعة أبي بكر خليفةً",
+          "en": "Because it directly instructed the people to give Abu Bakr the oath of allegiance as caliph"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "الآية نزلت قبل ذلك اليوم، لكن الرواية تذكر أن الناس كأنهم لم يعرفوها حتى تلاها أبو بكر في تلك اللحظة، فربطتهم مجدداً بحقيقة أن الرسل يموتون والدين باقٍ.",
+      "explanation_en": "The verse had been revealed before that day, but the report describes the people as if unaware of it until Abu Bakr recited it in that moment, reconnecting them to the truth that messengers die while the religion remains.",
+      "review_card_id": "L6-B10"
+    },
+    {
+      "question_id": "L6Q05",
+      "type": "true_false",
+      "depth": "meaning",
+      "prompt_ar": "هل يعني ثباتُ أبي بكر في ذلك اليوم أنه لم يحزن على وفاة النبي ﷺ؟",
+      "prompt_en": "Does Abu Bakr's composure that day mean he did not grieve the Prophet's ﷺ death?",
+      "correct_answer": false,
+      "explanation_ar": "خطأ. أحبَّ أبو بكر النبي ﷺ حبّاً صادقاً، ودخل عليه وقبَّله وودَّعه بكلماتٍ تحمل مشاعر واضحة. قوّته لم تكن في غياب الحزن، بل في أن الحزن لم يمنعه من الثبات على الحق وتحمُّل المسؤولية.",
+      "explanation_en": "False. Abu Bakr loved the Prophet ﷺ sincerely, entering upon him, kissing him, and bidding him farewell with words carrying clear emotion. His strength was not the absence of grief, but that grief did not stop him from standing firm in the truth and carrying responsibility.",
+      "review_card_id": "L6-B11"
+    },
+    {
+      "question_id": "L6Q06",
+      "type": "multiple_choice",
+      "depth": "meaning",
+      "prompt_ar": "ماذا يكشف هذا اليوم عن أبي بكر، بحسب الأدلة المتاحة؟",
+      "prompt_en": "What does this day reveal about Abu Bakr, according to the available evidence?",
+      "options": [
+        {
+          "id": "a",
+          "ar": "جمع بين حبٍّ عميق وقبول قضاء الله ووضوحٍ وثباتٍ في لحظة صدمة الجميع، من غير أن يعني ذلك تعييناً رسمياً خليفةً في تلك اللحظة",
+          "en": "He combined deep love, acceptance of Allah's decree, and clarity and steadiness at the moment everyone else was overwhelmed -- without this constituting a formal appointment as caliph at that moment"
+        },
+        {
+          "id": "b",
+          "ar": "أن قيادته للصلاة في مرض النبي ﷺ كانت تعييناً شرعياً صريحاً له خليفةً",
+          "en": "That his leading the prayer during the Prophet's ﷺ illness was an explicit legal designation of him as caliph"
+        },
+        {
+          "id": "c",
+          "ar": "أنه لم يتأثر عاطفياً بوفاة النبي ﷺ على عكس بقية الصحابة",
+          "en": "That he was emotionally unaffected by the Prophet's ﷺ death, unlike the rest of the Companions"
+        }
+      ],
+      "correct_answer": [
+        "a"
+      ],
+      "explanation_ar": "لا تصف المصادر المفحوصة قيادة الصلاة ولا خطبة أبي بكر بأنها تعيينٌ شرعي رسمي للخلافة؛ الدرس يقتصر على ما تُظهره الأدلة عن شخصيته واستعداده، لا على استنتاجٍ لاحق حول الخلافة.",
+      "explanation_en": "None of the inspected sources describe the prayer leadership or Abu Bakr's address as a formal legal designation of the caliphate; the lesson keeps to what the evidence shows about his character and readiness, not a later conclusion about succession.",
+      "review_card_id": "L6-B11"
     }
   ]
 }

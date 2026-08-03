@@ -1,21 +1,35 @@
 {
   "lesson_id": "abu_bakr.lesson_06_final_illness_and_death",
-  "status": "placeholder_structure_only",
-  "note": "PLACEHOLDER — real glossary pending Mohamed's review of content_research/abu_bakr/.",
+  "status": "internal_unapproved",
+  "note": "Four bilingual glossary terms, each genuinely needed for comprehension of this lesson's content.",
   "terms": [
     {
-      "term_id": "placeholder_term_1",
-      "arabic": "مصطلح عنصر نائب أول",
-      "english": "First placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L6-G01",
+      "arabic": "الرفيق الأعلى",
+      "english": "The Highest Companion",
+      "definition_ar": "تعبيرٌ عن الجنة ومنزلتها العليا، استعمله النبي ﷺ في كلماته الأخيرة حين اختار الآخرة على الدنيا.",
+      "definition_en": "An expression for Paradise and its highest station, used by the Prophet ﷺ in his final words as he chose the next world over this one."
     },
     {
-      "term_id": "placeholder_term_2",
-      "arabic": "مصطلح عنصر نائب ثانٍ",
-      "english": "Second placeholder term",
-      "definition_ar": "تعريف مؤقت لهذا المصطلح.",
-      "definition_en": "PLACEHOLDER definition for this term."
+      "term_id": "L6-G02",
+      "arabic": "الإمامة في الصلاة",
+      "english": "Leading the Prayer (Imamah)",
+      "definition_ar": "قيادة المصلّين، بحيث يتبعهم الإمامُ في أفعال الصلاة وأقوالها. أمر النبي ﷺ أبا بكرٍ بها في مرضه الأخير، وأصرَّ على ذلك حتى في آخر ظهورٍ له بين الناس.",
+      "definition_en": "Leading a congregation in prayer, with the worshippers following the imam's actions and recitation. The Prophet ﷺ instructed Abu Bakr to do this during his final illness, and insisted on it even during his last appearance among the people."
+    },
+    {
+      "term_id": "L6-G03",
+      "arabic": "الفتنة",
+      "english": "Fitna (Trial/Tribulation)",
+      "definition_ar": "اضطرابٌ أو امتحانٌ يهدِّد وضوح الدين أو استقرار الأمة. حذَّر منه النبي ﷺ في خطبته في أيام مرضه، مشبِّهاً إقبالها بقطع الليل المظلم.",
+      "definition_en": "A period of upheaval or testing that threatens the clarity of religion or the community's stability. The Prophet ﷺ warned of it in his address during his illness, likening its approach to pieces of a dark night."
+    },
+    {
+      "term_id": "L6-G04",
+      "arabic": "الوحي",
+      "english": "Revelation (Wahy)",
+      "definition_ar": "ما أنزله الله على أنبيائه من هدايةٍ وتشريع. أعلن النبي ﷺ في خطبته في أيام مرضه أنه لم يُحلَّ إلا ما أحلَّه القرآن ولم يُحرِّم إلا ما حرَّمه، مؤكِّداً أن مرجعيته هي الوحي لا رأيه الشخصي.",
+      "definition_en": "The guidance and law Allah sent down to His prophets. In his address during his illness, the Prophet ﷺ declared he had made lawful only what the Qur'an made lawful and forbidden only what it forbade -- affirming that revelation, not personal opinion, was his authority."
     }
   ]
 }
